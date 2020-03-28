@@ -20,3 +20,4 @@ This a list of everyone currently involved and what they are doing.
 |----------|----------|-------------|---------------|----------|
 |      1   | A        | In progress | @Estevanell   | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack01/first/pack01-first) |
 |      1   | B        | In progress | @nasobuco     | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack01/second/pack01-second) |
+|      2   | A        | In progress | @danielvp     | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack02/first/pack02-first) |
