@@ -21,7 +21,7 @@ def pack(number: str):
 
     for version in ["first", "second"]:
         os.makedirs(Path(__file__).absolute().parent.parent / "data" / "cord19" / "packs" / f"pack{number}" / version, exist_ok=True)
-        
+
         with open(Path(__file__).absolute().parent.parent / "data" / "cord19" / "packs" / f"pack{number}" / version / f"pack{number}-{version}.txt", "w") as fp:
             for sentence in sentences:
                 fp.write(sentence)
@@ -30,6 +30,8 @@ def pack(number: str):
         with open(Path(__file__).absolute().parent.parent / "data" / "cord19" / "packs" / f"pack{number}" / version / f"pack{number}-{version}.ann", "w") as fp:
             pass
 
+        os.chmod(Path(__file__).absolute().parent.parent / "data" / "cord19" / "packs" / f"pack{number}", 0o777)
+        os.chmod(Path(__file__).absolute().parent.parent / "data" / "cord19" / "packs" / f"pack{number}" / version, 0o777)
         os.chmod(Path(__file__).absolute().parent.parent / "data" / "cord19" / "packs" / f"pack{number}" / version / f"pack{number}-{version}.txt", 0o777)
         os.chmod(Path(__file__).absolute().parent.parent / "data" / "cord19" / "packs" / f"pack{number}" / version / f"pack{number}-{version}.ann", 0o777)
 
