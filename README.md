@@ -14,6 +14,7 @@ If you want to participate, [read the full instructions here](docs/instructions.
 
 ## A quick demo
 
+<video src="https://github.com/matcom/cord19-ann/blob/master/docs/demo.mkv"></video>
 ![](docs/demo.mkv)
 
 ## Contributors
