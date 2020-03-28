@@ -1,0 +1,99 @@
+T1	Concept 0 5;18 23;24 34;6 17	Lower tract infections respiratory
+T2	Concept 36 40	LRTI
+*	same-as T1 T2
+T3	Action 67 82	hospitalization
+T4	Action 87 96	mortality
+T5	Concept 140 150	recipients
+T6	Concept 100 113;114 122;123 133	hematopoietic cellular transplant
+T7	Concept 135 138	HCT
+*	same-as T6 T7
+R1	in-context Arg1:T5 Arg2:T7	
+R2	target Arg1:T4 Arg2:T5	
+T8	Concept 140 150	recipients
+R3	in-context Arg1:T8 Arg2:T7	
+R4	target Arg1:T3 Arg2:T8	
+R5	subject Arg1:T3 Arg2:T2	
+R6	subject Arg1:T4 Arg2:T2	
+A1	Emphasized T3
+A2	Emphasized T4
+T9	Concept 172 175	HCT
+T10	Concept 176 186	recipients
+R7	in-context Arg1:T10 Arg2:T9	
+T11	Concept 164 168	LRTI
+T12	Concept 151 160	Diagnosis
+R8	in-context Arg1:T12 Arg2:T11	
+R9	in-context Arg1:T12 Arg2:T10	
+T13	Concept 203 214	challenging
+A3	Emphasized T13
+R10	has-property Arg1:T12 Arg2:T13	
+T14	Concept 371 376;377 386	mimic infection
+T15	Concept 361 366	fever
+T16	Concept 330 339;340 352	pulmonary inflammation
+T17	Concept 236 249;250 262;263 273	noninfectious inflammatory conditions
+T18	Concept 282 287;288 294;295 299;300 307	graft versus host disease
+T19	Concept 309 313	GVHD
+*	same-as T18 T19
+R11	is-a Arg1:T18 Arg2:T17	
+T20	Concept 222 232	high rates
+R12	in-context Arg1:T20 Arg2:T17	
+R13	causes Arg1:T20 Arg2:T13	
+R14	causes Arg1:T18 Arg2:T16	
+R15	causes Arg1:T18 Arg2:T15	
+R16	causes Arg1:T18 Arg2:T14	
+T21	Concept 387 398;399 403;404 414;415 425	Metagenomic next generation sequencing
+T22	Concept 427 431	mNGS
+*	same-as T21 T22
+T23	Concept 460 470	diagnostic
+T24	Concept 451 459	enhanced
+R17	has-property Arg1:T23 Arg2:T24	
+R18	entails Arg1:T22 Arg2:T23	
+T25	Action 487 496	providing
+T26	Concept 499 506;507 518	culture independent
+T27	Concept 520 533	comprehensive
+T28	Action 534 545	measurement
+R19	subject Arg1:T25 Arg2:T22	
+R20	target Arg1:T25 Arg2:T28	
+R21	in-context Arg1:T28 Arg2:T26	
+R22	in-context Arg1:T28 Arg2:T27	
+T29	Concept 553 562;563 574	microbial composition
+R23	target Arg1:T28 Arg2:T29	
+T30	Concept 578 586;587 594	clinical samples
+R24	has-part Arg1:T30 Arg2:T29	
+T31	Reference 595 599	This
+T32	Concept 600 610	technology
+R25	is-a Arg1:T31 Arg2:T32	
+T33	Action 636 645	detection
+T34	Concept 623 635	simultaneous
+R26	in-context Arg1:T33 Arg2:T34	
+T35	Concept 649 658	bacterial
+T36	Concept 660 665	viral
+T37	Concept 670 676	fungal
+T38	Concept 677 686	pathogens
+R27	target Arg1:T33 Arg2:T35	
+R28	target Arg1:T33 Arg2:T36	
+R29	target Arg1:T33 Arg2:T37	
+R30	is-a Arg1:T35 Arg2:T38	
+R31	is-a Arg1:T36 Arg2:T38	
+R32	is-a Arg1:T37 Arg2:T38	
+T39	Action 695 706	introducing
+T40	Concept 707 711	bias
+A4	Negated T39
+T41	Concept 728 740;741 744	fixed-target PCR
+T42	Concept 748 757	serologic
+R33	causes Arg1:T41 Arg2:T40	
+R34	causes Arg1:T42 Arg2:T40	
+R35	target Arg1:T39 Arg2:T40	
+T43	Action 611 618	permits
+R36	target Arg1:T43 Arg2:T33	
+R37	subject Arg1:T43 Arg2:T31	
+R38	subject Arg1:T39 Arg2:T31	
+T44	Concept 799 810;811 817	multi-organ damage
+T45	Concept 799 810;822 833	multi-organ dysfunction
+T46	Concept 783 791	patients
+T47	Concept 767 768;769 779	a proportion
+R39	in-context Arg1:T46 Arg2:T47	
+T48	Action 792 798	showed
+A5	Uncertain T48
+R40	subject Arg1:T48 Arg2:T46	
+R41	target Arg1:T48 Arg2:T44	
+R42	target Arg1:T48 Arg2:T45	
