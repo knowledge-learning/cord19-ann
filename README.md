@@ -31,3 +31,5 @@ This a list of everyone currently involved and what they are doing.
 |      5   | B        |             |               | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack05/second/pack05-second) |
 |      6   | A        |             |               | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack06/first/pack06-first) |
 |      6   | B        |             |               | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack06/second/pack06-second) |
+|      7   | A        |             |               | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack07/first/pack07-first) |
+|      7   | B        |             |               | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack07/second/pack07-second) |
