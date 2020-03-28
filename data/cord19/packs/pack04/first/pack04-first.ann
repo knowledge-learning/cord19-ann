@@ -1,0 +1,74 @@
+T1	Concept 10 16	RNAseq
+T2	Action 17 27	identified
+T3	Concept 31 34;35 42	RNA viruses
+T4	Concept 28 30	10
+R1	in-context Arg1:T3 Arg2:T4	
+R2	target Arg1:T2 Arg2:T3	
+R3	subject Arg1:T2 Arg2:T1	
+T5	Action 74 87	pathogenicity
+A1	Uncertain T5
+R4	subject Arg1:T5 Arg2:T3	
+T6	Concept 95 100	lungs
+R5	target Arg1:T5 Arg2:T6	
+T7	Concept 131 135	five
+T8	Concept 136 139;140 147	DNA viruses
+R6	in-context Arg1:T8 Arg2:T7	
+R7	target Arg1:T2 Arg2:T8	
+T9	Action 178 191	pathogenicity
+R8	subject Arg1:T9 Arg2:T8	
+T10	Concept 168 177	pulmonary
+R9	target Arg1:T9 Arg2:T10	
+T11	Concept 110 113;114 127	RNA intermediates
+R10	in-context Arg1:T8 Arg2:T11	
+A2	Uncertain T9
+T12	Concept 192 198	DNAseq
+T13	Action 199 209	identified
+R11	subject Arg1:T13 Arg2:T12	
+T14	Concept 214 221	genomes
+T15	Reference 231 235	same
+T16	Concept 236 240	five
+T17	Concept 241 244;245 252	DNA viruses
+T18	Concept 286 289	CMV
+T19	Concept 294 299	HHV-6
+R12	in-context Arg1:T17 Arg2:T16	
+*	same-as T17 T15
+R13	has-part Arg1:T17 Arg2:T14	
+R14	target Arg1:T13 Arg2:T14	
+R15	has-part Arg1:T18 Arg2:T14	
+R16	is-a Arg1:T19 Arg2:T14	
+T20	Concept 333 344	pneumonitis
+A3	Uncertain T20
+R17	causes Arg1:T18 Arg2:T20	
+R18	causes Arg1:T19 Arg2:T20	
+T21	Action 783 791	presence
+T22	Concept 795 806;807 816	respiratory pathogens
+R19	subject Arg1:T21 Arg2:T22	
+T23	Action 838 847;848 858	increased expression
+T24	Concept 862 866;867 873;874 882;883 888	host immune response genes
+T25	Concept 899 905;906 915;916 925	airway microbial diversity
+T26	Action 893 898	lower
+R20	target Arg1:T23 Arg2:T24	
+R21	target Arg1:T26 Arg2:T25	
+R22	entails Arg1:T21 Arg2:T23	
+R23	entails Arg1:T21 Arg2:T26	
+T27	Concept 566 570	mNGS
+T28	Concept 584 588;589 600	100% sensitivity
+T29	Action 615 624	detection
+T30	Concept 605 614	microbial
+R24	target Arg1:T29 Arg2:T30	
+R25	in-context Arg1:T28 Arg2:T29	
+R26	has-property Arg1:T28 Arg2:T27	
+T31	Action 639 653	identification
+T32	Concept 657 666	potential
+T33	Concept 667 670	new
+T34	Concept 671 676;691 700	viral pathogens
+T35	Concept 681 690;691 700	bacterial pathogens
+R27	causes Arg1:T27 Arg2:T31	
+R29	in-context Arg1:T35 Arg2:T32	
+R28	in-context Arg1:T35 Arg2:T33	
+R30	in-context Arg1:T34 Arg2:T33	
+R31	in-context Arg1:T34 Arg2:T32	
+R32	target Arg1:T31 Arg2:T34	
+R33	target Arg1:T31 Arg2:T35	
+T36	Concept 704 707;708 710;711 713	six of 15
+T37	Concept 715 718	40%
