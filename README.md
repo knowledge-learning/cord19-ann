@@ -8,4 +8,20 @@ Your mission, should you choose to accept it, is to manually annotate sentences 
 
 ![](docs/img1.png)
 
-If you want to participate, [read the full instructions here](docs/instructions.md) and join our [Telegram group]().
+## Participate!
+
+If you want to participate, [read the full instructions here](docs/instructions.md) and join our [Telegram group](https://t.me/cord19).
+See a [demo video here](https://github.com/matcom/cord19-ann/raw/master/docs/demo.mp4).
+
+## Contributors
+
+This a list of everyone currently involved and what they are doing.
+
+| **Pack** | **Side** | **Status**  | **Annotator** | **Link** |
+|----------|----------|-------------|---------------|----------|
+|      1   | A        | In progress | @Estevanell   | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack01/first/pack01-first) |
+|      1   | B        | In progress | @nasobuco     | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack01/second/pack01-second) |
+|      2   | A        | In progress | @danielvp     | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack02/first/pack02-first) |
+|      2   | B        | In progress | @IntiBlanco   | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack02/second/pack02-second) |
+|      3   | A        | In progress | @Olivia       | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack03/first/pack03-first) |
+|      3   | B        | In progress | @gabyfdez90   | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack03/second/pack03-second) |
