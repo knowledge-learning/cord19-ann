@@ -11,11 +11,7 @@ Your mission, should you choose to accept it, is to manually annotate sentences 
 ## Participate!
 
 If you want to participate, [read the full instructions here](docs/instructions.md) and join our [Telegram group](https://t.me/cord19).
-
-## A quick demo
-
-<video src="https://github.com/matcom/cord19-ann/raw/master/docs/demo.mp4"></video>
-![](docs/demo.mkv)
+See a [demo video here](https://github.com/matcom/cord19-ann/raw/master/docs/demo.mp4).
 
 ## Contributors
 
