@@ -33,7 +33,7 @@ This a list of everyone currently involved and what they are doing.
 |      6   | B        | In progress | @Estevanell    | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack06/second/pack06-second) |
 |      7   | A        | Done        | @gabyfdez90    | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack07/first/pack07-first) |
 |      7   | B        | In progress | @AndyKIALO     | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack07/second/pack07-second) |
-|      8   | A        |             |                | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack08/first/pack08-first) |
+|      8   | A        | In progress | @gabyfdez90    | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack08/first/pack08-first) |
 |      8   | B        |             |                | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack08/second/pack08-second) |
 |      9   | A        |             |                | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack09/first/pack09-first) |
 |      9   | B        |             |                | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack09/second/pack09-second) |
