@@ -6,6 +6,89 @@ T5	Concept 75 91	pro-inflammatory
 R1	subject Arg1:T3 Arg2:T2	
 R2	subject Arg1:T3 Arg2:T1	
 R3	has-property Arg1:T4 Arg2:T5	
-T6	Concept 140 149	infection
-R4	in-time Arg1:T3 Arg2:T6	
 R5	target Arg1:T3 Arg2:T4	
+T6	Concept 115 149	hepatitis virus strain-3 infection
+R4	in-time Arg1:T3 Arg2:T6	
+T7	Concept 108 114	murine
+R6	has-property Arg1:T6 Arg2:T7	
+T8	Concept 163 173	SARS-CoV-2
+T9	Action 179 187	triggers
+T10	Action 197 204	release
+T11	Concept 188 196	cytokine
+R7	target Arg1:T10 Arg2:T11	
+R8	subject Arg1:T9 Arg2:T8	
+R9	target Arg1:T9 Arg2:T10	
+T12	Concept 210 219	monocytes
+R10	subject Arg1:T10 Arg2:T12	
+T13	Concept 224 235	macrophages
+R11	subject Arg1:T10 Arg2:T13	
+T14	Concept 239 256	COVID-19 patients
+R12	target Arg1:T10 Arg2:T14	
+T15	Concept 430 437	RT-LAMP
+T16	Concept 438 444	assays
+R13	has-property Arg1:T16 Arg2:T15	
+T17	Concept 458 464	usable
+R14	has-property Arg1:T16 Arg2:T17	
+T18	Concept 469 484	screening tests
+R15	target Arg1:T17 Arg2:T18	
+T19	Action 342 353	considering
+T20	Action 420 429	suggested
+R16	causes Arg1:T19 Arg2:T20	
+T21	Concept 365 369	load
+R17	target Arg1:T19 Arg2:T21	
+T22	Concept 359 364	viral
+A1	Emphasized T22
+T23	Concept 373 383	SARS-CoV-2
+R18	subject Arg1:T21 Arg2:T23	
+T24	Concept 387 398	early stage
+R19	in-context Arg1:T21 Arg2:T24	
+T25	Concept 399 418	after symptom onset
+R20	in-time Arg1:T21 Arg2:T25	
+T26	Concept 528 532	CCoV
+T27	Concept 533 543	strain A76
+R21	is-a Arg1:T26 Arg2:T27	
+T30	Concept 555 566	recombinant
+T28	Concept 567 580	S 103 protein
+R22	has-part Arg1:T26 Arg2:T28	
+R23	has-property Arg1:T28 Arg2:T30	
+T29	Concept 595 608	recombination
+R24	causes Arg1:T29 Arg2:T28	
+T31	Concept 617 627	serotype I
+T32	Concept 632 639	II CCoV
+T33	Concept 640 649	sequences
+R25	target Arg1:T29 Arg2:T33	
+R26	in-context Arg1:T32 Arg2:T33	
+R27	in-context Arg1:T31 Arg2:T33	
+T34	Concept 650 660	SARS-CoV-2
+T35	Concept 678 685	segment
+T36	Concept 667 677	disordered
+R28	has-property Arg1:T35 Arg2:T36	
+R29	has-part Arg1:T34 Arg2:T35	
+T37	Concept 699 707	residues
+R30	has-part Arg1:T35 Arg2:T37	
+T38	Concept 691 698	168-289
+R31	in-context Arg1:T37 Arg2:T38	
+T39	Concept 714 724	Human SARS
+T40	Concept 763 770	segment
+R32	has-part Arg1:T39 Arg2:T40	
+T41	Concept 750 762	unstructured
+R33	has-property Arg1:T40 Arg2:T41	
+T42	Concept 784 792	residues
+R34	has-part Arg1:T40 Arg2:T42	
+T43	Concept 776 783	145-289
+R35	in-context Arg1:T43 Arg2:T42	
+T44	Concept 818 827	direction
+T45	Concept 808 817	evolution
+R36	is-a Arg1:T44 Arg2:T45	
+T46	Action 832 839	promote
+A2	Uncertain T46
+T47	Concept 844 854	appearance
+R37	target Arg1:T46 Arg2:T47	
+T48	Concept 863 870	subtype
+R38	target Arg1:T47 Arg2:T48	
+T49	Concept 874 882	COVID-19
+R39	has-part Arg1:T48 Arg2:T49	
+T50	Concept 858 862	mild
+R40	has-property Arg1:T48 Arg2:T50	
+T51	Concept 798 807	potential
+R41	has-property Arg1:T44 Arg2:T51	
