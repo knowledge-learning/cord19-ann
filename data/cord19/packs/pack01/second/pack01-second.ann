@@ -39,7 +39,6 @@ T22	Concept 846 854	COVID-19
 R17	has-part Arg1:T21 Arg2:T22	
 R18	in-context Arg1:T19 Arg2:T21	
 R19	is-a Arg1:T16 Arg2:T19	
-T18	Action 633 644	demonstrate
 T23	Action 674 680	detect
 T24	Concept 659 673	simultaneously
 R20	has-property Arg1:T23 Arg2:T24	
@@ -47,3 +46,60 @@ T25	Concept 681 690	pathogens
 R21	target Arg1:T23 Arg2:T25	
 T26	Concept 650 654	mNGS
 R22	subject Arg1:T23 Arg2:T26	
+T27	Concept 699 712	host response
+T28	Concept 720 728	patients
+T29	Concept 716 719	HCT
+R23	has-property Arg1:T28 Arg2:T29	
+T32	Concept 734 739	acute
+T30	Concept 740 761	respiratory illnesses
+R24	has-property Arg1:T30 Arg2:T32	
+R25	has-part Arg1:T28 Arg2:T30	
+R26	target Arg1:T23 Arg2:T27	
+R27	in-context Arg1:T27 Arg2:T28	
+T18	Concept 457 465	regimens
+T31	Concept 449 456	empiric
+R28	has-property Arg1:T18 Arg2:T31	
+T33	Action 515 522	leading
+T34	Concept 526 543	treatment failure
+T35	Concept 545 564	disease progression
+T36	Concept 581 597	adverse outcomes
+T37	Concept 570 580	consequent
+R29	has-property Arg1:T36 Arg2:T37	
+R30	target Arg1:T33 Arg2:T34	
+R31	target Arg1:T33 Arg2:T35	
+R32	target Arg1:T33 Arg2:T36	
+T39	Action 475 483	activity
+A2	Uncertain T39
+T38	Concept 506 513	microbe
+T40	Concept 495 505	underlying
+R33	has-property Arg1:T38 Arg2:T40	
+R34	target Arg1:T39 Arg2:T38	
+R35	subject Arg1:T39 Arg2:T18	
+T41	Concept 437 447	situations
+R36	in-context Arg1:T18 Arg2:T41	
+R37	causes Arg1:T39 Arg2:T33	
+T42	Concept 253 257	mNGS
+T43	Action 213 222	capturing
+T44	Concept 248 251	RNA
+T45	Concept 242 247	human
+R38	has-property Arg1:T44 Arg2:T45	
+T46	Concept 228 237	microbial
+R39	has-property Arg1:T44 Arg2:T46	
+R40	target Arg1:T43 Arg2:T44	
+R41	subject Arg1:T43 Arg2:T42	
+T48	Action 300 309	profiling
+T47	Concept 317 342	host immunologic response
+R42	target Arg1:T48 Arg2:T47	
+T49	Concept 284 299	transcriptional
+T50	Concept 271 283	simultaneous
+R43	has-property Arg1:T48 Arg2:T49	
+R44	has-property Arg1:T48 Arg2:T50	
+T51	Action 263 270	permits
+R45	target Arg1:T51 Arg2:T48	
+R46	subject Arg1:T51 Arg2:T42	
+T52	Action 354 361	provide
+T53	Concept 376 383	insight
+T54	Concept 370 371	n
+R47	has-property Arg1:T53 Arg2:T54	
+R49	target Arg1:T52 Arg2:T53	
+R48	subject Arg1:T52 Arg2:T48	

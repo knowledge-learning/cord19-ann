@@ -65,3 +65,48 @@ T33	Concept 449 456	empiric
 R30	has-property Arg1:T32 Arg2:T33	
 T34	Concept 506 513	microbe
 T35	Concept 495 505	underlying
+T37	Action 536 543	failure
+T38	Concept 526 535	treatment
+R31	subject Arg1:T37 Arg2:T38	
+T39	Action 553 564	progression
+T40	Concept 545 552	disease
+T41	Concept 589 597	outcomes
+T42	Concept 581 588	adverse
+R32	has-property Arg1:T41 Arg2:T42	
+R33	subject Arg1:T39 Arg2:T40	
+R34	in-context Arg1:T34 Arg2:T35	
+R35	in-context Arg1:T32 Arg2:T34	
+R36	causes Arg1:T32 Arg2:T37	
+R37	causes Arg1:T32 Arg2:T39	
+R38	causes Arg1:T32 Arg2:T41	
+T36	Concept 650 654	mNGS
+T43	Action 674 680	detect
+T44	Concept 659 673	simultaneously
+T45	Concept 681 690	pathogens
+R39	in-context Arg1:T43 Arg2:T44	
+A3	Uncertain T43
+R40	subject Arg1:T43 Arg2:T36	
+R41	target Arg1:T43 Arg2:T45	
+T46	Action 704 712	response
+T47	Concept 699 703	host
+R42	subject Arg1:T46 Arg2:T47	
+T48	Concept 716 719	HCT
+T49	Concept 720 728	patients
+R43	in-context Arg1:T49 Arg2:T48	
+T50	Concept 740 751	respiratory
+T51	Concept 752 761	illnesses
+T52	Concept 734 739	acute
+R44	in-context Arg1:T51 Arg2:T50	
+R45	has-property Arg1:T51 Arg2:T52	
+R46	in-context Arg1:T49 Arg2:T51	
+R47	in-context Arg1:T46 Arg2:T49	
+R48	target Arg1:T43 Arg2:T46	
+T53	Concept 771 776	liver
+T54	Concept 777 783	damage
+R49	in-place Arg1:T54 Arg2:T53	
+T55	Concept 812 819	symptom
+T56	Concept 832 840	patients
+T57	Concept 846 854	COVID-19
+R50	in-context Arg1:T56 Arg2:T57	
+R51	is-a Arg1:T54 Arg2:T55	
+R52	in-context Arg1:T55 Arg2:T56	
