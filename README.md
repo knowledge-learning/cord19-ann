@@ -47,7 +47,7 @@ This a list of everyone currently involved and what they are doing.
 |     13   | B        | Done        | @JOramas       | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack13/second/pack13-second) |
 |     14   | A        | In progress | @danielvp      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack14/first/pack14-first) |
 |     14   | B        | In progress | @JOramas       | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack14/second/pack14-second) |
-|     15   | A        |             |                | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack15/first/pack15-first) |
+|     15   | A        | In progress | @Skull_kiddf   | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack15/first/pack15-first) |
 |     15   | B        |             |                | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack15/second/pack15-second) |
 |     16   | A        |             |                | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack16/first/pack16-first) |
 |     16   | B        |             |                | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack16/second/pack16-second) |
