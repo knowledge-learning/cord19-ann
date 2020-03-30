@@ -44,8 +44,10 @@ T22	Concept 548 566	accessory features
 T26	Concept 647 657	SARS-CoV-2
 T27	Concept 673 679	spread
 T28	Concept 684 693	virulence
-R21	has-property Arg1:T26 Arg2:T27	
-R22	has-property Arg1:T26 Arg2:T28	
 T23	Concept 626 643	unique capacities
 R23	is-a Arg1:T22 Arg2:T23	
 R24	has-part Arg1:T26 Arg2:T23	
+T24	Action 658 668	explaining
+R21	subject Arg1:T24 Arg2:T26	
+R22	target Arg1:T24 Arg2:T27	
+R25	target Arg1:T24 Arg2:T28	
