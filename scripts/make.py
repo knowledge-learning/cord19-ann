@@ -1,7 +1,16 @@
 import fire
 import os
-
+import yaml
 from pathlib import Path
+
+
+def report():
+    with open(Path(__file__).parent / "packs.yml") as fp:
+        packs = yaml.safe_load(fp)['packs']
+
+    for pack_id, pack in packs.items():
+        for label, (version_id, version) in zip("AB", pack.items()):
+            print(f"| {pack_id[4:]:8} | {version_id:8} | {version['status']:14} | {version['assigned'] or '':20} | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/{pack_id}/{version_id}/{pack_id}-{version_id}) |")
 
 
 def pack(number: str):

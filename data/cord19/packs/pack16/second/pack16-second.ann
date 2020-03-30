@@ -1,0 +1,96 @@
+T1	Concept 17 27	SARS-CoV-2
+T2	Concept 63 83	Bat-SARSr-CoV RaTG13
+R1	causes Arg1:T2 Arg2:T1	
+T3	Concept 110 122	substitution
+A1	Emphasized T3
+T4	Concept 99 109	synonymous
+R2	has-property Arg1:T3 Arg2:T4	
+T5	Concept 131 141	SARS-CoV-2
+R3	has-part Arg1:T3 Arg2:T5	
+T6	Concept 146 159	RaTG13 strain
+R4	has-part Arg1:T3 Arg2:T6	
+T7	Concept 185 191	genome
+T8	Concept 174 184	SARS-CoV-2
+R5	has-property Arg1:T7 Arg2:T8	
+T9	Action 160 169	suggested
+T10	Action 232 241	selection
+T12	Concept 211 219	negative
+T13	Concept 220 230	(purifying
+R6	is-a Arg1:T13 Arg2:T10	
+A2	Emphasized T10
+R7	is-a Arg1:T12 Arg2:T10	
+R8	target Arg1:T10 Arg2:T7	
+R9	target Arg1:T9 Arg2:T10	
+T11	Concept 353 362	mutations
+T14	Concept 342 352	synonymous
+R10	has-property Arg1:T11 Arg2:T14	
+T17	Concept 431 456	other coronavirus strains
+T16	Concept 396 406	SARS-CoV-2
+T18	Concept 411 417	RaTG13
+R12	in-context Arg1:T11 Arg2:T16	
+R13	in-context Arg1:T11 Arg2:T18	
+R14	in-context Arg1:T17 Arg2:T11	
+A4	Diminished T17
+A3	Emphasized T16
+A5	Emphasized T18
+T15	Concept 477 486	mutations
+T19	Concept 466 476	nucleotide
+R11	has-property Arg1:T15 Arg2:T19	
+T20	Action 492 500	enriched
+T21	Concept 504 518	T:C transition
+R15	in-context Arg1:T20 Arg2:T21	
+R16	target Arg1:T20 Arg2:T15	
+T22	Concept 519 524	CD147
+T23	Concept 536 546	associated
+A6	Emphasized T23
+R17	has-property Arg1:T22 Arg2:T23	
+T24	Concept 563 571	invasion
+R18	target Arg1:T23 Arg2:T24	
+T25	Concept 552 562	SARS-CoV-2
+R19	has-property Arg1:T24 Arg2:T25	
+T26	Concept 576 586	host cells
+R20	target Arg1:T24 Arg2:T26	
+T27	Concept 592 594	SP
+T28	Action 595 600	binds
+R21	subject Arg1:T28 Arg2:T27	
+T29	Concept 604 622	cellular receptors
+R22	target Arg1:T28 Arg2:T29	
+T30	Action 626 633	mediate
+R23	causes Arg1:T28 Arg2:T30	
+T31	Concept 634 643	infection
+R24	target Arg1:T30 Arg2:T31	
+T32	Concept 647 657	host cells
+R25	target Arg1:T31 Arg2:T32	
+T33	Concept 756 767	interaction
+T34	Concept 773 785	pig 146 ACE2
+R26	in-context Arg1:T33 Arg2:T34	
+T35	Concept 794 803	favorable
+R27	has-property Arg1:T33 Arg2:T35	
+A7	Emphasized T35
+T36	Action 819 826	isolate
+R28	causes Arg1:T35 Arg2:T36	
+T37	Concept 808 818	SARS-CoV-2
+R29	subject Arg1:T37 Arg2:T36	
+T38	Concept 847 849	Kd
+T40	Concept 865 871	lesser
+R30	is-a Arg1:T38 Arg2:T40	
+T39	Concept 859 864	folds
+R31	has-part Arg1:T38 Arg2:T39	
+T41	Concept 853 858	147 3
+R32	has-property Arg1:T39 Arg2:T41	
+T42	Concept 884 894	SARS-CoV-2
+T43	Action 872 880	compared
+R33	in-context Arg1:T40 Arg2:T43	
+R34	target Arg1:T43 Arg2:T42	
+T44	Concept 900 915	binding surface
+T45	Concept 919 927	olaparib
+T46	Concept 931 947	SARS-CoV-2-N-NTD
+T47	Concept 995 1001	CVL218
+R35	has-part Arg1:T44 Arg2:T45	
+R36	in-context Arg1:T44 Arg2:T46	
+T48	Reference 987 991	that
+R37	has-part Arg1:T48 Arg2:T47	
+T49	Concept 951 958	similar
+R38	has-property Arg1:T44 Arg2:T49	
+A8	Diminished T49
+R39	target Arg1:T49 Arg2:T48	

@@ -1,0 +1,51 @@
+T1	Concept 322 332	SARS-CoV-2
+T2	Concept 337 350	bat SARSr-CoV
+T3	Action 351 355	have
+R1	subject Arg1:T2 Arg2:T3	
+R2	subject Arg1:T1 Arg2:T3	
+T4	Concept 356 377	similar 58 amino acid
+R3	has-property Arg1:T3 Arg2:T4	
+T5	Concept 41 69	contaminated gloves or hands
+T7	Concept 97 117	route for SARS-CoV-2
+T6	Action 70 76	may be
+R5	is-a Arg1:T5 Arg2:T7	
+T9	Concept 560 578	Diagnosis criteria
+T10	Concept 582 590	COVID-19
+T11	Concept 700 747	reverse transcription polymerase chain reaction
+T12	Concept 749 755	RT-PCR
+*	same-as T11 T12
+T13	Concept 620 636	chest CT imaging
+T14	Concept 640 654	patchy shadows
+T15	Concept 659 679	ground glass opacity
+R6	entails Arg1:T10 Arg2:T13	
+R7	entails Arg1:T10 Arg2:T11	
+R8	has-property Arg1:T13 Arg2:T14	
+R9	has-property Arg1:T13 Arg2:T15	
+T16	Concept 591 600	infection
+R10	causes Arg1:T10 Arg2:T16	
+T17	Concept 196 218	best clinical response
+T18	Concept 158 181	standardized management
+R11	causes Arg1:T18 Arg2:T17	
+T19	Action 219 226	reduces
+R12	subject Arg1:T19 Arg2:T17	
+T20	Concept 231 235	risk
+T21	Concept 239 249	SARS-CoV-2
+T22	Action 264 272	improves
+R13	subject Arg1:T22 Arg2:T17	
+T23	Concept 277 286	prognosis
+R14	target Arg1:T19 Arg2:T20	
+R15	entails Arg1:T21 Arg2:T20	
+T24	Concept 250 259	infection
+R16	causes Arg1:T21 Arg2:T24	
+T27	Concept 390 397	results
+T28	Action 480 487	suggest
+R19	subject Arg1:T28 Arg2:T27	
+A1	Uncertain T6
+T29	Action 488 500	perturbation
+T31	Concept 504 517	immune system
+R4	target Arg1:T29 Arg2:T31	
+T30	Concept 533 545	pathogenesis
+R20	causes Arg1:T29 Arg2:T30	
+T32	Concept 549 559	SARS-CoV-2
+R21	has-property Arg1:T32 Arg2:T30	
+R22	has-property Arg1:T21 Arg2:T23	
