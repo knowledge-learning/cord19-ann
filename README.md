@@ -28,7 +28,7 @@ This a list of everyone currently involved and what they are doing.
 |      4   | A        | Done        | @danielvp      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack04/first/pack04-first) |
 |      4   | B        | In progress | @TaniaMG       | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack04/second/pack04-second) |
 |      5   | A        | Done        | @danielvp      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack05/first/pack05-first) |
-|      5   | B        | In progress | @adrianflda    | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack05/second/pack05-second) |
+|      5   | B        |             |                | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack05/second/pack05-second) |
 |      6   | A        | Done        | @DCardenas2019 | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack06/first/pack06-first) |
 |      6   | B        | In progress | @Estevanell    | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack06/second/pack06-second) |
 |      7   | A        | Done        | @gabyfdez90    | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack07/first/pack07-first) |
