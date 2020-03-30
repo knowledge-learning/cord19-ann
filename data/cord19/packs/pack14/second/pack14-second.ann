@@ -38,4 +38,14 @@ A1	Uncertain T18
 T19	Concept 481 502	core genomic features
 T20	Concept 524 529	virus
 T21	Concept 536 546	functional
-R19	has-property Arg1:T20 Arg2:T19	
+R19	has-property Arg1:T20 Arg2:T21	
+R20	entails Arg1:T19 Arg2:T20	
+T22	Concept 548 566	accessory features
+T26	Concept 647 657	SARS-CoV-2
+T27	Concept 673 679	spread
+T28	Concept 684 693	virulence
+R21	has-property Arg1:T26 Arg2:T27	
+R22	has-property Arg1:T26 Arg2:T28	
+T23	Concept 626 643	unique capacities
+R23	is-a Arg1:T22 Arg2:T23	
+R24	has-part Arg1:T26 Arg2:T23	
