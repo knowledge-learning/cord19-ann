@@ -43,9 +43,9 @@ This a list of everyone currently involved and what they are doing.
 |     11   | B        | In progress | @luilver       | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack11/second/pack11-second) |
 |     12   | A        | Done        | @danielvp      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack12/first/pack12-first) |
 |     12   | B        |             |                | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack12/second/pack12-second) |
-|     13   | A        | In progress | @danielvp      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack13/first/pack13-first) |
+|     13   | A        | Done        | @danielvp      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack13/first/pack13-first) |
 |     13   | B        |             |                | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack13/second/pack13-second) |
-|     14   | A        |             |                | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack14/first/pack14-first) |
+|     14   | A        | In progress | @danielvp      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack14/first/pack14-first) |
 |     14   | B        |             |                | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack14/second/pack14-second) |
 |     15   | A        |             |                | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack15/first/pack15-first) |
 |     15   | B        |             |                | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack15/second/pack15-second) |
