@@ -51,3 +51,46 @@ T24	Action 658 668	explaining
 R21	subject Arg1:T24 Arg2:T26	
 R22	target Arg1:T24 Arg2:T27	
 R25	target Arg1:T24 Arg2:T28	
+T25	Concept 698 709;710 716	seasonality factor
+T29	Action 717 727	represents
+T30	Concept 732 738	amount
+R26	subject Arg1:T29 Arg2:T25	
+T31	Concept 742 760	seasonal variation
+R27	in-context Arg1:T31 Arg2:T30	
+R28	target Arg1:T29 Arg2:T31	
+T32	Concept 768 781	SARS-CoV-2 R0
+R29	has-part Arg1:T32 Arg2:T31	
+T33	Concept 810 827	betacoronaviruses
+T34	Concept 798 803	other
+T35	Concept 804 809	human
+R30	in-context Arg1:T33 Arg2:T35	
+R31	in-context Arg1:T35 Arg2:T34	
+R32	in-context Arg1:T31 Arg2:T33	
+T36	Action 13 21;22 30	reported findings
+T37	Concept 0 12	Guan et al 4
+R33	subject Arg1:T36 Arg2:T37	
+T39	Concept 36 40	1099
+T40	Concept 41 46	cases
+T38	Concept 50 60	SARS-CoV-2
+R34	in-context Arg1:T39 Arg2:T40	
+R35	in-context Arg1:T40 Arg2:T38	
+R36	target Arg1:T36 Arg2:T38	
+T41	Concept 61 70	pneumonia
+R37	in-context Arg1:T41 Arg2:T38	
+T42	Concept 87 96	suggested
+T43	Concept 106 116	SARS-CoV-2
+T44	Concept 117 126	infection
+R38	in-context Arg1:T44 Arg2:T43	
+T45	Action 127 136	clustered
+R39	subject Arg1:T45 Arg2:T43	
+R40	in-context Arg1:T41 Arg2:T42	
+R41	in-context Arg1:T42 Arg2:T43	
+T46	Concept 144 177	groups of humans in close contact
+R42	target Arg1:T45 Arg2:T46	
+T47	Action 202 208	affect
+T48	Concept 209 218	older men
+T49	Concept 224 237	comorbidities
+R43	in-context Arg1:T49 Arg2:T48	
+R44	target Arg1:T47 Arg2:T48	
+A2	Emphasized T47
+R45	subject Arg1:T47 Arg2:T43	

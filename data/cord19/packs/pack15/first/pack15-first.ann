@@ -28,4 +28,79 @@ T17	Concept 250 259	infection
 R10	has-property Arg1:T17 Arg2:T16	
 R11	has-property Arg1:T17 Arg2:T15	
 R12	entails Arg1:T7 Arg2:T12	
-T18	Concept 185 191	obtain
+T18	Action 185 191	obtain
+R13	subject Arg1:T10 Arg2:T18	
+R14	target Arg1:T18 Arg2:T13	
+R15	subject Arg1:T10 Arg2:T12	
+R16	target Arg1:T12 Arg2:T15	
+T19	Action 264 272	improves
+T20	Concept 277 286	prognosis
+T21	Concept 304 312	infected
+R17	has-property Arg1:T21 Arg2:T20	
+R18	target Arg1:T19 Arg2:T20	
+R19	entails Arg1:T7 Arg2:T19	
+R20	subject Arg1:T10 Arg2:T19	
+T22	Reference 290 295	those
+A1	Uncertain T22
+T23	Concept 322 332	SARS-CoV-2
+T24	Concept 341 350	SARSr-CoV
+T25	Concept 337 340	bat
+R21	in-context Arg1:T24 Arg2:T25	
+T26	Concept 367 377	amino acid
+T27	Concept 378 383	usage
+R22	has-property Arg1:T26 Arg2:T27	
+T28	Concept 364 366	58
+R23	in-context Arg1:T27 Arg2:T28	
+T29	Concept 450 458	patients
+T30	Concept 471 478	illness
+T31	Concept 464 470	severe
+R26	has-property Arg1:T30 Arg2:T31	
+R27	has-property Arg1:T29 Arg2:T30	
+T32	Concept 533 545	pathogenesis
+T33	Concept 549 559	SARS-CoV-2
+T34	Concept 488 500	perturbation
+T35	Concept 504 517	immune system
+R28	has-property Arg1:T35 Arg2:T34	
+T36	Action 351 363	have similar
+R24	subject Arg1:T23 Arg2:T36	
+R25	target Arg1:T36 Arg2:T27	
+R29	in-context Arg1:T36 Arg2:T24	
+T37	Concept 390 397	results
+T38	Action 518 528	contribute
+R30	subject Arg1:T34 Arg2:T38	
+R31	target Arg1:T38 Arg2:T32	
+R32	has-property Arg1:T33 Arg2:T32	
+R33	entails Arg1:T37 Arg2:T38	
+T39	Concept 428 436	findings
+T40	Concept 419 427	previous
+R34	has-property Arg1:T39 Arg2:T40	
+R35	in-context Arg1:T39 Arg2:T29	
+*	same-as T37 T39
+T41	Concept 560 578	Diagnosis criteria
+T42	Concept 582 590	COVID-19
+T43	Concept 591 600	infection
+R36	in-context Arg1:T43 Arg2:T42	
+R37	in-context Arg1:T41 Arg2:T43	
+T44	Concept 626 636	CT imaging
+T45	Concept 620 625	chest
+R38	in-context Arg1:T44 Arg2:T45	
+T46	Concept 647 654	shadows
+T47	Concept 640 646	patchy
+R39	has-property Arg1:T46 Arg2:T47	
+T48	Concept 672 679	opacity
+T49	Concept 659 671	ground glass
+R40	has-property Arg1:T48 Arg2:T49	
+T50	Action 601 608	include
+R41	subject Arg1:T41 Arg2:T50	
+R42	target Arg1:T50 Arg2:T44	
+R43	has-property Arg1:T44 Arg2:T46	
+R44	has-property Arg1:T44 Arg2:T48	
+T51	Concept 688 696	positive
+T52	Concept 700 747	reverse transcription polymerase chain reaction
+T53	Concept 749 755	RT-PCR
+*	same-as T52 T53
+T54	Concept 757 762	tests
+R45	in-context Arg1:T54 Arg2:T52	
+R46	target Arg1:T50 Arg2:T54	
+R47	has-property Arg1:T54 Arg2:T51	
+T55	Concept 767 777	SARS-CoV-2
