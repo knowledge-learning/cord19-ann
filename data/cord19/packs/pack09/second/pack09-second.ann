@@ -1,0 +1,95 @@
+T1	Concept 53 61	COVID-19
+T2	Concept 39 47	patients
+R1	has-property Arg1:T2 Arg2:T1	
+T3	Action 25 33	reported
+A1	Negated T3
+T4	Concept 70 97	neurological manifestations
+A2	Negated T4
+R2	subject Arg1:T3 Arg2:T2	
+R3	target Arg1:T3 Arg2:T4	
+T5	Concept 154 179	super-transmission events
+T6	Concept 183 204	COVID-19 transmission
+R4	in-context Arg1:T5 Arg2:T6	
+T7	Concept 120 124	data
+T8	Action 125 135	suggesting
+R5	subject Arg1:T8 Arg2:T7	
+T9	Concept 99 108	Currently
+R6	in-time Arg1:T7 Arg2:T9	
+R7	target Arg1:T8 Arg2:T5	
+A3	Uncertain T5
+T10	Concept 325 339	SARS-CoV-2 RNA
+T12	Concept 759 766	SEIR-QD
+T13	Concept 771 778	SEIR-PO
+T14	Concept 779 785	models
+R9	is-a Arg1:T12 Arg2:T14	
+R10	is-a Arg1:T13 Arg2:T14	
+T15	Action 803 811	modeling
+T16	Concept 790 798	suitable
+R11	has-property Arg1:T13 Arg2:T16	
+R12	has-property Arg1:T12 Arg2:T16	
+R13	subject Arg1:T15 Arg2:T13	
+R14	subject Arg1:T15 Arg2:T12	
+T17	Concept 812 830	COVID-10 epidemics
+R15	target Arg1:T15 Arg2:T17	
+T18	Concept 607 624	COVID-19 clusters
+A4	Emphasized T18
+T19	Action 625 630	occur
+R16	target Arg1:T19 Arg2:T18	
+T20	Concept 496 519	rates of overdispersion
+A6	Emphasized T20
+T22	Action 471 479	estimate
+R18	target Arg1:T22 Arg2:T20	
+T23	Concept 463 465	We
+R19	subject Arg1:T22 Arg2:T23	
+T21	Concept 548 558	individual
+T25	Concept 537 542	cases
+R17	causes Arg1:T21 Arg2:T25	
+T26	Concept 527 533	number
+R20	is-a Arg1:T25 Arg2:T26	
+R21	in-context Arg1:T20 Arg2:T25	
+T27	Concept 363 382	real time RT-20 PCR
+T28	Concept 386 392	throat
+T29	Concept 397 409	rectal swabs
+T11	Action 349 359	detectable
+T30	Concept 340 348	remained
+R8	in-time Arg1:T11 Arg2:T30	
+R23	subject Arg1:T11 Arg2:T10	
+R24	target Arg1:T11 Arg2:T27	
+R25	in-place Arg1:T11 Arg2:T28	
+R26	in-place Arg1:T11 Arg2:T29	
+T31	Concept 306 323	clinical recovery
+R27	in-context Arg1:T10 Arg2:T31	
+T32	Concept 420 422	11
+T33	Concept 427 429	18
+T34	Concept 416 419	day
+R28	is-a Arg1:T32 Arg2:T34	
+R29	is-a Arg1:T33 Arg2:T34	
+T35	Concept 433 448	hospitalization
+R30	in-context Arg1:T34 Arg2:T35	
+R31	in-time Arg1:T28 Arg2:T32	
+R32	in-time Arg1:T29 Arg2:T33	
+T24	Concept 639 651	surveillance
+T36	Concept 656 665	isolation
+T37	Action 670 677	forcing
+T38	Concept 678 689	R below one
+R22	subject Arg1:T37 Arg2:T24	
+R33	subject Arg1:T37 Arg2:T36	
+R34	target Arg1:T37 Arg2:T38	
+R35	in-context Arg1:T19 Arg2:T24	
+R36	in-context Arg1:T19 Arg2:T36	
+A5	Uncertain T19
+T39	Concept 691 697	events
+R37	is-a Arg1:T18 Arg2:T39	
+T40	Action 721 730	overwhelm
+A7	Uncertain T40
+T41	Concept 735 754	surveillance system
+R38	target Arg1:T40 Arg2:T41	
+R39	subject Arg1:T40 Arg2:T39	
+T42	Concept 230 269	interpersonal transmission capabilities
+T43	Concept 273 281	COVID-19
+R40	has-property Arg1:T43 Arg2:T42	
+T44	Action 282 289	remains
+R41	in-time Arg1:T44 Arg2:T9	
+T45	Concept 290 297	unknown
+R42	subject Arg1:T44 Arg2:T42	
+R43	target Arg1:T44 Arg2:T45	

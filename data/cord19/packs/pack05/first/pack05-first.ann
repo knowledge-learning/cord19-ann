@@ -4,4 +4,73 @@ R1	in-context Arg1:T1 Arg2:T2
 T3	Concept 50 54	mNGS
 T4	Concept 12 17	cases
 R2	in-context Arg1:T4 Arg2:T1	
-T5	Concept 66 69	six
+T5	Concept 114 122;89 106	microbes transcriptionally
+T6	Concept 107 113	active
+R3	in-context Arg1:T5 Arg2:T6	
+T7	Concept 139 150;151 164	respiratory pathogenicity
+R4	has-property Arg1:T5 Arg2:T7	
+T8	Action 55 65	identified
+R5	target Arg1:T8 Arg2:T5	
+R6	subject Arg1:T8 Arg2:T3	
+R7	in-context Arg1:T8 Arg2:T4	
+T9	Concept 181 188	viruses
+T10	Concept 190 199	HCOV-229E
+T11	Concept 235 240	HRV-A
+T12	Concept 317 333;334 345	Stenotrophomonas maltophilia
+T13	Concept 296 312	culture-positive
+R8	in-context Arg1:T12 Arg2:T13	
+R9	is-a Arg1:T10 Arg2:T9	
+R10	is-a Arg1:T11 Arg2:T9	
+T14	Concept 359 363	mNGS
+T15	Concept 382 387;388 395	viral genomes
+T16	Action 368 374	detect
+R11	subject Arg1:T16 Arg2:T14	
+R12	target Arg1:T16 Arg2:T15	
+T17	Action 468 477	detection
+T18	Concept 481 491;492 501	resistance mutations
+T19	Action 456 466	genotyping
+R13	target Arg1:T17 Arg2:T18	
+R14	subject Arg1:T17 Arg2:T19	
+T20	Concept 507 520;521 529	epidemiologic tracking
+T21	Concept 533 540;541 550	disease outbreaks
+R15	in-context Arg1:T20 Arg2:T21	
+R16	target Arg1:T17 Arg2:T20	
+R17	target Arg1:T19 Arg2:T14	
+T22	Concept 597 606;607 616	bacterial pathogens
+T23	Concept 584 596	unidentified
+R18	in-context Arg1:T22 Arg2:T23	
+T24	Concept 618 622	mNGS
+R19	in-context Arg1:T24 Arg2:T22	
+T25	Action 623 631	detected
+R20	subject Arg1:T25 Arg2:T24	
+T26	Concept 632 645;646 651	Streptococcus mitis
+R21	target Arg1:T25 Arg2:T26	
+T27	Concept 656 669;670 677	oropharyngeal microbe
+R22	is-a Arg1:T26 Arg2:T27	
+T28	Concept 693 703	bacteremia
+T29	Concept 714 725;726 734	respiratory distress
+T30	Concept 708 713	acute
+R23	in-context Arg1:T29 Arg2:T30	
+R24	causes Arg1:T26 Arg2:T28	
+R25	causes Arg1:T26 Arg2:T29	
+T31	Concept 738 741;742 752	HCT recipients
+T32	Concept 769 778;779 787	pulmonary pathogen
+T33	Concept 759 768	potential
+R26	in-context Arg1:T32 Arg2:T33	
+R27	is-a Arg1:T26 Arg2:T32	
+R28	in-context Arg1:T29 Arg2:T31	
+R29	in-context Arg1:T28 Arg2:T31	
+T34	Concept 803 805;806 813	WU polyoma
+T35	Action 824 832	detected
+T36	Concept 836 839;840 850	DNA sequencing
+R30	subject Arg1:T35 Arg2:T34	
+R31	target Arg1:T35 Arg2:T36	
+T37	Concept 911 922;923 933	respiratory infections
+A1	Uncertain T37
+R32	causes Arg1:T36 Arg2:T37	
+T38	Concept 937 954;955 963	immunocompromised patients
+R33	in-context Arg1:T37 Arg2:T38	
+T39	Concept 999 1007	pathogen
+A2	Negated T39
+A3	Uncertain T39
+R34	is-a Arg1:T38 Arg2:T39	

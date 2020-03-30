@@ -1,0 +1,48 @@
+T1	Concept 23 31;32 39	membrane protein
+T2	Concept 41 49;50 53;54 59	pangolin P1E virus
+T3	Concept 71 78;79 84;85 90	similar codon usage
+T4	Concept 94 104	SARS-CoV-2
+R1	in-context Arg1:T3 Arg2:T2	
+R2	in-context Arg1:T3 Arg2:T4	
+T5	Action 7 15	analysis
+R3	target Arg1:T5 Arg2:T1	
+R4	entails Arg1:T5 Arg2:T3	
+T6	Concept 163 172	HCoV-OC43
+T7	Concept 177 186	HCoV-HKU1
+T8	Concept 208 218	SARS-CoV-2
+T9	Action 237 245;246 253	immunity against
+R5	target Arg1:T9 Arg2:T7	
+R6	target Arg1:T9 Arg2:T6	
+R7	causes Arg1:T8 Arg2:T9	
+A1	Uncertain T9
+T10	Concept 381 391	SARS-CoV-2
+T11	Concept 401 410;411 423	canonical TRS-mediated
+T12	Concept 487 493	sgRNAs
+T13	Action 442 455;456 469	discontinuous transcription
+T14	Action 473 480	produce
+R8	target Arg1:T14 Arg2:T12	
+R9	subject Arg1:T14 Arg2:T13	
+R10	causes Arg1:T11 Arg2:T14	
+T15	Action 392 396	uses
+R11	subject Arg1:T15 Arg2:T10	
+R12	target Arg1:T15 Arg2:T11	
+T16	Concept 570 580	SARS-CoV-2
+T17	Concept 599 603	ACE2
+T18	Concept 494 498;499 505	Lung injury
+T19	Action 558 566	attacked
+T20	Concept 540 550;551 557	epithelium mainly
+R13	subject Arg1:T19 Arg2:T16	
+R14	target Arg1:T19 Arg2:T20	
+R15	causes Arg1:T19 Arg2:T18	
+T21	Action 604 613	expressed
+T22	Concept 621 626	lungs
+T23	Concept 655 666;667 674	respiratory failure
+R16	in-place Arg1:T21 Arg2:T22	
+R17	target Arg1:T21 Arg2:T17	
+R18	causes Arg1:T21 Arg2:T19	
+R19	causes Arg1:T19 Arg2:T23	
+T24	Concept 701 711	SARS-CoV-2
+T25	Concept 717 722;723 727;728 736	amino acid sequence
+T26	Concept 759 765	varied
+R20	has-property Arg1:T25 Arg2:T26	
+R21	in-context Arg1:T25 Arg2:T24	

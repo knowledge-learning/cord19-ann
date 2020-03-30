@@ -1,0 +1,93 @@
+T1	Concept 7 19	analysis 197
+T2	Concept 23 39	membrane protein
+T3	Concept 94 108	SARS-CoV-2 198
+T4	Concept 122 135	other viruses
+T5	Concept 71 78;79 84;85 90	similar codon usage
+T6	Concept 41 59	pangolin P1E virus
+T7	Action 60 63	had
+T8	Concept 140 159	virtual elimination
+T9	Concept 163 172	HCoV-OC43
+T10	Concept 177 186	HCoV-HKU1
+T11	Action 187 204	would be possible
+T12	Concept 208 218	SARS-CoV-2
+T14	Action 219 226	induced
+A1	Emphasized T5
+T13	Concept 227 245	70% cross immunity
+T15	Concept 288 311	level of cross-immunity
+A2	Uncertain T15
+T16	Concept 317 326	HCoV-OC43
+T17	Concept 343 352	HCoV-HKU1
+T18	Concept 360 367	results
+T19	Action 368 375	confirm
+T20	Concept 381 391	SARS-CoV-2
+T21	Concept 401 437	canonical TRS-mediated 144 mechanism
+T23	Concept 442 469	discontinuous transcription
+T24	Action 473 480	produce
+T25	Concept 487 493	sgRNAs
+A3	Emphasized T25
+T26	Concept 494 505	Lung injury
+T27	Action 506 512	begins
+T28	Concept 521 527	insult
+T29	Concept 535 550	lung epithelium
+R2	has-property Arg1:T6 Arg2:T5	
+R3	subject Arg1:T7 Arg2:T6	
+R4	target Arg1:T7 Arg2:T5	
+R6	has-part Arg1:T8 Arg2:T9	
+R7	subject Arg1:T14 Arg2:T12	
+T30	Concept 254 258	them
+R8	has-property Arg1:T12 Arg2:T13	
+*	same-as T13 T15
+R13	has-property Arg1:T20 Arg2:T21	
+R15	subject Arg1:T24 Arg2:T20	
+R16	target Arg1:T24 Arg2:T25	
+R17	entails Arg1:T13 Arg2:T8	
+R18	target Arg1:T11 Arg2:T8	
+R19	is-a Arg1:T11 Arg2:T13	
+R20	target Arg1:T14 Arg2:T13	
+R9	has-part Arg1:T8 Arg2:T10	
+T22	Action 327 334	induces
+R10	subject Arg1:T16 Arg2:T22	
+R21	target Arg1:T22 Arg2:T17	
+R22	target Arg1:T19 Arg2:T20	
+T31	Action 392 396	uses
+R23	subject Arg1:T31 Arg2:T20	
+R24	target Arg1:T31 Arg2:T21	
+R25	subject Arg1:T27 Arg2:T26	
+R26	target Arg1:T27 Arg2:T28	
+R27	has-part Arg1:T28 Arg2:T29	
+T32	Action 558 566	attacked
+A4	Emphasized T32
+R28	subject Arg1:T32 Arg2:T29	
+T33	Concept 570 580	SARS-CoV-2
+T34	Concept 581 587	itself
+*	same-as T34 T33
+R29	target Arg1:T32 Arg2:T33	
+T35	Concept 599 603	ACE2
+T36	Action 604 613	expressed
+T37	Concept 621 626	lungs
+R30	subject Arg1:T36 Arg2:T35	
+R31	target Arg1:T36 Arg2:T37	
+R32	entails Arg1:T36 Arg2:T32	
+T38	Action 634 639	leads
+T39	Concept 655 674	respiratory failure
+R33	target Arg1:T38 Arg2:T39	
+R34	subject Arg1:T38 Arg2:T36	
+T40	Concept 684 697	global spread
+T41	Concept 701 711	SARS-CoV-2
+R35	has-property Arg1:T41 Arg2:T40	
+T42	Concept 717 736	amino acid sequence
+T43	Action 759 765	varied
+A5	Emphasized T43
+R36	target Arg1:T43 Arg2:T42	
+R37	subject Arg1:T43 Arg2:T40	
+R38	in-context Arg1:T1 Arg2:T6	
+R1	has-property Arg1:T6 Arg2:T2	
+R39	in-context Arg1:T1 Arg2:T2	
+R40	in-context Arg1:T5 Arg2:T4	
+R5	has-part Arg1:T5 Arg2:T3	
+R41	subject Arg1:T11 Arg2:T14	
+R42	in-place Arg1:T9 Arg2:T30	
+R43	in-place Arg1:T10 Arg2:T30	
+R11	in-context Arg1:T15 Arg2:T16	
+R12	subject Arg1:T19 Arg2:T18	
+R14	has-part Arg1:T21 Arg2:T23	

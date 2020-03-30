@@ -1,0 +1,89 @@
+T1	Action 14 19;9 13	score PPID
+T2	Concept 4 8	mean
+R1	in-context Arg1:T1 Arg2:T2	
+T3	Concept 23 33	SARS-CoV-2
+T4	Concept 35 40;41 45	Human SARS
+T5	Concept 51 54;55 58	Bat CoV
+T6	Concept 79 84	1.41%
+T7	Action 14 19;9 13	score PPID
+R2	subject Arg1:T7 Arg2:T3	
+R3	target Arg1:T7 Arg2:T6	
+T8	Concept 86 91	1.12%
+R4	subject Arg1:T1 Arg2:T4	
+R5	target Arg1:T1 Arg2:T8	
+T9	Action 14 19;9 13	score PPID
+R6	subject Arg1:T9 Arg2:T5	
+T10	Concept 97 102	1.85%
+R7	target Arg1:T9 Arg2:T10	
+T11	Concept 141 152;153 164	generalized circulation
+T12	Concept 172 182	SARS-CoV-2
+R8	in-context Arg1:T12 Arg2:T11	
+T13	Action 190 202	surveillance
+T14	Concept 212 220;221 232	clinical description
+R9	in-context Arg1:T13 Arg2:T14	
+T15	Concept 237 245;249 252	swabbing GPs
+R10	in-context Arg1:T13 Arg2:T15	
+R11	target Arg1:T13 Arg2:T12	
+T16	Action 285 291	assess
+R12	subject Arg1:T16 Arg2:T13	
+T17	Reference 296 305	situation
+R13	target Arg1:T16 Arg2:T17	
+T18	Concept 318 328	SARS-CoV-2
+T19	Concept 329 337	proteins
+R14	in-context Arg1:T19 Arg2:T18	
+T20	Concept 329 337	proteins
+T21	Concept 394 398	SARS
+R15	in-context Arg1:T20 Arg2:T21	
+T22	Action 354 357;365 369;370 373	act same way
+R16	target Arg1:T22 Arg2:T20	
+R17	subject Arg1:T22 Arg2:T20	
+T23	Concept 410 419;420 428	accessory proteins
+T24	Action 436 445	localized
+R18	subject Arg1:T24 Arg2:T23	
+T25	Concept 453 464;465 480;481 493;494 505	endoplasmic reticulum-Golgi intermediate compartment
+R19	in-place Arg1:T24 Arg2:T25	
+R20	is-a Arg1:T19 Arg2:T23	
+R21	is-a Arg1:T20 Arg2:T23	
+T26	Concept 533 537;538 546	cell membrane
+R22	in-place Arg1:T24 Arg2:T26	
+T27	Concept 608 623;624 636	protein-protein interactions
+T28	Action 572 585	pathogenicity
+T29	Action 590 599	mortality
+R23	subject Arg1:T28 Arg2:T18	
+R24	subject Arg1:T29 Arg2:T18	
+R25	causes Arg1:T27 Arg2:T28	
+R26	causes Arg1:T27 Arg2:T29	
+R27	in-place Arg1:T27 Arg2:T26	
+T30	Concept 719 731;732 738	pcMNPs-based method
+T31	Concept 675 685	robustness
+T32	Concept 691 700;701 713	excellent performances
+R28	has-property Arg1:T30 Arg2:T32	
+R29	has-property Arg1:T30 Arg2:T31	
+T33	Action 743 750	provide
+A1	Uncertain T33
+T34	Action 823 826;827 837;838 848	RNA extraction operations
+R30	subject Arg1:T33 Arg2:T30	
+T35	Concept 763 774	alternative
+T36	Concept 802 816	time-consuming
+R31	in-context Arg1:T34 Arg2:T35	
+R32	in-context Arg1:T34 Arg2:T36	
+R33	target Arg1:T33 Arg2:T34	
+T37	Action 920 929;930 939	molecular diagnosis
+T38	Concept 909 919	SARS-CoV-2
+R34	target Arg1:T37 Arg2:T38	
+R35	subject Arg1:T37 Arg2:T30	
+T39	Concept 876 885	potential
+R36	in-context Arg1:T37 Arg2:T39	
+T40	Concept 948 953;954 962	viral pathogen
+T41	Concept 963 973	SARS-CoV-2
+R37	is-a Arg1:T41 Arg2:T40	
+T42	Action 974 981	emerged
+R38	subject Arg1:T42 Arg2:T41	
+T43	Concept 985 989;990 994	late 2019
+R39	in-time Arg1:T42 Arg2:T43	
+T44	Action 1007 1018;1019 1023	exponential rise
+R40	causes Arg1:T41 Arg2:T44	
+T45	Concept 1081 1086;1090 1098	cases COVID-19
+T46	Concept 1099 1106	disease
+R41	is-a Arg1:T45 Arg2:T46	
+R42	target Arg1:T44 Arg2:T45	
