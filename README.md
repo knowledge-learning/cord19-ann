@@ -39,7 +39,7 @@ This a list of everyone currently involved and what they are doing.
 |      9   | B        | In progress | @DCardenas2019 | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack09/second/pack09-second) |
 |     10   | A        | In progress | @DrackEye      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack10/first/pack10-first) |
 |     10   | B        | In progress | @SusanitaLaDelRaton | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack10/second/pack10-second) |
-|     11   | A        |             |                | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack11/first/pack11-first) |
+|     11   | A        | In progress | @Skull_kiddf   | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack11/first/pack11-first) |
 |     11   | B        |             |                | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack11/second/pack11-second) |
 |     12   | A        |             |                | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack12/first/pack12-first) |
 |     12   | B        |             |                | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack12/second/pack12-second) |
