@@ -1,0 +1,106 @@
+T1	Action 3 10	created
+T2	Reference 0 2	We
+R1	subject Arg1:T1 Arg2:T2	
+T3	Concept 13 16;17 21	NOT gate
+R2	target Arg1:T1 Arg2:T3	
+T4	Concept 33 50	P-type transistor
+R3	in-context Arg1:T4 Arg2:T3	
+T5	Action 51 61	comprising
+T6	Concept 95 105	liposomes,
+T7	Concept 62 79	ampicillin-loaded
+T8	Concept 80 94	heat-triggered
+R4	has-property Arg1:T6 Arg2:T8	
+R5	has-property Arg1:T6 Arg2:T7	
+T9	Action 112 118	caused
+R6	subject Arg1:T9 Arg2:T3	
+T10	Concept 119 127	bacteria
+T11	Concept 131 134	die
+R7	target Arg1:T9 Arg2:T11	
+R8	in-context Arg1:T10 Arg2:T11	
+T12	Concept 138 155	high temperatures
+R9	in-context Arg1:T12 Arg2:T11	
+T13	Concept 175 182	survive
+T14	Concept 186 202	low temperatures
+R10	in-context Arg1:T14 Arg2:T13	
+R11	target Arg1:T9 Arg2:T13	
+T15	Concept 225 230	SENSR
+T16	Concept 231 243	successfully
+T17	Action 244 252	detected
+R12	has-property Arg1:T17 Arg2:T16	
+R13	subject Arg1:T17 Arg2:T15	
+T18	Concept 257 263;264 267	target RNA
+T19	Concept 271 274;275 284	low as 0.1 aM
+R14	has-property Arg1:T18 Arg2:T19	
+R15	target Arg1:T17 Arg2:T18	
+T20	Action 292 304	corroborates
+R16	entails Arg1:T17 Arg2:T20	
+T21	Concept 309 312	205
+T22	Concept 313 330	high adaptability
+T23	Concept 339 345	method
+T24	Concept 349 356	various
+T25	Concept 357 368	RNA markers
+R17	in-context Arg1:T22 Arg2:T21	
+R18	target Arg1:T20 Arg2:T22	
+R19	has-property Arg1:T23 Arg2:T22	
+R20	has-property Arg1:T25 Arg2:T24	
+R21	in-context Arg1:T23 Arg2:T25	
+T26	Concept 369 377	Carriage
+T27	Concept 383 390;391 398	dynamic process
+R22	has-property Arg1:T26 Arg2:T27	
+T28	Action 399 408	involving
+T29	Concept 409 421	fluctuations
+T30	Concept 425 432	species
+T31	Concept 437 444	strains
+R23	in-context Arg1:T30 Arg2:T29	
+R24	in-context Arg1:T31 Arg2:T29	
+R25	subject Arg1:T28 Arg2:T26	
+R26	target Arg1:T28 Arg2:T29	
+T32	Concept 445 450	Prior
+T33	Action 451 459	analyses
+R27	has-property Arg1:T32 Arg2:T33	
+T34	Concept 463 471	SARS-CoV
+R28	subject Arg1:T33 Arg2:T34	
+T35	Action 472 480	revealed
+R29	target Arg1:T33 Arg2:T35	
+T36	Concept 486 488	it
+*	same-as T36 T34
+R30	target Arg1:T35 Arg2:T36	
+T37	Action 489 497	utilizes
+R31	subject Arg1:T37 Arg2:T36	
+T38	Concept 500 512	structurally
+T39	Concept 513 519	unique
+T40	Concept 520 533	three-stemmed
+T41	Concept 534 538;539 549	mRNA pseudoknot
+R32	target Arg1:T37 Arg2:T41	
+R33	has-property Arg1:T38 Arg2:T39	
+R34	has-property Arg1:T41 Arg2:T40	
+R35	has-property Arg1:T40 Arg2:T38	
+T42	Action 553 562	stimulate
+R36	subject Arg1:T42 Arg2:T41	
+T43	Concept 568 573	rates
+T44	Concept 563 567	high
+T45	Concept 577 583	-1 PRF
+R37	target Arg1:T42 Arg2:T43	
+R38	has-property Arg1:T43 Arg2:T44	
+R39	has-property Arg1:T45 Arg2:T43	
+T46	Concept 590 592	it
+*	same-as T46 T41
+T47	Action 598 605	harbors
+R40	subject Arg1:T47 Arg2:T46	
+T48	Concept 608 614	-1 PRF
+T49	Concept 615 626;627 634	attenuation element
+R41	has-property Arg1:T49 Arg2:T48	
+R42	target Arg1:T47 Arg2:T49	
+T50	Concept 635 646	Full-length
+T51	Concept 647 658	amphiphysin
+T52	Action 659 667	produces
+T53	Concept 668 674	highly
+T54	Concept 675 681	curved
+T55	Concept 682 689	fission
+T56	Concept 690 698	products
+R43	has-property Arg1:T51 Arg2:T50	
+R44	subject Arg1:T52 Arg2:T51	
+R45	target Arg1:T52 Arg2:T56	
+R46	has-property Arg1:T54 Arg2:T53	
+R47	has-property Arg1:T55 Arg2:T54	
+R48	has-property Arg1:T56 Arg2:T55	
