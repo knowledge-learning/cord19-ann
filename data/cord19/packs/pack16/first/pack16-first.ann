@@ -1,7 +1,6 @@
 T1	Concept 17 27	SARS-CoV-2
 T2	Concept 63 83	Bat-SARSr-CoV RaTG13
 T3	Concept 131 141	SARS-CoV-2
-T4	Concept 146 159	RaTG13 strain
 T5	Concept 174 184	SARS-CoV-2
 T6	Concept 185 191	genome
 R1	has-property Arg1:T5 Arg2:T6	
@@ -12,15 +11,8 @@ T10	Action 47 62	originated from
 R4	subject Arg1:T1 Arg2:T10	
 A1	Uncertain T10
 R5	target Arg1:T10 Arg2:T2	
-T12	Concept 89 98	increased
+T12	Action 89 98	increased
 T13	Concept 202 210	stronger
-T14	Concept 99 109	synonymous
-T11	Action 110 122	substitution
-R6	subject Arg1:T3 Arg2:T11	
-R8	has-property Arg1:T11 Arg2:T12	
-R9	has-property Arg1:T11 Arg2:T14	
-R10	target Arg1:T11 Arg2:T4	
-R2	entails Arg1:T11 Arg2:T7	
 R3	has-property Arg1:T7 Arg2:T9	
 R7	has-property Arg1:T7 Arg2:T8	
 R11	has-property Arg1:T7 Arg2:T13	
@@ -44,13 +36,71 @@ T22	Concept 293 303	SARS-CoV-2
 T23	Concept 308 327	other coronaviruses
 T25	Concept 396 406	SARS-CoV-2
 T26	Concept 411 417	RaTG13
-T27	Concept 437 456	coronavirus strains
-T28	Concept 466 476	nucleotide
-T29	Action 477 486	mutations
 T30	Concept 504 518	T:C transition
-R22	target Arg1:T29 Arg2:T28	
-A2	Emphasized T29
-R21	in-context Arg1:T29 Arg2:T30	
-T24	Action 342 362	synonymous mutations
-R23	subject Arg1:T25 Arg2:T24	
-R24	in-context Arg1:T24 Arg2:T26	
+T24	Concept 342 362	synonymous mutations
+T31	Concept 276 284	analysis
+R24	entails Arg1:T31 Arg2:T32	
+R26	in-context Arg1:T31 Arg2:T22	
+R27	in-context Arg1:T31 Arg2:T23	
+T32	Action 379 387	elevated
+R28	target Arg1:T32 Arg2:T24	
+A3	Emphasized T32
+T28	Concept 466 486	nucleotide mutations
+T29	Action 492 500	enriched
+R21	target Arg1:T29 Arg2:T28	
+R22	in-context Arg1:T29 Arg2:T30	
+R29	entails Arg1:T31 Arg2:T29	
+T27	Concept 431 456	other coronavirus strains
+T11	Concept 99 122	synonymous substitution
+R6	target Arg1:T12 Arg2:T11	
+R2	in-context Arg1:T11 Arg2:T3	
+R9	entails Arg1:T12 Arg2:T7	
+R10	in-context Arg1:T24 Arg2:T25	
+R23	in-context Arg1:T24 Arg2:T26	
+T14	Reference 423 427	that
+R25	has-property Arg1:T27 Arg2:T14	
+R30	in-context Arg1:T32 Arg2:T14	
+T33	Concept 519 524	CD147
+T34	Concept 552 562	SARS-CoV-2
+T35	Action 563 571	invasion
+R31	subject Arg1:T34 Arg2:T35	
+T36	Concept 581 586	cells
+T37	Concept 576 580	host
+R32	has-property Arg1:T36 Arg2:T37	
+R33	target Arg1:T35 Arg2:T36	
+T38	Concept 592 594	SP
+T39	Concept 613 622	receptors
+T40	Concept 604 612	cellular
+R34	has-property Arg1:T39 Arg2:T40	
+T41	Concept 652 657	cells
+T42	Concept 647 651	host
+T43	Action 634 643	infection
+R35	causes Arg1:T33 Arg2:T35	
+R36	causes Arg1:T38 Arg2:T43	
+R37	subject Arg1:T39 Arg2:T43	
+R38	target Arg1:T43 Arg2:T41	
+T44	Concept 808 818	SARS-CoV-2
+T45	Concept 819 826	isolate
+R39	has-property Arg1:T44 Arg2:T45	
+T46	Concept 264 275	comparative
+T47	Concept 250 263	comprehensive
+R40	has-property Arg1:T31 Arg2:T46	
+R41	has-property Arg1:T31 Arg2:T47	
+T48	Action 756 767	interaction
+A2	Uncertain T48
+T49	Concept 773 785	pig 146 ACE2
+R42	subject Arg1:T44 Arg2:T48	
+R43	target Arg1:T48 Arg2:T49	
+T50	Concept 847 849	Kd
+T52	Concept 853 871	147 3 folds lesser
+T53	Action 837 846	estimated
+R44	subject Arg1:T50 Arg2:T53	
+T51	Concept 794 803	favorable
+R45	has-property Arg1:T48 Arg2:T51	
+A4	Emphasized T51
+R46	in-context Arg1:T53 Arg2:T52	
+T54	Concept 884 894	SARS-CoV-2
+R47	in-context Arg1:T53 Arg2:T54	
+R48	entails Arg1:T53 Arg2:T48	
+T4	Concept 146 152	RaTG13
+R8	in-context Arg1:T11 Arg2:T4	
