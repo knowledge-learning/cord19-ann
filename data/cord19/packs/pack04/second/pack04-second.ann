@@ -1,0 +1,64 @@
+T1	Concept 10 16	RNAseq
+T2	Action 17 27	identified
+T3	Concept 31 42	RNA viruses
+R1	subject Arg1:T2 Arg2:T1	
+R2	target Arg1:T2 Arg2:T3	
+T4	Concept 28 30	10
+R3	in-context Arg1:T3 Arg2:T4	
+T5	Action 57 73	have established
+R4	in-context Arg1:T5 Arg2:T3	
+T6	Concept 74 87	pathogenicity
+R5	target Arg1:T5 Arg2:T6	
+T7	Concept 95 100	lungs
+R6	in-place Arg1:T6 Arg2:T7	
+T8	Concept 110 127	RNA intermediates
+R7	target Arg1:T5 Arg2:T8	
+T9	Concept 136 147	DNA viruses
+T10	Concept 131 135	five
+R8	in-context Arg1:T9 Arg2:T10	
+T11	Concept 168 191	pulmonary pathogenicity
+R9	has-property Arg1:T9 Arg2:T11	
+A1	Uncertain T11
+T12	Concept 192 198	DNAseq
+T13	Action 199 209	identified
+R10	subject Arg1:T13 Arg2:T12	
+T14	Concept 214 221	genomes
+R11	target Arg1:T13 Arg2:T14	
+T15	Concept 241 252	DNA viruses
+T16	Concept 236 240	five
+T17	Reference 225 235	these same
+R12	in-context Arg1:T15 Arg2:T16	
+R13	in-context Arg1:T16 Arg2:T17	
+T18	Concept 269 275	others
+T19	Concept 264 268	five
+R14	in-context Arg1:T19 Arg2:T17	
+R15	in-context Arg1:T18 Arg2:T19	
+T20	Action 276 285	including
+T21	Concept 286 289	CMV
+T22	Concept 294 299	HHV-6
+T24	Concept 333 344	pneumonitis
+R19	subject Arg1:T20 Arg2:T18	
+R20	target Arg1:T20 Arg2:T21	
+R21	target Arg1:T20 Arg2:T22	
+T23	Action 307 327	have been associated
+R16	subject Arg1:T23 Arg2:T22	
+R17	subject Arg1:T23 Arg2:T21	
+R18	target Arg1:T23 Arg2:T24	
+T25	Action 348 353	found
+T26	Concept 345 347	We
+R22	subject Arg1:T25 Arg2:T26	
+T27	Concept 378 388	expression
+T28	Concept 368 377	increased
+A2	Emphasized T28
+R23	has-property Arg1:T27 Arg2:T28	
+R24	target Arg1:T25 Arg2:T27	
+T29	Concept 392 400	patients
+R25	in-place Arg1:T27 Arg2:T29	
+T30	Concept 416 430	LRTI pathogens
+R26	has-property Arg1:T29 Arg2:T30	
+T31	Concept 438 443	those
+R27	in-context Arg1:T31 Arg2:T29	
+T32	Concept 444 451	without
+R28	has-property Arg1:T31 Arg2:T32	
+R29	in-context Arg1:T32 Arg2:T30	
+T33	Concept 762 764	We

@@ -23,6 +23,9 @@ def _load_yaml():
         packs = yaml.safe_load(fp)['packs']
 
 
+_load_yaml()
+
+
 def status(update, context):
     _load_yaml()
 

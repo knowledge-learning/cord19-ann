@@ -1,3 +1,114 @@
 T1	Concept 190 199	HCOV-229E
 T2	Concept 235 240	HRV-A
 T3	Concept 317 345	Stenotrophomonas maltophilia
+T4	Concept 50 54	mNGS
+T5	Action 55 65	identified
+T6	Concept 70 78	patients
+T7	Concept 66 69	six
+T8	Concept 32 48	clinical testing
+A1	Negated T8
+R1	in-context Arg1:T4 Arg2:T8	
+R2	subject Arg1:T5 Arg2:T4	
+R3	target Arg1:T5 Arg2:T6	
+R4	in-context Arg1:T6 Arg2:T7	
+T9	Concept 114 122	microbes
+T10	Concept 89 113	transcriptionally active
+R5	has-property Arg1:T9 Arg2:T10	
+R6	has-property Arg1:T6 Arg2:T9	
+T11	Concept 139 164	respiratory pathogenicity
+T12	Concept 128 138	recognized
+R7	has-property Arg1:T11 Arg2:T12	
+R8	has-property Arg1:T9 Arg2:T11	
+T13	Concept 181 188	viruses
+R9	in-context Arg1:T1 Arg2:T13	
+T14	Action 200 214	was identified
+R10	subject Arg1:T14 Arg2:T1	
+T15	Concept 222 230	patients
+R11	target Arg1:T14 Arg2:T15	
+T16	Concept 218 221	two
+R12	in-context Arg1:T15 Arg2:T16	
+R13	in-context Arg1:T2 Arg2:T13	
+T17	Action 241 255	was identified
+T18	Concept 265 273	patients
+T19	Concept 259 264	three
+R14	in-context Arg1:T18 Arg2:T19	
+T20	Concept 296 312	culture-positive
+R15	in-context Arg1:T20 Arg2:T3	
+T21	Concept 275 286	one of whom
+R16	in-context Arg1:T21 Arg2:T18	
+R17	has-property Arg1:T21 Arg2:T20	
+R18	target Arg1:T17 Arg2:T18	
+T22	Concept 359 363	mNGS
+T23	Action 368 374	detect
+A2	Uncertain T23
+R19	subject Arg1:T23 Arg2:T22	
+T24	Concept 382 395	viral genomes
+T25	Concept 375 381	entire
+R20	has-property Arg1:T24 Arg2:T25	
+R21	target Arg1:T23 Arg2:T24	
+T26	Concept 430 439	attribute
+T27	Action 449 455	enable
+A3	Uncertain T27
+T28	Concept 456 466	genotyping
+T29	Concept 468 501	detection of resistance mutations
+T30	Concept 507 529	epidemiologic tracking
+T31	Concept 533 550	disease outbreaks
+R22	in-context Arg1:T30 Arg2:T31	
+R23	target Arg1:T27 Arg2:T28	
+R24	target Arg1:T27 Arg2:T29	
+R25	target Arg1:T27 Arg2:T30	
+R26	subject Arg1:T27 Arg2:T26	
+R27	in-context Arg1:T26 Arg2:T24	
+T32	Concept 618 622	mNGS
+T33	Concept 597 616	bacterial pathogens
+T34	Concept 584 596	unidentified
+R28	has-property Arg1:T33 Arg2:T34	
+T35	Concept 573 583	previously
+R29	in-time Arg1:T34 Arg2:T35	
+R30	in-context Arg1:T32 Arg2:T33	
+T36	Action 623 631	detected
+R31	subject Arg1:T36 Arg2:T32	
+T37	Concept 632 651	Streptococcus mitis
+R32	target Arg1:T36 Arg2:T37	
+T38	Concept 656 677	oropharyngeal microbe
+R33	is-a Arg1:T37 Arg2:T38	
+T39	Concept 693 703	bacteremia
+T40	Concept 714 734	respiratory distress
+T41	Concept 708 713	acute
+R34	has-property Arg1:T40 Arg2:T41	
+R35	causes Arg1:T37 Arg2:T39	
+R36	causes Arg1:T37 Arg2:T40	
+T42	Concept 738 752	HCT recipients
+R37	in-place Arg1:T40 Arg2:T42	
+T43	Concept 769 787	pulmonary pathogen
+A4	Uncertain T43
+T44	Concept 795 802	patient
+R38	in-context Arg1:T43 Arg2:T44	
+T45	Concept 791 794	one
+R39	in-context Arg1:T44 Arg2:T45	
+R40	has-property Arg1:T37 Arg2:T43	
+T46	Concept 803 819	WU polyoma virus
+T47	Action 824 832	detected
+R41	subject Arg1:T47 Arg2:T46	
+T48	Concept 836 850	DNA sequencing
+R42	target Arg1:T47 Arg2:T48	
+T49	Concept 851 863	another case
+R43	in-context Arg1:T48 Arg2:T49	
+T50	Concept 880 885	virus
+R44	in-context Arg1:T50 Arg2:T46	
+T51	Action 886 905	has been associated
+R45	subject Arg1:T51 Arg2:T50	
+T52	Concept 911 933	respiratory infections
+T53	Concept 937 963	immunocompromised patients
+R46	target Arg1:T51 Arg2:T52	
+R47	in-place Arg1:T52 Arg2:T53	
+T54	Concept 965 973	evidence
+T55	Action 974 984	supporting
+R48	subject Arg1:T55 Arg2:T54	
+T56	Concept 989 993	role
+T57	Concept 999 1007	pathogen
+R49	in-context Arg1:T56 Arg2:T57	
+T58	Concept 1011 1018	lacking
+R50	has-property Arg1:T56 Arg2:T58	
+R51	target Arg1:T55 Arg2:T56	
+R52	in-context Arg1:T56 Arg2:T50	
