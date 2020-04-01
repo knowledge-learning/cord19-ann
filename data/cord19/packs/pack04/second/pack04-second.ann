@@ -44,14 +44,10 @@ T23	Action 307 327	have been associated
 R16	subject Arg1:T23 Arg2:T22	
 R17	subject Arg1:T23 Arg2:T21	
 R18	target Arg1:T23 Arg2:T24	
-T25	Action 348 353	found
-T26	Concept 345 347	We
-R22	subject Arg1:T25 Arg2:T26	
 T27	Concept 378 388	expression
 T28	Concept 368 377	increased
 A2	Emphasized T28
 R23	has-property Arg1:T27 Arg2:T28	
-R24	target Arg1:T25 Arg2:T27	
 T29	Concept 392 400	patients
 R25	in-place Arg1:T27 Arg2:T29	
 T30	Concept 416 430	LRTI pathogens
@@ -61,8 +57,51 @@ R27	in-context Arg1:T31 Arg2:T29
 T32	Concept 444 451	without
 R28	has-property Arg1:T31 Arg2:T32	
 R29	in-context Arg1:T32 Arg2:T30	
-T33	Concept 762 764	We
 T34	Concept 795 816	respiratory pathogens
 T35	Concept 848 858	expression
 T36	Concept 838 847	increased
 R30	has-property Arg1:T35 Arg2:T36	
+T38	Concept 783 791	presence
+R33	in-context Arg1:T38 Arg2:T34	
+T39	Action 821 834	characterized
+R34	subject Arg1:T39 Arg2:T38	
+R35	target Arg1:T39 Arg2:T35	
+T40	Concept 862 888	host immune response genes
+T41	Concept 899 925	airway microbial diversity
+R36	in-context Arg1:T35 Arg2:T40	
+R37	in-context Arg1:T35 Arg2:T41	
+A3	Diminished T41
+T42	Action 457 468	benchmarked
+T43	Concept 506 518	care testing
+T44	Concept 481 502	conventional standard
+T45	Concept 548 564	study enrollment
+T46	Concept 566 570	mNGS
+T47	Action 571 583	demonstrated
+T48	Concept 589 600	sensitivity
+T49	Concept 584 588	100%
+R41	in-context Arg1:T48 Arg2:T49	
+R42	subject Arg1:T47 Arg2:T46	
+R43	target Arg1:T47 Arg2:T48	
+T50	Concept 605 624	microbial detection
+R44	in-context Arg1:T48 Arg2:T50	
+T51	Action 639 653	identification
+T53	Concept 671 676	viral
+T54	Concept 667 670	new
+R47	has-property Arg1:T53 Arg2:T54	
+R48	target Arg1:T51 Arg2:T53	
+A4	Uncertain T53
+T55	Concept 681 700	bacterial pathogens
+A5	Uncertain T55
+R49	target Arg1:T51 Arg2:T55	
+T56	Concept 720 728	subjects
+R50	in-place Arg1:T51 Arg2:T56	
+T57	Concept 704 719	six of 15 (40%)
+R51	in-context Arg1:T56 Arg2:T57	
+T58	Concept 753 760	testing
+A6	Negated T58
+R52	has-property Arg1:T56 Arg2:T58	
+R40	target Arg1:T42 Arg2:T44	
+R38	in-context Arg1:T44 Arg2:T43	
+R39	in-time Arg1:T43 Arg2:T45	
+R53	subject Arg1:T42 Arg2:T46	
+R31	causes Arg1:T46 Arg2:T51	
