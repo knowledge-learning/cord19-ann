@@ -1,0 +1,18 @@
+T1	Action 487 497	inhibition
+T2	Concept 476 486	SARS-CoV-2
+R1	subject Arg1:T1 Arg2:T2	
+T3	Concept 507 516	sensitive
+A1	Emphasized T3
+R2	target Arg1:T1 Arg2:T3	
+T4	Concept 520 539	crRNA concentration
+R3	in-context Arg1:T3 Arg2:T4	
+T5	Concept 543 554	our samples
+R4	in-place Arg1:T3 Arg2:T5	
+T6	Concept 568 585	Cas13d expression
+A2	Diminished T6
+T7	Action 602 611	decreased
+T8	Concept 591 601	moderately
+R5	has-property Arg1:T7 Arg2:T8	
+R6	subject Arg1:T7 Arg2:T6	
+T9	Concept 612 631	inhibitory activity
+R7	target Arg1:T7 Arg2:T9	
