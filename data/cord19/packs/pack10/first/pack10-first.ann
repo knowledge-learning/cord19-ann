@@ -1,0 +1,60 @@
+T1	Concept 452 471	SARS-CoV 3a protein
+T2	Concept 631 641	SARS-CoV-2
+T3	Concept 693 695	R0
+T4	Concept 624 626	R0
+T5	Concept 710 727	betacoronaviruses
+T6	Concept 834 848	SARS-CoV S-RBD
+T7	Concept 852 856	ACE2
+T8	Action 789 796	reaches
+T9	Concept 773 788	2019-nCoV S-RBD
+T10	Concept 363 371	SARS-CoV
+T11	Action 379 390	transmitted
+T12	Concept 399 418	sexual transmission
+A1	Uncertain T10
+R1	subject Arg1:T11 Arg2:T10	
+R2	target Arg1:T11 Arg2:T12	
+T13	Concept 492 516	expression of fibrinogen
+T14	Action 479 487	regulate
+R4	subject Arg1:T14 Arg2:T1	
+R5	target Arg1:T14 Arg2:T13	
+T15	Concept 520 524	lung
+T16	Concept 525 541	epithelial cells
+R3	has-part Arg1:T15 Arg2:T16	
+R6	in-place Arg1:T13 Arg2:T15	
+T17	Concept 103 117	infection case
+T18	Action 122 130	decrease
+T19	Concept 145 154	new cases
+T20	Concept 189 229	first (second) week in the February 2-15
+R9	target Arg1:T18 Arg2:T19	
+R10	subject Arg1:T18 Arg2:T17	
+R11	in-time Arg1:T18 Arg2:T20	
+T21	Concept 66 80	COVID-19 cases
+T22	Concept 56 65	confirmed
+R12	has-property Arg1:T21 Arg2:T22	
+T23	Action 81 89	suggests
+R13	subject Arg1:T23 Arg2:T21	
+T24	Concept 50 55	newly
+R15	has-property Arg1:T21 Arg2:T24	
+R16	subject Arg1:T8 Arg2:T9	
+T25	Concept 814 830	binding strength
+T27	Concept 589 620	amplitude of seasonal variation
+T28	Concept 654 689	amplitude of the seasonal variation
+R18	has-property Arg1:T5 Arg2:T28	
+R19	in-context Arg1:T27 Arg2:T4	
+R21	in-context Arg1:T28 Arg2:T3	
+T26	Concept 544 562	seasonality factor
+T29	Action 570 579	indicates
+R7	subject Arg1:T29 Arg2:T26	
+R8	has-property Arg1:T6 Arg2:T25	
+R17	target Arg1:T8 Arg2:T6	
+R14	target Arg1:T23 Arg2:T18	
+T30	Concept 645 649	half
+T31	Concept 429 436	studies
+T32	Action 441 446	shown
+R22	subject Arg1:T32 Arg2:T31	
+R25	target Arg1:T32 Arg2:T14	
+R26	is-a Arg1:T2 Arg2:T5	
+R23	has-property Arg1:T2 Arg2:T27	
+R20	target Arg1:T29 Arg2:T2	
+R24	has-property Arg1:T27 Arg2:T30	
+R27	in-context Arg1:T6 Arg2:T7	

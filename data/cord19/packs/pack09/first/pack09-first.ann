@@ -1,0 +1,52 @@
+T2	Action 282 289	remains
+T4	Concept 771 778	SEIR-PO
+T5	Concept 759 766	SEIR-QD
+T6	Concept 607 624	COVID-19 clusters
+T8	Concept 120 124	data
+T9	Action 125 135	suggesting
+T10	Concept 154 179	super-transmission events
+T11	Concept 183 204	COVID-19 transmission
+R1	in-context Arg1:T10 Arg2:T11	
+R2	subject Arg1:T9 Arg2:T8	
+R3	target Arg1:T9 Arg2:T10	
+T12	Concept 39 47	patients
+T13	Concept 70 97	neurological manifestations
+R6	has-property Arg1:T12 Arg2:T13	
+T1	Concept 53 61	COVID-19
+T14	Concept 325 339	SARS-CoV-2 RNA
+R5	has-part Arg1:T12 Arg2:T1	
+T16	Concept 290 297	unknown
+A1	Negated T12
+A2	Uncertain T10
+T18	Concept 230 269	interpersonal transmission capabilities
+R9	target Arg1:T2 Arg2:T16	
+T19	Concept 812 830	COVID-10 epidemics
+T3	Action 803 811	modeling
+R10	target Arg1:T3 Arg2:T19	
+R11	subject Arg1:T3 Arg2:T4	
+R12	subject Arg1:T3 Arg2:T5	
+T20	Concept 601 606	large
+R13	has-property Arg1:T6 Arg2:T20	
+T22	Concept 505 519	overdispersion
+T23	Concept 410 429	until day 11 and 18
+T24	Concept 386 392	throat
+T25	Concept 397 409	rectal swabs
+T26	Concept 433 448	hospitalization
+T27	Concept 363 382	real time RT-20 PCR
+T28	Concept 273 281	COVID-19
+R7	has-property Arg1:T28 Arg2:T18	
+R8	subject Arg1:T2 Arg2:T28	
+T17	Action 340 359	remained detectable
+R4	subject Arg1:T17 Arg2:T27	
+R17	target Arg1:T17 Arg2:T14	
+R18	in-place Arg1:T17 Arg2:T24	
+R19	in-place Arg1:T17 Arg2:T25	
+R21	in-time Arg1:T17 Arg2:T23	
+R22	in-context Arg1:T17 Arg2:T26	
+T21	Action 721 730	overwhelm
+T29	Concept 735 754	surveillance system
+R20	target Arg1:T21 Arg2:T29	
+R14	subject Arg1:T21 Arg2:T6	
+R23	subject Arg1:T21 Arg2:T22	
+T7	Concept 491 495	high
+R15	has-property Arg1:T22 Arg2:T7	
