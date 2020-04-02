@@ -1,0 +1,76 @@
+T1	Concept 37 43	CVL218
+T2	Concept 243 253	SARS-CoV-2
+T4	Concept 69 73	lung
+R1	in-context Arg1:T1 Arg2:T4	
+T5	Concept 13 33	higher distributions
+R2	has-property Arg1:T1 Arg2:T5	
+T6	Concept 114 121	arbidol
+T7	Action 93 101	compared
+R3	target Arg1:T7 Arg2:T1	
+R4	target Arg1:T7 Arg2:T6	
+T3	Action 230 239	treatment
+A1	Uncertain T3
+R5	subject Arg1:T3 Arg2:T1	
+R6	target Arg1:T3 Arg2:T2	
+T8	Concept 401 406	CD147
+T13	Concept 357 367	SARS-CoV-2
+T9	Action 410 422	facilitating
+T10	Concept 423 433	SARS-CoV-2
+R9	subject Arg1:T9 Arg2:T8	
+R10	target Arg1:T9 Arg2:T10	
+T14	Concept 318 328	host cells
+T15	Concept 486 496	SARS-CoV-2
+T16	Action 501 507	invade
+A2	Uncertain T16
+T17	Concept 512 526	urinary system
+T18	Concept 528 548	hematological system
+T19	Concept 553 569	digestive system
+T20	Concept 585 603	respiratory system
+R12	subject Arg1:T16 Arg2:T15	
+R13	target Arg1:T16 Arg2:T17	
+R14	target Arg1:T16 Arg2:T18	
+R15	target Arg1:T16 Arg2:T19	
+R16	target Arg1:T16 Arg2:T20	
+T21	Concept 447 457	host cells
+R17	in-context Arg1:T8 Arg2:T21	
+T22	Concept 679 690	salt-bridge
+T23	Action 691 708	presented between
+A3	Negated T23
+R18	subject Arg1:T23 Arg2:T22	
+T24	Concept 734 738	E329
+T25	Concept 742 746	ACE2
+T26	Concept 788 798	SARS-CoV-2
+T27	Concept 799 802	RBD
+R19	has-part Arg1:T26 Arg2:T27	
+R20	has-part Arg1:T25 Arg2:T24	
+R21	target Arg1:T23 Arg2:T24	
+R22	target Arg1:T23 Arg2:T27	
+T11	Concept 305 310	CD147
+T12	Action 296 304	blocking
+R7	in-context Arg1:T11 Arg2:T14	
+R8	target Arg1:T12 Arg2:T11	
+T28	Concept 336 346	inhibitory
+R23	has-property Arg1:T12 Arg2:T28	
+R11	in-context Arg1:T28 Arg2:T13	
+T30	Concept 844 853	ritonavir
+T31	Concept 858 867	lopinavir
+T32	Concept 871 879	COVID-19
+T33	Concept 890 909	coronavirus disease
+T34	Action 937 947	inhibitory
+T35	Concept 958 965	CEP_C30
+T36	Concept 1036 1045	darunavir
+T37	Concept 1049 1059	SARS-CoV-2
+T38	Concept 1143 1147	PLVP
+T39	Action 1122 1132	inhibitory
+R24	is-a Arg1:T32 Arg2:T33	
+T29	Concept 822 840	therapeutic effect
+R27	subject Arg1:T34 Arg2:T30	
+R28	subject Arg1:T34 Arg2:T31	
+R29	target Arg1:T34 Arg2:T35	
+R25	has-property Arg1:T34 Arg2:T29	
+R26	in-context Arg1:T29 Arg2:T33	
+R30	subject Arg1:T39 Arg2:T36	
+R31	target Arg1:T39 Arg2:T38	
+T40	Concept 1078 1096	therapeutic effect
+R32	has-property Arg1:T39 Arg2:T40	
+R33	in-context Arg1:T40 Arg2:T37	
