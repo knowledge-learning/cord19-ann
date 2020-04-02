@@ -1,5 +1,91 @@
 T1	Concept 5 18	mutation rate
 A1	Emphasized T1
-T2	Concept 20 25	human
-T3	Action 35 47	transmission
-T4	Concept 29 34	human
+T2	Concept 20 47	human to human transmission
+T3	Concept 49 62	survival time
+T4	Concept 66 78	up to 4 days
+T5	Concept 79 117	under various environmental conditions
+T6	Concept 122 139	lack of treatment
+T7	Action 140 145	makes
+T8	Reference 146 148	it
+T9	Concept 161 179	bioterrorism agent
+T10	Concept 151 160	potential
+R2	has-property Arg1:T3 Arg2:T4	
+R3	has-property Arg1:T4 Arg2:T5	
+R4	has-property Arg1:T4 Arg2:T6	
+R5	subject Arg1:T7 Arg2:T3	
+R6	is-a Arg1:T8 Arg2:T9	
+R1	has-property Arg1:T8 Arg2:T10	
+R7	subject Arg1:T7 Arg2:T2	
+R8	subject Arg1:T7 Arg2:T1	
+R9	target Arg1:T7 Arg2:T8	
+T11	Concept 182 200	seasonality factor
+T12	Concept 204 207	0.5
+R10	has-property Arg1:T11 Arg2:T12	
+T14	Concept 227 236	amplitude
+T15	Concept 240 258	seasonal variation
+T16	Concept 262 264	R0
+T17	Concept 269 279	SARS-CoV-2
+T20	Concept 309 327	seasonal variation
+T21	Concept 331 333	R0
+T22	Concept 348 365	betacoronaviruses
+T23	Concept 342 347	other
+R12	has-property Arg1:T22 Arg2:T23	
+T24	Action 280 282	is
+R13	has-property Arg1:T15 Arg2:T14	
+R15	in-context Arg1:T15 Arg2:T16	
+R16	has-property Arg1:T17 Arg2:T15	
+R14	subject Arg1:T24 Arg2:T14	
+R19	in-context Arg1:T20 Arg2:T21	
+R20	has-property Arg1:T22 Arg2:T20	
+T13	Concept 283 301	half the amplitude
+R11	has-property Arg1:T20 Arg2:T13	
+R17	target Arg1:T24 Arg2:T13	
+R18	entails Arg1:T11 Arg2:T13	
+T18	Concept 377 384	efforts
+A2	Emphasized T18
+T25	Action 422 432	to provide
+T26	Concept 435 439	fast
+T27	Concept 444 452	reliable
+T28	Concept 453 470	diagnostic method
+T29	Concept 475 485	SARS-CoV-2
+T19	Concept 405 421	around the world
+R21	in-context Arg1:T18 Arg2:T19	
+R22	subject Arg1:T25 Arg2:T18	
+R23	target Arg1:T25 Arg2:T28	
+R24	has-property Arg1:T28 Arg2:T27	
+R25	has-property Arg1:T28 Arg2:T26	
+R26	in-context Arg1:T28 Arg2:T29	
+T30	Concept 499 510	dN/dS ratio
+T31	Concept 514 524	RBD region
+T32	Concept 528 544	SARS-CoV-2 WIV04
+T34	Concept 581 587	3 fold
+A3	Uncertain T34
+T35	Concept 607 624	full spike region
+R29	in-place Arg1:T30 Arg2:T31	
+T33	Action 562 571	increased
+R27	target Arg1:T33 Arg2:T30	
+R28	subject Arg1:T33 Arg2:T32	
+R30	in-time Arg1:T30 Arg2:T34	
+T36	Concept 588 601	in comparison
+R31	in-context Arg1:T33 Arg2:T36	
+R32	in-context Arg1:T36 Arg2:T35	
+T38	Concept 728 732	DPP4
+T39	Concept 667 679	MERS-CoV RBD
+T40	Action 734 737	are
+T41	Concept 755 763	SARS-CoV
+T42	Concept 768 778	SARS-CoV-2
+T43	Concept 642 663	critical key residues
+T44	Concept 638 641	six
+R33	has-property Arg1:T43 Arg2:T44	
+R34	in-context Arg1:T43 Arg2:T39	
+T45	Concept 691 703	its receptor
+T37	Concept 704 726	dipeptidyl peptidase 4
+*	same-as T37 T38
+R35	has-property Arg1:T45 Arg2:T37	
+R36	in-context Arg1:T43 Arg2:T45	
+R37	subject Arg1:T40 Arg2:T43	
+T46	Concept 742 751	different
+A4	Emphasized T46
+R38	target Arg1:T40 Arg2:T46	
+R39	in-context Arg1:T46 Arg2:T41	
+R40	in-context Arg1:T40 Arg2:T42	

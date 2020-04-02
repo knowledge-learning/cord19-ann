@@ -1,0 +1,143 @@
+T1	Concept 0 7	Further
+T2	Concept 8 19	comparative
+T3	Concept 20 29	alignment
+T4	Concept 30 38	analysis
+T5	Concept 42 46	GZ02
+T6	Concept 48 65	SARS viral strain
+T7	Concept 68 78	Wuhan-Hu-1
+T8	Concept 80 113	the earliest sequenced SARS-CoV-2
+T9	Concept 116 122	RaTG13
+T10	Concept 124 130	HKU9-1
+T11	Concept 136 145	potential
+T12	Concept 146 154	ancestor
+T13	Concept 158 162	SARS
+T14	Concept 167 177	SARS-CoV-2
+T15	Concept 183 193	SARS-CoV-2
+T16	Concept 195 200	HKU-1
+T17	Concept 205 209	OC43
+T18	Action 211 217	showed
+T19	Concept 223 226	FCS
+T20	Action 227 236	exhibited
+T21	Concept 239 253	clear sequence
+T22	Concept 258 262	rule
+T23	Concept 266 287	coronavirus evolution
+R1	has-property Arg1:T2 Arg2:T1	
+R2	has-part Arg1:T4 Arg2:T3	
+R3	has-part Arg1:T3 Arg2:T2	
+*	same-as T5 T6
+R4	is-a Arg1:T7 Arg2:T8	
+R5	has-property Arg1:T12 Arg2:T11	
+R6	has-property Arg1:T13 Arg2:T12	
+R7	has-property Arg1:T14 Arg2:T12	
+R8	in-context Arg1:T10 Arg2:T14	
+R9	in-context Arg1:T10 Arg2:T13	
+R10	in-context Arg1:T4 Arg2:T5	
+R11	in-context Arg1:T4 Arg2:T7	
+R12	in-context Arg1:T4 Arg2:T9	
+R13	in-context Arg1:T4 Arg2:T10	
+R14	in-context Arg1:T4 Arg2:T15	
+R15	in-context Arg1:T15 Arg2:T16	
+R16	in-context Arg1:T15 Arg2:T17	
+R17	subject Arg1:T18 Arg2:T4	
+R18	subject Arg1:T20 Arg2:T19	
+R19	target Arg1:T18 Arg2:T20	
+R20	target Arg1:T20 Arg2:T21	
+R21	in-context Arg1:T22 Arg2:T23	
+R22	target Arg1:T20 Arg2:T22	
+T24	Action 292 301	emergence
+T25	Concept 313 324	coronavirus
+T26	Concept 307 312	novel
+T27	Concept 326 336	SARS-CoV-2
+T28	Concept 341 346	Wuhan
+T29	Concept 348 353	China
+T30	Concept 357 362	early
+T31	Concept 363 371	December
+T32	Concept 372 376	2019
+T33	Action 381 387	caused
+T34	Concept 388 398	widespread
+T35	Concept 399 411	transmission
+T36	Concept 412 418	within
+T37	Concept 423 430	country
+T38	Concept 437 447	over 1,000
+T39	Concept 448 454	deaths
+T40	Action 455 463	reported
+T41	Concept 467 471	date
+R23	has-property Arg1:T25 Arg2:T26	
+R24	subject Arg1:T24 Arg2:T25	
+*	same-as T25 T27
+R25	in-place Arg1:T24 Arg2:T28	
+R26	in-place Arg1:T28 Arg2:T29	
+R27	has-property Arg1:T31 Arg2:T30	
+R28	in-time Arg1:T32 Arg2:T31	
+R29	in-time Arg1:T24 Arg2:T31	
+R30	target Arg1:T24 Arg2:T33	
+R31	has-property Arg1:T35 Arg2:T34	
+R32	target Arg1:T33 Arg2:T35	
+R33	in-place Arg1:T35 Arg2:T37	
+R34	has-property Arg1:T37 Arg2:T36	
+R35	in-context Arg1:T35 Arg2:T38	
+R36	has-part Arg1:T38 Arg2:T39	
+R37	subject Arg1:T40 Arg2:T39	
+R38	target Arg1:T40 Arg2:T41	
+T42	Concept 473 482	McLaellen
+T43	Concept 487 495	colleges
+T44	Action 496 502	showed
+T45	Concept 508 512	ACE2
+T46	Action 513 518	binds
+T47	Concept 522 534	SARS-CoV-2 S
+T48	Concept 535 542	protein
+T49	Concept 548 559	much higher
+T50	Concept 560 568	affinity
+A1	Emphasized T50
+T52	Concept 591 598	protein
+T51	Concept 580 590	SARS-CoV S
+R39	subject Arg1:T44 Arg2:T42	
+R40	subject Arg1:T44 Arg2:T43	
+R41	target Arg1:T44 Arg2:T45	
+R43	target Arg1:T46 Arg2:T47	
+R44	is-a Arg1:T47 Arg2:T48	
+R45	subject Arg1:T46 Arg2:T45	
+R42	has-property Arg1:T50 Arg2:T49	
+R46	in-context Arg1:T50 Arg2:T46	
+T53	Concept 569 573	than
+R47	in-context Arg1:T53 Arg2:T51	
+R48	is-a Arg1:T51 Arg2:T52	
+R49	in-context Arg1:T50 Arg2:T53	
+T54	Concept 599 609	SARS-CoV-2
+T55	Concept 613 619	highly
+T56	Concept 620 630	infectious
+R50	has-property Arg1:T56 Arg2:T55	
+R51	has-property Arg1:T54 Arg2:T56	
+T57	Action 634 646	demonstrated
+T58	Concept 652 664	Cas13d-based
+T59	Concept 665 672	genetic
+T60	Concept 673 682	targeting
+T61	Concept 687 698	effectively
+T62	Concept 699 705	target
+T63	Concept 710 716	cleave
+T64	Concept 721 724	RNA
+T65	Concept 725 734	sequences
+T66	Concept 738 748	SARS-CoV-2
+T67	Concept 749 758	fragments
+T68	Concept 763 766	IAV
+T69	Concept 770 774	lung
+T70	Concept 775 785	epithelial
+T71	Concept 786 799	cell cultures
+R52	target Arg1:T57 Arg2:T58	
+T72	Concept 631 633	We
+R53	subject Arg1:T57 Arg2:T72	
+R54	has-part Arg1:T58 Arg2:T59	
+R55	has-part Arg1:T59 Arg2:T60	
+R56	has-property Arg1:T62 Arg2:T61	
+R57	entails Arg1:T60 Arg2:T62	
+R58	entails Arg1:T60 Arg2:T63	
+R59	has-property Arg1:T65 Arg2:T64	
+R60	in-context Arg1:T63 Arg2:T65	
+R61	in-context Arg1:T62 Arg2:T66	
+R62	in-context Arg1:T65 Arg2:T66	
+R63	has-part Arg1:T66 Arg2:T67	
+R64	has-part Arg1:T69 Arg2:T70	
+R65	has-part Arg1:T70 Arg2:T71	
+R66	in-place Arg1:T68 Arg2:T69	
+R67	in-context Arg1:T62 Arg2:T68	
+R68	in-context Arg1:T63 Arg2:T68	

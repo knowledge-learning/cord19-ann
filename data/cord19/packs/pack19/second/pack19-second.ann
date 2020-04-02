@@ -1,0 +1,111 @@
+T1	Concept 0 3	MSA
+T2	Concept 4 11	results
+T3	Action 12 23	demonstrate
+T4	Concept 30 35	ORF3b
+T5	Concept 39 49	SARS-CoV-2
+R1	target Arg1:T3 Arg2:T4	
+R2	in-context Arg1:T4 Arg2:T5	
+R3	subject Arg1:T3 Arg2:T2	
+R4	in-context Arg1:T2 Arg2:T1	
+T6	Concept 67 72	ORF3b
+T7	Concept 53 63	not closer
+R5	in-context Arg1:T4 Arg2:T7	
+R6	in-context Arg1:T7 Arg2:T6	
+T8	Concept 73 80	protein
+T9	Concept 84 94	Human SARS
+R7	is-a Arg1:T6 Arg2:T8	
+T10	Concept 102 107	ORF3b
+T11	Concept 119 127	Bat-CoV,
+T12	Concept 108 115	protein
+T13	Action 128 134	having
+T14	Concept 137 145;146 156	sequence similarity
+T15	Concept 165 171	54.55%
+T16	Concept 176 182	59.09%
+R8	in-context Arg1:T8 Arg2:T9	
+R9	in-context Arg1:T7 Arg2:T10	
+R10	is-a Arg1:T10 Arg2:T12	
+R11	in-context Arg1:T10 Arg2:T11	
+R12	subject Arg1:T13 Arg2:T4	
+R13	target Arg1:T13 Arg2:T14	
+R14	has-property Arg1:T9 Arg2:T14	
+R15	has-property Arg1:T11 Arg2:T14	
+R16	in-context Arg1:T14 Arg2:T15	
+R17	in-context Arg1:T14 Arg2:T16	
+T18	Concept 223 243	SARS-CoV-2 infection
+T19	Concept 252 257	fever
+T20	Concept 259 268	dry cough
+T21	Concept 270 278	weakness
+T22	Concept 284 304	breathing difficulty
+R18	causes Arg1:T18 Arg2:T19	
+R19	causes Arg1:T18 Arg2:T20	
+R20	causes Arg1:T18 Arg2:T21	
+R21	causes Arg1:T18 Arg2:T22	
+T17	Concept 305 322	SARS-CoV-2 assays
+T23	Action 327 332	yield
+T24	Concept 333 348	false positives
+T25	Action 361 364;365 373	not targeted
+T26	Concept 374 386	specifically
+T27	Concept 390 400	SARS-CoV-2
+R22	subject Arg1:T23 Arg2:T17	
+R23	has-property Arg1:T23 Arg2:T24	
+R24	in-context Arg1:T23 Arg2:T25	
+R25	has-part Arg1:T25 Arg2:T26	
+R26	target Arg1:T25 Arg2:T27	
+T28	Concept 409 414	virus
+T29	Concept 418 425	closely
+T30	Concept 426 433	related
+T31	Concept 437 442	other
+T32	Concept 443 454	Coronavirus
+T33	Concept 455 464	organisms
+R28	has-property Arg1:T30 Arg2:T29	
+R27	has-property Arg1:T28 Arg2:T30	
+R29	in-context Arg1:T23 Arg2:T28	
+R30	has-part Arg1:T31 Arg2:T32	
+R31	is-a Arg1:T33 Arg2:T32	
+R32	in-context Arg1:T30 Arg2:T33	
+T34	Concept 481 493	asymptomatic
+T35	Concept 494 503	infection
+R33	has-property Arg1:T35 Arg2:T34	
+T36	Action 469 477	presence
+R34	subject Arg1:T36 Arg2:T35	
+T37	Action 509 517	suggests
+R35	target Arg1:T36 Arg2:T37	
+T38	Concept 523 533	SARS-CoV-2
+R36	target Arg1:T37 Arg2:T38	
+T39	Concept 538 547	gradually
+T40	Action 548 554	evolve
+R37	has-property Arg1:T40 Arg2:T39	
+R38	subject Arg1:T40 Arg2:T38	
+T41	Concept 562 567	virus
+T42	Concept 568 575	similar
+T43	Concept 579 588	influenza
+R39	has-property Arg1:T41 Arg2:T42	
+R40	in-context Arg1:T42 Arg2:T43	
+R41	target Arg1:T40 Arg2:T41	
+T44	Concept 603 609	latent
+T45	Action 596 602	may be
+T46	Concept 613 619	humans
+T47	Concept 626 635	long time
+R42	target Arg1:T37 Arg2:T45	
+R43	has-part Arg1:T45 Arg2:T44	
+R44	in-place Arg1:T44 Arg2:T46	
+R45	in-time Arg1:T44 Arg2:T47	
+T48	Concept 651 658	results
+T49	Action 659 668	suggested
+T50	Concept 678 685	monkeys
+T51	Concept 691 701	SARS-CoV-2
+T52	Concept 702 711	infection
+T53	Concept 712 717	after
+T54	Concept 718 726	recovery
+T55	Concept 727 736	could not
+T56	Concept 737 751	be re-infected
+R46	subject Arg1:T49 Arg2:T48	
+R47	target Arg1:T49 Arg2:T50	
+R48	has-part Arg1:T51 Arg2:T52	
+R49	in-context Arg1:T50 Arg2:T51	
+R50	has-part Arg1:T53 Arg2:T54	
+R51	entails Arg1:T54 Arg2:T55	
+R52	has-part Arg1:T55 Arg2:T56	
+R53	in-context Arg1:T51 Arg2:T53	
+T57	Concept 761 772	same strain
+R54	in-context Arg1:T56 Arg2:T57	

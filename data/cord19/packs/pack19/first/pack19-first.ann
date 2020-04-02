@@ -1,0 +1,81 @@
+T1	Concept 205 233	manifestations of SARS-CoV-2
+T2	Concept 252 257	fever
+T3	Concept 259 262	dry
+T4	Concept 263 268	cough
+T5	Concept 270 278	weakness
+T6	Concept 284 304	breathing difficulty
+T7	Action 244 251	include
+T8	Concept 678 711	monkeys with SARS-CoV-2 infection
+T9	Concept 718 726	recovery
+R1	in-context Arg1:T8 Arg2:T9	
+T12	Concept 523 533	SARS-CoV-2
+T13	Concept 740 751	re-infected
+T14	Concept 761 772	same strain
+R2	in-context Arg1:T13 Arg2:T14	
+T10	Action 737 739	be
+R3	target Arg1:T10 Arg2:T13	
+R4	subject Arg1:T10 Arg2:T8	
+T15	Concept 562 588	virus similar to influenza
+T16	Concept 604 619	atent in humans
+T17	Concept 631 635	time
+R6	in-context Arg1:T16 Arg2:T17	
+T18	Concept 631 635	time
+A1	Emphasized T18
+T19	Action 548 554	evolve
+R7	subject Arg1:T19 Arg2:T12	
+R8	target Arg1:T19 Arg2:T15	
+T20	Action 600 602	be
+A2	Uncertain T20
+R9	target Arg1:T20 Arg2:T16	
+R10	subject Arg1:T20 Arg2:T12	
+T21	Concept 305 322	SARS-CoV-2 assays
+T22	Concept 333 347	false positive
+T23	Action 327 332	yield
+A3	Uncertain T23
+R11	subject Arg1:T23 Arg2:T21	
+R12	target Arg1:T23 Arg2:T22	
+T26	Concept 437 463	other Coronavirus organism
+T27	Action 426 433	related
+T24	Concept 390 400	SARS-CoV-2
+R13	subject Arg1:T7 Arg2:T1	
+R14	target Arg1:T7 Arg2:T2	
+R15	target Arg1:T7 Arg2:T3	
+R16	target Arg1:T7 Arg2:T4	
+R17	target Arg1:T7 Arg2:T5	
+R18	target Arg1:T7 Arg2:T6	
+T28	Concept 365 400	targeted specifically to SARS-CoV-2
+R19	in-context Arg1:T23 Arg2:T28	
+T25	Reference 409 414	virus
+A4	Emphasized T27
+R20	subject Arg1:T27 Arg2:T25	
+R21	target Arg1:T27 Arg2:T26	
+T11	Concept 494 503	infection
+T29	Concept 481 493	asymptomatic
+R5	has-property Arg1:T11 Arg2:T29	
+R22	in-context Arg1:T12 Arg2:T11	
+T30	Concept 30 35	ORF3b
+T31	Concept 67 72	ORF3b
+T32	Concept 39 49	SARS-CoV-2
+T33	Concept 84 94	Human SARS
+T34	Concept 73 80	protein
+T35	Concept 102 107	ORF3b
+T36	Concept 108 115	protein
+T37	Concept 119 126	Bat-CoV
+R23	has-property Arg1:T30 Arg2:T32	
+R24	is-a Arg1:T31 Arg2:T34	
+R25	is-a Arg1:T35 Arg2:T36	
+R26	has-property Arg1:T31 Arg2:T33	
+R27	has-property Arg1:T35 Arg2:T37	
+T38	Action 128 134	having
+T39	Action 51 63	s not closer
+A5	Negated T39
+R29	is-a Arg1:T39 Arg2:T31	
+R30	target Arg1:T39 Arg2:T35	
+T40	Concept 137 156	sequence similarity
+T41	Concept 165 171	54.55%
+T42	Concept 176 182	59.09%
+R28	has-property Arg1:T40 Arg2:T41	
+R31	has-part Arg1:T40 Arg2:T42	
+R32	target Arg1:T38 Arg2:T40	
+R33	subject Arg1:T38 Arg2:T30	
+R34	subject Arg1:T38 Arg2:T31	
