@@ -22,8 +22,8 @@ This a list of everyone currently involved and what they are doing.
 | 01       | first    | Done           | @Estevanell          | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack01/first/pack01-first) |
 | 01       | second   | Done           | @nasobuco            | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack01/second/pack01-second) |
 | 02       | first    | Done           | @danielvp            | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack02/first/pack02-first) |
-| 02       | second   | In progress    | @IntiBlanco          | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack02/second/pack02-second) |
-| 03       | first    | In progress    | @Olivia              | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack03/first/pack03-first) |
+| 02       | second   | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack02/second/pack02-second) |
+| 03       | first    | In progress    | @danielvp            | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack03/first/pack03-first) |
 | 03       | second   | Done           | @gabyfdez90          | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack03/second/pack03-second) |
 | 04       | first    | Done           | @danielvp            | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack04/first/pack04-first) |
 | 04       | second   | Done           | @Dcardenas2019       | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack04/second/pack04-second) |
