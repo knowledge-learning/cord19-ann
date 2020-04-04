@@ -1,0 +1,74 @@
+T1	Concept 6 13	results
+T2	Action 14 21	confirm
+T3	Concept 26 37	interaction
+T4	Concept 41 46	CD147
+T5	Concept 51 53	SP
+R1	subject Arg1:T2 Arg2:T1	
+R2	target Arg1:T2 Arg2:T3	
+R3	in-context Arg1:T3 Arg2:T4	
+R4	in-context Arg1:T3 Arg2:T5	
+T6	Concept 84 89	route
+R5	causes Arg1:T1 Arg2:T6	
+T7	Concept 94 104	SARS-CoV-2
+R6	in-context Arg1:T6 Arg2:T7	
+T8	Concept 140 168	chronic kidney disease (CKD)
+T9	Concept 213 223	SARS-CoV-2
+T10	Concept 259 267	immunity
+A1	Diminished T10
+T11	Concept 297 351	Prophylactic Antiviral CRISPR in huMAN cells (PAC-MAN)
+T12	Concept 352 360	strategy
+T13	Concept 374 394	genetic intervention
+T14	Concept 405 415	SARS-CoV-2
+T15	Concept 417 420	IAV
+T16	Concept 466 476	SARS-CoV-2
+T17	Concept 477 482	ORF9b
+T18	Concept 483 490	protein
+R7	is-a Arg1:T17 Arg2:T18	
+R8	in-context Arg1:T17 Arg2:T16	
+T19	Concept 624 634	SARS-CoV-2
+T21	Concept 744 754	suppressed
+A2	Emphasized T21
+T22	Concept 108 125	invade host cells
+R9	in-context Arg1:T7 Arg2:T22	
+A3	Uncertain T6
+R10	is-a Arg1:T11 Arg2:T12	
+R11	in-context Arg1:T12 Arg2:T13	
+T23	Concept 498 517	mean PPID of 10.31%
+R12	has-property Arg1:T17 Arg2:T23	
+T24	Concept 524 550	N-terminal (1-10 residues)
+T25	Concept 551 579	predicted disordered segment
+R13	in-context Arg1:T24 Arg2:T25	
+R14	has-part Arg1:T17 Arg2:T24	
+T26	Action 398 404	target
+R15	subject Arg1:T26 Arg2:T11	
+R16	target Arg1:T26 Arg2:T14	
+R17	target Arg1:T26 Arg2:T15	
+T27	Concept 438 465	all sequenced coronaviruses
+R18	target Arg1:T26 Arg2:T27	
+A4	Uncertain T27
+T28	Concept 126 134	Children
+R19	has-property Arg1:T28 Arg2:T8	
+T29	Concept 180 190	risk group
+A5	Emphasized T29
+R20	is-a Arg1:T28 Arg2:T29	
+T30	Concept 198 209	susceptible
+A6	Emphasized T30
+R21	has-property Arg1:T29 Arg2:T30	
+R22	in-context Arg1:T30 Arg2:T9	
+T31	Concept 231 249	underlying disease
+T32	Concept 711 720	host gene
+T33	Concept 721 731	expression
+R23	in-context Arg1:T33 Arg2:T32	
+R24	has-property Arg1:T33 Arg2:T21	
+R25	in-context Arg1:T30 Arg2:T31	
+R26	in-context Arg1:T30 Arg2:T10	
+T34	Concept 608 613	reads
+T20	Concept 652 673	viral 112 transcripts
+T35	Action 674 682	dominate
+T36	Concept 687 700	transcriptome
+R28	target Arg1:T35 Arg2:T36	
+R29	in-time Arg1:T20 Arg2:T33	
+A7	Emphasized T34
+R30	in-context Arg1:T34 Arg2:T19	
+R31	causes Arg1:T34 Arg2:T20	
+R27	subject Arg1:T35 Arg2:T20	

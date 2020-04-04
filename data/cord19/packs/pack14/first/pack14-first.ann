@@ -5,3 +5,71 @@ T3	Concept 106 116	SARS-CoV-2
 T4	Concept 271 281	SARS-CoV-2
 T5	Concept 282 285	RNA
 T6	Concept 322 330	COVID-19
+T7	Concept 238 243	Early
+T8	Concept 248 257	prolonged
+T9	Action 258 267	detection
+R2	target Arg1:T9 Arg2:T5	
+R3	in-context Arg1:T9 Arg2:T8	
+R4	in-context Arg1:T9 Arg2:T7	
+T10	Concept 298 304;305 308;309 318	window for diagnosis
+R5	in-context Arg1:T10 Arg2:T6	
+T11	Concept 334 338	long
+R6	has-property Arg1:T10 Arg2:T11	
+A1	Uncertain T11
+R7	in-context Arg1:T5 Arg2:T4	
+R8	entails Arg1:T9 Arg2:T10	
+T12	Concept 343 353	SARS-CoV-2
+T13	Concept 367 373;374 385;386 393	severe respiratory disease
+T14	Concept 403 410	quickly
+T15	Action 411 417	spread
+T16	Concept 423 429;430 432;433 439	person to person
+T17	Concept 466 471	death
+A2	Uncertain T17
+R9	entails Arg1:T13 Arg2:T17	
+R10	causes Arg1:T12 Arg2:T13	
+R11	subject Arg1:T15 Arg2:T12	
+R12	in-context Arg1:T15 Arg2:T14	
+R13	in-context Arg1:T15 Arg2:T16	
+T18	Concept 673 679	spread
+T19	Concept 684 693	virulence
+T20	Concept 647 657	SARS-CoV-2
+R14	in-context Arg1:T18 Arg2:T20	
+R15	in-context Arg1:T19 Arg2:T20	
+T21	Concept 626 632;633 643	unique capacities
+R16	has-property Arg1:T18 Arg2:T21	
+R17	has-property Arg1:T19 Arg2:T21	
+T22	Concept 548 557;558 566	accessory features
+R18	entails Arg1:T22 Arg2:T21	
+T23	Action 536 546	functional
+T24	Concept 524 529	virus
+R19	subject Arg1:T23 Arg2:T24	
+T25	Concept 481 485;486 493;494 502	core genomic features
+R20	causes Arg1:T25 Arg2:T23	
+T26	Concept 698 709;710 716	seasonality factor
+T27	Concept 810 827	betacoronaviruses
+T28	Concept 804 809	human
+R21	in-context Arg1:T27 Arg2:T28	
+T29	Action 751 760	variation
+T30	Concept 742 750	seasonal
+R22	in-context Arg1:T29 Arg2:T30	
+*	same-as T26 T29
+T31	Concept 768 778	SARS-CoV-2
+T32	Concept 779 781	R0
+R23	in-context Arg1:T31 Arg2:T32	
+R24	target Arg1:T29 Arg2:T31	
+R25	in-context Arg1:T29 Arg2:T27	
+T33	Concept 164 169;170 177	close contact
+T34	Concept 154 160	humans
+T35	Action 127 136	clustered
+R26	in-context Arg1:T34 Arg2:T33	
+R27	target Arg1:T35 Arg2:T34	
+R28	subject Arg1:T35 Arg2:T3	
+T36	Action 202 208	affect
+A3	Emphasized T36
+T37	Concept 187 191;192 198	more likely
+R29	in-context Arg1:T36 Arg2:T37	
+R30	subject Arg1:T36 Arg2:T3	
+T38	Concept 209 214;215 218	older men
+T39	Concept 224 237	comorbidities
+R31	in-context Arg1:T39 Arg2:T38	
+R32	target Arg1:T36 Arg2:T38	

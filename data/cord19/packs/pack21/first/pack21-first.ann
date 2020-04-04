@@ -1,0 +1,80 @@
+T1	Concept 198 202	S416
+T2	Concept 234 242	chemical
+T3	Concept 219 233	best efficient
+R1	is-a Arg1:T1 Arg2:T2	
+R2	has-property Arg1:T1 Arg2:T3	
+T4	Concept 276 290	cellular level
+T5	Concept 306 316	SARS virus
+T6	Concept 479 489	SARS-CoV-2
+T7	Concept 243 249	so far
+R3	in-time Arg1:T3 Arg2:T7	
+T8	Concept 258 268	SARS-CoV-2
+R4	in-context Arg1:T3 Arg2:T8	
+T9	Concept 356 363	studies
+T10	Concept 337 355	structural biology
+T11	Concept 318 332	viral genomics
+R5	in-context Arg1:T9 Arg2:T10	
+R6	in-context Arg1:T9 Arg2:T11	
+T12	Concept 380 384	ACE2
+T13	Concept 395 414	functional receptor
+R7	is-a Arg1:T12 Arg2:T13	
+T14	Concept 427 437	SARS-CoV-2
+T15	Concept 438 449	coronavirus
+R8	is-a Arg1:T14 Arg2:T15	
+R9	in-context Arg1:T13 Arg2:T14	
+R10	causes Arg1:T9 Arg2:T12	
+T16	Concept 423 426	new
+R11	has-property Arg1:T14 Arg2:T16	
+T17	Concept 525 563	angiotensin converting enzyme 2 (ACE2)
+T18	Concept 504 523	cell entry receptor
+R12	is-a Arg1:T17 Arg2:T18	
+T19	Concept 459 464	study
+T20	Concept 581 589	SARS-CoV
+T21	Action 495 499	uses
+R13	subject Arg1:T21 Arg2:T6	
+R14	target Arg1:T21 Arg2:T17	
+T22	Concept 570 577	similar
+R15	has-property Arg1:T21 Arg2:T22	
+R16	in-context Arg1:T22 Arg2:T20	
+T23	Concept 154 174	SARS-CoV-2 infection
+T24	Concept 178 191	Vero E6 cells
+T25	Concept 137 146	procedure
+R17	in-context Arg1:T25 Arg2:T23	
+R18	in-place Arg1:T25 Arg2:T24	
+T26	Concept 95 115	antiviral activities
+A1	Emphasized T26
+R19	in-time Arg1:T26 Arg2:T25	
+T27	Concept 70 80	remdesivir
+T28	Concept 59 65	CVL218
+T29	Concept 34 52	DMSO control group
+R20	in-context Arg1:T28 Arg2:T29	
+R21	in-context Arg1:T27 Arg2:T29	
+R22	causes Arg1:T19 Arg2:T6	
+R23	causes Arg1:T28 Arg2:T26	
+R24	causes Arg1:T27 Arg2:T26	
+T30	Concept 607 619	transmission
+T31	Concept 590 606	Hospital-related
+R25	in-context Arg1:T30 Arg2:T31	
+T32	Concept 646 655	infection
+T33	Concept 659 678	health-care workers
+R26	causes Arg1:T30 Arg2:T32	
+R27	in-context Arg1:T32 Arg2:T33	
+T34	Concept 715 732	COVID-19 epidemic
+T35	Concept 801 811	SARS-CoV-2
+T36	Concept 864 884	protective materials
+T39	Concept 758 767	knowledge
+A2	Diminished T39
+T40	Concept 852 860	shortage
+R30	in-context Arg1:T40 Arg2:T36	
+R31	in-time Arg1:T32 Arg2:T40	
+T41	Concept 774 797	transmission approaches
+R32	in-context Arg1:T41 Arg2:T35	
+R33	in-context Arg1:T39 Arg2:T41	
+T37	Concept 699 711	early stages
+R28	in-context Arg1:T37 Arg2:T34	
+R29	in-time Arg1:T37 Arg2:T39	
+R34	in-time Arg1:T32 Arg2:T37	
+T38	Reference 565 566	4
+T42	Reference 568 569	5
+R35	in-context Arg1:T38 Arg2:T17	
+R36	in-context Arg1:T42 Arg2:T17	

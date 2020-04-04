@@ -1,0 +1,89 @@
+T1	Concept 2 17	straightforward
+T2	Concept 18 42	reference-sequence-based
+T3	Concept 43 53	comparison
+T4	Action 61 70	confirmed
+T5	Concept 71 75	this
+T6	Action 77 84	showing
+T8	Concept 106 114	proteins
+T7	Concept 95 96	,
+T9	Concept 97 98	N
+T10	Concept 104 105	E
+T11	Concept 118 128	SARS-CoV-2
+R1	is-a Arg1:T7 Arg2:T8	
+R2	is-a Arg1:T9 Arg2:T8	
+R3	is-a Arg1:T10 Arg2:T8	
+R4	has-property Arg1:T2 Arg2:T1	
+R5	in-context Arg1:T3 Arg2:T2	
+R6	subject Arg1:T4 Arg2:T3	
+R7	target Arg1:T4 Arg2:T5	
+R8	causes Arg1:T4 Arg2:T6	
+R9	target Arg1:T6 Arg2:T7	
+R10	target Arg1:T6 Arg2:T9	
+R11	target Arg1:T6 Arg2:T10	
+R12	in-context Arg1:T8 Arg2:T11	
+T12	Concept 133 141	SARS-CoV
+R13	in-context Arg1:T8 Arg2:T12	
+T13	Action 142 146	have
+T14	Concept 147 155	over 90%
+R14	subject Arg1:T13 Arg2:T8	
+T15	Concept 156 174	genetic similarity
+R15	in-context Arg1:T14 Arg2:T15	
+R16	target Arg1:T13 Arg2:T15	
+T16	Concept 194 195	S
+T17	Concept 196 203	protein
+R17	is-a Arg1:T16 Arg2:T17	
+T18	Action 208 223	notably reduced
+R18	subject Arg1:T18 Arg2:T17	
+R19	target Arg1:T18 Arg2:T15	
+T19	Concept 225 239	but still high
+R20	has-property Arg1:T18 Arg2:T19	
+T20	Action 241 252	Considering
+T21	Concept 257 286	complexity of sexual behavior
+R21	subject Arg1:T20 Arg2:T21	
+T22	Concept 295 317	transmission potential
+R22	subject Arg1:T20 Arg2:T22	
+T23	Concept 321 344	asymptomatic infectives
+R23	in-context Arg1:T22 Arg2:T23	
+T24	Action 349 356	suggest
+R24	target Arg1:T20 Arg2:T24	
+T25	Concept 362 368	people
+T26	Concept 386 401	epidemic areas,
+T27	Concept 369 378	who lived
+R25	subject Arg1:T24 Arg2:T25	
+R27	in-place Arg1:T27 Arg2:T26	
+T28	Concept 402 422	have tourism history
+R28	in-context Arg1:T25 Arg2:T28	
+T29	Concept 428 442	epidemic areas
+R29	in-place Arg1:T28 Arg2:T29	
+T30	Concept 447 485	were potentially asymptomatic infected
+R30	in-context Arg1:T25 Arg2:T30	
+R26	in-context Arg1:T25 Arg2:T27	
+T31	Action 486 495	should be
+T32	Concept 496 509	very cautious
+R31	subject Arg1:T31 Arg2:T25	
+R32	target Arg1:T31 Arg2:T32	
+T33	Concept 516 528	sex behavior
+R33	in-context Arg1:T32 Arg2:T33	
+T34	Action 533 538	avoid
+T35	Concept 539 563	oral/anal sex especially
+R34	subject Arg1:T34 Arg2:T25	
+R35	target Arg1:T34 Arg2:T35	
+T36	Concept 571 585	may be helpful
+T37	Concept 589 596	prevent
+T38	Concept 597 628	further spreading of SARS-CoV-2
+R36	entails Arg1:T32 Arg2:T36	
+R37	entails Arg1:T34 Arg2:T36	
+R38	in-context Arg1:T36 Arg2:T37	
+R39	in-context Arg1:T37 Arg2:T38	
+T39	Concept 641 649	outbreak
+T40	Concept 653 677	coronavirus disease-2019
+T41	Concept 679 687	COVID-19
+*	same-as T40 T41
+R40	in-context Arg1:T39 Arg2:T40	
+T42	Action 689 695	caused
+T43	Concept 707 754	severe acute respiratory syndrome coronavirus 2
+T44	Concept 756 766	SARS-CoV-2
+*	same-as T43 T44
+T45	Concept 701 706	novel
+R41	subject Arg1:T42 Arg2:T40	
+R42	has-property Arg1:T43 Arg2:T45	

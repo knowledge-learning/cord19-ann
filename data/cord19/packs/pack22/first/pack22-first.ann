@@ -1,0 +1,69 @@
+T1	Action 26 37	interaction
+T2	Concept 41 46	CD147
+T3	Concept 51 53	SP
+T4	Concept 94 104	SARS-CoV-2
+T5	Action 108 114	invade
+T6	Concept 115 125	host cells
+R1	subject Arg1:T1 Arg2:T2	
+R2	target Arg1:T1 Arg2:T3	
+R3	subject Arg1:T5 Arg2:T4	
+R4	target Arg1:T5 Arg2:T6	
+A1	Uncertain T5
+R5	causes Arg1:T1 Arg2:T5	
+T7	Concept 254 267	poor immunity
+T8	Concept 231 249	underlying disease
+T9	Concept 213 223	SARS-CoV-2
+T10	Concept 140 162	chronic kidney disease
+T11	Concept 126 134	Children
+T12	Action 198 209	susceptible
+A2	Emphasized T12
+T13	Concept 175 190	high-risk group
+R6	in-context Arg1:T11 Arg2:T10	
+R7	is-a Arg1:T11 Arg2:T13	
+R8	causes Arg1:T8 Arg2:T12	
+R9	causes Arg1:T7 Arg2:T12	
+R10	target Arg1:T12 Arg2:T9	
+R11	subject Arg1:T12 Arg2:T11	
+T14	Concept 297 326	Prophylactic Antiviral CRISPR
+T15	Concept 330 341	huMAN cells
+T16	Concept 343 351	PAC-MAN)
+R12	is-a Arg1:T16 Arg2:T15	
+T17	Concept 405 415	SARS-CoV-2
+T18	Concept 417 420	IAV
+T19	Concept 442 465	sequenced coronaviruses
+R13	is-a Arg1:T17 Arg2:T19	
+R14	in-context Arg1:T14 Arg2:T15	
+T20	Concept 374 394	genetic intervention
+T21	Action 398 404	target
+A4	Uncertain T19
+R15	has-property Arg1:T14 Arg2:T20	
+R16	subject Arg1:T21 Arg2:T14	
+R17	target Arg1:T21 Arg2:T17	
+R18	target Arg1:T21 Arg2:T18	
+R19	target Arg1:T21 Arg2:T19	
+T22	Concept 466 476	SARS-CoV-2
+T23	Concept 477 482	ORF9b
+T24	Concept 483 490	protein
+R20	is-a Arg1:T23 Arg2:T24	
+R21	has-part Arg1:T22 Arg2:T23	
+T25	Concept 503 517	PPID of 10.31%
+R22	in-context Arg1:T23 Arg2:T25	
+T26	Concept 524 579	N-terminal (1-10 residues) predicted disordered segment
+R23	has-property Arg1:T23 Arg2:T26	
+T27	Concept 608 613	reads
+T28	Concept 624 634	SARS-CoV-2
+R24	in-context Arg1:T27 Arg2:T28	
+A3	Emphasized T27
+T29	Action 636 646	indicating
+T30	Concept 652 673	viral 112 transcripts
+T31	Concept 687 700	transcriptome
+T32	Action 744 754	suppressed
+A5	Emphasized T32
+T33	Concept 711 731	host gene expression
+R25	subject Arg1:T29 Arg2:T27	
+T34	Action 674 682	dominate
+R26	subject Arg1:T34 Arg2:T30	
+R27	target Arg1:T34 Arg2:T31	
+R28	target Arg1:T29 Arg2:T34	
+R29	target Arg1:T32 Arg2:T33	
+R30	target Arg1:T29 Arg2:T32	

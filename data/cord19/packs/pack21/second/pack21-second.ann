@@ -1,0 +1,101 @@
+T1	Action 18 26	compared
+T2	Concept 34 52	DMSO control group
+T3	Concept 59 65	CVL218
+T4	Concept 70 80	remdesivir
+T5	Action 81 87	showed
+T6	Concept 88 94	potent
+A1	Emphasized T6
+T7	Concept 95 115	antiviral activities
+T8	Concept 127 136	full-time
+T9	Concept 137 146	procedure
+T10	Concept 154 174	SARS-CoV-2 infection
+T11	Concept 178 185	Vero E6
+T12	Concept 186 191	cells
+R1	target Arg1:T1 Arg2:T2	
+R2	subject Arg1:T1 Arg2:T3	
+R3	subject Arg1:T1 Arg2:T4	
+R4	subject Arg1:T5 Arg2:T4	
+R5	subject Arg1:T5 Arg2:T3	
+R6	target Arg1:T5 Arg2:T7	
+R7	has-property Arg1:T7 Arg2:T6	
+R8	has-part Arg1:T9 Arg2:T8	
+R9	in-time Arg1:T7 Arg2:T9	
+R10	in-context Arg1:T9 Arg2:T10	
+R11	in-context Arg1:T7 Arg2:T11	
+R12	is-a Arg1:T11 Arg2:T12	
+T13	Concept 198 202	S416
+T14	Concept 219 233	best efficient
+T15	Concept 234 242	chemical
+T16	Concept 243 249	so far
+T17	Concept 250 257	against
+T18	Concept 258 268	SARS-CoV-2
+T19	Concept 276 290	cellular level
+R13	has-property Arg1:T13 Arg2:T14	
+R14	is-a Arg1:T13 Arg2:T15	
+R15	in-time Arg1:T14 Arg2:T16	
+R16	in-context Arg1:T14 Arg2:T17	
+R17	has-part Arg1:T17 Arg2:T18	
+R18	in-place Arg1:T14 Arg2:T19	
+T20	Concept 306 310	SARS
+T21	Concept 311 316	virus
+T22	Concept 291 298	Similar
+T23	Concept 318 332	viral genomics
+T24	Concept 337 355	structural biology
+T25	Concept 356 363	studies
+R19	has-part Arg1:T23 Arg2:T25	
+R20	has-part Arg1:T24 Arg2:T25	
+T26	Action 364 374	have shown
+T27	Concept 380 384	ACE2
+T29	Concept 395 414	functional receptor
+T28	Concept 423 426	new
+T30	Concept 427 437	SARS-CoV-2
+T31	Concept 438 449	coronavirus
+R21	subject Arg1:T26 Arg2:T25	
+R22	is-a Arg1:T27 Arg2:T29	
+R23	target Arg1:T26 Arg2:T27	
+R24	in-context Arg1:T29 Arg2:T30	
+R25	has-property Arg1:T30 Arg2:T28	
+R26	is-a Arg1:T30 Arg2:T31	
+T32	Concept 452 458	recent
+T33	Concept 459 464	study
+T34	Action 465 473	revealed
+T35	Concept 479 489	SARS-CoV-2
+T36	Action 495 499	uses
+T37	Concept 504 524	cell entry receptor,
+T38	Concept 525 554	angiotensin converting enzyme
+T39	Concept 558 562	ACE2
+T40	Concept 570 577	similar
+T41	Concept 581 589	SARS-CoV
+R27	subject Arg1:T34 Arg2:T33	
+R28	has-property Arg1:T33 Arg2:T32	
+R29	target Arg1:T34 Arg2:T35	
+R30	subject Arg1:T36 Arg2:T35	
+R31	target Arg1:T36 Arg2:T37	
+R32	in-context Arg1:T37 Arg2:T38	
+*	same-as T38 T39
+R33	in-context Arg1:T36 Arg2:T40	
+R34	in-context Arg1:T40 Arg2:T41	
+T42	Concept 590 619	Hospital-related transmission
+T43	Concept 635 655	causes for infection
+T44	Concept 659 678	health-care workers
+R35	is-a Arg1:T42 Arg2:T43	
+R36	in-context Arg1:T43 Arg2:T44	
+T45	Concept 699 711	early stages
+A2	Emphasized T45
+R37	in-time Arg1:T42 Arg2:T45	
+T46	Concept 715 732	COVID-19 epidemic
+R38	in-context Arg1:T45 Arg2:T46	
+T47	Concept 681 691	especially
+R39	has-property Arg1:T45 Arg2:T47	
+T48	Concept 750 767	lack of knowledge
+R40	in-context Arg1:T43 Arg2:T48	
+T49	Concept 768 797	about transmission approaches
+R41	in-context Arg1:T48 Arg2:T49	
+T50	Concept 801 811	SARS-CoV-2
+R42	in-context Arg1:T49 Arg2:T50	
+T51	Concept 852 884	shortage of protective materials
+T52	Concept 831 837	period
+T53	Action 843 849	facing
+R43	target Arg1:T53 Arg2:T51	
+R44	has-property Arg1:T53 Arg2:T52	
+R45	in-context Arg1:T43 Arg2:T53	

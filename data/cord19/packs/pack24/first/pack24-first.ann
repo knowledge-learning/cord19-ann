@@ -1,0 +1,81 @@
+T1	Concept 209 227	SARS-CoV-2 viruses
+T2	Concept 13 33	statistical analysis
+T3	Concept 50 60	percentage
+R1	causes Arg1:T2 Arg2:T3	
+T4	Concept 64 84	PD-1 + CD8 + T cells
+R2	in-context Arg1:T3 Arg2:T4	
+T5	Concept 90 102	ICU patients
+T6	Concept 143 156	Non-ICU cases
+T7	Concept 161 177	healthy controls
+T8	Concept 344 353	mean PPID
+T9	Concept 357 367	SARS-CoV-2
+T10	Concept 369 379	Human SARS
+T11	Concept 385 392	Bat CoV
+T12	Concept 462 472	SARS-CoV-2
+T13	Concept 440 458	transmission route
+T14	Concept 414 423	Currently
+T15	Concept 484 508	respiratory air droplets
+T16	Concept 635 645	SARS-CoV-2
+T17	Concept 690 700	SARS-CoV-2
+T18	Concept 678 689	coronavirus
+R3	is-a Arg1:T17 Arg2:T18	
+T19	Concept 669 677	emerging
+R4	has-property Arg1:T18 Arg2:T19	
+T20	Concept 715 723	outbreak
+T21	Concept 727 746	coronavirus example
+T22	Concept 781 814	SARS-CoV-2 3CL pro (PDB ID: 6LU7)
+R5	in-context Arg1:T8 Arg2:T9	
+R6	in-context Arg1:T8 Arg2:T10	
+T23	Concept 399 404	equal
+T24	Concept 408 413	1.96%
+R7	in-context Arg1:T8 Arg2:T11	
+R8	has-property Arg1:T8 Arg2:T23	
+T25	Concept 121 127	higher
+A1	Emphasized T25
+R9	has-property Arg1:T3 Arg2:T25	
+R10	in-context Arg1:T25 Arg2:T6	
+R11	in-context Arg1:T25 Arg2:T7	
+T26	Concept 235 241	T cell
+T27	Concept 242 252	exhaustion
+T28	Concept 256 273	COVID-19 patients
+T29	Reference 291 296	those
+R12	in-context Arg1:T29 Arg2:T28	
+T30	Concept 307 315	ICU care
+R13	in-place Arg1:T27 Arg2:T28	
+T31	Action 297 306	requiring
+R14	subject Arg1:T31 Arg2:T29	
+R15	target Arg1:T31 Arg2:T30	
+R16	in-place Arg1:T27 Arg2:T29	
+R17	in-context Arg1:T27 Arg2:T26	
+R18	causes Arg1:T1 Arg2:T27	
+R19	causes Arg1:T3 Arg2:T1	
+R20	in-time Arg1:T13 Arg2:T14	
+R21	in-context Arg1:T13 Arg2:T12	
+R22	is-a Arg1:T15 Arg2:T13	
+R23	causes Arg1:T17 Arg2:T20	
+R24	in-context Arg1:T20 Arg2:T21	
+T32	Concept 546 553	samples
+T33	Concept 531 542	two batches
+R25	in-context Arg1:T33 Arg2:T32	
+T34	Concept 565 578	effectiveness
+T35	Concept 583 593	importance
+T36	Concept 597 609	sanitization
+T37	Concept 654 664	risk areas
+A2	Emphasized T37
+T38	Concept 761 777	solved structure
+R26	in-context Arg1:T38 Arg2:T22	
+T39	Concept 752 760	recently
+R27	in-time Arg1:T38 Arg2:T39	
+R28	in-context Arg1:T21 Arg2:T38	
+T40	Action 513 523	comparison
+R29	subject Arg1:T40 Arg2:T33	
+R30	target Arg1:T40 Arg2:T34	
+R31	target Arg1:T40 Arg2:T35	
+R32	in-context Arg1:T34 Arg2:T36	
+R33	in-context Arg1:T35 Arg2:T36	
+T41	Concept 613 634	reducing the airborne
+R34	in-place Arg1:T41 Arg2:T37	
+R35	in-context Arg1:T36 Arg2:T41	
+R36	in-context Arg1:T41 Arg2:T16	
+R37	in-context Arg1:T23 Arg2:T24	
+R38	in-context Arg1:T4 Arg2:T5	

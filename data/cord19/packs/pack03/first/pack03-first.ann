@@ -1,0 +1,41 @@
+T1	Concept 109 113	LRTI
+T2	Concept 114 119	assay
+R1	in-context Arg1:T2 Arg2:T1	
+T3	Concept 102 108	single
+R2	in-context Arg1:T2 Arg2:T3	
+T4	Action 86 96	detectable
+T5	Concept 76 85	pathogens
+R3	target Arg1:T4 Arg2:T5	
+T6	Concept 12 22;23 33	microarray approaches
+R4	subject Arg1:T4 Arg2:T6	
+R5	in-context Arg1:T4 Arg2:T2	
+T7	Concept 120 125;126 140	ACE2+ cholangiocytes
+T8	Action 145 154	preserved
+T9	Concept 164 169	liver
+T10	Concept 158 163	human
+R6	in-context Arg1:T9 Arg2:T10	
+T11	Concept 170 176;177 185	ductal organoid
+R7	in-place Arg1:T9 Arg2:T11	
+R8	is-a Arg1:T8 Arg2:T9	
+R9	target Arg1:T8 Arg2:T7	
+T12	Concept 200 211	microarrays
+T13	Concept 245 254	sequences
+T14	Concept 260 263;264 269	all known
+T15	Concept 270 277	viruses
+R10	has-part Arg1:T15 Arg2:T13	
+R11	in-context Arg1:T15 Arg2:T14	
+R12	has-property Arg1:T13 Arg2:T12	
+T16	Action 288 297	detection
+T17	Concept 307 312;313 320	viral strains
+T18	Concept 301 306	novel
+R13	in-context Arg1:T17 Arg2:T18	
+R14	target Arg1:T16 Arg2:T17	
+R15	causes Arg1:T12 Arg2:T16	
+T19	Concept 359 363	mNGS
+T20	Concept 346 358	simultaneous
+R16	in-context Arg1:T19 Arg2:T20	
+T21	Action 364 373	detection
+R17	subject Arg1:T21 Arg2:T19	
+T22	Concept 377 388;389 398	respiratory pathogens
+R18	target Arg1:T21 Arg2:T22	
+T23	Concept 411 422;423 431	immunologic response
