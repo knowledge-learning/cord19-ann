@@ -45,3 +45,15 @@ R20	target Arg1:T21 Arg2:T24
 T25	Concept 484 488	data
 T26	Action 500 506	inform
 T27	Concept 511 519;520 532	clinical significance
+T28	Concept 547 555	pathogen
+R21	in-context Arg1:T27 Arg2:T28	
+R22	target Arg1:T26 Arg2:T27	
+R23	target Arg1:T26 Arg2:T25	
+R24	causes Arg1:T21 Arg2:T25	
+T29	Concept 607 615	COVID-19
+T30	Concept 621 626	fever
+T31	Concept 631 636	cough
+A1	Emphasized T30
+A2	Emphasized T31
+R25	causes Arg1:T29 Arg2:T30	
+R26	causes Arg1:T29 Arg2:T31	

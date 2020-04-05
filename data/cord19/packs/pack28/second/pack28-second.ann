@@ -1,0 +1,130 @@
+T1	Concept 34 50	Zika NS2B-NS3pro
+T2	Concept 54 65	susceptible
+T3	Concept 69 90	allosteric inhibition
+T4	Concept 24 30	pocket
+R3	has-property Arg1:T1 Arg2:T4	
+R1	has-property Arg1:T4 Arg2:T2	
+R2	in-context Arg1:T4 Arg2:T3	
+T5	Concept 109 114	small
+T6	Concept 115 124	molecules
+T7	Concept 128 137	different
+T8	Concept 138 146	scaffols
+R4	has-property Arg1:T6 Arg2:T5	
+R5	in-context Arg1:T6 Arg2:T8	
+R6	has-property Arg1:T8 Arg2:T7	
+A1	Emphasized T6
+R7	causes Arg1:T6 Arg2:T4	
+T9	Action 151 171	empirical estimation
+T10	Concept 213 221	COVID-19
+T11	Concept 222 227	cases
+R8	in-context Arg1:T11 Arg2:T10	
+T12	Concept 197 202	newly
+T13	Concept 172 177	based
+T14	Concept 181 193	real numbers
+R9	has-property Arg1:T9 Arg2:T13	
+R10	in-context Arg1:T13 Arg2:T14	
+R11	in-context Arg1:T13 Arg2:T11	
+R12	has-property Arg1:T11 Arg2:T12	
+T15	Concept 242 245	one
+T16	Concept 246 249	new
+T17	Action 250 259	infection
+R13	has-property Arg1:T17 Arg2:T16	
+R14	in-context Arg1:T17 Arg2:T15	
+T18	Action 269 277	decrease
+R15	causes Arg1:T17 Arg2:T18	
+T19	Concept 292 295	new
+T20	Concept 296 301	cases
+R17	has-property Arg1:T20 Arg2:T19	
+T21	Concept 282 288	number
+R16	target Arg1:T18 Arg2:T21	
+R18	has-property Arg1:T20 Arg2:T21	
+T22	Concept 305 310	0.097
+R19	in-context Arg1:T18 Arg2:T22	
+T23	Concept 351 355	week
+T24	Concept 326 335	following
+T25	Concept 336 341	first
+T26	Concept 312 317	0.438
+T27	Concept 343 349	second
+R20	is-a Arg1:T25 Arg2:T23	
+R21	is-a Arg1:T27 Arg2:T23	
+R22	has-property Arg1:T25 Arg2:T24	
+R23	in-context Arg1:T22 Arg2:T25	
+R24	in-context Arg1:T18 Arg2:T26	
+R25	in-context Arg1:T26 Arg2:T27	
+R26	has-property Arg1:T27 Arg2:T24	
+T28	Concept 363 376	February 2-15
+R27	entails Arg1:T9 Arg2:T17	
+R28	in-context Arg1:T9 Arg2:T29	
+T29	Concept 377 386	subsample
+R29	in-time Arg1:T29 Arg2:T28	
+T30	Concept 406 419	effectiveness
+T31	Concept 423 430	China's
+T32	Concept 431 442	large-scale
+T33	Concept 443 453	quarantine
+T34	Concept 454 460	policy
+R30	in-place Arg1:T34 Arg2:T31	
+R31	has-property Arg1:T34 Arg2:T32	
+R32	has-property Arg1:T34 Arg2:T33	
+R33	has-property Arg1:T34 Arg2:T30	
+R34	entails Arg1:T9 Arg2:T30	
+T35	Concept 480 487	genomes
+T36	Concept 472 479	diploid
+T37	Concept 465 471	normal
+T38	Concept 489 493	wild
+T39	Concept 494 501	strains
+T41	Concept 514 517	lab
+T42	Concept 518 525	strains
+T43	Concept 528 542	heterozygosity
+T44	Concept 546 557	not uniform
+T45	Concept 565 568	276
+T46	Concept 573 579	genome
+R35	has-property Arg1:T35 Arg2:T36	
+R36	has-property Arg1:T35 Arg2:T37	
+R37	has-property Arg1:T39 Arg2:T38	
+R38	has-property Arg1:T42 Arg2:T41	
+R40	is-a Arg1:T39 Arg2:T35	
+R41	is-a Arg1:T42 Arg2:T35	
+R42	has-property Arg1:T43 Arg2:T44	
+R43	in-context Arg1:T43 Arg2:T46	
+R44	in-context Arg1:T46 Arg2:T45	
+R45	in-context Arg1:T43 Arg2:T35	
+T47	Concept 605 613	reported
+A2	Negated T47
+T48	Concept 619 627	patients
+T49	Concept 633 641	COVID-19
+T50	Concept 650 662	neurological
+T51	Action 663 677	manifestations
+T40	Concept 507 513	inbred
+A3	Negated T40
+R39	has-property Arg1:T42 Arg2:T40	
+R46	has-property Arg1:T51 Arg2:T50	
+R47	in-context Arg1:T48 Arg2:T49	
+R48	in-context Arg1:T51 Arg2:T48	
+R49	has-property Arg1:T51 Arg2:T47	
+T52	Concept 690 697	numbers
+T53	Concept 682 689	average
+R50	has-property Arg1:T52 Arg2:T53	
+T54	Concept 701 713	CD163+ cells
+T55	Concept 718 730	CD163+ cells
+T56	Concept 731 741	per villus
+T57	Concept 761 767	higher
+T58	Concept 775 779	ZIKV
+T59	Concept 780 785	group
+T60	Concept 787 790	n=5
+T61	Concept 813 821	controls
+T62	Concept 804 812	negative
+A4	Emphasized T57
+T63	Concept 823 826	n=3
+R51	has-property Arg1:T54 Arg2:T52	
+R52	in-context Arg1:T55 Arg2:T56	
+R53	has-property Arg1:T55 Arg2:T52	
+R54	has-property Arg1:T52 Arg2:T57	
+R55	in-context Arg1:T57 Arg2:T59	
+R56	has-property Arg1:T59 Arg2:T58	
+R57	has-property Arg1:T59 Arg2:T60	
+T64	Reference 792 796	than
+A5	Negated T64
+R58	has-property Arg1:T64 Arg2:T57	
+R59	has-property Arg1:T61 Arg2:T62	
+R60	in-context Arg1:T61 Arg2:T63	
+R61	in-context Arg1:T64 Arg2:T61	

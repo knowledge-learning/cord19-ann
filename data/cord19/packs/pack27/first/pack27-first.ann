@@ -1,0 +1,80 @@
+T1	Concept 0 4	CA12
+T2	Concept 24 39	drug resistance
+R1	entails Arg1:T1 Arg2:T2	
+T3	Concept 52 58	cancer
+R2	in-context Arg1:T1 Arg2:T3	
+A1	Emphasized T3
+T4	Concept 59 64	types
+R3	has-part Arg1:T3 Arg2:T4	
+T5	Concept 174 187	overexpressed
+R4	has-property Arg1:T1 Arg2:T5	
+A2	Emphasized T5
+T6	Concept 191 194	FLC
+R5	in-context Arg1:T5 Arg2:T6	
+T7	Concept 224 233	cell foci
+T8	Concept 215 223	Infected
+R6	has-property Arg1:T7 Arg2:T8	
+T9	Concept 248 261	42-108 46 hpi
+R7	has-property Arg1:T7 Arg2:T9	
+T10	Action 281 289	received
+T11	Concept 267 275	patients
+R8	subject Arg1:T10 Arg2:T11	
+T12	Concept 339 353	administration
+R9	target Arg1:T10 Arg2:T12	
+T13	Concept 290 304	glucocorticoid
+T14	Concept 324 338	immunoglobulin
+T15	Concept 312 323	intravenous
+R10	has-property Arg1:T12 Arg2:T13	
+R11	has-property Arg1:T12 Arg2:T14	
+R12	is-a Arg1:T12 Arg2:T15	
+T16	Concept 410 419	disparity
+T17	Concept 401 409	regional
+R13	is-a Arg1:T16 Arg2:T17	
+T18	Concept 423 431	COVID-19
+R14	has-property Arg1:T18 Arg2:T16	
+T19	Concept 435 444	Chongqing
+R15	in-context Arg1:T18 Arg2:T19	
+T20	Concept 370 375	study
+T21	Action 384 396	demonstrated
+R16	subject Arg1:T21 Arg2:T20	
+R17	target Arg1:T21 Arg2:T16	
+T22	Action 468 476	compared
+R18	subject Arg1:T22 Arg2:T20	
+T23	Concept 481 492	differences
+R19	target Arg1:T22 Arg2:T23	
+T24	Concept 501 507	severe
+T25	Concept 523 531	patients
+T26	Concept 512 522	non-severe
+R20	has-part Arg1:T25 Arg2:T26	
+R21	has-part Arg1:T25 Arg2:T24	
+R22	has-property Arg1:T25 Arg2:T23	
+T27	Concept 559 564	China
+R23	in-place Arg1:T23 Arg2:T27	
+T28	Concept 535 557	Chongqing municipality
+R24	has-part Arg1:T27 Arg2:T28	
+T29	Concept 617 628	individuals
+T30	Concept 608 616	infected
+R25	has-property Arg1:T29 Arg2:T30	
+T31	Concept 598 600	9%
+R26	has-part Arg1:T30 Arg2:T31	
+T32	Action 633 644	ascertained
+T33	Action 649 658	reported,
+R27	target Arg1:T32 Arg2:T29	
+R28	target Arg1:T33 Arg2:T29	
+T34	Concept 663 692	infection fatality risk (IFR)
+T35	Concept 700 708	the risk
+*	same-as T34 T35
+T36	Concept 712 717	death
+T37	Concept 737 748	individuals
+T38	Concept 728 736	infected
+R29	has-property Arg1:T37 Arg2:T38	
+R31	has-property Arg1:T35 Arg2:T36	
+T39	Concept 775 779	0.5%
+T40	Concept 783 787	0.8%
+T41	Concept 766 771	order
+R32	has-part Arg1:T41 Arg2:T39	
+R33	has-part Arg1:T41 Arg2:T40	
+R34	has-property Arg1:T34 Arg2:T41	
+R35	entails Arg1:T32 Arg2:T34	
+R36	entails Arg1:T33 Arg2:T34	
+R30	in-context Arg1:T35 Arg2:T38	

@@ -1,12 +1,125 @@
-T1	Concept 476 486	SARS-CoV-2
-T2	Action 498 516	was more sensitive
-T3	Concept 476 497	SARS-CoV-2 inhibition
-T4	Concept 520 539	crRNA concentration
-T5	Reference 562 567	lower
-T6	Concept 568 585	Cas13d expression
-R1	is-a Arg1:T3 Arg2:T2	
-R2	causes Arg1:T2 Arg2:T4	
-T7	Concept 684 704	SARS-CoV-2 infection
-T8	Concept 632 662	Receptor-dependent viral entry
-T9	Action 663 680	is the first step
-R3	is-a Arg1:T8 Arg2:T9	
+T1	Concept 10 20	SARS-CoV-2
+T2	Action 21 30	infection
+T8	Concept 54 67	overexuberant
+T10	Concept 99 105	innate
+T11	Action 110 118	acquired
+T12	Concept 119 127	immunity
+R4	has-property Arg1:T12 Arg2:T10	
+T14	Concept 163 175	pathogenesis
+T15	Concept 179 187	COVID-19
+T16	Concept 192 197	organ
+T17	Action 198 204	injury
+R6	has-property Arg1:T14 Arg2:T15	
+T19	Concept 216 222	genome
+T20	Concept 226 236	SARS-CoV-2
+T21	Concept 240 256	phylogenetically
+T22	Action 257 262	close
+R14	in-context Arg1:T22 Arg2:T21	
+T23	Concept 274 282	SARS-CoV
+T24	Concept 302 310	sequence
+T25	Concept 311 319	identity
+R16	has-property Arg1:T25 Arg2:T24	
+T26	Concept 332 340	membrane
+T27	Concept 346 358	nucleocapsid
+T28	Concept 367 375	envelope
+T29	Concept 377 385	proteins
+T30	Concept 399 412	coronaviruses
+T31	Concept 427 435	sequence
+T32	Concept 436 448	similarities
+R17	has-property Arg1:T32 Arg2:T31	
+R19	has-part Arg1:T30 Arg2:T26	
+R20	has-part Arg1:T30 Arg2:T27	
+R21	has-part Arg1:T30 Arg2:T29	
+R22	has-property Arg1:T29 Arg2:T28	
+T3	Concept 476 486	SARS-CoV-2
+T33	Action 487 497	inhibition
+T34	Concept 520 525	crRNA
+T35	Concept 526 539	concentration
+T37	Concept 612 622	inhibitory
+T38	Concept 623 631	activity
+T39	Action 602 611	decreased
+R24	has-property Arg1:T38 Arg2:T37	
+R25	target Arg1:T39 Arg2:T38	
+R27	has-property Arg1:T35 Arg2:T34	
+T40	Concept 507 516	sensitive
+R1	subject Arg1:T2 Arg2:T1	
+T46	Concept 295 298	79%
+R34	has-property Arg1:T25 Arg2:T46	
+T47	Concept 423 426	90%
+R35	has-property Arg1:T32 Arg2:T47	
+T49	Concept 395 398	two
+R36	has-property Arg1:T30 Arg2:T49	
+R23	target Arg1:T33 Arg2:T3	
+T50	Concept 657 662	entry
+T51	Concept 651 656	viral
+T52	Concept 632 650	Receptor-dependent
+R37	has-property Arg1:T50 Arg2:T51	
+R38	has-property Arg1:T50 Arg2:T52	
+T55	Concept 720 729	existence
+T56	Concept 710 719	potential
+T57	Concept 733 749	non-neutralizing
+T58	Concept 750 760	protective
+T59	Concept 761 771	antibodies
+T60	Concept 775 785	SARS-CoV-2
+T61	Concept 786 789	148
+T62	Action 790 800	highlights
+T63	Concept 805 809	need
+T64	Concept 817 826	effective
+T65	Concept 827 837	SARS-CoV-2
+T66	Concept 838 847	infection
+T67	Concept 848 853	mouse
+T68	Concept 854 859	model
+T70	Concept 875 878	149
+T71	Action 885 896	established
+R42	has-property Arg1:T55 Arg2:T56	
+R43	has-property Arg1:T59 Arg2:T58	
+R44	has-property Arg1:T59 Arg2:T57	
+R45	has-property Arg1:T59 Arg2:T60	
+R46	has-property Arg1:T55 Arg2:T57	
+R47	subject Arg1:T62 Arg2:T55	
+R49	has-property Arg1:T68 Arg2:T67	
+R50	has-property Arg1:T68 Arg2:T66	
+R51	has-property Arg1:T68 Arg2:T65	
+R52	has-property Arg1:T68 Arg2:T64	
+R48	has-property Arg1:T63 Arg2:T68	
+R54	subject Arg1:T71 Arg2:T68	
+R5	target Arg1:T17 Arg2:T16	
+T4	Concept 39 49	viral load
+A3	Emphasized T4
+R8	in-context Arg1:T4 Arg2:T2	
+R9	causes Arg1:T4 Arg2:T14	
+R12	subject Arg1:T17 Arg2:T4	
+T5	Action 73 88	immune response
+T13	Concept 68 72	host
+R2	subject Arg1:T5 Arg2:T13	
+R7	has-property Arg1:T13 Arg2:T8	
+R3	target Arg1:T11 Arg2:T12	
+R10	in-context Arg1:T13 Arg2:T12	
+R11	in-context Arg1:T4 Arg2:T12	
+R31	causes Arg1:T13 Arg2:T14	
+R32	subject Arg1:T17 Arg2:T13	
+R13	has-part Arg1:T20 Arg2:T19	
+R15	has-part Arg1:T23 Arg2:T19	
+R33	subject Arg1:T22 Arg2:T20	
+R55	subject Arg1:T22 Arg2:T23	
+R56	is-a Arg1:T23 Arg2:T30	
+R57	is-a Arg1:T20 Arg2:T30	
+R18	has-property Arg1:T30 Arg2:T32	
+A1	Diminished T39
+R29	has-property Arg1:T33 Arg2:T40	
+R30	in-context Arg1:T33 Arg2:T34	
+T6	Concept 568 574	Cas13d
+T9	Concept 575 585	expression
+R26	has-property Arg1:T9 Arg2:T6	
+R28	subject Arg1:T39 Arg2:T9	
+A4	Diminished T9
+T7	Concept 684 694	SARS-CoV-2
+T18	Action 695 704	infection
+R41	target Arg1:T18 Arg2:T7	
+R39	subject Arg1:T18 Arg2:T50	
+T36	Concept 676 680	step
+*	same-as T50 T36
+R40	target Arg1:T62 Arg2:T63	
+R53	has-property Arg1:T60 Arg2:T61	
+R58	has-property Arg1:T65 Arg2:T70	
+A2	Diminished T71

@@ -1,0 +1,98 @@
+T4	Concept 243 263	SARS-CoV-2 infection
+T5	Concept 267 271	lung
+T6	Concept 220 239	antiviral treatment
+T2	Concept 203 219	better potential
+R2	has-property Arg1:T6 Arg2:T2	
+R3	in-context Arg1:T6 Arg2:T4	
+R5	in-place Arg1:T4 Arg2:T5	
+T8	Concept 305 310	CD147
+T10	Concept 357 367	SARS-CoV-2
+T3	Action 296 304	blocking
+R4	target Arg1:T3 Arg2:T8	
+T7	Concept 318 328	host cells
+R7	in-place Arg1:T8 Arg2:T7	
+T11	Concept 336 353	inhibitory effect
+R6	causes Arg1:T3 Arg2:T11	
+R8	in-context Arg1:T11 Arg2:T10	
+T9	Concept 401 406	CD147
+T13	Concept 447 457	host cells
+T15	Concept 486 496	SARS-CoV-2
+T16	Concept 512 526	urinary system
+T17	Action 501 507	invade
+R9	subject Arg1:T17 Arg2:T15	
+R10	target Arg1:T17 Arg2:T16	
+T18	Concept 528 548	hematological system
+T19	Concept 553 569	digestive system
+R11	target Arg1:T17 Arg2:T18	
+R12	target Arg1:T17 Arg2:T19	
+T20	Concept 585 603	respiratory system
+R13	target Arg1:T17 Arg2:T20	
+T21	Concept 630 638	symptoms
+R14	has-property Arg1:T17 Arg2:T21	
+A1	Uncertain T21
+T22	Concept 679 690	salt-bridge
+T23	Concept 672 678	strong
+T25	Concept 709 713	R426
+T26	Concept 717 729	SARS-CoV RBD
+T27	Concept 734 738	E329
+T28	Concept 742 746	ACE2
+T29	Concept 788 802	SARS-CoV-2 RBD
+T30	Action 751 758	missing
+R16	target Arg1:T30 Arg2:T29	
+R18	has-property Arg1:T22 Arg2:T23	
+R19	has-part Arg1:T26 Arg2:T25	
+R20	has-part Arg1:T28 Arg2:T27	
+R15	in-context Arg1:T22 Arg2:T26	
+R17	in-context Arg1:T22 Arg2:T28	
+R21	subject Arg1:T30 Arg2:T22	
+T24	Concept 871 879	COVID-19
+T31	Concept 890 909	coronavirus disease
+R22	is-a Arg1:T24 Arg2:T31	
+T32	Concept 844 853	ritonavir
+T33	Concept 858 867	lopinavir
+T34	Concept 822 840	therapeutic effect
+R23	in-context Arg1:T34 Arg2:T24	
+R24	has-property Arg1:T32 Arg2:T34	
+R25	has-property Arg1:T33 Arg2:T34	
+T35	Action 924 927	due
+R26	subject Arg1:T35 Arg2:T24	
+T36	Concept 937 954	inhibitory effect
+R27	target Arg1:T35 Arg2:T36	
+T37	Concept 958 965	CEP_C30
+R28	in-place Arg1:T36 Arg2:T37	
+T38	Concept 973 982	ritonavir
+T39	Concept 1001 1009	efficacy
+T40	Concept 992 1000	stronger
+T41	Action 987 991	have
+R29	subject Arg1:T41 Arg2:T38	
+R30	target Arg1:T41 Arg2:T39	
+R31	has-property Arg1:T39 Arg2:T40	
+T42	Concept 1049 1059	SARS-CoV-2
+T43	Concept 1068 1096	potential therapeutic effect
+T45	Concept 1122 1139	inhibitory effect
+T46	Concept 1143 1147	PLVP
+R33	in-context Arg1:T45 Arg2:T46	
+T44	Concept 1015 1045	inhibitory effect of darunavir
+R35	in-context Arg1:T44 Arg2:T42	
+R32	has-property Arg1:T44 Arg2:T43	
+R36	causes Arg1:T44 Arg2:T45	
+R34	subject Arg1:T35 Arg2:T31	
+T47	Action 410 422	facilitating
+R37	subject Arg1:T47 Arg2:T9	
+T12	Concept 423 442	SARS-CoV-2 invasion
+R38	target Arg1:T47 Arg2:T12	
+R39	in-place Arg1:T12 Arg2:T13	
+T49	Concept 47 54	tissues
+T50	Concept 69 73	lung
+R1	in-place Arg1:T49 Arg2:T50	
+T51	Action 122 131	indicated
+T52	Concept 143 176	pharmacokinetic profile of CVL218
+T14	Concept 134 142	superior
+R44	has-property Arg1:T52 Arg2:T14	
+R45	target Arg1:T51 Arg2:T52	
+T53	Concept 37 43	CVL218
+R46	is-a Arg1:T53 Arg2:T6	
+T1	Concept 13 33	higher distributions
+R40	has-property Arg1:T53 Arg2:T1	
+R41	in-context Arg1:T53 Arg2:T49	
+R42	subject Arg1:T51 Arg2:T53	

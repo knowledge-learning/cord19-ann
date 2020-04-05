@@ -1,0 +1,107 @@
+T1	Action 13 33	statistical analysis
+T2	Concept 64 68	PD-1
+T3	Concept 71 74	CD8
+T4	Concept 77 78	T
+T5	Concept 79 83	cell
+R1	is-a Arg1:T2 Arg2:T5	
+R2	is-a Arg1:T3 Arg2:T5	
+R3	is-a Arg1:T4 Arg2:T5	
+T6	Concept 50 60	percentage
+R4	has-property Arg1:T2 Arg2:T6	
+R5	has-property Arg1:T3 Arg2:T6	
+R6	has-property Arg1:T4 Arg2:T6	
+T8	Concept 143 150	Non-ICU
+T9	Concept 161 168	healthy
+T7	Concept 90 93	ICU
+T10	Concept 94 102	patients
+R7	is-a Arg1:T7 Arg2:T10	
+R8	is-a Arg1:T8 Arg2:T10	
+R9	is-a Arg1:T9 Arg2:T10	
+T11	Concept 121 127	higher
+A1	Emphasized T11
+R12	in-context Arg1:T11 Arg2:T8	
+R13	in-context Arg1:T11 Arg2:T9	
+R10	in-context Arg1:T6 Arg2:T7	
+R11	has-property Arg1:T6 Arg2:T11	
+R14	entails Arg1:T1 Arg2:T6	
+T12	Concept 209 219	SARS-CoV-2
+T15	Concept 220 227	viruses
+R16	is-a Arg1:T12 Arg2:T15	
+T17	Concept 256 264	COVID-19
+T18	Concept 265 273	patients
+R20	in-context Arg1:T18 Arg2:T17	
+T19	Concept 307 310	ICU
+T20	Reference 291 296	those
+R22	is-a Arg1:T20 Arg2:T18	
+R23	in-context Arg1:T20 Arg2:T19	
+T13	Action 235 252	T cell exhaustion
+R15	target Arg1:T13 Arg2:T18	
+R17	subject Arg1:T13 Arg2:T12	
+T14	Reference 275 287	particularly
+A2	Emphasized T14
+R18	has-property Arg1:T13 Arg2:T14	
+R19	in-context Arg1:T14 Arg2:T19	
+T16	Concept 320 327	results
+T21	Concept 349 353	PPID
+T22	Concept 357 367	SARS-CoV-2
+T23	Concept 369 379	Human SARS
+T24	Concept 381 392	and Bat CoV
+T25	Concept 344 348	mean
+R21	has-property Arg1:T22 Arg2:T21	
+R24	has-property Arg1:T23 Arg2:T21	
+R25	is-a Arg1:T24 Arg2:T21	
+R26	has-property Arg1:T21 Arg2:T25	
+T26	Concept 399 404	equal
+R27	has-property Arg1:T25 Arg2:T26	
+T27	Concept 408 413	1.96%
+R28	in-context Arg1:T26 Arg2:T27	
+R29	entails Arg1:T16 Arg2:T25	
+T28	Concept 462 472	SARS-CoV-2
+T29	Concept 484 495	respiratory
+T30	Concept 496 508	air droplets
+T31	Concept 440 458	transmission route
+A3	Emphasized T31
+R30	has-property Arg1:T28 Arg2:T31	
+R31	has-property Arg1:T30 Arg2:T29	
+R32	is-a Arg1:T30 Arg2:T31	
+T32	Concept 513 523	comparison
+T33	Concept 535 542	batches
+T34	Concept 546 553	samples
+T35	Concept 531 534	two
+T36	Action 597 609	sanitization
+R33	entails Arg1:T32 Arg2:T36	
+T37	Concept 565 578	effectiveness
+R34	has-property Arg1:T36 Arg2:T37	
+T38	Action 613 621	reducing
+A4	Uncertain T38
+R35	causes Arg1:T36 Arg2:T38	
+T39	Concept 635 645	SARS-CoV-2
+T40	Concept 626 634	airborne
+R36	has-property Arg1:T39 Arg2:T40	
+R37	target Arg1:T38 Arg2:T39	
+T41	Concept 654 664	risk areas
+T42	Concept 649 653	high
+R38	has-property Arg1:T41 Arg2:T42	
+R39	in-context Arg1:T38 Arg2:T41	
+R40	has-property Arg1:T34 Arg2:T33	
+R41	has-property Arg1:T33 Arg2:T35	
+R42	in-context Arg1:T32 Arg2:T33	
+T43	Concept 678 689	coronavirus
+T44	Concept 690 700	SARS-CoV-2
+T45	Concept 781 799	SARS-CoV-2 3CL pro
+T46	Concept 801 804	PDB
+T47	Concept 805 807	ID
+T48	Concept 809 813	6LU7
+T49	Action 715 723	outbreak
+R43	is-a Arg1:T44 Arg2:T43	
+R45	has-property Arg1:T45 Arg2:T46	
+R46	has-property Arg1:T46 Arg2:T47	
+R47	has-property Arg1:T47 Arg2:T48	
+T50	Concept 768 777	structure
+R48	has-property Arg1:T45 Arg2:T50	
+T51	Concept 761 767	solved
+R49	has-property Arg1:T50 Arg2:T51	
+R44	causes Arg1:T44 Arg2:T49	
+T52	Concept 727 738	coronavirus
+R50	subject Arg1:T49 Arg2:T52	
+R51	is-a Arg1:T45 Arg2:T52	

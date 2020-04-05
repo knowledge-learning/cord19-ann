@@ -147,6 +147,11 @@ def _assign_pack(user):
     for pack_id, pack in packs.items():
         for version_id, version in pack.items():
             if version['status'] == 'Open':
+                if version_id == 'second' and pack['first']['assigned'] == user:
+                    continue
+                if version_id == 'first' and pack['second']['assigned'] == user:
+                    continue
+
                 version['assigned'] = user
                 version['status'] = "In progress"
                 _save_packs()

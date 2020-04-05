@@ -1,0 +1,89 @@
+T1	Concept 16 25	mutations
+T2	Concept 5 15	pathogenic
+R1	has-property Arg1:T1 Arg2:T2	
+T3	Concept 33 53	human telomerase RNA
+R2	in-context Arg1:T1 Arg2:T3	
+T6	Concept 71 84	wellconserved
+T4	Concept 85 87	PK
+R4	has-property Arg1:T4 Arg2:T6	
+R5	in-place Arg1:T1 Arg2:T4	
+R6	has-part Arg1:T3 Arg2:T4	
+T5	Concept 197 207	SARS-CoV-2
+T7	Action 208 217	infection
+T8	Action 181 193	confirmation
+T9	Concept 308 314	RT-PCR
+T10	Concept 249 306	real-time reverse transcription polymerase chain reaction
+*	same-as T10 T9
+R3	target Arg1:T8 Arg2:T7	
+R7	subject Arg1:T7 Arg2:T5	
+T11	Concept 243 248	viral
+R8	in-context Arg1:T10 Arg2:T11	
+R9	causes Arg1:T10 Arg2:T8	
+T12	Concept 351 355	PEDV
+T13	Action 356 365	infection
+R10	subject Arg1:T13 Arg2:T12	
+T14	Concept 430 448	growth performance
+T15	Concept 420 429	decreased
+R11	has-property Arg1:T14 Arg2:T15	
+R12	causes Arg1:T13 Arg2:T14	
+T16	Concept 384 388	pigs
+R13	in-context Arg1:T14 Arg2:T16	
+T17	Concept 334 343	mortality
+T18	Concept 369 374	lower
+T19	Concept 378 383	older
+T20	Concept 384 388	pigs
+R14	has-property Arg1:T17 Arg2:T18	
+R15	has-property Arg1:T20 Arg2:T19	
+R16	target Arg1:T13 Arg2:T20	
+R17	in-context Arg1:T17 Arg2:T13	
+T21	Concept 449 453	ACE2
+T22	Concept 477 486	AT2 cells
+T23	Concept 508 517	AT1 cells
+T24	Concept 519 542	airway epithelial cells
+T25	Concept 544 555	fibroblasts
+T26	Concept 557 574	endothelial cells
+T27	Concept 580 591	macrophages
+T28	Action 496 504	detected
+R18	in-place Arg1:T28 Arg2:T23	
+R19	target Arg1:T28 Arg2:T21	
+A1	Uncertain T28
+T29	Action 496 504	detected
+A2	Uncertain T29
+T30	Action 496 504	detected
+A3	Uncertain T30
+T31	Action 496 504	detected
+A4	Uncertain T31
+T32	Action 496 504	detected
+A5	Uncertain T32
+R20	target Arg1:T32 Arg2:T21	
+R21	target Arg1:T31 Arg2:T21	
+R22	target Arg1:T30 Arg2:T21	
+R23	target Arg1:T29 Arg2:T21	
+R24	in-place Arg1:T32 Arg2:T24	
+R25	in-place Arg1:T29 Arg2:T25	
+R26	in-place Arg1:T30 Arg2:T26	
+R27	in-place Arg1:T31 Arg2:T27	
+T33	Action 464 473	expressed
+A6	Emphasized T33
+R28	subject Arg1:T33 Arg2:T21	
+R29	in-place Arg1:T33 Arg2:T22	
+T34	Concept 605 615	rod-shaped
+T35	Concept 616 632	Ce:GAGG crystals
+R30	has-property Arg1:T35 Arg2:T34	
+T36	Action 633 642	implanted
+T37	Concept 652 657	brain
+T38	Concept 662 672	four weeks
+R31	in-time Arg1:T36 Arg2:T38	
+R32	in-place Arg1:T36 Arg2:T37	
+R33	target Arg1:T36 Arg2:T35	
+T39	Action 687 697	activation
+A7	Negated T39
+R34	causes Arg1:T36 Arg2:T39	
+T40	Concept 701 712	glial cells
+R35	subject Arg1:T39 Arg2:T40	
+T41	Concept 749 761	optic fibers
+T42	Concept 735 748	biocompatible
+R36	has-property Arg1:T41 Arg2:T42	
+T43	Action 687 697	activation
+R37	subject Arg1:T43 Arg2:T40	
+R38	causes Arg1:T41 Arg2:T43	
