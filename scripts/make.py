@@ -1,6 +1,8 @@
 import fire
 import os
 import yaml
+
+from typing import List
 from pathlib import Path
 
 
@@ -32,12 +34,12 @@ This a list of everyone currently involved and what they are doing.
             fp.write(line + "\n")
 
 
-def pack(number: str):
+def pack(*pack_ids: List[str]):
     sentences = []
 
     with open(Path(__file__).absolute().parent.parent / "data" / "cord19" / "corpus" / "raw.txt") as fp:
         for sentence in fp:
-            if len(sentences) == 5:
+            if len(sentences) == 5 * len(pack_ids):
                 break
 
             sentence = sentence.strip()
@@ -47,24 +49,28 @@ def pack(number: str):
 
             sentences.append(sentence)
 
-    for version in ["first", "second"]:
-        os.makedirs(Path(__file__).absolute().parent.parent / "data" / "cord19" / "packs" / f"pack{number}" / version, exist_ok=True)
+    for pack_id in pack_ids:
+        print(f"Pack: {pack_id}")
 
-        with open(Path(__file__).absolute().parent.parent / "data" / "cord19" / "packs" / f"pack{number}" / version / f"pack{number}-{version}.txt", "w") as fp:
-            for sentence in sentences:
-                fp.write(sentence)
-                fp.write("\n")
+        for version in ["first", "second"]:
+            os.makedirs(Path(__file__).absolute().parent.parent / "data" / "cord19" / "packs" / f"pack{pack_id}" / version, exist_ok=True)
 
-        with open(Path(__file__).absolute().parent.parent / "data" / "cord19" / "packs" / f"pack{number}" / version / f"pack{number}-{version}.ann", "w") as fp:
-            pass
+            with open(Path(__file__).absolute().parent.parent / "data" / "cord19" / "packs" / f"pack{pack_id}" / version / f"pack{pack_id}-{version}.txt", "w") as fp:
+                for sentence in sentences[:5]:
+                    fp.write(sentence)
+                    fp.write("\n")
 
-        os.chmod(Path(__file__).absolute().parent.parent / "data" / "cord19" / "packs" / f"pack{number}", 0o777)
-        os.chmod(Path(__file__).absolute().parent.parent / "data" / "cord19" / "packs" / f"pack{number}" / version, 0o777)
-        os.chmod(Path(__file__).absolute().parent.parent / "data" / "cord19" / "packs" / f"pack{number}" / version / f"pack{number}-{version}.txt", 0o777)
-        os.chmod(Path(__file__).absolute().parent.parent / "data" / "cord19" / "packs" / f"pack{number}" / version / f"pack{number}-{version}.ann", 0o777)
+            with open(Path(__file__).absolute().parent.parent / "data" / "cord19" / "packs" / f"pack{pack_id}" / version / f"pack{pack_id}-{version}.ann", "w") as fp:
+                pass
 
-    for sentence in sentences:
-        print(sentence)
+            os.chmod(Path(__file__).absolute().parent.parent / "data" / "cord19" / "packs" / f"pack{pack_id}", 0o777)
+            os.chmod(Path(__file__).absolute().parent.parent / "data" / "cord19" / "packs" / f"pack{pack_id}" / version, 0o777)
+            os.chmod(Path(__file__).absolute().parent.parent / "data" / "cord19" / "packs" / f"pack{pack_id}" / version / f"pack{pack_id}-{version}.txt", 0o777)
+            os.chmod(Path(__file__).absolute().parent.parent / "data" / "cord19" / "packs" / f"pack{pack_id}" / version / f"pack{pack_id}-{version}.ann", 0o777)
+
+        for i in range(5):
+            print(sentences[0])
+            sentences.pop(0)
 
 
 if __name__ == "__main__":
