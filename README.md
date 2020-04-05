@@ -53,7 +53,7 @@ This a list of everyone currently involved and what they are doing.
 | 16       | second   | Done           | @gabyfdez90          | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack16/second/pack16-second) |
 | 17       | first    | Done           | @Ariel96cs           | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack17/first/pack17-first) |
 | 17       | second   | Done           | @Dcardenas2019       | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack17/second/pack17-second) |
-| 18       | first    | In progress    | @DrackEye            | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack18/first/pack18-first) |
+| 18       | first    | Done           | @DrackEye            | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack18/first/pack18-first) |
 | 18       | second   | Done           | @edvard_munch        | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack18/second/pack18-second) |
 | 19       | first    | Done           | @claudiaqw           | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack19/first/pack19-first) |
 | 19       | second   | Done           | @JOramas             | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack19/second/pack19-second) |
@@ -71,11 +71,11 @@ This a list of everyone currently involved and what they are doing.
 | 25       | second   | Done           | @edvard_munch        | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack25/second/pack25-second) |
 | 26       | first    | In progress    | @danielvp            | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack26/first/pack26-first) |
 | 26       | second   | In progress    | @Estevanell          | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack26/second/pack26-second) |
-| 27       | first    | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack27/first/pack27-first) |
-| 27       | second   | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack27/second/pack27-second) |
-| 28       | first    | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack28/first/pack28-first) |
-| 28       | second   | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack28/second/pack28-second) |
-| 29       | first    | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack29/first/pack29-first) |
+| 27       | first    | Done           | @gabyfdez90          | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack27/first/pack27-first) |
+| 27       | second   | Done           | @edvard_munch        | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack27/second/pack27-second) |
+| 28       | first    | In progress    | @DrackEye            | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack28/first/pack28-first) |
+| 28       | second   | Done           | @Skull_kiddf         | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack28/second/pack28-second) |
+| 29       | first    | Done           | @gabyfdez90          | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack29/first/pack29-first) |
 | 29       | second   | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack29/second/pack29-second) |
-| 30       | first    | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack30/first/pack30-first) |
+| 30       | first    | Done           | @gabyfdez90          | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack30/first/pack30-first) |
 | 30       | second   | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack30/second/pack30-second) |
