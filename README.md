@@ -76,7 +76,7 @@ This a list of everyone currently involved and what they are doing.
 | 28       | first    | In progress    | @DrackEye            | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack28/first/pack28-first) |
 | 28       | second   | Done           | @Skull_kiddf         | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack28/second/pack28-second) |
 | 29       | first    | Done           | @gabyfdez90          | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack29/first/pack29-first) |
-| 29       | second   | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack29/second/pack29-second) |
+| 29       | second   | Done           | @Skull_kiddf         | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack29/second/pack29-second) |
 | 30       | first    | Done           | @gabyfdez90          | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack30/first/pack30-first) |
 | 30       | second   | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack30/second/pack30-second) |
 | 31       | first    | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack31/first/pack31-first) |
