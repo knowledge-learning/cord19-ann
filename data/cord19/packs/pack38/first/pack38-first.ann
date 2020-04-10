@@ -1,0 +1,129 @@
+T1	Concept 16 20	mice
+T2	Concept 0 15	Aged transgenic
+R1	in-context Arg1:T1 Arg2:T2	
+T3	Concept 41 62	Alzheimer's mutations
+T4	Concept 66 91	amyloid precursor protein
+R2	in-context Arg1:T3 Arg2:T4	
+R3	has-property Arg1:T1 Arg2:T3	
+T5	Concept 96 108	presenilin-1
+T6	Action 114 122	deletion
+T7	Concept 126 132	exon-9
+R4	target Arg1:T6 Arg2:T7	
+R5	has-property Arg1:T1 Arg2:T5	
+R6	has-property Arg1:T1 Arg2:T6	
+T8	Concept 134 144	APP/PS1dE9
+*	same-as T6 T8
+T9	Action 190 202	accumulation
+T10	Concept 219 250	microglial-targeted radiotracer
+T11	Concept 209 218	activated
+R7	in-context Arg1:T10 Arg2:T11	
+R8	target Arg1:T9 Arg2:T15	
+R9	subject Arg1:T9 Arg2:T1	
+T12	Concept 157 164	in vivo
+R10	in-context Arg1:T9 Arg2:T12	
+T13	Concept 165 173	cortical
+T14	Concept 178 189	hippocampal
+R11	in-context Arg1:T9 Arg2:T13	
+R12	in-context Arg1:T9 Arg2:T14	
+T15	Concept 252 277	18kD translocator protein
+T16	Concept 279 283	TSPO
+*	same-as T15 T16
+R13	is-a Arg1:T15 Arg2:T10	
+T17	Concept 291 304	aged wildtype
+T18	Concept 308 316	young Tg
+T19	Concept 317 321	mice
+R14	in-context Arg1:T19 Arg2:T18	
+T20	Concept 317 321	mice
+R15	in-context Arg1:T20 Arg2:T17	
+T21	Action 190 202	accumulation
+R16	subject Arg1:T21 Arg2:T19	
+R17	subject Arg1:T21 Arg2:T20	
+R18	target Arg1:T21 Arg2:T15	
+T22	Concept 150 156	higher
+R19	has-property Arg1:T9 Arg2:T22	
+R20	in-context Arg1:T22 Arg2:T21	
+T23	Concept 364 369	model
+T24	Action 370 378	proposed
+R21	target Arg1:T24 Arg2:T23	
+T25	Action 385 392	predict
+T26	Action 397 406	infection
+T27	Concept 407 412	nodes
+T28	Concept 413 422	precisely
+T29	Concept 439 450	probability
+R22	subject Arg1:T25 Arg2:T24	
+R23	target Arg1:T25 Arg2:T26	
+R24	target Arg1:T26 Arg2:T27	
+R25	has-property Arg1:T25 Arg2:T28	
+R26	in-context Arg1:T25 Arg2:T29	
+T30	Action 457 468	deprivation
+T31	Concept 451 456	Serum
+R27	target Arg1:T30 Arg2:T31	
+T32	Action 487 491	cope
+T33	Concept 481 486	cells
+R28	subject Arg1:T32 Arg2:T33	
+T34	Action 521 536	stress response
+R29	entails Arg1:T32 Arg2:T34	
+R30	entails Arg1:T30 Arg2:T34	
+T35	Concept 576 581	PARP2
+T36	Action 582 594	participates
+R31	subject Arg1:T36 Arg2:T35	
+R32	target Arg1:T36 Arg2:T34	
+T37	Action 662 670	detected
+T38	Concept 644 651	protein
+T39	Action 686 698	denaturation
+T40	Concept 681 685	urea
+R33	target Arg1:T39 Arg2:T40	
+R34	in-time Arg1:T37 Arg2:T39	
+R35	subject Arg1:T37 Arg2:T38	
+A1	Negated T37
+T41	Action 624 631	explain
+R36	subject Arg1:T41 Arg2:T36	
+A2	Negated T41
+R37	target Arg1:T41 Arg2:T37	
+T42	Concept 714 733	population mobility
+T43	Concept 738 760	human-to-human contact
+T44	Concept 762 783	environmental factors
+T45	Action 788 794	impact
+T46	Action 795 815	droplet transmission
+T47	Action 820 828	survival
+T48	Concept 832 839	viruses
+R38	subject Arg1:T47 Arg2:T48	
+R39	target Arg1:T45 Arg2:T46	
+R40	target Arg1:T45 Arg2:T47	
+R41	subject Arg1:T45 Arg2:T44	
+R42	subject Arg1:T45 Arg2:T43	
+R43	subject Arg1:T45 Arg2:T42	
+T49	Concept 847 856	influenza
+R44	is-a Arg1:T49 Arg2:T48	
+T50	Reference 893 897	this
+T51	Concept 904 912	pathogen
+R45	is-a Arg1:T50 Arg2:T51	
+T52	Concept 898 903	novel
+R46	has-property Arg1:T50 Arg2:T52	
+T53	Action 880 888	examined
+R47	in-context Arg1:T53 Arg2:T50	
+R48	target Arg1:T53 Arg2:T44	
+A3	Negated T53
+T54	Action 953 962	available
+T55	Concept 922 944	high resolution models
+R49	target Arg1:T54 Arg2:T55	
+T56	Concept 964 973	ab initio
+T57	Concept 974 988	low resolution
+T58	Action 989 1002	bead modeling
+R50	in-context Arg1:T58 Arg2:T57	
+R51	in-context Arg1:T58 Arg2:T56	
+T59	Concept 1019 1024	MONSA
+R52	subject Arg1:T58 Arg2:T59	
+R53	in-time Arg1:T58 Arg2:T54	
+T60	Concept 1102 1109	protein
+T61	Concept 1121 1136	detergent tails
+T62	Concept 1151 1166	detergent heads
+T63	Concept 1050 1056	phases
+T64	Concept 1071 1080	contrasts
+R54	has-property Arg1:T63 Arg2:T64	
+T65	Concept 1062 1070	distinct
+R55	in-context Arg1:T64 Arg2:T65	
+R56	is-a Arg1:T60 Arg2:T63	
+R57	is-a Arg1:T61 Arg2:T63	
+R58	is-a Arg1:T62 Arg2:T63	
+R59	entails Arg1:T58 Arg2:T63	

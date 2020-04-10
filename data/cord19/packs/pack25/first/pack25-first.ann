@@ -66,11 +66,6 @@ R29	target Arg1:T38 Arg2:T37
 T39	Concept 574 579	drugs
 R30	subject Arg1:T38 Arg2:T39	
 R31	has-property Arg1:T39 Arg2:T35	
-T40	Concept 448 456	strategy
-T41	Concept 434 447	repositioning
-T42	Concept 429 433	drug
-R32	is-a Arg1:T41 Arg2:T40	
-R33	in-context Arg1:T41 Arg2:T42	
 T43	Concept 191 192;193 201	M proteins
 T44	Concept 191 192;193 201	M proteins
 R13	in-place Arg1:T44 Arg2:T12	
@@ -92,3 +87,27 @@ T49	Concept 266 271	2.70%
 T50	Concept 273 278	1.36%
 T51	Concept 284 289	1.36%
 R39	in-context Arg1:T23 Arg2:T15	
+T52	Concept 387 391	best
+T40	Concept 429 456	drug repositioning strategy
+T41	Concept 448 456	strategy
+R32	is-a Arg1:T40 Arg2:T41	
+A5	Emphasized T52
+A6	Uncertain T52
+T42	Action 464 471	finding
+T53	Concept 476 479	new
+T54	Concept 480 484	uses
+T55	Concept 492 497	drugs
+T56	Concept 488 491	old
+R41	target Arg1:T42 Arg2:T54	
+R42	has-property Arg1:T54 Arg2:T53	
+R43	in-context Arg1:T54 Arg2:T55	
+R44	has-property Arg1:T55 Arg2:T56	
+*	same-as T40 T42
+T57	Action 419 424	apply
+R33	is-a Arg1:T57 Arg2:T34	
+R40	has-property Arg1:T57 Arg2:T52	
+R45	target Arg1:T57 Arg2:T40	
+T58	Action 502 510	identify
+R46	in-context Arg1:T57 Arg2:T58	
+R47	causes Arg1:T45 Arg2:T57	
+R48	target Arg1:T58 Arg2:T35	

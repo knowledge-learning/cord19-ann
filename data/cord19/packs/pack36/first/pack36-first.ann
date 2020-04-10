@@ -17,3 +17,40 @@ T10	Concept 205 218	cleavage site
 T11	Concept 170 179	substrate
 T12	Concept 165 169	poor
 R6	has-property Arg1:T11 Arg2:T12	
+R7	is-a Arg1:T7 Arg2:T10	
+T14	Action 180 190	properties
+R9	subject Arg1:T14 Arg2:T11	
+R10	target Arg1:T14 Arg2:T7	
+A2	Uncertain T14
+R8	entails Arg1:T9 Arg2:T14	
+T13	Action 257 266	influence
+A3	Emphasized T13
+T15	Concept 270 286	processing order
+T16	Concept 295 303	assembly
+R11	entails Arg1:T14 Arg2:T13	
+R12	subject Arg1:T13 Arg2:T15	
+R13	subject Arg1:T13 Arg2:T16	
+R14	in-context Arg1:T15 Arg2:T8	
+R15	in-context Arg1:T16 Arg2:T8	
+T17	Concept 324 333	beginning
+T18	Concept 357 363	period
+T19	Concept 346 356	infectious
+A4	Emphasized T19
+R16	has-property Arg1:T18 Arg2:T19	
+T20	Action 368 373	occur
+T21	Concept 374 380	before
+T22	Action 385 390	onset
+T23	Concept 394 402	symptoms
+R17	in-context Arg1:T17 Arg2:T18	
+R18	subject Arg1:T20 Arg2:T17	
+R19	in-time Arg1:T20 Arg2:T21	
+R20	target Arg1:T20 Arg2:T22	
+R21	subject Arg1:T22 Arg2:T23	
+A5	Uncertain T20
+T24	Concept 463 471	reported
+A6	Diminished T24
+T25	Concept 525 531	period
+T26	Concept 514 524	incubation
+R22	has-property Arg1:T25 Arg2:T26	
+R23	has-property Arg1:T20 Arg2:T24	
+R24	in-context Arg1:T24 Arg2:T25	
