@@ -25,10 +25,52 @@ T15	Concept 270 285	viral infection
 R10	in-time Arg1:T15 Arg2:T14	
 T18	Concept 356 383	excessive synthesis of IL-6
 T16	Concept 413 418	virus
-T19	Concept 430 464	human immunodeficiency virus (HIV)
-R11	is-a Arg1:T19 Arg2:T16	
 T20	Concept 467 489	foot and mouth disease
 R12	is-a Arg1:T20 Arg2:T16	
-T21	Concept 500 532	vesicular stomatitis virus (VSV)
-R13	is-a Arg1:T21 Arg2:T16	
 R14	entails Arg1:T18 Arg2:T16	
+T17	Action 567 574	yielded
+T22	Concept 586 598	relationship
+R15	target Arg1:T17 Arg2:T22	
+R17	subject Arg1:T17 Arg2:T4	
+T23	Concept 768 787	affected population
+T28	Concept 684 696	first deaths
+T29	Concept 806 827	elevated IL-33 levels
+T30	Concept 831 838	smokers
+T19	Concept 460 463	HIV
+T31	Concept 430 458	human immunodeficiency virus
+*	same-as T31 T19
+T21	Concept 528 531	VSV
+T32	Concept 577 585	positive
+T33	Concept 500 526	vesicular stomatitis virus
+T34	Concept 621 633	relationship
+*	same-as T33 T21
+T35	Concept 612 620	negative
+R11	in-context Arg1:T22 Arg2:T32	
+T36	Action 567 574	yielded
+R13	is-a Arg1:T31 Arg2:T16	
+R16	subject Arg1:T36 Arg2:T5	
+R20	target Arg1:T36 Arg2:T34	
+R21	is-a Arg1:T33 Arg2:T16	
+R22	in-context Arg1:T34 Arg2:T35	
+T37	Action 707 715	reported
+R18	target Arg1:T37 Arg2:T28	
+T24	Concept 842 851	asthmatic
+R19	in-context Arg1:T29 Arg2:T30	
+R23	in-context Arg1:T29 Arg2:T24	
+T38	Action 861 869	provokes
+T39	Concept 852 859	patient
+R24	is-a Arg1:T24 Arg2:T39	
+R25	is-a Arg1:T30 Arg2:T39	
+T40	Concept 870 886	hypersensitivity
+R26	subject Arg1:T38 Arg2:T29	
+R27	target Arg1:T38 Arg2:T40	
+A1	Uncertain T38
+T41	Action 915 924	triggered
+T42	Concept 928 943	virus infection
+R28	subject Arg1:T41 Arg2:T42	
+T43	Concept 890 914	type 1 inflammatory cues
+R29	target Arg1:T41 Arg2:T43	
+R30	has-property Arg1:T40 Arg2:T43	
+R34	in-place Arg1:T23 Arg2:T37	
+T25	Concept 730 760	hundreds to thousands of cases
+R31	entails Arg1:T28 Arg2:T25	
