@@ -95,7 +95,7 @@ This a list of everyone currently involved and what they are doing.
 | 37       | second   | In progress    | @Dcardenas2019       | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack37/second/pack37-second) |
 | 38       | first    | Done           | @apiad               | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack38/first/pack38-first) |
 | 38       | second   | In progress    | @Estevanell          | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack38/second/pack38-second) |
-| 39       | first    | In progress    | @Skull_kiddf         | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack39/first/pack39-first) |
+| 39       | first    | Done           | @Skull_kiddf         | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack39/first/pack39-first) |
 | 39       | second   | In progress    | @edvard_munch        | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack39/second/pack39-second) |
 | 40       | first    | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack40/first/pack40-first) |
 | 40       | second   | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack40/second/pack40-second) |
