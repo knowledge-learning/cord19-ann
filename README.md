@@ -99,3 +99,13 @@ This a list of everyone currently involved and what they are doing.
 | 39       | second   | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack39/second/pack39-second) |
 | 40       | first    | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack40/first/pack40-first) |
 | 40       | second   | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack40/second/pack40-second) |
+| 41       | first    | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack41/first/pack41-first) |
+| 41       | second   | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack41/second/pack41-second) |
+| 42       | first    | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack42/first/pack42-first) |
+| 42       | second   | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack42/second/pack42-second) |
+| 43       | first    | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack43/first/pack43-first) |
+| 43       | second   | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack43/second/pack43-second) |
+| 44       | first    | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack44/first/pack44-first) |
+| 44       | second   | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack44/second/pack44-second) |
+| 45       | first    | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack45/first/pack45-first) |
+| 45       | second   | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack45/second/pack45-second) |
