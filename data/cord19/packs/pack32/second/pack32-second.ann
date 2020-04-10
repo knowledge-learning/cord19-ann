@@ -1,0 +1,117 @@
+T1	Concept 30 40	stem cells
+T2	Concept 46 51	other
+T3	Concept 52 61	mammalian
+T6	Action 103 113	responding
+T7	Action 121 130	producing
+T8	Concept 131 136	IFN-I
+T9	Concept 152 158	unique
+T10	Concept 159 180	interferon-stimulated
+T12	Concept 190 193	ISG
+T13	Concept 195 219	transcriptomic signature
+T14	Concept 249 260	differences
+T15	Concept 237 248	fundamental
+T16	Concept 269 273	bats
+T4	Concept 281 286	other
+T11	Concept 287 294	mammals
+T18	Concept 303 312	KNTC1-nul
+R2	causes Arg1:T8 Arg2:T6	
+R3	subject Arg1:T6 Arg2:T1	
+R4	target Arg1:T7 Arg2:T8	
+R5	subject Arg1:T7 Arg2:T1	
+T5	Concept 184 188	gene
+R8	has-property Arg1:T5 Arg2:T10	
+R9	has-property Arg1:T5 Arg2:T9	
+*	same-as T12 T5
+R10	has-property Arg1:T12 Arg2:T13	
+R11	has-property Arg1:T1 Arg2:T13	
+R12	entails Arg1:T13 Arg2:T14	
+R6	has-property Arg1:T14 Arg2:T15	
+R7	in-context Arg1:T14 Arg2:T11	
+R13	has-property Arg1:T11 Arg2:T4	
+R14	is-a Arg1:T14 Arg2:T16	
+R15	entails Arg1:T6 Arg2:T14	
+R16	entails Arg1:T7 Arg2:T14	
+T19	Concept 314 323	RPE cells
+T20	Concept 334 340	severe
+T21	Action 341 352	SAC failure
+R17	has-property Arg1:T21 Arg2:T20	
+T22	Concept 358 381	kinetochore attachments
+T23	Action 387 394	ablated
+T24	Concept 400 410	nocodazole
+T25	Concept 419 423	STLC
+T26	Concept 427 432	taxol
+T27	Concept 453 462	erroneous
+T28	Action 463 474	attachments
+R18	has-property Arg1:T19 Arg2:T18	
+R19	has-property Arg1:T28 Arg2:T27	
+R20	causes Arg1:T26 Arg2:T28	
+R21	causes Arg1:T25 Arg2:T28	
+R22	causes Arg1:T28 Arg2:T21	
+A1	Uncertain T28
+R23	target Arg1:T23 Arg2:T22	
+R24	subject Arg1:T23 Arg2:T24	
+R25	causes Arg1:T23 Arg2:T21	
+R26	subject Arg1:T21 Arg2:T19	
+T29	Action 482 488	sample
+T30	Concept 489 495	period
+T31	Concept 504 508	wind
+T32	Concept 509 515	speeds
+A2	Emphasized T32
+T33	Concept 524 537	precipitation
+A3	Emphasized T33
+T34	Action 538 546	decrease
+T35	Concept 551 557	number
+T36	Concept 561 571	infections
+T37	Concept 579 585	future
+R27	has-property Arg1:T36 Arg2:T35	
+R28	in-time Arg1:T34 Arg2:T37	
+R29	target Arg1:T34 Arg2:T35	
+R30	has-property Arg1:T31 Arg2:T32	
+R31	has-property Arg1:T29 Arg2:T30	
+R32	causes Arg1:T33 Arg2:T34	
+R33	causes Arg1:T32 Arg2:T34	
+A4	Uncertain T34
+R34	entails Arg1:T29 Arg2:T34	
+T38	Concept 602 619	replicative forms
+T39	Concept 620 644	(anti-sense viral genome
+R35	is-a Arg1:T39 Arg2:T38	
+T40	Concept 658 671	intracellular
+T41	Action 672 678	origin
+T42	Concept 686 695	viral RNA
+T43	Action 704 713	secretion
+T44	Concept 723 728	jelly
+T45	Concept 741 744	RNA
+T46	Action 745 752	derived
+T47	Concept 753 764	exclusively
+T48	Concept 770 791	environmental capsids
+R36	entails Arg1:T38 Arg2:T41	
+R37	has-property Arg1:T41 Arg2:T40	
+R38	subject Arg1:T41 Arg2:T42	
+T49	Reference 700 703	its
+*	same-as T49 T42
+R39	subject Arg1:T43 Arg2:T49	
+R40	in-place Arg1:T43 Arg2:T44	
+A5	Negated T46
+R41	entails Arg1:T38 Arg2:T46	
+R42	subject Arg1:T46 Arg2:T45	
+R43	has-property Arg1:T46 Arg2:T47	
+R44	in-place Arg1:T46 Arg2:T48	
+T50	Concept 796 805	simulated
+T51	Concept 806 817	experiments
+T52	Concept 833 839	genome
+T53	Concept 840 846	length
+T54	Concept 851 855	read
+T55	Concept 856 862	length
+T56	Action 863 872	influence
+T57	Concept 873 875	VI
+R45	has-property Arg1:T51 Arg2:T50	
+R46	has-property Arg1:T52 Arg2:T53	
+R47	has-property Arg1:T54 Arg2:T55	
+R48	subject Arg1:T56 Arg2:T53	
+R49	subject Arg1:T56 Arg2:T55	
+R50	target Arg1:T56 Arg2:T57	
+R51	entails Arg1:T51 Arg2:T56	
+A6	Uncertain T56
+A7	Uncertain T46
+T17	Concept 71 78	bat RSC
+R1	has-property Arg1:T17 Arg2:T1	

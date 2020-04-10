@@ -1,0 +1,103 @@
+T1	Concept 27 32	drugs
+T2	Concept 33 42	compounds
+T3	Concept 44 54	remdesivir
+T4	Concept 91 100	inhibitor
+T5	Concept 81 90	potential
+T6	Concept 109 118	2019-nCov
+T8	Concept 24 26	30
+T9	Reference 13 16	one
+R1	is-a Arg1:T9 Arg2:T1	
+R2	is-a Arg1:T9 Arg2:T2	
+*	same-as T9 T3
+R3	in-context Arg1:T1 Arg2:T8	
+R4	in-context Arg1:T2 Arg2:T8	
+R6	has-property Arg1:T3 Arg2:T4	
+R7	in-context Arg1:T3 Arg2:T6	
+R5	has-property Arg1:T3 Arg2:T5	
+T7	Concept 136 146	r-selected
+T10	Concept 147 152	K276R
+T11	Action 153 165	substitution
+T12	Concept 177 182	found
+T13	Concept 186 189	158
+T14	Concept 190 197	3D G64S
+T15	Concept 198 206	lineages
+T16	Concept 224 226	WT
+T17	Concept 227 238	populations
+T18	Action 240 249	decreased
+T19	Concept 258 265	fitness
+T20	Concept 274 276	WT
+T21	Concept 324 331	3D G64S
+R8	has-property Arg1:T11 Arg2:T10	
+R9	has-property Arg1:T11 Arg2:T7	
+R10	has-property Arg1:T11 Arg2:T12	
+R11	in-context Arg1:T12 Arg2:T15	
+R12	has-property Arg1:T15 Arg2:T14	
+R13	in-context Arg1:T15 Arg2:T13	
+R14	has-property Arg1:T17 Arg2:T16	
+R15	causes Arg1:T11 Arg2:T18	
+R16	target Arg1:T18 Arg2:T19	
+T22	Concept 250 257	overall
+R17	has-property Arg1:T19 Arg2:T22	
+R18	in-context Arg1:T18 Arg2:T20	
+R19	in-context Arg1:T18 Arg2:T21	
+T23	Reference 217 220	not
+A1	Negated T23
+*	same-as T23 T12
+R20	has-property Arg1:T17 Arg2:T23	
+T24	Concept 408 414	filter
+T25	Action 420 425	learn
+T26	Concept 431 439	negative
+T27	Concept 440 447	weights
+T28	Concept 459 467	position
+T29	Concept 453 458	given
+T30	Concept 504 517	justification
+T31	Concept 493 503	biological
+T32	Reference 522 526	that
+R21	has-property Arg1:T30 Arg2:T31	
+R22	has-property Arg1:T28 Arg2:T29	
+R23	has-property Arg1:T27 Arg2:T26	
+T33	Concept 392 400	possible
+A2	Uncertain T33
+R24	has-property Arg1:T25 Arg2:T33	
+R25	subject Arg1:T25 Arg2:T24	
+R26	target Arg1:T25 Arg2:T27	
+R27	in-context Arg1:T25 Arg2:T28	
+A3	Negated T30
+R28	has-property Arg1:T25 Arg2:T30	
+T35	Concept 565 570	upper
+T36	Concept 571 576	bound
+T37	Concept 584 590	number
+T38	Concept 594 599	cases
+T39	Action 612 618	traced
+T41	Action 629 638	isolation
+T43	Concept 655 664	imperfect
+R29	has-property Arg1:T36 Arg2:T35	
+R31	has-property Arg1:T38 Arg2:T37	
+R33	has-property Arg1:T41 Arg2:T43	
+A4	Uncertain T43
+R30	has-property Arg1:T37 Arg2:T36	
+A5	Uncertain T36
+R34	target Arg1:T39 Arg2:T38	
+R32	target Arg1:T41 Arg2:T38	
+T34	Concept 667 673	longer
+T42	Concept 685 691	length
+T44	Concept 705 719	proportionally
+T45	Concept 725 732	contigs
+T46	Concept 740 742	VI
+R35	in-context Arg1:T45 Arg2:T46	
+R37	has-property Arg1:T42 Arg2:T34	
+R38	causes Arg1:T42 Arg2:T45	
+A6	Emphasized T45
+R39	has-property Arg1:T45 Arg2:T44	
+T47	Concept 754 760	longer
+T48	Concept 761 772	read length
+T49	Action 773 782	decreases
+T51	Concept 791 794	PID
+T52	Concept 795 800	range
+T40	Concept 678 684	genome
+R36	has-property Arg1:T40 Arg2:T42	
+R40	has-property Arg1:T48 Arg2:T47	
+R41	subject Arg1:T49 Arg2:T48	
+R42	target Arg1:T49 Arg2:T52	
+R43	has-property Arg1:T51 Arg2:T52	
+R44	in-context Arg1:T49 Arg2:T46	

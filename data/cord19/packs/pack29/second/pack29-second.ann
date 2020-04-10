@@ -1,0 +1,109 @@
+T1	Action 19 30	RNA binding
+T2	Concept 52 58	pxMNPs
+T3	Concept 43 51	prepared
+R1	has-property Arg1:T2 Arg2:T3	
+R2	has-property Arg1:T2 Arg2:T1	
+T4	Action 60 71	RNA binding
+T5	Concept 108 112	2 μg
+T6	Concept 113 116	RNA
+T7	Concept 117 126	molecules
+T8	Concept 132 137	20 μg
+T9	Concept 138 144	pcMNPs
+T10	Concept 148 154	200 μL
+T11	Concept 155 168	lysis/binding
+T12	Concept 169 175	buffer
+T13	Concept 72 78	assays
+R3	has-property Arg1:T7 Arg2:T6	
+R4	in-context Arg1:T7 Arg2:T5	
+R5	in-context Arg1:T9 Arg2:T8	
+R6	has-property Arg1:T12 Arg2:T11	
+R7	in-context Arg1:T12 Arg2:T10	
+T14	Action 97 107	incubating
+R8	target Arg1:T14 Arg2:T7	
+R10	is-a Arg1:T14 Arg2:T13	
+R11	in-context Arg1:T13 Arg2:T4	
+R9	target Arg1:T14 Arg2:T9	
+R12	in-place Arg1:T14 Arg2:T12	
+T15	Concept 214 221	lineage
+T16	Concept 222 228	C CoVs
+R13	has-property Arg1:T16 Arg2:T15	
+T17	Concept 242 259	protease-enhanced
+T18	Action 260 265	entry
+T19	Concept 269 276	lineage
+T20	Concept 277 283	B CoVs
+R14	has-property Arg1:T20 Arg2:T19	
+R15	has-property Arg1:T18 Arg2:T17	
+R16	subject Arg1:T18 Arg2:T20	
+T21	Concept 176 185	Analogous
+R17	has-property Arg1:T18 Arg2:T21	
+R18	in-context Arg1:T18 Arg2:T16	
+T22	Concept 307 312	model
+T23	Concept 313 320	outputs
+T24	Action 343 354	identifying
+T25	Concept 355 360	areas
+T26	Concept 364 368	risk
+T27	Action 372 384	transmission
+T28	Concept 388 394	dengue
+T29	Concept 406 413	malaria
+T30	Concept 333 339	useful
+R19	has-property Arg1:T22 Arg2:T23	
+R20	has-property Arg1:T22 Arg2:T30	
+R21	in-context Arg1:T22 Arg2:T24	
+R22	has-property Arg1:T27 Arg2:T26	
+R23	has-property Arg1:T26 Arg2:T25	
+R24	has-property Arg1:T28 Arg2:T27	
+R25	has-property Arg1:T29 Arg2:T27	
+R26	target Arg1:T24 Arg2:T25	
+T31	Action 436 443	changes
+T32	Concept 430 435	Small
+R27	has-property Arg1:T31 Arg2:T32	
+T33	Concept 451 460	structure
+T34	Reference 447 450	its
+T35	Action 472 478	moving
+T36	Concept 483 502	isopropyl ether 172
+T37	Concept 503 514	substituent
+T38	Concept 522 542	naphthyl ring system
+T39	Concept 544 548	B#59
+T40	Action 558 570	introduction
+T41	Concept 577 587	additional
+T42	Concept 588 596	aromatic
+T43	Concept 597 605	ring-173
+T44	Concept 606 611	bound
+T45	Concept 612 625	nitrogen atom
+T46	Concept 627 631	B#57
+T47	Action 665 683	antiviral activity
+R28	target Arg1:T31 Arg2:T33	
+R29	target Arg1:T35 Arg2:T36	
+R30	has-property Arg1:T37 Arg2:T36	
+R31	in-place Arg1:T35 Arg2:T38	
+*	same-as T39 T38
+R32	is-a Arg1:T35 Arg2:T31	
+R33	target Arg1:T40 Arg2:T45	
+*	same-as T45 T46
+R34	has-property Arg1:T45 Arg2:T44	
+R35	has-property Arg1:T45 Arg2:T43	
+R36	has-property Arg1:T45 Arg2:T42	
+R37	has-property Arg1:T45 Arg2:T41	
+R38	is-a Arg1:T40 Arg2:T31	
+A1	Diminished T47
+R39	causes Arg1:T31 Arg2:T47	
+T48	Concept 684 690	People
+T49	Concept 696 700	mild
+T50	Concept 701 709	symptoms
+T51	Concept 792 809	subclinical cases
+T52	Action 834 846	transmission
+T53	Concept 847 855	patterns
+R40	has-property Arg1:T52 Arg2:T53	
+R41	has-property Arg1:T50 Arg2:T49	
+R42	has-property Arg1:T48 Arg2:T50	
+T54	Action 725 734	diagnosed
+A2	Uncertain T54
+R43	target Arg1:T54 Arg2:T48	
+*	same-as T51 T48
+T56	Concept 710 718	unlikely
+R44	has-property Arg1:T54 Arg2:T56	
+T57	Action 827 833	affect
+R45	causes Arg1:T51 Arg2:T57	
+A3	Uncertain T57
+R46	target Arg1:T57 Arg2:T53	
+T55	Reference 856 871	in the same way

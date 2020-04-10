@@ -31,3 +31,35 @@ T19	Concept 784 797	blood samples
 T20	Concept 810 816	RT-PCR
 T21	Concept 922 932	SARS-CoV-2
 T22	Concept 860 873	blood samples
+T23	Concept 179 187	disorder
+T24	Concept 169 178	intrinsic
+R11	has-property Arg1:T23 Arg2:T24	
+R12	in-context Arg1:T23 Arg2:T11	
+R13	in-context Arg1:T11 Arg2:T12	
+R14	in-context Arg1:T11 Arg2:T13	
+R15	in-context Arg1:T11 Arg2:T14	
+T25	Concept 551 561	SARS-CoV-2
+T26	Concept 742 752	SARS-CoV-2
+T27	Concept 753 765	nucleic acid
+R16	has-part Arg1:T26 Arg2:T27	
+R17	in-place Arg1:T27 Arg2:T18	
+R18	in-place Arg1:T27 Arg2:T19	
+T28	Concept 729 737	Positive
+R19	has-property Arg1:T27 Arg2:T28	
+T29	Action 798 806	detected
+R20	subject Arg1:T29 Arg2:T27	
+R21	target Arg1:T29 Arg2:T20	
+T30	Concept 845 856	respiratory
+T31	Concept 886 894	homology
+A2	Emphasized T31
+T32	Concept 818 832	Virus sequence
+T33	Action 874 880	shares
+R22	subject Arg1:T33 Arg2:T32	
+R23	target Arg1:T33 Arg2:T31	
+R24	in-context Arg1:T31 Arg2:T21	
+R25	in-place Arg1:T32 Arg2:T30	
+R26	in-place Arg1:T32 Arg2:T22	
+T35	Concept 525 542	antiviral effects
+A3	Uncertain T35
+T34	Concept 392 412	therapeutic shortcut
+R27	in-context Arg1:T35 Arg2:T25	

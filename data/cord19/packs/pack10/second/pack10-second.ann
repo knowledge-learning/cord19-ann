@@ -6,4 +6,44 @@ R1	subject Arg1:T2 Arg2:T1
 R2	target Arg1:T2 Arg2:T3	
 T4	Concept 179 208	following first (second) week
 R3	in-time Arg1:T2 Arg2:T4	
-R4	has-property Arg1:T3 Arg2:T4	
+T5	Concept 363 371	SARS-CoV
+T6	Action 379 390	transmitted
+A2	Negated T6
+A3	Uncertain T6
+T7	Concept 399 418	sexual transmission
+R5	subject Arg1:T6 Arg2:T5	
+T9	Action 479 487	regulate
+A4	Uncertain T9
+T10	Concept 492 516	expression of fibrinogen
+T11	Concept 520 541	lung epithelial cells
+T8	Concept 452 471	SARS-CoV 3a protein
+R8	subject Arg1:T9 Arg2:T8	
+R9	target Arg1:T9 Arg2:T10	
+R4	in-context Arg1:T6 Arg2:T7	
+R6	in-place Arg1:T9 Arg2:T11	
+T12	Concept 773 788	2019-nCoV S-RBD
+T14	Action 642 649	is half
+T15	Action 789 796	reaches
+R7	subject Arg1:T15 Arg2:T12	
+T13	Concept 631 641	SARS-CoV-2
+T17	Concept 602 626	seasonal variation in R0
+T18	Concept 589 598	amplitude
+R11	has-property Arg1:T13 Arg2:T17	
+R12	has-property Arg1:T17 Arg2:T18	
+T19	Concept 671 695	seasonal variation in R0
+T20	Concept 704 727	other betacoronaviruses
+T21	Concept 654 663	amplitude
+R13	has-property Arg1:T20 Arg2:T19	
+R14	has-property Arg1:T19 Arg2:T21	
+R15	subject Arg1:T14 Arg2:T18	
+R16	target Arg1:T14 Arg2:T21	
+T22	Concept 544 562	seasonality factor
+T23	Concept 566 569	0.5
+R17	in-context Arg1:T22 Arg2:T23	
+R18	entails Arg1:T22 Arg2:T14	
+T16	Concept 814 830	binding strength
+T24	Concept 834 856	SARS-CoV S-RBD to ACE2
+R10	has-property Arg1:T16 Arg2:T24	
+T25	Concept 803 806	73%
+R19	target Arg1:T15 Arg2:T16	
+R20	in-context Arg1:T16 Arg2:T25	
