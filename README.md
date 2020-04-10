@@ -84,13 +84,13 @@ This a list of everyone currently involved and what they are doing.
 | 32       | first    | Done           | @edvard_munch        | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack32/first/pack32-first) |
 | 32       | second   | Done           | @Skull_kiddf         | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack32/second/pack32-second) |
 | 33       | first    | Done           | @apiad               | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack33/first/pack33-first) |
-| 33       | second   | In progress    | @SusanitaLaDelRaton  | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack33/second/pack33-second) |
+| 33       | second   | Done           | @SusanitaLaDelRaton  | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack33/second/pack33-second) |
 | 34       | first    | Done           | @apiad               | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack34/first/pack34-first) |
 | 34       | second   | Done           | @Estevanell          | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack34/second/pack34-second) |
 | 35       | first    | In progress    | @Skull_kiddf         | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack35/first/pack35-first) |
 | 35       | second   | In progress    | @Estevanell          | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack35/second/pack35-second) |
 | 36       | first    | In progress    | @edvard_munch        | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack36/first/pack36-first) |
-| 36       | second   | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack36/second/pack36-second) |
+| 36       | second   | In progress    | @SusanitaLaDelRaton  | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack36/second/pack36-second) |
 | 37       | first    | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack37/first/pack37-first) |
 | 37       | second   | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack37/second/pack37-second) |
 | 38       | first    | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack38/first/pack38-first) |
@@ -99,13 +99,3 @@ This a list of everyone currently involved and what they are doing.
 | 39       | second   | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack39/second/pack39-second) |
 | 40       | first    | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack40/first/pack40-first) |
 | 40       | second   | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack40/second/pack40-second) |
-| 41       | first    | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack41/first/pack41-first) |
-| 41       | second   | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack41/second/pack41-second) |
-| 42       | first    | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack42/first/pack42-first) |
-| 42       | second   | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack42/second/pack42-second) |
-| 43       | first    | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack43/first/pack43-first) |
-| 43       | second   | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack43/second/pack43-second) |
-| 44       | first    | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack44/first/pack44-first) |
-| 44       | second   | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack44/second/pack44-second) |
-| 45       | first    | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack45/first/pack45-first) |
-| 45       | second   | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack45/second/pack45-second) |
