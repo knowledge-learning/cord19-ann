@@ -92,11 +92,11 @@ This a list of everyone currently involved and what they are doing.
 | 36       | first    | Done           | @edvard_munch        | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack36/first/pack36-first) |
 | 36       | second   | In progress    | @SusanitaLaDelRaton  | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack36/second/pack36-second) |
 | 37       | first    | In progress    | @DrackEye            | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack37/first/pack37-first) |
-| 37       | second   | In progress    | @Dcardenas2019       | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack37/second/pack37-second) |
+| 37       | second   | Done           | @Dcardenas2019       | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack37/second/pack37-second) |
 | 38       | first    | Done           | @apiad               | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack38/first/pack38-first) |
 | 38       | second   | In progress    | @Estevanell          | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack38/second/pack38-second) |
 | 39       | first    | Done           | @Skull_kiddf         | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack39/first/pack39-first) |
-| 39       | second   | In progress    | @edvard_munch        | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack39/second/pack39-second) |
+| 39       | second   | Done           | @edvard_munch        | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack39/second/pack39-second) |
 | 40       | first    | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack40/first/pack40-first) |
 | 40       | second   | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack40/second/pack40-second) |
 | 41       | first    | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack41/first/pack41-first) |
