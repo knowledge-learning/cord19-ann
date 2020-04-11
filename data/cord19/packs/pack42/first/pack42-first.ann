@@ -1,0 +1,104 @@
+T1	Concept 10 14	data
+T2	Reference 4 9	these
+T3	Concept 30 38	COVID-19
+R1	entails Arg1:T1 Arg2:T3	
+T4	Concept 51 59	multiple
+T5	Action 60 74	organic injury
+R2	causes Arg1:T3 Arg2:T5	
+A1	Uncertain T5
+R3	has-property Arg1:T5 Arg2:T4	
+T6	Concept 75 83	COVID-19
+T7	Action 84 91	spreads
+T8	Concept 97 102	human
+T9	Concept 106 111	human
+R4	in-context Arg1:T7 Arg2:T8	
+R5	subject Arg1:T7 Arg2:T6	
+R6	target Arg1:T7 Arg2:T9	
+T10	Action 138 147	isolation
+T11	Concept 151 157	people
+T12	Concept 159 175	social avoidance
+T13	Action 180 190	quarantine
+T15	Concept 201 207	faster
+T16	Action 208 217	detection
+T17	Concept 221 229	infected
+T18	Concept 230 235	cases
+R7	has-property Arg1:T18 Arg2:T17	
+T19	Action 243 249	reduce
+A2	Uncertain T19
+T20	Action 258 264	growth
+R8	target Arg1:T10 Arg2:T11	
+R9	has-property Arg1:T16 Arg2:T15	
+R10	target Arg1:T16 Arg2:T18	
+R11	causes Arg1:T10 Arg2:T19	
+R12	causes Arg1:T12 Arg2:T19	
+R13	causes Arg1:T13 Arg2:T19	
+R14	causes Arg1:T16 Arg2:T19	
+R15	target Arg1:T19 Arg2:T20	
+T14	Concept 250 257	further
+R16	has-property Arg1:T20 Arg2:T14	
+R17	entails Arg1:T7 Arg2:T19	
+T21	Concept 276 290	nasopharyngeal
+T22	Concept 267 275	positive
+T23	Action 291 295	swab
+R18	is-a Arg1:T21 Arg2:T23	
+R19	has-property Arg1:T23 Arg2:T22	
+T24	Concept 296 302	RT-PCR
+R20	is-a Arg1:T23 Arg2:T24	
+T25	Concept 307 310	309
+T26	Concept 311 319	COVID-19
+T28	Concept 329 337	patients
+T29	Concept 369 378	potential
+T30	Action 382 388	infect
+T31	Reference 389 395	others
+R21	in-context Arg1:T24 Arg2:T28	
+R22	has-property Arg1:T26 Arg2:T28	
+R23	in-context Arg1:T28 Arg2:T25	
+T32	Reference 352 356	they
+*	same-as T32 T28
+R24	has-property Arg1:T32 Arg2:T29	
+R25	target Arg1:T30 Arg2:T31	
+A3	Uncertain T30
+R26	in-context Arg1:T29 Arg2:T30	
+T27	Concept 427 435	COVID-19
+T33	Action 414 423	treatment
+R27	target Arg1:T33 Arg2:T27	
+T34	Action 457 474	kidney impairment
+T35	Action 443 453	prevention
+T36	Concept 437 442	early
+T37	Concept 486 494	adequate
+T38	Concept 495 514	hemodynamic support
+T39	Action 519 527	avoiding
+T40	Concept 528 539	nephrotoxic
+T41	Concept 540 545	drugs
+T42	Concept 563 572	important
+A4	Emphasized T42
+T43	Concept 577 582	early
+T44	Concept 583 600	renal replacement
+T45	Action 601 610	treatment
+T46	Action 615 622	improve
+T47	Concept 637 646	prognosis
+R28	has-property Arg1:T35 Arg2:T36	
+R29	target Arg1:T35 Arg2:T34	
+R30	has-property Arg1:T38 Arg2:T37	
+R31	target Arg1:T39 Arg2:T41	
+R32	has-property Arg1:T41 Arg2:T40	
+R33	has-part Arg1:T35 Arg2:T38	
+R34	has-part Arg1:T35 Arg2:T39	
+R35	has-property Arg1:T35 Arg2:T42	
+R36	in-context Arg1:T35 Arg2:T33	
+R37	in-context Arg1:T45 Arg2:T44	
+R38	has-property Arg1:T45 Arg2:T43	
+A5	Uncertain T46
+R39	causes Arg1:T45 Arg2:T46	
+R40	target Arg1:T46 Arg2:T47	
+R41	in-context Arg1:T47 Arg2:T33	
+T48	Concept 680 687	T cells
+T49	Action 692 701	decreased
+T50	Action 706 715	exhausted
+T51	Concept 719 727	patients
+T52	Concept 733 741	COVID-19
+R42	in-context Arg1:T51 Arg2:T52	
+R43	target Arg1:T49 Arg2:T48	
+R44	target Arg1:T50 Arg2:T48	
+R45	in-context Arg1:T50 Arg2:T51	
+R46	in-context Arg1:T49 Arg2:T51	

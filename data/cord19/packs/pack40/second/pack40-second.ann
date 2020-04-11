@@ -1,0 +1,87 @@
+T1	Concept 4 9	swine
+T2	Concept 10 18	proteins
+T3	Concept 45 49	hits
+T4	Concept 86 90	ASFV
+T5	Concept 91 99	proteins
+R1	has-property Arg1:T5 Arg2:T4	
+R2	has-property Arg1:T2 Arg2:T1	
+T6	Action 25 35	interacted
+R3	subject Arg1:T6 Arg2:T2	
+R4	target Arg1:T6 Arg2:T3	
+T7	Concept 55 64	predicted
+T8	Action 68 76	interact
+R5	target Arg1:T8 Arg2:T5	
+R6	subject Arg1:T8 Arg2:T2	
+R7	has-property Arg1:T8 Arg2:T7	
+T9	Action 104 113	perfusion
+T10	Concept 114 120	system
+R8	has-property Arg1:T9 Arg2:T10	
+T11	Action 133 147	fluid exchange
+T12	Action 164 172	addition
+T13	Concept 176 195	transfection agents
+T14	Concept 220 230	time-lapse
+R9	entails Arg1:T10 Arg2:T11	
+A1	Uncertain T11
+R10	entails Arg1:T10 Arg2:T12	
+R11	target Arg1:T12 Arg2:T13	
+R12	in-context Arg1:T12 Arg2:T14	
+T15	Concept 231 242	measurement
+R13	has-property Arg1:T14 Arg2:T15	
+R14	in-context Arg1:T11 Arg2:T14	
+T16	Concept 263 269	number
+T17	Concept 273 278	cases
+T18	Concept 293 296	low
+A2	Uncertain T18
+R15	has-property Arg1:T17 Arg2:T16	
+R16	has-property Arg1:T16 Arg2:T18	
+T19	Concept 302 306	only
+T20	Action 314 320	reduce
+T21	Concept 325 337	contact rate
+T22	Concept 345 369	administratively-imposed
+T23	Action 370 380	quarantine
+R17	has-property Arg1:T23 Arg2:T22	
+R18	has-property Arg1:T23 Arg2:T19	
+R19	in-context Arg1:T23 Arg2:T17	
+T24	Concept 307 310	way
+R20	is-a Arg1:T23 Arg2:T24	
+R21	subject Arg1:T23 Arg2:T20	
+R22	target Arg1:T20 Arg2:T21	
+T25	Action 395 406	replication
+T26	Concept 414 419	donor
+T27	Action 381 391	Initiation
+T28	Action 434 440	switch
+T29	Concept 448 456	acceptor
+T31	Concept 502 512	infectious
+T32	Concept 513 519	genome
+T33	Concept 542 554	plaque assay
+R23	subject Arg1:T27 Arg2:T25	
+R24	in-context Arg1:T25 Arg2:T26	
+R25	target Arg1:T28 Arg2:T29	
+T30	Concept 467 487	after the oriI locus
+R26	in-time Arg1:T28 Arg2:T30	
+R27	has-property Arg1:T32 Arg2:T31	
+R28	causes Arg1:T27 Arg2:T32	
+R29	causes Arg1:T28 Arg2:T32	
+T34	Action 532 538	scored
+A3	Uncertain T34
+R30	target Arg1:T34 Arg2:T32	
+R31	subject Arg1:T34 Arg2:T33	
+T35	Concept 586 594	pathways
+T36	Concept 576 585	signaling
+T37	Concept 598 600	C3
+T38	Concept 613 616	RAS
+A4	Emphasized T38
+T39	Concept 618 627	Vitamin D
+A5	Emphasized T39
+T40	Concept 632 646	RXR activation
+T41	Concept 652 671	Chemokine signaling
+T42	Concept 697 708	significant
+A6	Emphasized T42
+A7	Emphasized T40
+R32	has-property Arg1:T35 Arg2:T36	
+R33	in-context Arg1:T35 Arg2:T37	
+R34	is-a Arg1:T38 Arg2:T35	
+R35	is-a Arg1:T39 Arg2:T35	
+R36	is-a Arg1:T40 Arg2:T35	
+R37	is-a Arg1:T41 Arg2:T35	
+R38	has-property Arg1:T38 Arg2:T42	

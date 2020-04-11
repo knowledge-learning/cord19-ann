@@ -1,0 +1,99 @@
+T1	Concept 7 22	epidemic period
+T2	Concept 43 52	challenge
+A1	Emphasized T2
+T3	Action 68 76	identify
+T4	Concept 77 85	COVID-19
+T5	Action 86 95	pneumonia
+T6	Action 101 114	heart failure
+T7	Concept 115 123	patients
+T8	Action 139 146	contact
+T9	Concept 131 138	initial
+R1	has-property Arg1:T3 Arg2:T2	
+T10	Concept 57 64	doctors
+R2	subject Arg1:T3 Arg2:T10	
+R3	target Arg1:T3 Arg2:T5	
+R4	has-property Arg1:T4 Arg2:T5	
+R5	in-context Arg1:T3 Arg2:T7	
+R6	subject Arg1:T6 Arg2:T7	
+R7	has-property Arg1:T8 Arg2:T9	
+R8	in-time Arg1:T3 Arg2:T1	
+R9	in-context Arg1:T3 Arg2:T8	
+T11	Concept 152 159	samples
+T13	Concept 171 179	COVID-19
+T12	Concept 189 193	MERS
+A2	Negated T12
+T14	Concept 195 200	BtCoV
+A3	Negated T14
+T15	Concept 205 208	MHV
+A4	Negated T15
+R10	has-property Arg1:T11 Arg2:T13	
+R11	has-property Arg1:T11 Arg2:T12	
+R12	has-property Arg1:T11 Arg2:T14	
+R13	has-property Arg1:T11 Arg2:T15	
+T16	Concept 214 222	positive
+T17	Action 223 240	RT-LAMP reactions
+T18	Concept 252 263	specificity
+T19	Action 271 279	reaction
+T20	Concept 284 292	COVID-19
+T21	Concept 147 151	Only
+R14	has-property Arg1:T11 Arg2:T21	
+R15	has-property Arg1:T11 Arg2:T17	
+R16	has-property Arg1:T17 Arg2:T16	
+R17	entails Arg1:T17 Arg2:T18	
+R18	has-property Arg1:T19 Arg2:T18	
+R19	in-context Arg1:T19 Arg2:T20	
+T22	Reference 300 305	those
+T23	Action 314 323	pneumonia
+T24	Concept 325 334	one-third
+T25	Concept 338 346	COVID-19
+T26	Concept 347 355	patients
+T27	Action 361 370	pneumonia
+T28	Concept 384 391	account
+T29	Concept 380 383	low
+A5	Emphasized T29
+T30	Concept 393 400	<190/µL
+T31	Concept 405 418	CD8 + T cells
+R20	in-context Arg1:T26 Arg2:T25	
+R21	in-context Arg1:T26 Arg2:T24	
+R22	subject Arg1:T27 Arg2:T26	
+R23	has-property Arg1:T26 Arg2:T28	
+R24	has-property Arg1:T28 Arg2:T29	
+R25	has-property Arg1:T31 Arg2:T28	
+R26	in-context Arg1:T28 Arg2:T30	
+A6	Negated T23
+R27	subject Arg1:T23 Arg2:T22	
+R28	in-context Arg1:T28 Arg2:T22	
+T32	Concept 434 442	COVID-19
+T33	Concept 453 463	wide-range
+T34	Concept 467 475	patients
+T35	Action 443 450	affects
+T36	Concept 482 487	youth
+T37	Concept 495 502	elderly
+R31	has-property Arg1:T34 Arg2:T33	
+R29	has-part Arg1:T33 Arg2:T36	
+R30	has-part Arg1:T33 Arg2:T37	
+R32	subject Arg1:T35 Arg2:T32	
+R33	target Arg1:T35 Arg2:T34	
+T38	Concept 529 537	patients
+T39	Concept 546 551	basic
+T40	Action 552 566	kidney disease
+A7	Negated T40
+T42	Concept 585 596	abnormality
+A8	Negated T42
+T43	Concept 577 584	obvious
+T44	Action 600 614	renal function
+T45	Concept 626 641	hospitalization
+T46	Concept 645 653	COVID-19
+T47	Action 680 689	exhibited
+T48	Action 690 693	ARF
+A9	Negated T47
+R34	target Arg1:T47 Arg2:T48	
+R35	subject Arg1:T40 Arg2:T38	
+R36	has-property Arg1:T40 Arg2:T39	
+R37	in-context Arg1:T42 Arg2:T44	
+R38	has-property Arg1:T42 Arg2:T43	
+R39	has-property Arg1:T38 Arg2:T42	
+R40	in-context Arg1:T45 Arg2:T46	
+R41	in-context Arg1:T38 Arg2:T45	
+T41	Concept 671 679	patients
+R42	subject Arg1:T47 Arg2:T41	

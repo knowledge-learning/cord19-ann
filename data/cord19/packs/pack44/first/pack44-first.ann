@@ -1,0 +1,125 @@
+T1	Concept 36 47	accelerated
+A1	Uncertain T1
+T2	Action 48 57	evolution
+T3	Concept 61 64	RBD
+T4	Concept 68 80	SARS-related
+T5	Concept 81 84	CoV
+T6	Concept 89 105	COVID-19-related
+T7	Concept 106 109	CoV
+T8	Concept 110 117	related
+T9	Concept 127 139	phylogenetic
+T10	Concept 140 153	intermediates
+R1	has-property Arg1:T2 Arg2:T1	
+R2	subject Arg1:T2 Arg2:T3	
+R3	has-property Arg1:T5 Arg2:T3	
+R4	has-property Arg1:T5 Arg2:T4	
+R5	has-property Arg1:T7 Arg2:T3	
+R6	has-property Arg1:T7 Arg2:T6	
+R7	has-property Arg1:T2 Arg2:T8	
+R8	in-context Arg1:T8 Arg2:T10	
+R9	has-property Arg1:T10 Arg2:T9	
+T11	Reference 154 158	This
+T12	Concept 162 170	critical
+T13	Concept 177 185	COVID-19
+T14	Action 186 195	infection
+R10	has-property Arg1:T11 Arg2:T12	
+T15	Concept 200 207	rapidly
+T16	Action 208 216	progress
+T17	Concept 222 240	hospital admission
+T18	Action 244 248	ARDS
+T19	Concept 262 268	2 days
+T20	Concept 300 305	fatal
+R11	in-context Arg1:T14 Arg2:T13	
+R12	has-property Arg1:T14 Arg2:T20	
+A2	Uncertain T20
+R13	subject Arg1:T16 Arg2:T14	
+R14	has-property Arg1:T16 Arg2:T15	
+R15	target Arg1:T16 Arg2:T18	
+R16	in-context Arg1:T16 Arg2:T17	
+R17	in-time Arg1:T16 Arg2:T19	
+T21	Concept 325 330	first
+T23	Concept 340 348	infected
+A3	Emphasized T23
+T22	Concept 349 357	patients
+T24	Concept 373 381	COVID-19
+T25	Concept 391 397	number
+A4	Emphasized T25
+T27	Action 423 438	cytokine storms
+T28	Concept 449 454	fatal
+R18	has-property Arg1:T27 Arg2:T28	
+R19	has-property Arg1:T22 Arg2:T23	
+R20	has-property Arg1:T22 Arg2:T21	
+R21	in-context Arg1:T22 Arg2:T24	
+R22	has-property Arg1:T22 Arg2:T25	
+R23	subject Arg1:T27 Arg2:T22	
+T26	Concept 460 465	delay
+T29	Concept 491 495	long
+A5	Emphasized T29
+T30	Action 506 515	infection
+T31	Concept 496 500	time
+R24	has-property Arg1:T31 Arg2:T29	
+T32	Reference 455 459	This
+R25	entails Arg1:T26 Arg2:T31	
+T33	Concept 519 525	severe
+T34	Concept 530 538	critical
+T35	Concept 539 549	conditions
+R26	is-a Arg1:T33 Arg2:T35	
+R27	is-a Arg1:T34 Arg2:T35	
+T36	Concept 558 566	COVID-19
+T37	Concept 567 575	patients
+T38	Action 599 607	ICU care
+T39	Concept 580 590	eventually
+R28	in-time Arg1:T31 Arg2:T30	
+R29	in-context Arg1:T31 Arg2:T33	
+R30	in-context Arg1:T31 Arg2:T34	
+T40	Concept 641 645	mild
+T41	Concept 646 654	symptoms
+R31	has-property Arg1:T41 Arg2:T40	
+R32	in-context Arg1:T37 Arg2:T36	
+R33	subject Arg1:T38 Arg2:T37	
+R34	in-time Arg1:T38 Arg2:T39	
+T42	Concept 616 625	initially
+R35	has-property Arg1:T37 Arg2:T41	
+R36	in-time Arg1:T41 Arg2:T42	
+T43	Action 680 689	discharge
+T44	Action 693 698	death
+T45	Concept 665 671	longer
+T46	Concept 672 676	time
+A6	Emphasized T45
+R37	has-property Arg1:T46 Arg2:T45	
+R38	in-context Arg1:T46 Arg2:T43	
+R39	in-context Arg1:T46 Arg2:T44	
+R40	entails Arg1:T26 Arg2:T46	
+T47	Action 717 729	accumulation
+T48	Concept 733 745	hospitalized
+T49	Concept 746 751	cases
+T50	Concept 757 762	after
+A7	Emphasized T50
+T51	Action 794 800	spread
+T52	Concept 784 793	community
+T53	Action 767 776	downturns
+R41	in-place Arg1:T51 Arg2:T52	
+R42	subject Arg1:T53 Arg2:T51	
+R43	causes Arg1:T31 Arg2:T47	
+R44	causes Arg1:T46 Arg2:T47	
+R45	subject Arg1:T47 Arg2:T49	
+R46	has-property Arg1:T49 Arg2:T48	
+R47	in-time Arg1:T47 Arg2:T50	
+R48	in-context Arg1:T50 Arg2:T53	
+T54	Concept 823 829	report
+T55	Reference 818 822	this
+T56	Action 859 868	secretion
+T57	Concept 872 881	cytokines
+T58	Concept 892 897	TNF-α
+T59	Concept 899 903	IL-6
+T60	Concept 908 913	IL-10
+R49	subject Arg1:T56 Arg2:T57	
+R50	entails Arg1:T54 Arg2:T56	
+R51	is-a Arg1:T58 Arg2:T57	
+R52	is-a Arg1:T59 Arg2:T57	
+R53	is-a Arg1:T60 Arg2:T57	
+A8	Emphasized T56
+T61	Concept 931 939	COVID-19
+T62	Concept 940 948	patients
+R54	in-context Arg1:T62 Arg2:T61	
+R55	in-context Arg1:T56 Arg2:T62	

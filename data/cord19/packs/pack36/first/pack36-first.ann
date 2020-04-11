@@ -28,8 +28,8 @@ A3	Emphasized T13
 T15	Concept 270 286	processing order
 T16	Concept 295 303	assembly
 R11	entails Arg1:T14 Arg2:T13	
-R12	subject Arg1:T13 Arg2:T15	
-R13	subject Arg1:T13 Arg2:T16	
+R12	target Arg1:T13 Arg2:T15	
+R13	target Arg1:T13 Arg2:T16	
 R14	in-context Arg1:T15 Arg2:T8	
 R15	in-context Arg1:T16 Arg2:T8	
 T17	Concept 324 333	beginning
@@ -54,3 +54,60 @@ T26	Concept 514 524	incubation
 R22	has-property Arg1:T25 Arg2:T26	
 R23	has-property Arg1:T20 Arg2:T24	
 R24	in-context Arg1:T24 Arg2:T25	
+T27	Concept 597 600	RBD
+T28	Concept 627 640	coronaviruses
+T29	Concept 645 654	2019-nCoV
+T30	Concept 563 573	amino acid
+T31	Action 574 584	similarity
+T32	Concept 608 626	Guangdong pangolin
+R26	is-a Arg1:T29 Arg2:T28	
+R27	is-a Arg1:T32 Arg2:T28	
+R28	has-part Arg1:T27 Arg2:T30	
+R29	subject Arg1:T31 Arg2:T32	
+R30	subject Arg1:T31 Arg2:T29	
+R31	in-context Arg1:T31 Arg2:T30	
+T33	Concept 719 732	recombination
+T34	Concept 697 706	evolution
+T35	Concept 686 696	convergent
+R25	has-property Arg1:T34 Arg2:T35	
+T37	Concept 665 685	selectively-mediated
+R32	in-context Arg1:T34 Arg2:T37	
+R33	entails Arg1:T34 Arg2:T31	
+A7	Uncertain T34
+A8	Negated T33
+R34	entails Arg1:T33 Arg2:T31	
+A9	Uncertain T33
+T36	Concept 844 854	escape 300
+T38	Concept 876 886	repression
+T39	Concept 860 875	transcriptional
+R35	has-property Arg1:T38 Arg2:T39	
+T40	Concept 909 921	conformation
+T41	Concept 904 908	open
+R36	has-property Arg1:T40 Arg2:T41	
+T42	Concept 931 934	DNA
+T43	Concept 925 930	viral
+R37	in-context Arg1:T42 Arg2:T43	
+T44	Concept 954 966	compartments
+T45	Concept 938 953	replication 301
+R38	in-context Arg1:T44 Arg2:T45	
+T46	Reference 994 1001	viruses
+T47	Concept 1033 1043	transcript
+T48	Concept 1027 1032	viral
+R39	in-context Arg1:T47 Arg2:T48	
+T49	Action 1044 1048	loss
+T50	Action 1002 1012	counteract
+T51	Concept 1013 1026	decay-induced
+R40	subject Arg1:T50 Arg2:T46	
+R41	has-property Arg1:T47 Arg2:T51	
+R42	target Arg1:T49 Arg2:T47	
+R43	target Arg1:T50 Arg2:T49	
+T52	Concept 833 840	ability
+R44	in-context Arg1:T52 Arg2:T36	
+R45	in-place Arg1:T36 Arg2:T38	
+T53	Action 890 896	linked
+A10	Uncertain T53
+R46	subject Arg1:T53 Arg2:T52	
+R47	in-context Arg1:T40 Arg2:T42	
+R48	in-place Arg1:T40 Arg2:T44	
+R49	target Arg1:T53 Arg2:T40	
+R50	entails Arg1:T53 Arg2:T50	

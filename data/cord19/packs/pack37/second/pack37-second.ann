@@ -17,3 +17,90 @@ R5	target Arg1:T9 Arg2:T8
 T11	Concept 333 338	PARP2
 T12	Action 339 348	maintains
 T13	Concept 349 366	genomic stability
+T14	Concept 485 495	proteasome
+T15	Concept 771 780	NP-exo WT
+T16	Concept 785 791	NP-exo
+T18	Concept 597 618	virus genome sequence
+T19	Concept 799 806	viruses
+T20	Concept 792 798	mutant
+R6	has-property Arg1:T19 Arg2:T20	
+R7	is-a Arg1:T16 Arg2:T19	
+R8	is-a Arg1:T15 Arg2:T19	
+T21	Concept 845 853	particle
+T22	Concept 834 844	infectious
+T23	Concept 830 833	one
+R9	has-property Arg1:T21 Arg2:T22	
+T25	Action 451 464	ubiquitinated
+T26	Action 469 477	degraded
+T27	Concept 439 447	required
+A2	Negated T27
+R10	in-time Arg1:T25 Arg2:T27	
+R11	in-time Arg1:T26 Arg2:T27	
+R12	subject Arg1:T26 Arg2:T14	
+R13	subject Arg1:T25 Arg2:T14	
+R14	subject Arg1:T12 Arg2:T11	
+R15	target Arg1:T12 Arg2:T13	
+T28	Action 370 380	recruiting
+T29	Concept 381 401	DNA repair machinery
+R16	subject Arg1:T28 Arg2:T11	
+T30	Concept 414 424	DNA damage
+R17	target Arg1:T28 Arg2:T29	
+R18	target Arg1:T25 Arg2:T11	
+R19	target Arg1:T26 Arg2:T11	
+T31	Concept 39 51	concentrated
+A3	Emphasized T31
+T32	Concept 65 74	years old
+T33	Concept 59 64	30-50
+R20	in-context Arg1:T33 Arg2:T32	
+R21	has-property Arg1:T3 Arg2:T31	
+R22	in-context Arg1:T31 Arg2:T33	
+T34	Concept 76 82	60.61%
+R23	in-context Arg1:T34 Arg2:T31	
+R24	in-context Arg1:T4 Arg2:T2	
+R25	in-context Arg1:T6 Arg2:T2	
+T35	Concept 858 862	3600
+T36	Concept 867 872	23000
+T37	Action 639 646	merging
+T38	Concept 662 669	results
+T39	Concept 651 661	prediction
+R26	in-context Arg1:T38 Arg2:T39	
+T40	Action 728 736	learning
+T41	Concept 718 727	efficient
+T42	Concept 709 713	fast
+R27	has-property Arg1:T40 Arg2:T41	
+R28	has-property Arg1:T40 Arg2:T42	
+T43	Concept 745 754	sequences
+T44	Concept 740 744	long
+R29	has-property Arg1:T43 Arg2:T44	
+T45	Concept 588 596	original
+R30	has-property Arg1:T18 Arg2:T45	
+T46	Concept 845 853	particle
+R31	has-property Arg1:T46 Arg2:T22	
+R32	in-context Arg1:T23 Arg2:T46	
+R33	in-context Arg1:T23 Arg2:T21	
+R34	has-part Arg1:T15 Arg2:T46	
+R35	has-part Arg1:T16 Arg2:T21	
+R36	in-context Arg1:T46 Arg2:T35	
+R37	in-context Arg1:T21 Arg2:T36	
+T17	Concept 873 886	NP RNA copies
+R38	in-context Arg1:T35 Arg2:T17	
+R39	in-context Arg1:T36 Arg2:T17	
+T24	Concept 205 210	model
+R42	target Arg1:T37 Arg2:T38	
+T48	Concept 677 699	generated subsequences
+R43	in-context Arg1:T39 Arg2:T48	
+R41	in-place Arg1:T29 Arg2:T30	
+R40	is-a Arg1:T7 Arg2:T24	
+T47	Concept 232 239	example
+T49	Concept 219 231	most studied
+R44	entails Arg1:T47 Arg2:T49	
+T50	Action 571 580	splitting
+R46	target Arg1:T50 Arg2:T18	
+R47	causes Arg1:T50 Arg2:T40	
+R48	causes Arg1:T37 Arg2:T40	
+R49	target Arg1:T40 Arg2:T43	
+R50	subject Arg1:T9 Arg2:T10	
+T51	Concept 245 257	unique world
+R51	in-context Arg1:T51 Arg2:T10	
+R52	is-a Arg1:T7 Arg2:T47	
+R45	in-context Arg1:T47 Arg2:T51	

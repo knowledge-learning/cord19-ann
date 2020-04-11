@@ -1,0 +1,93 @@
+T2	Concept 20 28	patients
+T3	Concept 11 19	COVID-19
+T4	Concept 4 7	age
+T5	Concept 59 83	30-50 years old (60.61%)
+R2	in-context Arg1:T2 Arg2:T3	
+T6	Concept 93 97	male
+T7	Concept 128 134	female
+T8	Concept 107 118	susceptible
+R5	has-property Arg1:T6 Arg2:T8	
+R6	in-context Arg1:T8 Arg2:T7	
+T9	Concept 102 106	more
+R7	has-property Arg1:T8 Arg2:T9	
+R1	has-property Arg1:T2 Arg2:T4	
+R3	in-context Arg1:T4 Arg2:T5	
+T1	Concept 32 51	mainly concentrated
+R4	has-property Arg1:T2 Arg2:T1	
+T10	Concept 166 192	yeast linear pGKL plasmids
+T12	Concept 205 210	model
+R8	is-a Arg1:T10 Arg2:T12	
+T11	Concept 333 338	PARP2
+T15	Concept 349 366	genomic stability
+T16	Action 339 348	maintains
+R11	subject Arg1:T16 Arg2:T11	
+R12	target Arg1:T16 Arg2:T15	
+T17	Action 370 380	recruiting
+T18	Concept 381 401	DNA repair machinery
+T19	Concept 405 424	sites of DNA damage
+R13	causes Arg1:T17 Arg2:T16	
+R14	target Arg1:T17 Arg2:T18	
+R15	in-place Arg1:T17 Arg2:T19	
+R16	subject Arg1:T17 Arg2:T11	
+T20	Concept 485 495	proteasome
+T21	Action 469 477	degraded
+T22	Action 451 464	ubiquitinated
+R17	subject Arg1:T21 Arg2:T20	
+R18	subject Arg1:T22 Arg2:T20	
+R20	target Arg1:T22 Arg2:T15	
+R21	target Arg1:T21 Arg2:T15	
+T23	Concept 430 447	when not required
+R19	in-context Arg1:T22 Arg2:T23	
+R22	in-context Arg1:T21 Arg2:T23	
+T26	Concept 677 699	generated subsequences
+T27	Action 700 705	leads
+T28	Concept 728 736	learning
+T29	Concept 745 754	sequences
+T30	Concept 740 744	long
+T31	Concept 718 727	efficient
+T32	Concept 709 713	fast
+R23	target Arg1:T27 Arg2:T28	
+R24	has-property Arg1:T28 Arg2:T31	
+R25	has-property Arg1:T28 Arg2:T32	
+R26	in-context Arg1:T28 Arg2:T29	
+R27	has-property Arg1:T29 Arg2:T30	
+T33	Concept 771 780	NP-exo WT
+T36	Concept 834 853	infectious particle
+T37	Concept 858 862	3600
+T38	Concept 873 875	NP
+T39	Concept 876 879	RNA
+T40	Concept 880 886	copies
+T41	Concept 867 872	23000
+T34	Concept 785 791	NP-exo
+T35	Concept 799 806	viruses
+T42	Concept 792 798	mutant
+R30	has-property Arg1:T35 Arg2:T42	
+R31	is-a Arg1:T33 Arg2:T35	
+R32	is-a Arg1:T34 Arg2:T35	
+R33	has-part Arg1:T33 Arg2:T36	
+R34	has-part Arg1:T34 Arg2:T36	
+R35	in-context Arg1:T33 Arg2:T37	
+R36	in-context Arg1:T34 Arg2:T41	
+R37	in-context Arg1:T37 Arg2:T40	
+R38	in-context Arg1:T41 Arg2:T40	
+R39	in-context Arg1:T40 Arg2:T39	
+R40	has-part Arg1:T39 Arg2:T38	
+T24	Action 571 580	splitting
+T25	Action 639 646	merging
+T43	Concept 651 669	prediction results
+T44	Concept 588 618	original virus genome sequence
+R28	in-context Arg1:T43 Arg2:T26	
+R29	in-context Arg1:T24 Arg2:T44	
+R41	target Arg1:T25 Arg2:T43	
+R42	causes Arg1:T25 Arg2:T27	
+R43	causes Arg1:T24 Arg2:T27	
+T13	Concept 232 239	example
+T45	Concept 219 231	most studied
+R9	has-property Arg1:T13 Arg2:T45	
+R10	is-a Arg1:T10 Arg2:T13	
+T14	Concept 324 332	plasmids
+T46	Concept 297 323	linear double-stranded DNA
+R44	in-context Arg1:T13 Arg2:T14	
+R45	has-property Arg1:T14 Arg2:T46	
+T47	Concept 265 296	yeast cytoplasmically localized
+R46	in-context Arg1:T14 Arg2:T47	

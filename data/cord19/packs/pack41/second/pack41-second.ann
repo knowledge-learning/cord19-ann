@@ -1,0 +1,123 @@
+T1	Concept 7 18	cold season
+T2	Concept 24 34	cumulative
+T3	Concept 35 43	relative
+T4	Concept 44 48	risk
+T5	Concept 52 66	non-accidental
+T6	Concept 68 79	respiratory
+T7	Concept 84 98	cardiovascular
+T8	Action 99 104	death
+T9	Action 105 114	increased
+T10	Concept 123 133	DTR values
+A1	Emphasized T10
+T11	Concept 137 143	Tabriz
+R1	has-property Arg1:T4 Arg2:T2	
+R2	has-property Arg1:T4 Arg2:T3	
+R3	has-property Arg1:T8 Arg2:T4	
+R4	has-property Arg1:T8 Arg2:T5	
+R5	has-property Arg1:T8 Arg2:T7	
+R6	target Arg1:T9 Arg2:T4	
+R7	in-context Arg1:T9 Arg2:T10	
+R8	in-place Arg1:T9 Arg2:T11	
+R9	in-time Arg1:T9 Arg2:T1	
+T12	Concept 162 167	cells
+A2	Emphasized T12
+T13	Action 181 191	cell cycle
+T14	Concept 175 180	first
+T15	Action 192 199	entered
+T16	Action 200 207	S phase
+T17	Concept 217 224	amounts
+A3	Diminished T17
+T18	Concept 228 234	loaded
+T19	Concept 235 238	MCM
+R10	has-property Arg1:T19 Arg2:T18	
+R11	has-property Arg1:T19 Arg2:T17	
+R12	in-context Arg1:T15 Arg2:T17	
+R13	subject Arg1:T13 Arg2:T12	
+R14	in-context Arg1:T13 Arg2:T14	
+R15	subject Arg1:T15 Arg2:T12	
+R16	target Arg1:T15 Arg2:T16	
+T20	Concept 242 259	crystal structure
+T21	Concept 263 271	ZIKV NS3
+T22	Concept 272 280	helicase
+T23	Concept 292 295	ATP
+T24	Concept 286 291	bound
+T25	Concept 303 311	residues
+T26	Reference 297 302	these
+T27	Concept 329 338	functions
+A4	Emphasized T27
+T28	Action 384 394	stabilizes
+T29	Concept 399 402	ATP
+T30	Concept 403 411	molecule
+T31	Concept 352 357	Mn 2+
+T32	Concept 376 383	GLU 286
+T33	Action 358 370	coordination
+T34	Concept 417 423	P-loop
+T35	Concept 424 432	residues
+T36	Concept 443 450	ARG 202
+T37	Concept 452 459	LYS 200
+T38	Concept 434 441	GLY 197
+T39	Concept 465 473	motif VI
+T40	Concept 474 482	residues
+T41	Concept 484 491	ARG 459
+T42	Concept 493 500	ARG 462
+T44	Action 523 541	ion NTP hydrolysis
+T46	Action 562 572	transition
+T47	Concept 573 578	state
+T48	Concept 579 590	nucleotides
+R17	has-part Arg1:T21 Arg2:T22	
+R18	has-property Arg1:T22 Arg2:T20	
+R19	in-context Arg1:T20 Arg2:T23	
+R20	has-property Arg1:T23 Arg2:T24	
+R21	in-place Arg1:T27 Arg2:T20	
+R22	has-property Arg1:T25 Arg2:T27	
+R23	target Arg1:T33 Arg2:T31	
+R24	target Arg1:T33 Arg2:T32	
+R25	subject Arg1:T28 Arg2:T33	
+R26	target Arg1:T28 Arg2:T30	
+R27	has-property Arg1:T30 Arg2:T29	
+R28	is-a Arg1:T33 Arg2:T27	
+R29	has-property Arg1:T35 Arg2:T34	
+R30	is-a Arg1:T38 Arg2:T35	
+R31	is-a Arg1:T36 Arg2:T35	
+R32	is-a Arg1:T37 Arg2:T35	
+R33	has-property Arg1:T40 Arg2:T39	
+R34	is-a Arg1:T41 Arg2:T40	
+R35	is-a Arg1:T42 Arg2:T40	
+R37	subject Arg1:T44 Arg2:T35	
+R38	subject Arg1:T44 Arg2:T40	
+T43	Concept 514 522	key role
+R36	has-property Arg1:T44 Arg2:T43	
+R39	has-property Arg1:T46 Arg2:T47	
+R40	subject Arg1:T46 Arg2:T48	
+R41	in-context Arg1:T44 Arg2:T48	
+T45	Concept 595 604	increased
+A5	Emphasized T45
+T49	Concept 605 620	lung macrophage
+T50	Concept 621 631	population
+T52	Concept 647 653	severe
+T53	Concept 654 662	COVID-19
+T54	Concept 663 671	patients
+R42	has-property Arg1:T54 Arg2:T53	
+R43	has-property Arg1:T54 Arg2:T52	
+R44	has-property Arg1:T50 Arg2:T45	
+R45	has-property Arg1:T49 Arg2:T50	
+R46	in-context Arg1:T50 Arg2:T54	
+T51	Concept 681 689	COVID-19
+T55	Concept 707 711	long
+A6	Uncertain T55
+T58	Concept 746 756	time delay
+T59	Concept 765 769	real
+T60	Concept 770 777	dynamic
+T61	Concept 786 799	dailyobserved
+T62	Concept 800 804	case
+T63	Concept 805 812	numbers
+T56	Concept 712 729	incubation period
+R47	has-property Arg1:T51 Arg2:T56	
+R48	has-property Arg1:T56 Arg2:T55	
+R49	causes Arg1:T56 Arg2:T58	
+R50	has-property Arg1:T60 Arg2:T59	
+R54	in-context Arg1:T58 Arg2:T60	
+R53	is-a Arg1:T60 Arg2:T63	
+R51	is-a Arg1:T61 Arg2:T63	
+R52	has-property Arg1:T62 Arg2:T63	
+R55	in-context Arg1:T58 Arg2:T61	

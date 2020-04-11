@@ -1,0 +1,97 @@
+T1	Concept 24 32	analysis
+T2	Concept 6 23	network proximity
+R1	in-context Arg1:T1 Arg2:T2	
+T3	Action 53 64	association
+A1	Emphasized T3
+T4	Concept 86 93	targets
+T5	Concept 73 83	Irbesartan
+R2	has-part Arg1:T5 Arg2:T4	
+T6	Concept 98 102	HCoV
+T7	Concept 119 127	proteins
+T8	Concept 114 118	host
+R3	has-property Arg1:T7 Arg2:T8	
+R4	in-context Arg1:T7 Arg2:T6	
+T9	Concept 141 152	interactome
+T10	Concept 135 140	human
+R5	has-part Arg1:T10 Arg2:T9	
+R6	subject Arg1:T3 Arg2:T4	
+R7	subject Arg1:T3 Arg2:T7	
+R8	in-place Arg1:T3 Arg2:T9	
+R9	entails Arg1:T1 Arg2:T3	
+T11	Concept 210 214	COPD
+T12	Concept 157 167	mechanisms
+T13	Concept 193 206	exacerbations
+T14	Concept 179 192	virus-induced
+R10	has-property Arg1:T13 Arg2:T14	
+T15	Action 168 178	underlying
+R12	subject Arg1:T15 Arg2:T12	
+R13	target Arg1:T15 Arg2:T13	
+R11	in-place Arg1:T15 Arg2:T11	
+T16	Concept 223 230	factors
+T17	Action 236 241	drive
+T18	Concept 242 254	inflammation
+T19	Concept 268 276	severity
+T20	Concept 259 267	clinical
+T21	Reference 290 298	episodes
+R14	in-context Arg1:T19 Arg2:T20	
+T22	Concept 310 320	understood
+A2	Diminished T22
+R15	subject Arg1:T17 Arg2:T16	
+R16	target Arg1:T17 Arg2:T18	
+R17	target Arg1:T17 Arg2:T19	
+R18	in-time Arg1:T17 Arg2:T21	
+R19	has-property Arg1:T16 Arg2:T22	
+R20	has-property Arg1:T12 Arg2:T22	
+T23	Reference 344 350	values
+T24	Concept 366 375	2019-nCoV
+T25	Concept 376 381	S-RBD
+T26	Concept 427 435	SARS-CoV
+T27	Concept 436 441	S-RBD
+T28	Concept 445 449	ACE2
+T29	Action 382 389	reaches
+T30	Concept 407 423	binding strength
+T31	Concept 396 399	73%
+R21	has-part Arg1:T24 Arg2:T25	
+R22	has-part Arg1:T26 Arg2:T27	
+R25	target Arg1:T29 Arg2:T30	
+R26	subject Arg1:T29 Arg2:T25	
+R27	in-context Arg1:T30 Arg2:T27	
+R23	in-context Arg1:T30 Arg2:T31	
+R24	in-context Arg1:T27 Arg2:T28	
+T32	Action 324 333	comparing
+R28	subject Arg1:T32 Arg2:T23	
+R29	entails Arg1:T32 Arg2:T29	
+T33	Concept 488 491	SNP
+T34	Action 496 508	have reduced
+T35	Concept 523 535	inflammation
+T36	Concept 514 522	mediated
+T37	Concept 509 513	TLR4
+R30	has-property Arg1:T35 Arg2:T36	
+T38	Concept 471 479	carriers
+R31	in-context Arg1:T38 Arg2:T33	
+A3	Uncertain T34
+R32	subject Arg1:T34 Arg2:T38	
+R33	target Arg1:T34 Arg2:T35	
+R34	in-context Arg1:T35 Arg2:T37	
+T39	Concept 568 574	models
+T40	Concept 554 567	network based
+T41	Concept 595 606	inefficient
+T42	Concept 579 594	computationally
+R35	in-context Arg1:T41 Arg2:T42	
+T43	Concept 625 640	metapopulations
+R36	is-a Arg1:T40 Arg2:T39	
+R37	has-property Arg1:T40 Arg2:T41	
+R38	is-a Arg1:T43 Arg2:T39	
+T44	Concept 651 660	efficient
+T45	Action 670 674	fail
+A4	Emphasized T45
+T46	Action 678 686	maintain
+T47	Concept 695 706	populations
+T48	Concept 687 694	initial
+T49	Concept 710 717	patches
+R39	has-property Arg1:T47 Arg2:T48	
+R40	in-context Arg1:T47 Arg2:T49	
+R41	has-property Arg1:T43 Arg2:T44	
+R42	subject Arg1:T45 Arg2:T43	
+R43	in-context Arg1:T45 Arg2:T46	
+R44	target Arg1:T46 Arg2:T47	
