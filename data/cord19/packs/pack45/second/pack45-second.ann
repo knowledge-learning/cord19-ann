@@ -1,0 +1,128 @@
+T1	Concept 13 21	findings
+T2	Action 46 52	change
+A1	Negated T2
+A2	Emphasized T2
+T3	Action 56 65	infection
+T4	Concept 66 71	rates
+T5	Concept 79 86	schools
+T6	Concept 91 101	workplaces
+T7	Action 109 115	closed
+T8	Concept 120 129	intercity
+T9	Concept 130 136	travel
+T10	Action 137 144	limited
+T11	Concept 188 196	COVID-19
+T12	Action 212 215	end
+T13	Concept 223 228	April
+A3	Uncertain T13
+T14	Concept 229 233	2020
+T15	Action 197 205	epidemic
+R1	in-context Arg1:T1 Arg2:T2	
+R2	has-property Arg1:T2 Arg2:T4	
+R3	has-property Arg1:T4 Arg2:T3	
+R4	target Arg1:T7 Arg2:T5	
+R5	target Arg1:T7 Arg2:T6	
+R6	has-property Arg1:T9 Arg2:T8	
+R7	target Arg1:T10 Arg2:T9	
+R8	entails Arg1:T7 Arg2:T2	
+R9	entails Arg1:T10 Arg2:T2	
+R10	entails Arg1:T1 Arg2:T12	
+R11	subject Arg1:T15 Arg2:T11	
+R12	subject Arg1:T12 Arg2:T15	
+R13	in-time Arg1:T12 Arg2:T13	
+R14	in-time Arg1:T13 Arg2:T14	
+T16	Concept 239 246	results
+T17	Concept 262 273	preliminary
+T18	Action 274 287	demonstration
+T19	Concept 291 297	T cell
+T20	Action 298 308	exhaustion
+T21	Concept 316 324	COVID-19
+T22	Action 325 334	infection
+T23	Concept 357 367	aggressive
+A4	Emphasized T23
+A5	Uncertain T23
+T24	Concept 368 373	early
+T25	Action 374 386	intervention
+T26	Concept 394 402	required
+T27	Concept 406 414	patients
+T28	Concept 424 436	T lymphocyte
+T29	Concept 437 443	counts
+R15	entails Arg1:T16 Arg2:T18	
+R16	has-property Arg1:T18 Arg2:T17	
+R17	target Arg1:T18 Arg2:T20	
+R18	target Arg1:T20 Arg2:T19	
+R19	in-context Arg1:T20 Arg2:T22	
+R20	subject Arg1:T22 Arg2:T21	
+R21	entails Arg1:T16 Arg2:T25	
+R22	has-property Arg1:T25 Arg2:T23	
+R23	has-property Arg1:T25 Arg2:T24	
+R24	has-property Arg1:T25 Arg2:T26	
+R25	in-context Arg1:T25 Arg2:T27	
+R26	in-context Arg1:T27 Arg2:T29	
+A6	Diminished T29
+R27	has-property Arg1:T28 Arg2:T29	
+T30	Concept 448 455	results
+T31	Concept 485 488	DTR
+T32	Action 474 481	effects
+T33	Concept 526 535	mortality
+T34	Concept 539 547	COVID-19
+R28	subject Arg1:T32 Arg2:T31	
+R29	entails Arg1:T30 Arg2:T33	
+R30	has-part Arg1:T33 Arg2:T32	
+R31	has-property Arg1:T34 Arg2:T33	
+T35	Concept 575 578	N8R
+T36	Concept 583 586	NLR
+T37	Concept 590 598	powerful
+T38	Concept 599 609	prognostic
+T39	Concept 610 617	factors
+T40	Concept 622 627	early
+T41	Action 628 642	identification
+T42	Concept 646 652	severe
+T43	Concept 653 661	COVID-19
+T44	Concept 662 667	cases
+R32	has-property Arg1:T39 Arg2:T38	
+R33	has-property Arg1:T39 Arg2:T37	
+R34	is-a Arg1:T36 Arg2:T39	
+R35	is-a Arg1:T35 Arg2:T39	
+R36	subject Arg1:T41 Arg2:T39	
+R37	has-property Arg1:T41 Arg2:T40	
+R38	target Arg1:T41 Arg2:T44	
+R39	has-property Arg1:T44 Arg2:T42	
+R40	in-context Arg1:T44 Arg2:T43	
+T46	Action 700 706	growth
+T47	Concept 707 711	rate
+T48	Concept 717 725	COVID-19
+T49	Concept 712 713	r
+R41	has-property Arg1:T46 Arg2:T47	
+*	same-as T47 T49
+R42	has-property Arg1:T48 Arg2:T49	
+T50	Concept 739 751	[0.30, 0.32]
+A7	Uncertain T50
+R43	in-context Arg1:T48 Arg2:T50	
+T51	Concept 761 767	larger
+T52	Action 777 783	growth
+T53	Concept 784 788	rate
+T54	Concept 789 792	0.1
+T55	Concept 806 810	CCDC
+T45	Concept 678 688	Fudan-CCDC
+T56	Concept 689 694	model
+R44	is-a Arg1:T45 Arg2:T56	
+R45	has-property Arg1:T49 Arg2:T51	
+T57	Concept 820 839	reproductive number
+T58	Concept 840 842	R0
+*	same-as T58 T57
+T59	Concept 846 854	COVID-19
+T60	Concept 858 867	estimated
+T61	Concept 871 887	3.25 ≤ R 0 ≤ 3.4
+T62	Concept 905 920	R0 = 1 + r * Tc
+T63	Concept 926 934	Tc = 7.5
+R46	has-property Arg1:T52 Arg2:T53	
+R47	in-context Arg1:T53 Arg2:T54	
+R48	in-context Arg1:T49 Arg2:T55	
+R49	entails Arg1:T45 Arg2:T49	
+R50	entails Arg1:T55 Arg2:T53	
+R51	is-a Arg1:T55 Arg2:T56	
+R52	has-property Arg1:T59 Arg2:T58	
+R53	has-property Arg1:T58 Arg2:T60	
+R54	in-context Arg1:T58 Arg2:T61	
+R55	in-context Arg1:T61 Arg2:T62	
+R56	in-context Arg1:T61 Arg2:T63	

@@ -1,0 +1,76 @@
+T1	Concept 71 79	families
+T2	Concept 83 87	HCWs
+T3	Concept 117 130	psychological
+T4	Concept 131 139	problems
+T5	Concept 155 163	COVID-19
+T6	Concept 164 172	epidemic
+R1	in-context Arg1:T1 Arg2:T2	
+T7	Action 97 103	suffer
+A1	Uncertain T7
+T8	Concept 143 147	HCWs
+R2	subject Arg1:T7 Arg2:T1	
+R3	in-context Arg1:T6 Arg2:T5	
+R4	in-time Arg1:T7 Arg2:T6	
+R5	has-property Arg1:T4 Arg2:T3	
+R6	in-context Arg1:T4 Arg2:T8	
+R7	target Arg1:T7 Arg2:T4	
+T9	Concept 178 181	78%
+T10	Concept 189 193	HCWs
+T11	Action 194 203	exhibited
+T12	Concept 229 237	COVID-19
+T13	Concept 206 214	positive
+T14	Concept 215 225	perception
+R8	has-property Arg1:T14 Arg2:T13	
+R9	in-context Arg1:T14 Arg2:T12	
+R10	target Arg1:T11 Arg2:T14	
+R11	in-context Arg1:T9 Arg2:T10	
+R12	subject Arg1:T11 Arg2:T9	
+T15	Concept 265 275	quarantine
+T16	Concept 255 264	stringent
+T17	Concept 280 286	public
+T18	Concept 287 293	health
+T19	Concept 294 302	measures
+T20	Concept 314 318	late
+T21	Concept 319 326	January
+T22	Concept 376 384	COVID-19
+T23	Action 303 310	imposed
+T24	Action 341 350	decreased
+T25	Concept 327 340	significantly
+T26	Action 355 367	transmission
+R13	has-property Arg1:T19 Arg2:T16	
+R14	is-a Arg1:T15 Arg2:T19	
+R15	has-property Arg1:T18 Arg2:T17	
+R16	is-a Arg1:T18 Arg2:T19	
+R17	has-property Arg1:T24 Arg2:T25	
+R18	target Arg1:T24 Arg2:T26	
+R19	target Arg1:T26 Arg2:T22	
+R20	in-context Arg1:T20 Arg2:T21	
+R21	target Arg1:T23 Arg2:T18	
+R22	target Arg1:T23 Arg2:T17	
+R23	causes Arg1:T23 Arg2:T24	
+T27	Concept 385 398	Comorbidities
+T28	Action 424 434	associated
+T29	Concept 452 460	COVID-19
+T30	Concept 461 470	infection
+T31	Concept 440 448	severity
+R24	has-property Arg1:T30 Arg2:T31	
+R25	in-context Arg1:T30 Arg2:T29	
+R26	target Arg1:T28 Arg2:T30	
+R27	subject Arg1:T28 Arg2:T27	
+T32	Concept 500 514	cardiovascular
+T33	Concept 515 522	disease
+T34	Concept 526 531	heart
+T35	Concept 532 539	failure
+T36	Concept 559 567	COVID-19
+T38	Concept 568 573	group
+T39	Concept 540 545	group
+R28	in-context Arg1:T35 Arg2:T34	
+R29	in-context Arg1:T38 Arg2:T36	
+R30	in-context Arg1:T39 Arg2:T35	
+T40	Action 496 499	had
+R31	subject Arg1:T40 Arg2:T39	
+T41	Concept 482 486	more
+R32	has-property Arg1:T40 Arg2:T41	
+R33	target Arg1:T40 Arg2:T33	
+R34	in-context Arg1:T33 Arg2:T32	
+R35	in-context Arg1:T40 Arg2:T38	

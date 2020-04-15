@@ -1,0 +1,145 @@
+T1	Action 13 23	instructed
+T2	Concept 0 8	Patients
+T3	Concept 27 38	selfisolate
+T4	Concept 45 52	results
+T5	Concept 57 64	pending
+T6	Concept 81 89	symptoms
+R1	has-property Arg1:T4 Arg2:T5	
+T7	Concept 95 103	resolved
+A1	Negated T7
+R2	has-property Arg1:T6 Arg2:T7	
+R3	subject Arg1:T1 Arg2:T2	
+R4	target Arg1:T1 Arg2:T3	
+R5	in-context Arg1:T1 Arg2:T4	
+R6	in-context Arg1:T1 Arg2:T6	
+T8	Concept 140 152	implications
+T9	Concept 161 166	99.8%
+T10	Concept 181 183	UK
+T11	Concept 119 128	financial
+T12	Concept 133 139	health
+R8	is-a Arg1:T11 Arg2:T8	
+R7	is-a Arg1:T12 Arg2:T8	
+R9	entails Arg1:T1 Arg2:T11	
+R10	entails Arg1:T1 Arg2:T12	
+R11	in-context Arg1:T11 Arg2:T9	
+R12	in-context Arg1:T12 Arg2:T9	
+R13	in-place Arg1:T9 Arg2:T10	
+T13	Concept 215 223	COVID-19
+T14	Concept 196 203	illness
+A2	Negated T13
+R14	in-context Arg1:T9 Arg2:T14	
+R15	in-context Arg1:T9 Arg2:T13	
+T15	Concept 228 240	phylogenetic
+T16	Concept 241 248	uniting
+T17	Concept 252 256	SARS
+T18	Concept 265 268	CoV
+T19	Concept 273 281	COVID-19
+T20	Concept 290 293	CoV
+T21	Action 302 310	evidence
+T22	Concept 325 335	similarity
+A3	Emphasized T22
+T23	Concept 339 342	RBD
+T24	Concept 343 350	protein
+T25	Concept 351 360	sequences
+R16	is-a Arg1:T23 Arg2:T24	
+R17	in-context Arg1:T25 Arg2:T23	
+R18	in-context Arg1:T22 Arg2:T25	
+R19	target Arg1:T21 Arg2:T22	
+R20	has-property Arg1:T16 Arg2:T15	
+T26	Action 257 264	related
+T27	Action 282 289	related
+R21	subject Arg1:T27 Arg2:T19	
+R22	target Arg1:T27 Arg2:T20	
+R23	subject Arg1:T26 Arg2:T17	
+R24	target Arg1:T26 Arg2:T18	
+R25	subject Arg1:T21 Arg2:T16	
+R26	in-context Arg1:T16 Arg2:T26	
+R27	in-context Arg1:T16 Arg2:T27	
+T28	Concept 370 380	population
+T29	Concept 361 369	COVID-19
+T30	Concept 429 432	ICU
+T31	Concept 481 489	MRES-COV
+T32	Concept 490 500	population
+T33	Concept 395 410	incubation time
+T34	Concept 433 442	admission
+T35	Concept 458 466	fatality
+T36	Concept 387 394	shorter
+R28	has-property Arg1:T33 Arg2:T36	
+R29	in-place Arg1:T34 Arg2:T30	
+T37	Concept 421 425	rate
+R30	in-context Arg1:T37 Arg2:T34	
+T38	Concept 415 420	lower
+R31	has-property Arg1:T37 Arg2:T38	
+T39	Concept 444 453	discharge
+R32	in-place Arg1:T39 Arg2:T30	
+R33	in-place Arg1:T35 Arg2:T30	
+R34	has-property Arg1:T35 Arg2:T38	
+R35	has-property Arg1:T39 Arg2:T38	
+R36	in-context Arg1:T28 Arg2:T29	
+R37	has-property Arg1:T28 Arg2:T33	
+R38	in-context Arg1:T36 Arg2:T32	
+R39	in-context Arg1:T32 Arg2:T31	
+R40	has-property Arg1:T28 Arg2:T37	
+R41	in-context Arg1:T38 Arg2:T32	
+T40	Concept 501 511	Lymphocyte
+T41	Concept 556 559	CD4
+T42	Concept 564 567	CD8
+T43	Concept 568 573	cells
+T44	Action 579 588	decreased
+T45	Concept 592 600	COVID-19
+T46	Concept 601 609	patients
+T47	Concept 615 619	~15%
+T48	Concept 620 628	patients
+T49	Concept 637 646	CD4 / CD8
+T50	Concept 647 649	<1
+T51	Concept 512 526	classification
+R42	in-context Arg1:T51 Arg2:T40	
+R43	is-a Arg1:T42 Arg2:T43	
+R44	is-a Arg1:T41 Arg2:T43	
+R45	subject Arg1:T44 Arg2:T42	
+R46	subject Arg1:T44 Arg2:T41	
+R47	in-context Arg1:T46 Arg2:T45	
+R48	target Arg1:T44 Arg2:T46	
+T52	Action 540 546	showed
+R49	subject Arg1:T52 Arg2:T51	
+R50	target Arg1:T52 Arg2:T44	
+T53	Action 629 632	had
+R51	target Arg1:T53 Arg2:T50	
+R52	in-context Arg1:T50 Arg2:T49	
+R53	subject Arg1:T53 Arg2:T47	
+R54	in-context Arg1:T47 Arg2:T48	
+R55	in-context Arg1:T48 Arg2:T45	
+R56	target Arg1:T52 Arg2:T53	
+T54	Action 667 679	intervention
+T55	Concept 661 666	early
+T56	Concept 683 685	VT
+T57	Concept 690 703	psychological
+T58	Concept 704 710	stress
+T59	Concept 719 721	GP
+T60	Concept 734 739	staff
+T61	Concept 726 733	medical
+T62	Concept 756 767	transparent
+T63	Action 768 780	announcement
+T64	Concept 784 792	epidemic
+T65	Concept 793 804	information
+T66	Action 809 819	facilitate
+A4	Uncertain T66
+T67	Concept 824 837	psychological
+T68	Concept 838 847	treatment
+T69	Action 852 859	control
+T70	Concept 863 871	COVID-19
+R57	has-property Arg1:T54 Arg2:T55	
+R58	target Arg1:T54 Arg2:T56	
+R59	target Arg1:T54 Arg2:T58	
+R60	has-property Arg1:T58 Arg2:T57	
+R61	in-context Arg1:T58 Arg2:T59	
+R62	in-context Arg1:T58 Arg2:T60	
+R63	has-property Arg1:T63 Arg2:T62	
+R64	in-context Arg1:T65 Arg2:T64	
+R65	target Arg1:T63 Arg2:T65	
+R66	has-property Arg1:T68 Arg2:T67	
+R67	target Arg1:T69 Arg2:T70	
+R68	target Arg1:T66 Arg2:T68	
+R69	target Arg1:T66 Arg2:T69	
+R70	entails Arg1:T54 Arg2:T66	
+R71	entails Arg1:T63 Arg2:T66	
