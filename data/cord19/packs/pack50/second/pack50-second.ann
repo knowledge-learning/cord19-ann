@@ -1,0 +1,73 @@
+T1	Concept 519 527	proteins
+T2	Action 507 518	interacting
+R1	in-context Arg1:T1 Arg2:T2	
+T3	Concept 492 499	origins
+R2	in-context Arg1:T3 Arg2:T1	
+T4	Concept 465 471	source
+R3	is-a Arg1:T4 Arg2:T3	
+T5	Concept 475 484	variation
+R4	in-context Arg1:T4 Arg2:T5	
+T6	Concept 543 550	packing
+T7	Concept 535 542	crystal
+R5	has-property Arg1:T6 Arg2:T7	
+T8	Concept 558 577	NSP7-NSP8 structure
+R6	in-context Arg1:T6 Arg2:T8	
+T9	Action 608 617	formation
+T10	Concept 650 657	complex
+T11	Concept 642 649	protein
+T12	Concept 623 641	hetero-hexadecamer
+R7	has-property Arg1:T10 Arg2:T11	
+R8	has-property Arg1:T10 Arg2:T12	
+R9	subject Arg1:T9 Arg2:T10	
+R10	in-place Arg1:T9 Arg2:T6	
+T13	Concept 183 191	COVID-19
+T14	Concept 225 232	disease
+T15	Concept 208 217	acuteness
+R11	has-property Arg1:T14 Arg2:T15	
+T16	Concept 244 254	landscapes
+T17	Concept 237 243	energy
+R13	has-property Arg1:T16 Arg2:T17	
+T18	Concept 258 271	CTT sequences
+R14	in-context Arg1:T16 Arg2:T18	
+T19	Action 325 335	increasing
+T20	Concept 336 337	κ
+R15	target Arg1:T19 Arg2:T20	
+R16	in-context Arg1:T16 Arg2:T19	
+T21	Concept 298 304	rugged
+R17	has-property Arg1:T16 Arg2:T21	
+T22	Concept 352 362	landscapes
+T23	Concept 5 13	COVID-19
+T24	Concept 18 27	SARS-2002
+T25	Concept 376 381	CTLV1
+T26	Concept 383 388	CTLV2
+T27	Concept 390 395	CTLV3
+T28	Concept 401 406	CTLV4
+R18	in-context Arg1:T22 Arg2:T25	
+R19	in-context Arg1:T22 Arg2:T26	
+R20	in-context Arg1:T22 Arg2:T27	
+R21	in-context Arg1:T22 Arg2:T28	
+T29	Concept 418 423	width
+T30	Concept 450 456	WT CTT
+R22	has-property Arg1:T30 Arg2:T29	
+T31	Action 407 413	retain
+R23	target Arg1:T31 Arg2:T29	
+R24	subject Arg1:T31 Arg2:T22	
+T32	Concept 61 66	loops
+T33	Concept 52 60	flexible
+T34	Concept 47 51	long
+R25	has-property Arg1:T32 Arg2:T33	
+R26	has-property Arg1:T32 Arg2:T34	
+R27	has-part Arg1:T23 Arg2:T32	
+R28	has-property Arg1:T24 Arg2:T32	
+T35	Concept 85 93	residues
+T36	Concept 76 84	aromatic
+R29	has-property Arg1:T35 Arg2:T36	
+T37	Concept 117 126	interface
+T38	Concept 132 136	ACE2
+R30	in-context Arg1:T37 Arg2:T38	
+R31	in-place Arg1:T35 Arg2:T37	
+R32	has-part Arg1:T23 Arg2:T35	
+R33	has-part Arg1:T24 Arg2:T35	
+T39	Concept 174 179	types
+R34	in-context Arg1:T39 Arg2:T13	
+R12	in-context Arg1:T39 Arg2:T15	

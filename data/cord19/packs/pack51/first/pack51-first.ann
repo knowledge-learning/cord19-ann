@@ -1,0 +1,184 @@
+T1	Reference 6 13	regions
+T2	Action 14 22	included
+T3	Action 23 29	damage
+T4	Concept 69 75	middle
+T5	Concept 80 88	inferior
+T6	Concept 98 102	gyri
+T7	Concept 89 97	temporal
+T8	Concept 112 117	gyrus
+T9	Concept 104 111	angular
+R1	has-property Arg1:T6 Arg2:T7	
+R2	has-property Arg1:T8 Arg2:T9	
+T10	Concept 139 145	matter
+T11	Concept 133 138	white
+T12	Concept 122 132	underlying
+R3	has-property Arg1:T10 Arg2:T12	
+R4	has-property Arg1:T10 Arg2:T11	
+T13	Concept 38 48	hemisphere
+T14	Concept 33 37	left
+T15	Concept 49 58	posterior
+T16	Concept 59 67	superior
+R5	subject Arg1:T2 Arg2:T1	
+R6	target Arg1:T2 Arg2:T3	
+R7	has-property Arg1:T13 Arg2:T14	
+R8	has-property Arg1:T13 Arg2:T15	
+R9	has-property Arg1:T13 Arg2:T16	
+R10	target Arg1:T3 Arg2:T13	
+R11	has-property Arg1:T6 Arg2:T5	
+R12	has-property Arg1:T6 Arg2:T4	
+R13	target Arg1:T3 Arg2:T6	
+R14	target Arg1:T3 Arg2:T8	
+R15	target Arg1:T3 Arg2:T10	
+T17	Concept 147 155	superior
+T18	Concept 156 168	longitudinal
+T19	Concept 169 179	fasciculus
+T20	Concept 181 189	inferior
+T21	Concept 190 202	longitudinal
+T22	Concept 203 213	fasciculus
+T23	Concept 219 227	inferior
+T24	Concept 228 244	fronto-occipital
+T25	Concept 245 255	fasciculus
+R16	has-property Arg1:T25 Arg2:T24	
+R17	has-property Arg1:T25 Arg2:T23	
+R18	has-property Arg1:T22 Arg2:T21	
+R19	has-property Arg1:T22 Arg2:T20	
+R20	has-property Arg1:T19 Arg2:T18	
+R21	has-property Arg1:T19 Arg2:T17	
+R22	has-part Arg1:T10 Arg2:T25	
+R23	has-part Arg1:T10 Arg2:T19	
+R24	has-part Arg1:T10 Arg2:T22	
+T26	Concept 295 298	PCR
+T27	Concept 284 294	polymerase
+T28	Concept 280 283	Taq
+T29	Concept 333 340	9-amino
+T30	Concept 341 349	acridine
+T31	Concept 350 357	complex
+T32	Concept 373 380	SE-PGQs
+R25	is-a Arg1:T28 Arg2:T27	
+R26	in-context Arg1:T26 Arg2:T28	
+T33	Action 313 324	investigate
+T34	Action 358 367	formation
+R27	in-context Arg1:T29 Arg2:T30	
+R28	in-context Arg1:T31 Arg2:T29	
+R29	target Arg1:T34 Arg2:T31	
+R30	in-context Arg1:T34 Arg2:T32	
+T35	Action 402 406	stop
+T36	Concept 411 419	movement
+T37	Concept 423 433	polymerase
+T38	Concept 434 445	replication
+T39	Concept 446 455	machinery
+A1	Uncertain T35
+R31	in-context Arg1:T33 Arg2:T26	
+R32	target Arg1:T33 Arg2:T34	
+R33	entails Arg1:T34 Arg2:T35	
+R34	target Arg1:T35 Arg2:T36	
+R35	has-property Arg1:T39 Arg2:T38	
+R36	in-context Arg1:T38 Arg2:T37	
+R37	in-context Arg1:T36 Arg2:T39	
+T40	Concept 476 480	Zika
+T41	Concept 490 501	NS2B-NS3pro
+T42	Concept 502 509	complex
+R38	is-a Arg1:T41 Arg2:T42	
+T43	Concept 481 489	homology
+T44	Concept 467 475	solvated
+R39	in-context Arg1:T43 Arg2:T40	
+R40	has-property Arg1:T43 Arg2:T44	
+R41	in-context Arg1:T41 Arg2:T43	
+T45	Action 527 536	minimized
+T46	Concept 514 519	first
+T47	Concept 520 526	energy
+R42	has-property Arg1:T45 Arg2:T46	
+T48	Concept 542 546	1000
+T49	Concept 547 552	steps
+T50	Concept 556 564	steepest
+T51	Concept 565 572	descent
+T52	Concept 579 586	GROMACS
+T53	Concept 595 600	4.5.7
+T54	Concept 607 612	AMBER
+T55	Concept 622 627	force
+T56	Concept 628 633	field
+T57	Concept 613 621	all-atom
+T58	Action 573 578	using
+R43	in-context Arg1:T52 Arg2:T53	
+R44	in-context Arg1:T56 Arg2:T55	
+R45	in-context Arg1:T56 Arg2:T57	
+R46	in-context Arg1:T57 Arg2:T54	
+R47	target Arg1:T45 Arg2:T41	
+R48	in-context Arg1:T46 Arg2:T47	
+R49	in-context Arg1:T48 Arg2:T49	
+R50	has-property Arg1:T50 Arg2:T51	
+R51	in-context Arg1:T49 Arg2:T50	
+R52	in-context Arg1:T45 Arg2:T48	
+R53	in-context Arg1:T45 Arg2:T58	
+R54	target Arg1:T58 Arg2:T52	
+R55	target Arg1:T58 Arg2:T56	
+T59	Concept 634 637	CML
+T60	Concept 643 650	chronic
+T61	Concept 651 662	hematologic
+T62	Concept 663 668	tumor
+R56	has-property Arg1:T62 Arg2:T61	
+R57	has-property Arg1:T62 Arg2:T60	
+R58	is-a Arg1:T59 Arg2:T62	
+T63	Concept 688 696	measures
+T64	Concept 674 687	comprehensive
+R59	has-property Arg1:T63 Arg2:T64	
+T65	Action 716 721	delay
+T66	Action 726 732	reduce
+T67	Action 707 712	taken
+T68	Concept 737 741	risk
+T69	Concept 745 754	infection
+T70	Action 758 769	restricting
+T71	Concept 770 777	patient
+T72	Action 778 786	exposure
+T73	Concept 790 800	situations
+T74	Concept 815 827	transmission
+A2	Uncertain T74
+R60	target Arg1:T67 Arg2:T63	
+R61	entails Arg1:T67 Arg2:T65	
+R62	entails Arg1:T67 Arg2:T66	
+R63	target Arg1:T65 Arg2:T68	
+R64	target Arg1:T66 Arg2:T68	
+R65	in-context Arg1:T68 Arg2:T69	
+R66	in-context Arg1:T65 Arg2:T70	
+R67	in-context Arg1:T66 Arg2:T70	
+R68	target Arg1:T70 Arg2:T72	
+R69	subject Arg1:T72 Arg2:T71	
+R70	target Arg1:T72 Arg2:T73	
+R71	has-property Arg1:T73 Arg2:T74	
+R72	in-context Arg1:T67 Arg2:T59	
+T75	Reference 832 838	former
+T76	Action 846 854	required
+A3	Uncertain T76
+T77	Concept 863 867	H7N1
+T78	Concept 872 876	H5N1
+T79	Concept 877 886	influenza
+T80	Concept 887 892	virus
+T81	Concept 893 903	infections
+R73	in-context Arg1:T79 Arg2:T81	
+R74	in-context Arg1:T79 Arg2:T80	
+R75	is-a Arg1:T77 Arg2:T79	
+R76	is-a Arg1:T78 Arg2:T79	
+T83	Concept 940 945	lysis
+T84	Reference 959 965	latter
+R77	subject Arg1:T76 Arg2:T75	
+R78	target Arg1:T76 Arg2:T77	
+R79	target Arg1:T76 Arg2:T78	
+T82	Action 932 939	induced
+T85	Concept 918 931	hemagglutinin
+R80	target Arg1:T82 Arg2:T83	
+R81	subject Arg1:T82 Arg2:T85	
+R82	in-context Arg1:T76 Arg2:T83	
+T86	Action 988 995	mediate
+T87	Action 1000 1006	assist
+T88	Concept 1049 1056	viruses
+T90	Concept 1026 1030	host
+T91	Concept 1031 1036	cells
+T92	Action 1014 1022	invasion
+A4	Emphasized T88
+R83	has-property Arg1:T91 Arg2:T90	
+R84	subject Arg1:T92 Arg2:T88	
+R85	target Arg1:T92 Arg2:T91	
+R86	subject Arg1:T86 Arg2:T84	
+R87	subject Arg1:T87 Arg2:T84	
+R88	target Arg1:T86 Arg2:T92	
+R89	target Arg1:T87 Arg2:T92	

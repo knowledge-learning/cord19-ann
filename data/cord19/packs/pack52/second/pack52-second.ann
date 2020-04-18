@@ -1,0 +1,80 @@
+T1	Action 118 123	clash
+T2	Concept 92 111	second conformation
+T3	Concept 133 146	ACE2 receptor
+R2	subject Arg1:T1 Arg2:T2	
+R1	target Arg1:T1 Arg2:T3	
+T4	Action 37 44	similar
+T5	Concept 52 69	ligand bound form
+T6	Concept 77 80	RBD
+R3	has-property Arg1:T6 Arg2:T5	
+R4	target Arg1:T4 Arg2:T5	
+T7	Concept 0 26	One of these conformations
+R5	subject Arg1:T4 Arg2:T7	
+T8	Concept 156 164	approach
+T9	Action 165 173	combines
+T10	Concept 174 185	mutagenesis
+T11	Concept 189 192	PCR
+T12	Concept 198 222	degenerate (NNK) primers
+T13	Concept 228 249	in-cell recombination
+R6	subject Arg1:T9 Arg2:T8	
+T14	Concept 149 155	recent
+R7	in-time Arg1:T8 Arg2:T14	
+R8	target Arg1:T9 Arg2:T10	
+R9	in-context Arg1:T10 Arg2:T11	
+R10	target Arg1:T9 Arg2:T12	
+R11	in-context Arg1:T12 Arg2:T13	
+T15	Action 253 269	create variation
+T16	Concept 298 308	tail fiber
+T17	Concept 312 320	T3 phage
+T18	Concept 273 290	specific residues
+R12	causes Arg1:T15 Arg2:T9	
+R13	target Arg1:T15 Arg2:T18	
+R14	in-place Arg1:T18 Arg2:T16	
+R15	in-context Arg1:T16 Arg2:T17	
+T19	Concept 360 375	siRNA silencing
+T20	Action 352 359	improve
+T21	Action 341 351	preference
+T22	Concept 321 340	Nucleotide sequence
+T23	Action 489 500	sporulation
+T24	Concept 483 488	yeast
+T25	Action 501 511	represents
+T26	Action 528 534	change
+T27	Concept 542 549	biology
+T28	Concept 557 565	organism
+T29	Concept 459 482	Domestication impairing
+R16	subject Arg1:T25 Arg2:T23	
+R17	target Arg1:T25 Arg2:T26	
+R18	subject Arg1:T23 Arg2:T24	
+R19	has-property Arg1:T23 Arg2:T29	
+R20	target Arg1:T26 Arg2:T27	
+R21	has-property Arg1:T28 Arg2:T27	
+R22	target Arg1:T21 Arg2:T22	
+R23	subject Arg1:T20 Arg2:T21	
+T30	Action 376 386	efficiency
+R24	subject Arg1:T30 Arg2:T19	
+R25	target Arg1:T20 Arg2:T30	
+T31	Concept 390 395	bases
+T32	Concept 399 419	particular positions
+T33	Action 420 426	define
+T34	Concept 427 433	target
+T35	Action 434 445	recognition
+T36	Action 450 458	cleavage
+R26	target Arg1:T33 Arg2:T35	
+R27	target Arg1:T33 Arg2:T36	
+R28	subject Arg1:T33 Arg2:T31	
+R29	in-place Arg1:T31 Arg2:T32	
+R30	target Arg1:T35 Arg2:T34	
+R31	target Arg1:T36 Arg2:T34	
+T37	Concept 641 651	life cycle
+T38	Concept 670 680	wild yeast
+T39	Concept 597 604	strains
+T40	Action 605 614	retaining
+T41	Action 626 637	re-acquired
+R32	subject Arg1:T40 Arg2:T39	
+R33	target Arg1:T40 Arg2:T37	
+R34	subject Arg1:T41 Arg2:T39	
+R35	target Arg1:T41 Arg2:T37	
+T42	Action 652 658	closer
+R36	subject Arg1:T42 Arg2:T37	
+R37	target Arg1:T42 Arg2:T38	
+R38	in-context Arg1:T37 Arg2:T38	

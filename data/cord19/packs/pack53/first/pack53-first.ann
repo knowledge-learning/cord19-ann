@@ -1,0 +1,70 @@
+T1	Concept 57 71	nasopharyngeal
+T2	Concept 72 76	swab
+T3	Concept 77 86	specimens
+T4	Concept 91 98	nucleic
+T5	Concept 99 103	acid
+T6	Concept 104 109	tests
+R1	in-context Arg1:T6 Arg2:T5	
+R2	has-property Arg1:T5 Arg2:T4	
+T7	Concept 18 23	cases
+T8	Concept 24 33	published
+T9	Action 53 56	use
+R3	has-property Arg1:T7 Arg2:T8	
+R4	subject Arg1:T9 Arg2:T7	
+R5	has-property Arg1:T2 Arg2:T1	
+R6	in-context Arg1:T3 Arg2:T2	
+R7	target Arg1:T9 Arg2:T3	
+R8	in-context Arg1:T9 Arg2:T6	
+T10	Concept 113 128	positive-strand
+T11	Concept 129 132	RNA
+T12	Concept 133 138	virus
+T13	Concept 139 150	polymerases
+R9	in-context Arg1:T11 Arg2:T12	
+R10	in-context Arg1:T11 Arg2:T10	
+R11	in-context Arg1:T13 Arg2:T11	
+T14	Concept 169 173	loop
+T15	Concept 162 168	finger
+T16	Concept 156 161	index
+R12	is-a Arg1:T16 Arg2:T15	
+T17	Concept 191 197	active
+T18	Concept 198 202	site
+R14	has-property Arg1:T18 Arg2:T17	
+T19	Action 206 213	contact
+T20	Concept 218 223	thumb
+T21	Concept 224 230	domain
+T22	Action 232 243	positioning
+T23	Concept 248 252	ring
+T24	Concept 253 259	finger
+T25	Concept 260 264	loop
+T26	Concept 265 272	beneath
+R15	has-part Arg1:T23 Arg2:T25	
+R13	has-part Arg1:T16 Arg2:T14	
+T27	Action 174 181	reaches
+T28	Concept 182 186	over
+R16	has-property Arg1:T27 Arg2:T28	
+R17	subject Arg1:T27 Arg2:T14	
+R18	target Arg1:T27 Arg2:T18	
+R19	entails Arg1:T27 Arg2:T19	
+R20	is-a Arg1:T20 Arg2:T15	
+R21	in-context Arg1:T21 Arg2:T20	
+R22	target Arg1:T19 Arg2:T21	
+R23	subject Arg1:T19 Arg2:T14	
+R24	entails Arg1:T19 Arg2:T22	
+R25	subject Arg1:T22 Arg2:T25	
+R26	has-property Arg1:T22 Arg2:T26	
+R27	target Arg1:T22 Arg2:T14	
+T29	Concept 296 308	intervention
+T30	Concept 287 295	strength
+T31	Concept 278 286	constant
+R28	has-property Arg1:T30 Arg2:T31	
+R29	in-context Arg1:T29 Arg2:T30	
+T32	Action 309 316	reduces
+T33	Concept 321 328	density
+T34	Concept 343 353	proportion
+T35	Concept 334 342	constant
+R30	has-property Arg1:T34 Arg2:T35	
+T36	Concept 355 368	K(τ) = K(τ)/θ
+*	same-as T36 T34
+R31	entails Arg1:T29 Arg2:T32	
+R32	target Arg1:T32 Arg2:T33	
+R33	has-property Arg1:T32 Arg2:T34	

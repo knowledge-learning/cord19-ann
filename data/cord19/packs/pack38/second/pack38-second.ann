@@ -1,0 +1,131 @@
+T1	Concept 16 20	mice
+T2	Concept 5 15	transgenic
+T3	Concept 0 4	Aged
+R1	has-property Arg1:T1 Arg2:T2	
+R2	has-property Arg1:T1 Arg2:T3	
+T4	Concept 41 62	Alzheimer's mutations
+T5	Concept 32 40	familial
+R3	has-property Arg1:T4 Arg2:T5	
+T6	Concept 66 83;84 91	amyloid precursor protein
+T7	Concept 84 91	protein
+R4	is-a Arg1:T6 Arg2:T7	
+T8	Concept 96 108	presenilin-1
+T9	Concept 126 132	exon-9
+A1	Negated T9
+T10	Concept 134 144	APP/PS1dE9
+R5	in-context Arg1:T8 Arg2:T9	
+R6	has-part Arg1:T10 Arg2:T8	
+R7	has-part Arg1:T10 Arg2:T6	
+R8	in-context Arg1:T4 Arg2:T10	
+R9	in-context Arg1:T1 Arg2:T4	
+T11	Concept 134 137	APP
+T12	Concept 138 144	PS1dE9
+*	same-as T11 T6
+*	same-as T12 T8
+T13	Concept 364 369	model
+T14	Action 385 392	predict
+T15	Concept 397 412	infection nodes
+R10	subject Arg1:T14 Arg2:T13	
+R11	target Arg1:T14 Arg2:T15	
+T16	Concept 439 450	probability
+R12	in-context Arg1:T14 Arg2:T16	
+T17	Action 457 468	deprivation
+T18	Concept 451 456	Serum
+R13	target Arg1:T17 Arg2:T18	
+T19	Action 487 491	cope
+T20	Concept 481 486	cells
+R14	subject Arg1:T19 Arg2:T20	
+T21	Concept 521 527	stress
+T22	Action 528 536	response
+R15	in-context Arg1:T22 Arg2:T21	
+R16	causes Arg1:T22 Arg2:T17	
+R17	causes Arg1:T22 Arg2:T19	
+T23	Concept 576 581	PARP2
+R18	in-context Arg1:T23 Arg2:T22	
+T24	Action 662 670	detected
+A2	Negated T24
+R19	target Arg1:T24 Arg2:T23	
+T25	Concept 681 698	urea denaturation
+R20	in-context Arg1:T24 Arg2:T25	
+T26	Action 753 760	contact
+T27	Concept 738 752	human-to-human
+T28	Concept 714 733	population mobility
+R21	in-context Arg1:T26 Arg2:T27	
+T29	Concept 762 783	environmental factors
+T30	Action 803 815	transmission
+T31	Concept 795 802	droplet
+R22	target Arg1:T30 Arg2:T31	
+T32	Action 820 828	survival
+T33	Concept 832 839	viruses
+R23	subject Arg1:T32 Arg2:T33	
+R24	causes Arg1:T29 Arg2:T30	
+R25	causes Arg1:T26 Arg2:T30	
+R26	causes Arg1:T28 Arg2:T30	
+R27	causes Arg1:T29 Arg2:T32	
+R28	causes Arg1:T26 Arg2:T32	
+R29	causes Arg1:T28 Arg2:T32	
+T34	Concept 847 856	influenza
+R30	is-a Arg1:T34 Arg2:T33	
+T35	Concept 938 944	models
+T36	Concept 922 937	high resolution
+R31	has-property Arg1:T35 Arg2:T36	
+A3	Negated T35
+T37	Concept 964 1002	ab initio low resolution bead modeling
+T38	Concept 1019 1024	MONSA
+T39	Action 1006 1015	performed
+R32	subject Arg1:T39 Arg2:T38	
+R33	target Arg1:T39 Arg2:T37	
+R34	in-context Arg1:T39 Arg2:T35	
+T41	Concept 1050 1056	phases
+T40	Concept 1111 1118	phase 1
+T42	Concept 1062 1080	distinct contrasts
+T43	Concept 1138 1145	phase 2
+T44	Concept 1168 1175	phase 3
+T45	Concept 1151 1166	detergent heads
+T46	Concept 1121 1136	detergent tails
+T47	Concept 1102 1109	protein
+R35	in-context Arg1:T40 Arg2:T47	
+R36	in-context Arg1:T41 Arg2:T42	
+R37	is-a Arg1:T40 Arg2:T41	
+R38	in-context Arg1:T43 Arg2:T46	
+R39	is-a Arg1:T43 Arg2:T41	
+R40	entails Arg1:T39 Arg2:T41	
+R41	in-context Arg1:T44 Arg2:T45	
+R42	is-a Arg1:T44 Arg2:T41	
+T48	Concept 190 202	accumulation
+T49	Concept 157 159;160 173	in vivo cortical
+T50	Concept 178 189	hippocampal
+R43	has-property Arg1:T48 Arg2:T50	
+R44	has-property Arg1:T48 Arg2:T49	
+T51	Concept 209 218	activated
+T52	Concept 239 250	radiotracer
+T53	Concept 219 238	microglial-targeted
+R46	has-property Arg1:T52 Arg2:T53	
+R47	has-property Arg1:T52 Arg2:T51	
+T54	Concept 252 277	18kD translocator protein
+T55	Concept 279 283	TSPO
+R45	in-context Arg1:T48 Arg2:T54	
+R48	is-a Arg1:T54 Arg2:T52	
+*	same-as T55 T54
+T56	Concept 190 202	accumulation
+A5	Emphasized T48
+A4	Diminished T56
+R49	has-property Arg1:T56 Arg2:T50	
+R50	has-property Arg1:T56 Arg2:T49	
+R51	in-context Arg1:T56 Arg2:T54	
+R52	in-context Arg1:T48 Arg2:T1	
+T57	Concept 317 321	mice
+T58	Concept 308 316	young Tg
+T59	Concept 291 295	aged
+T60	Concept 296 304	wildtype
+T61	Concept 317 321	mice
+R53	has-property Arg1:T57 Arg2:T58	
+R54	has-property Arg1:T61 Arg2:T60	
+R55	has-property Arg1:T61 Arg2:T59	
+R56	in-context Arg1:T56 Arg2:T57	
+T62	Concept 190 202	accumulation
+A6	Diminished T62
+R57	has-property Arg1:T62 Arg2:T50	
+R58	has-property Arg1:T62 Arg2:T49	
+R59	in-context Arg1:T62 Arg2:T54	
+R60	in-context Arg1:T62 Arg2:T61	

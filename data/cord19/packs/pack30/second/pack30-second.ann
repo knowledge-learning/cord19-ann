@@ -1,11 +1,8 @@
 T1	Concept 72 76	EDS1
 T2	Concept 81 85	PAD4
 T3	Action 48 58	activation
-T4	Concept 101 134	R genemediated disease resistance
 T5	Concept 170 179	infection
 T6	Concept 152 159	lipases
-R1	has-part Arg1:T1 Arg2:T4	
-R2	has-part Arg1:T2 Arg2:T4	
 R3	has-part Arg1:T1 Arg2:T5	
 R4	has-part Arg1:T1 Arg2:T5	
 R5	target Arg1:T3 Arg2:T1	
@@ -17,3 +14,50 @@ T10	Concept 360 369	conserved
 T11	Action 260 269	conserved
 T12	Concept 228 235	protein
 T13	Action 242 248	make u
+T14	Concept 785 788	DBP
+T15	Concept 810 817	protein
+T16	Concept 839 848	vitamin D
+T18	Concept 908 919	fatty acids
+T19	Concept 794 809	multifunctional
+R8	is-a Arg1:T14 Arg2:T19	
+R9	is-a Arg1:T14 Arg2:T15	
+R7	has-property Arg1:T15 Arg2:T19	
+T17	Concept 876 891	actin scavenger
+R11	is-a Arg1:T14 Arg2:T17	
+T20	Action 850 855	binds
+T21	Concept 856 861	actin
+R10	target Arg1:T20 Arg2:T21	
+R12	has-property Arg1:T14 Arg2:T20	
+T22	Action 902 907	binds
+R13	target Arg1:T22 Arg2:T18	
+R14	has-property Arg1:T14 Arg2:T22	
+T23	Reference 535 544	Figure 1C
+T24	Concept 515 523	heat map
+T25	Concept 414 427	substitutions
+T26	Concept 404 410	number
+T28	Action 484 493	increases
+T29	Concept 499 505	genome
+T30	Concept 506 510	size
+R15	has-property Arg1:T29 Arg2:T30	
+T27	Concept 461 482	host-specific fitness
+T31	Action 448 457	reduction
+R16	target Arg1:T31 Arg2:T27	
+R17	has-property Arg1:T25 Arg2:T26	
+T32	Concept 404 427	number of substitutions
+T33	Action 434 443	potential
+R18	causes Arg1:T32 Arg2:T28	
+R19	target Arg1:T28 Arg2:T29	
+T34	Concept 224 227	506
+R20	has-property Arg1:T12 Arg2:T34	
+T35	Concept 434 482	potential for reduction in host-specific fitness
+*	same-as T32 T35
+T4	Concept 101 123	R genemediated disease
+T36	Concept 124 134	resistance
+R1	has-property Arg1:T4 Arg2:T36	
+R2	entails Arg1:T1 Arg2:T4	
+R21	entails Arg1:T2 Arg2:T4	
+T37	Concept 524 532	patterns
+R22	has-property Arg1:T24 Arg2:T37	
+T38	Concept 392 399	kingdom
+T39	Concept 385 391	animal
+R23	has-property Arg1:T38 Arg2:T39	

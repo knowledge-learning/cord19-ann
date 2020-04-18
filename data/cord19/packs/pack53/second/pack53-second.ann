@@ -1,0 +1,48 @@
+T1	Concept 104 109	tests
+T2	Concept 91 103	nucleic acid
+T3	Concept 343 353	proportion
+T4	Concept 568 575	results
+T5	Concept 771 779	dynamics
+T6	Concept 57 71	nasopharyngeal
+T7	Concept 787 798	full system
+T8	Action 576 582	showed
+R1	subject Arg1:T8 Arg2:T4	
+T9	Concept 555 567	experimental
+R2	has-property Arg1:T4 Arg2:T9	
+T10	Concept 612 624	U1 snRNA 294
+T11	Action 625 634	decreased
+T12	Concept 655 661	dosage
+T13	Concept 641 643	4X
+T14	Concept 645 647	9X
+T15	Concept 652 654	6X
+T16	Concept 693 699	HEK293
+T17	Concept 709 713	SY5Y
+T18	Concept 730 735	PC-12
+T19	Concept 701 706	human
+R3	in-place Arg1:T16 Arg2:T19	
+T20	Concept 715 720	human
+R4	in-place Arg1:T17 Arg2:T20	
+T21	Concept 737 740	rat
+R5	in-place Arg1:T18 Arg2:T21	
+T22	Concept 742 752	cell lines
+R6	is-a Arg1:T16 Arg2:T22	
+R7	is-a Arg1:T17 Arg2:T22	
+R8	is-a Arg1:T18 Arg2:T22	
+R9	target Arg1:T8 Arg2:T11	
+T23	Concept 592 608	expression level
+R10	is-a Arg1:T13 Arg2:T12	
+R11	is-a Arg1:T14 Arg2:T12	
+R12	is-a Arg1:T15 Arg2:T12	
+R13	causes Arg1:T12 Arg2:T11	
+R14	in-place Arg1:T12 Arg2:T22	
+R15	has-property Arg1:T7 Arg2:T5	
+T24	Action 799 805	differ
+R16	subject Arg1:T24 Arg2:T5	
+T25	Concept 18 23	cases
+T26	Action 53 56	use
+T27	Action 44 49	tends
+R17	subject Arg1:T27 Arg2:T25	
+R18	target Arg1:T27 Arg2:T26	
+T28	Concept 72 86	swab specimens
+R19	in-place Arg1:T28 Arg2:T6	
+R20	target Arg1:T26 Arg2:T28	

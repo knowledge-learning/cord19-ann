@@ -1,0 +1,113 @@
+T1	Concept 5 13	COVID-19
+T2	Concept 18 27	SARS-2002
+T3	Concept 28 38	interfaces
+T4	Action 39 46	contain
+T5	Concept 52 60	flexible
+T6	Concept 47 51	long
+T7	Concept 61 66	loops
+T8	Concept 85 93	residues
+T9	Concept 76 84	aromatic
+T10	Concept 71 75	nine
+T11	Concept 95 98	Tyr
+T12	Concept 100 103	Trp
+T13	Concept 105 108	Phe
+T14	Concept 117 126	interface
+T15	Concept 132 136	ACE2
+R1	has-property Arg1:T7 Arg2:T6	
+R2	has-property Arg1:T7 Arg2:T5	
+R3	in-context Arg1:T3 Arg2:T2	
+R4	in-context Arg1:T3 Arg2:T1	
+R5	subject Arg1:T4 Arg2:T3	
+R6	target Arg1:T4 Arg2:T7	
+R7	has-property Arg1:T8 Arg2:T9	
+R8	target Arg1:T4 Arg2:T10	
+R9	in-context Arg1:T10 Arg2:T8	
+R10	is-a Arg1:T11 Arg2:T8	
+R11	is-a Arg1:T12 Arg2:T8	
+R12	is-a Arg1:T13 Arg2:T8	
+R13	in-context Arg1:T14 Arg2:T15	
+R14	in-context Arg1:T4 Arg2:T14	
+T16	Action 159 168	there are
+T17	Concept 174 179	types
+A1	Emphasized T17
+T18	Concept 183 191	COVID-19
+T19	Concept 208 217	acuteness
+T20	Concept 225 232	disease
+R15	in-context Arg1:T17 Arg2:T18	
+R16	in-context Arg1:T20 Arg2:T18	
+R17	in-context Arg1:T19 Arg2:T20	
+R18	target Arg1:T16 Arg2:T17	
+R19	in-context Arg1:T16 Arg2:T19	
+T21	Concept 237 243	energy
+T22	Concept 244 254	landscapes
+T23	Concept 258 261	CTT
+T24	Concept 262 271	sequences
+T25	Concept 298 304	rugged
+T26	Action 306 316	increasing
+T27	Concept 317 318	D
+T28	Action 325 335	increasing
+T29	Concept 336 337	κ
+R20	has-property Arg1:T22 Arg2:T21	
+R21	target Arg1:T28 Arg2:T29	
+R22	in-context Arg1:T22 Arg2:T24	
+R23	in-context Arg1:T24 Arg2:T23	
+T30	Action 272 278	become
+R24	subject Arg1:T30 Arg2:T22	
+T31	Concept 293 297	more
+R25	has-property Arg1:T30 Arg2:T31	
+R26	target Arg1:T30 Arg2:T25	
+R27	target Arg1:T26 Arg2:T27	
+T32	Concept 352 362	landscapes
+T33	Concept 376 381	CTLV1
+T34	Concept 367 375	variants
+T35	Concept 383 388	CTLV2
+T36	Concept 390 395	CTLV3
+T37	Concept 401 406	CTLV4
+T38	Action 407 413	retain
+T39	Concept 418 423	width
+T40	Concept 433 434	s
+T41	Concept 435 441	values
+T42	Concept 425 432	similar
+T43	Concept 450 452	WT
+T44	Concept 453 456	CTT
+R29	is-a Arg1:T33 Arg2:T34	
+R30	is-a Arg1:T35 Arg2:T34	
+R31	is-a Arg1:T36 Arg2:T34	
+R32	is-a Arg1:T37 Arg2:T34	
+R33	in-context Arg1:T32 Arg2:T34	
+R34	subject Arg1:T38 Arg2:T32	
+R35	target Arg1:T38 Arg2:T39	
+R36	in-context Arg1:T41 Arg2:T40	
+R37	has-property Arg1:T41 Arg2:T42	
+R38	entails Arg1:T41 Arg2:T38	
+R28	entails Arg1:T26 Arg2:T30	
+R39	in-context Arg1:T30 Arg2:T28	
+R40	in-context Arg1:T39 Arg2:T44	
+R41	in-context Arg1:T44 Arg2:T43	
+T45	Reference 457 464	Another
+T46	Concept 465 471	source
+T47	Concept 475 484	variation
+T48	Concept 492 499	origins
+T49	Concept 507 518	interacting
+T50	Concept 519 527	proteins
+R42	in-context Arg1:T46 Arg2:T47	
+R43	in-context Arg1:T45 Arg2:T46	
+R44	has-property Arg1:T50 Arg2:T49	
+R45	is-a Arg1:T48 Arg2:T45	
+R46	in-context Arg1:T48 Arg2:T50	
+T51	Concept 558 567	NSP7-NSP8
+T52	Concept 568 577	structure
+T53	Concept 623 641	hetero-hexadecamer
+T54	Concept 642 649	protein
+T55	Concept 650 657	complex
+T56	Action 543 550	packing
+T57	Concept 535 542	crystal
+T58	Action 608 617	formation
+A2	Uncertain T58
+R47	target Arg1:T58 Arg2:T55	
+R48	has-property Arg1:T54 Arg2:T53	
+R49	in-context Arg1:T55 Arg2:T54	
+R50	is-a Arg1:T51 Arg2:T52	
+R51	target Arg1:T56 Arg2:T57	
+R52	in-context Arg1:T56 Arg2:T51	
+R53	in-place Arg1:T58 Arg2:T56	

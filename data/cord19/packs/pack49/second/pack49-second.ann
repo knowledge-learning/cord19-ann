@@ -1,0 +1,58 @@
+T1	Concept 0 8	Patients
+T2	Action 27 38	selfisolate
+T3	Concept 45 52	results
+T4	Action 57 64	pending
+R1	in-time Arg1:T2 Arg2:T4	
+R2	subject Arg1:T4 Arg2:T3	
+R3	subject Arg1:T2 Arg2:T1	
+T5	Concept 81 89	symptoms
+T6	Action 95 103	resolved
+R4	subject Arg1:T6 Arg2:T5	
+T7	Concept 361 380	COVID-19 population
+T8	Concept 387 410	shorter incubation time
+R5	has-property Arg1:T7 Arg2:T8	
+T9	Concept 429 442	ICU admission
+A1	Negated T9
+T10	Concept 444 453	discharge
+A2	Negated T10
+T11	Concept 458 466	fatality
+A3	Negated T11
+R6	has-property Arg1:T7 Arg2:T9	
+R7	has-property Arg1:T7 Arg2:T10	
+T12	Concept 556 559	CD4
+T13	Concept 564 567	CD8
+T14	Action 579 588	decreased
+R8	subject Arg1:T14 Arg2:T13	
+R9	subject Arg1:T14 Arg2:T12	
+T15	Concept 592 600	COVID-19
+R10	in-context Arg1:T14 Arg2:T15	
+T16	Action 809 819	facilitate
+T17	Concept 667 679	intervention
+T18	Concept 784 804	epidemic information
+R11	subject Arg1:T16 Arg2:T17	
+R12	subject Arg1:T16 Arg2:T18	
+T19	Concept 824 847	psychological treatment
+T20	Concept 863 866	COV
+R13	in-context Arg1:T19 Arg2:T20	
+R14	causes Arg1:T17 Arg2:T19	
+R15	causes Arg1:T18 Arg2:T19	
+R16	target Arg1:T16 Arg2:T19	
+R17	in-time Arg1:T2 Arg2:T6	
+T23	Concept 119 152	financial and health implications
+R18	causes Arg1:T2 Arg2:T23	
+T22	Concept 290 293	CoV
+T21	Action 228 248	phylogenetic uniting
+T24	Concept 265 268	CoV
+T26	Action 302 310	evidence
+R19	subject Arg1:T26 Arg2:T21	
+R21	has-property Arg1:T7 Arg2:T11	
+R22	subject Arg1:T21 Arg2:T24	
+R23	is-a Arg1:T21 Arg2:T22	
+T27	Concept 252 256	SARS
+T28	Concept 273 281	COVID-19
+R24	in-context Arg1:T22 Arg2:T28	
+R25	in-context Arg1:T24 Arg2:T27	
+T29	Action 325 335	similarity
+T25	Concept 339 360	RBD protein sequences
+R20	target Arg1:T26 Arg2:T29	
+R26	subject Arg1:T29 Arg2:T25	
