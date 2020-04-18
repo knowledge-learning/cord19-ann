@@ -13,6 +13,10 @@ Your mission, should you choose to accept it, is to manually annotate sentences 
 If you want to participate, [read the full instructions here](docs/instructions.md) and join our [Telegram group](https://t.me/cord19).
 See a [demo video here](https://github.com/matcom/cord19-ann/raw/master/docs/demo.mp4).
 
+## License
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
+
 ## Contributors
 
 This a list of everyone currently involved and what they are doing.
