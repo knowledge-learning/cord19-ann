@@ -129,7 +129,7 @@ This a list of everyone currently involved and what they are doing.
 | 52       | second   | Done           | @Csisc1994           | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack52/second/pack52-second) |
 | 53       | first    | In progress    | @edvard_munch        | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack53/first/pack53-first) |
 | 53       | second   | Done           | @Csisc1994           | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack53/second/pack53-second) |
-| 54       | first    | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack54/first/pack54-first) |
+| 54       | first    | In progress    | @Csisc1994           | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack54/first/pack54-first) |
 | 54       | second   | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack54/second/pack54-second) |
 | 55       | first    | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack55/first/pack55-first) |
 | 55       | second   | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack55/second/pack55-second) |
