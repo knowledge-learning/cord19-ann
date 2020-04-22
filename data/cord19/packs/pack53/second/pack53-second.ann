@@ -1,4 +1,4 @@
-T1	Concept 104 109	tests
+T1	Action 104 109	tests
 T2	Concept 91 103	nucleic acid
 T3	Concept 343 353	proportion
 T4	Concept 568 575	results
@@ -47,3 +47,91 @@ T28	Concept 72 86	swab specimens
 R19	in-place Arg1:T28 Arg2:T6	
 R20	target Arg1:T26 Arg2:T28	
 R21	subject Arg1:T26 Arg2:T25	
+R22	in-context Arg1:T26 Arg2:T1	
+R23	subject Arg1:T1 Arg2:T2	
+T29	Concept 851 854	ODE
+T30	Concept 840 850	mean-field
+T31	Concept 824 839	two-dimensional
+R24	has-property Arg1:T29 Arg2:T30	
+R25	has-property Arg1:T29 Arg2:T31	
+R26	target Arg1:T24 Arg2:T29	
+T32	Action 876 887	transitions
+T33	Concept 893 904	coexistence
+T34	Concept 917 920	VDR
+T35	Concept 935 944	dominance
+T36	Concept 978 981	HCR
+T37	Concept 948 965	carrying capacity
+T38	Concept 278 295	constant-strength
+T39	Concept 296 308	intervention
+R27	has-property Arg1:T39 Arg2:T38	
+T40	Action 309 316	reduces
+T41	Concept 321 328	density
+R28	target Arg1:T40 Arg2:T41	
+R29	subject Arg1:T40 Arg2:T39	
+T42	Concept 334 342	constant
+R30	has-property Arg1:T3 Arg2:T42	
+R31	has-property Arg1:T40 Arg2:T3	
+T43	Action 404 411	matches
+R32	in-time Arg1:T40 Arg2:T43	
+T44	Concept 379 387	strength
+T45	Concept 391 403	intervention
+R33	has-property Arg1:T45 Arg2:T44	
+R34	subject Arg1:T43 Arg2:T44	
+T46	Concept 416 424	strength
+R35	target Arg1:T43 Arg2:T46	
+T47	Concept 428 436	epidemic
+R36	has-property Arg1:T47 Arg2:T46	
+T48	Concept 460 472	distribution
+T49	Action 476 486	equivalent
+T50	Concept 524 536	distribution
+T51	Concept 504 523	generation-interval
+T52	Concept 494 503	intrinsic
+R37	subject Arg1:T49 Arg2:T48	
+R38	target Arg1:T49 Arg2:T50	
+R39	has-property Arg1:T50 Arg2:T51	
+R40	has-property Arg1:T50 Arg2:T52	
+T53	Action 450 459	resulting
+R41	subject Arg1:T53 Arg2:T40	
+R42	target Arg1:T53 Arg2:T49	
+*	same-as T48 T50
+T54	Action 858 866	expected
+R43	subject Arg1:T54 Arg2:T32	
+R44	target Arg1:T54 Arg2:T24	
+T55	Concept 930 934	host
+R45	subject Arg1:T32 Arg2:T33	
+R46	subject Arg1:T32 Arg2:T35	
+R47	in-time Arg1:T33 Arg2:T34	
+R48	in-time Arg1:T35 Arg2:T36	
+R49	has-property Arg1:T55 Arg2:T35	
+R50	in-context Arg1:T35 Arg2:T37	
+T56	Concept 139 150	polymerases
+T57	Concept 129 132	RNA
+T58	Concept 113 128	positive-strand
+R51	has-property Arg1:T57 Arg2:T58	
+T59	Concept 133 138	virus
+R52	in-place Arg1:T57 Arg2:T59	
+R53	in-place Arg1:T56 Arg2:T57	
+T60	Action 174 186	reaches over
+R54	in-place Arg1:T60 Arg2:T58	
+T61	Concept 198 202	site
+T62	Concept 191 197	active
+R55	has-property Arg1:T61 Arg2:T62	
+R56	target Arg1:T60 Arg2:T61	
+T63	Action 206 213	contact
+T64	Concept 224 230	domain
+T65	Concept 169 173	loop
+T66	Concept 156 161	index
+T67	Concept 162 168	finger
+R57	is-a Arg1:T66 Arg2:T67	
+R58	has-property Arg1:T66 Arg2:T65	
+R59	subject Arg1:T60 Arg2:T65	
+R60	subject Arg1:T63 Arg2:T65	
+R61	target Arg1:T63 Arg2:T64	
+T68	Concept 218 223	thumb
+R62	in-place Arg1:T68 Arg2:T64	
+T69	Action 232 243	positioning
+T70	Concept 260 264	loop
+T71	Concept 248 259	ring-finger
+R63	has-property Arg1:T71 Arg2:T70	
+R64	subject Arg1:T69 Arg2:T70	
+R65	target Arg1:T69 Arg2:T65	

@@ -1,0 +1,76 @@
+T1	Concept 19 27	research
+T2	Concept 71 79	families
+T4	Action 97 103	suffer
+T5	Concept 109 116	similar
+T6	Concept 117 130	psychological
+T7	Concept 131 139	problems
+T8	Concept 143 146	HCW
+T9	Concept 155 163	COVID-19
+T10	Concept 164 172	epidemic
+T3	Concept 83 86	HCW
+R1	in-context Arg1:T2 Arg2:T3	
+R2	subject Arg1:T4 Arg2:T2	
+R3	target Arg1:T4 Arg2:T7	
+R4	has-property Arg1:T7 Arg2:T6	
+R5	has-property Arg1:T7 Arg2:T5	
+R6	has-property Arg1:T7 Arg2:T8	
+R7	in-context Arg1:T4 Arg2:T9	
+R8	in-context Arg1:T10 Arg2:T9	
+T11	Concept 178 181	78%
+T12	Concept 189 192	HCW
+T13	Concept 206 214	positive
+T14	Action 215 225	perception
+T15	Concept 229 237	COVID-19
+R9	target Arg1:T14 Arg2:T15	
+R10	subject Arg1:T14 Arg2:T12	
+R11	has-property Arg1:T14 Arg2:T13	
+R12	in-context Arg1:T12 Arg2:T11	
+T16	Concept 255 264	stringent
+T17	Action 265 275	quarantine
+T18	Concept 280 293	public health
+T19	Concept 294 302	measures
+T20	Concept 303 310	imposed
+T21	Concept 319 326	January
+T22	Action 341 350	decreased
+T23	Action 355 367	transmission
+T24	Concept 368 372	rate
+T25	Concept 376 384	COVID-19
+R13	has-property Arg1:T17 Arg2:T16	
+R14	in-context Arg1:T19 Arg2:T18	
+R15	has-property Arg1:T19 Arg2:T20	
+R16	in-time Arg1:T17 Arg2:T21	
+R17	in-time Arg1:T19 Arg2:T21	
+T26	Concept 314 318	late
+R18	in-context Arg1:T21 Arg2:T26	
+R19	causes Arg1:T17 Arg2:T22	
+R20	causes Arg1:T19 Arg2:T22	
+R21	target Arg1:T22 Arg2:T23	
+R22	target Arg1:T23 Arg2:T24	
+R23	has-property Arg1:T25 Arg2:T24	
+T27	Concept 385 398	Comorbidities
+T28	Concept 424 434	associated
+A1	Uncertain T28
+T29	Concept 440 448	severity
+T30	Concept 452 460	COVID-19
+T31	Action 461 470	infection
+R24	in-context Arg1:T31 Arg2:T30	
+R25	has-property Arg1:T31 Arg2:T29	
+R26	has-property Arg1:T27 Arg2:T28	
+R27	in-context Arg1:T27 Arg2:T31	
+T32	Concept 487 495	patients
+A2	Emphasized T32
+T33	Concept 500 514	cardiovascular
+T34	Action 515 522	disease
+T35	Concept 526 539	heart failure
+T36	Concept 540 545	group
+T37	Concept 559 567	COVID-19
+T38	Concept 568 573	group
+R28	is-a Arg1:T35 Arg2:T36	
+R29	is-a Arg1:T37 Arg2:T38	
+R30	subject Arg1:T34 Arg2:T32	
+R31	has-property Arg1:T34 Arg2:T33	
+T39	Concept 482 486	more
+R33	has-property Arg1:T32 Arg2:T39	
+R32	in-context Arg1:T32 Arg2:T35	
+T40	Reference 551 555	that
+R34	in-context Arg1:T32 Arg2:T37	

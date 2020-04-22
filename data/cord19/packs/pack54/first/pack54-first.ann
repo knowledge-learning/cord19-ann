@@ -1,0 +1,132 @@
+T1	Concept 6 13	results
+T2	Action 14 21	suggest
+T3	Concept 31 41	prevalence
+T4	Concept 45 61	strongyloidiasis
+T5	Action 71 75	high
+R1	subject Arg1:T2 Arg2:T1	
+R2	has-property Arg1:T4 Arg2:T3	
+R3	target Arg1:T2 Arg2:T5	
+R4	subject Arg1:T5 Arg2:T3	
+T6	Concept 82 90	migrants
+T7	Concept 101 106	Spain
+R5	in-place Arg1:T6 Arg2:T7	
+R6	target Arg1:T5 Arg2:T6	
+T8	Action 148 156	designed
+R7	entails Arg1:T5 Arg2:T8	
+T9	Concept 128 137	programme
+R8	target Arg1:T8 Arg2:T9	
+T10	Action 118 127	screening
+R9	has-property Arg1:T9 Arg2:T10	
+T11	Concept 191 199	patients
+T12	Concept 174 190	immunosuppressed
+R10	has-property Arg1:T11 Arg2:T12	
+R11	target Arg1:T10 Arg2:T11	
+T13	Action 217 221	risk
+R12	subject Arg1:T13 Arg2:T11	
+T14	Concept 242 255	complications
+T15	Concept 235 241	severe
+R13	has-property Arg1:T14 Arg2:T15	
+R14	target Arg1:T13 Arg2:T14	
+T16	Concept 263 272	infection
+R15	causes Arg1:T16 Arg2:T14	
+T17	Concept 857 864	patient
+T18	Concept 874 884	contagious
+T19	Concept 913 922	infection
+R16	causes Arg1:T19 Arg2:T18	
+R17	has-property Arg1:T17 Arg2:T18	
+T20	Concept 895 902	14 days
+R18	in-time Arg1:T17 Arg2:T20	
+R19	in-context Arg1:T20 Arg2:T19	
+T21	Action 333 337	have
+T22	Action 383 391	requires
+T23	Action 398 402	care
+T24	Concept 287 290	29%
+T25	Concept 294 296	US
+T26	Concept 297 307	households
+T27	Concept 315 325	healthcare
+T28	Concept 326 332	worker
+T29	Concept 363 368	child
+T30	Concept 351 362	school-aged
+T31	Concept 369 377	age 3-12
+T32	Concept 392 397	child
+R20	has-property Arg1:T24 Arg2:T26	
+R21	in-place Arg1:T26 Arg2:T25	
+R22	in-context Arg1:T26 Arg2:T28	
+R23	in-context Arg1:T28 Arg2:T27	
+R26	target Arg1:T23 Arg2:T32	
+R27	target Arg1:T22 Arg2:T23	
+R28	has-property Arg1:T29 Arg2:T31	
+R29	has-property Arg1:T29 Arg2:T30	
+R25	target Arg1:T21 Arg2:T29	
+R30	subject Arg1:T22 Arg2:T29	
+R24	subject Arg1:T21 Arg2:T24	
+T33	Concept 408 416	estimate
+T34	Concept 422 428	little
+T35	Action 429 433	less
+T36	Concept 439 447	one case
+T37	Concept 448 454	series
+T38	Concept 458 461	ICU
+T39	Concept 462 470	patients
+T40	Concept 494 501	failure
+T41	Concept 482 493	respiratory
+T42	Concept 476 481	acute
+T43	Concept 507 518	Influenza A
+T44	Concept 520 524	H1N1
+T45	Action 530 539	requiring
+T46	Concept 540 550	mechanical
+T47	Concept 551 562	ventilation
+T48	Concept 574 577	CFR
+R31	has-property Arg1:T35 Arg2:T34	
+R32	subject Arg1:T35 Arg2:T33	
+R33	target Arg1:T35 Arg2:T37	
+R34	has-property Arg1:T37 Arg2:T36	
+R35	has-part Arg1:T37 Arg2:T39	
+R36	in-place Arg1:T39 Arg2:T38	
+R37	has-property Arg1:T39 Arg2:T40	
+R38	has-property Arg1:T40 Arg2:T41	
+R39	has-part Arg1:T40 Arg2:T42	
+R40	causes Arg1:T43 Arg2:T40	
+*	same-as T43 T44
+R41	subject Arg1:T45 Arg2:T40	
+R42	target Arg1:T45 Arg2:T47	
+R43	has-property Arg1:T47 Arg2:T46	
+R44	entails Arg1:T40 Arg2:T47	
+R45	has-property Arg1:T47 Arg2:T48	
+R46	in-context Arg1:T48 Arg2:T40	
+T49	Action 660 662	is
+T50	Action 701 706	found
+A1	Negated T50
+T51	Action 814 822	estimate
+T52	Action 736 744	relative
+T53	Concept 635 647	nucleocapsid
+T54	Concept 649 650	N
+*	same-as T53 T54
+T55	Concept 652 659	protein
+R47	in-place Arg1:T55 Arg2:T53	
+R48	subject Arg1:T49 Arg2:T55	
+T56	Concept 666 674	abundant
+T57	Concept 675 680	viral
+T58	Concept 681 688	protein
+R49	in-place Arg1:T58 Arg2:T57	
+R50	has-property Arg1:T58 Arg2:T57	
+R51	target Arg1:T49 Arg2:T58	
+R52	is-a Arg1:T55 Arg2:T58	
+R53	subject Arg1:T50 Arg2:T55	
+T59	Concept 713 724	efficiently
+T60	Concept 725 735	translated
+R54	has-property Arg1:T52 Arg2:T60	
+R55	has-property Arg1:T60 Arg2:T59	
+R56	target Arg1:T50 Arg2:T52	
+T61	Concept 752 757	other
+T62	Concept 758 768	structural
+T63	Concept 769 777	proteins
+R57	target Arg1:T52 Arg2:T63	
+R58	has-property Arg1:T63 Arg2:T62	
+R59	has-property Arg1:T63 Arg2:T61	
+T64	Concept 797 805	approach
+R60	in-context Arg1:T50 Arg2:T64	
+R61	subject Arg1:T51 Arg2:T64	
+T65	Concept 834 843	abundance
+T66	Concept 823 833	transcript
+R62	has-property Arg1:T66 Arg2:T65	
+R63	target Arg1:T51 Arg2:T65	

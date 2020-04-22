@@ -69,3 +69,95 @@ R32	target Arg1:T32 Arg2:T33
 R33	has-property Arg1:T32 Arg2:T34	
 R31	subject Arg1:T32 Arg2:T29	
 T37	Concept 391 403	intervention
+T38	Concept 379 387	strength
+R34	in-context Arg1:T38 Arg2:T37	
+T39	Action 404 411	matches
+T40	Concept 416 424	strength
+T41	Concept 428 436	epidemic
+R35	subject Arg1:T39 Arg2:T38	
+R36	in-context Arg1:T40 Arg2:T41	
+R37	target Arg1:T39 Arg2:T40	
+T42	Concept 438 443	θ = R
+*	same-as T42 T39
+T43	Concept 460 472	distribution
+T44	Concept 450 459	resulting
+R38	has-property Arg1:T43 Arg2:T44	
+T45	Action 476 486	equivalent
+T46	Concept 494 503	intrinsic
+T47	Concept 524 536	distribution
+T48	Concept 504 523	generation-interval
+R39	has-property Arg1:T47 Arg2:T46	
+R40	has-property Arg1:T47 Arg2:T48	
+R41	subject Arg1:T45 Arg2:T43	
+R42	target Arg1:T45 Arg2:T47	
+T49	Concept 538 549	K(τ) = g(τ)
+*	same-as T49 T45
+R43	entails Arg1:T39 Arg2:T45	
+T50	Concept 592 602	expression
+T51	Concept 603 608	level
+T52	Concept 615 620	snRNA
+T53	Concept 612 614	U1
+R44	in-context Arg1:T51 Arg2:T50	
+R45	has-property Arg1:T52 Arg2:T51	
+R46	has-part Arg1:T53 Arg2:T52	
+T54	Action 625 634	decreased
+R47	subject Arg1:T54 Arg2:T51	
+T55	Concept 635 640	after
+T57	Concept 641 643	4X
+T58	Concept 645 647	9X
+T59	Concept 652 654	6X
+T56	Concept 655 661	dosage
+T60	Concept 693 699	HEK293
+T61	Concept 701 706	human
+T62	Concept 709 713	SY5Y
+T63	Concept 715 720	human
+T64	Concept 730 735	PC-12
+T65	Concept 737 740	rat
+T66	Concept 742 746	cell
+T67	Concept 747 752	lines
+R48	has-property Arg1:T67 Arg2:T66	
+R49	in-time Arg1:T54 Arg2:T55	
+R50	in-context Arg1:T55 Arg2:T57	
+R51	in-context Arg1:T55 Arg2:T58	
+R52	in-context Arg1:T55 Arg2:T59	
+R53	is-a Arg1:T59 Arg2:T56	
+R54	is-a Arg1:T58 Arg2:T56	
+R55	is-a Arg1:T57 Arg2:T56	
+R56	in-context Arg1:T57 Arg2:T60	
+R57	in-context Arg1:T58 Arg2:T62	
+R58	in-context Arg1:T59 Arg2:T64	
+R59	is-a Arg1:T64 Arg2:T67	
+R60	is-a Arg1:T62 Arg2:T67	
+R61	is-a Arg1:T60 Arg2:T67	
+R62	has-part Arg1:T61 Arg2:T60	
+R63	has-part Arg1:T63 Arg2:T62	
+R64	has-part Arg1:T65 Arg2:T64	
+T68	Concept 771 779	dynamics
+T69	Concept 792 798	system
+T70	Concept 787 791	full
+R65	has-property Arg1:T69 Arg2:T70	
+T71	Action 799 805	differ
+T72	Concept 824 839	two-dimensional
+T73	Concept 840 844	mean
+T74	Concept 845 850	field
+R66	has-property Arg1:T74 Arg2:T73	
+R67	has-property Arg1:T74 Arg2:T72	
+T75	Concept 851 854	ODE
+*	same-as T75 T74
+T76	Concept 893 904	coexistence
+T77	Action 876 887	transitions
+T78	Concept 917 920	VDR
+T79	Concept 930 934	host
+T80	Action 935 944	dominance
+T81	Concept 948 956	carrying
+T82	Concept 957 965	capacity
+R68	has-property Arg1:T82 Arg2:T81	
+T83	Concept 978 981	HCR
+R69	in-time Arg1:T82 Arg2:T83	
+R70	target Arg1:T80 Arg2:T79	
+R71	in-time Arg1:T76 Arg2:T78	
+R72	target Arg1:T77 Arg2:T76	
+R73	in-context Arg1:T80 Arg2:T82	
+R74	subject Arg1:T71 Arg2:T69	
+R75	target Arg1:T71 Arg2:T74	
+R76	in-context Arg1:T71 Arg2:T68	

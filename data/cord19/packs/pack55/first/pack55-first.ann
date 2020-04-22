@@ -1,0 +1,163 @@
+T1	Concept 21 35	polyampholytic
+T2	Concept 36 40	IDRs
+T3	Action 41 46	drawn
+T4	Concept 56 61	human
+T5	Concept 62 70	proteome
+R1	has-part Arg1:T4 Arg2:T5	
+T6	Concept 118 124	values
+T7	Concept 109 115	median
+T8	Concept 116 117	κ
+T9	Concept 129 135	median
+T10	Concept 136 142	values
+R2	has-property Arg1:T2 Arg2:T1	
+R3	subject Arg1:T3 Arg2:T2	
+R4	in-context Arg1:T3 Arg2:T5	
+T11	Action 89 100	correlation
+T12	Concept 81 88	inverse
+R5	has-property Arg1:T11 Arg2:T12	
+R6	has-property Arg1:T6 Arg2:T7	
+R7	in-context Arg1:T6 Arg2:T8	
+R8	has-property Arg1:T10 Arg2:T9	
+T13	Concept 151 159	fraction
+T14	Concept 171 179	residues
+T15	Concept 163 170	charged
+R9	has-property Arg1:T14 Arg2:T15	
+R10	in-context Arg1:T13 Arg2:T14	
+R11	in-context Arg1:T10 Arg2:T13	
+R12	subject Arg1:T11 Arg2:T6	
+R13	subject Arg1:T11 Arg2:T10	
+R14	entails Arg1:T3 Arg2:T11	
+T16	Reference 187 192	these
+T17	Concept 193 196	two
+T18	Concept 197 206	variables
+R15	is-a Arg1:T17 Arg2:T18	
+R16	in-context Arg1:T16 Arg2:T17	
+T19	Action 207 217	contribute
+T20	Concept 221 228	maximum
+T21	Concept 232 235	18%
+T22	Concept 243 252	variation
+R17	subject Arg1:T19 Arg2:T16	
+R18	target Arg1:T19 Arg2:T21	
+A1	Uncertain T19
+R19	has-property Arg1:T19 Arg2:T20	
+R20	in-context Arg1:T21 Arg2:T22	
+T23	Concept 274 277	82%
+T24	Action 278 285	related
+T25	Concept 295 302	factors
+T26	Concept 311 322	containment
+T27	Concept 323 331	measures
+R21	has-property Arg1:T27 Arg2:T26	
+T28	Concept 333 340	general
+T29	Concept 341 347	health
+T30	Concept 348 356	policies
+R22	has-property Arg1:T30 Arg2:T28	
+R23	in-context Arg1:T30 Arg2:T29	
+R24	is-a Arg1:T27 Arg2:T25	
+R25	is-a Arg1:T30 Arg2:T25	
+T31	Concept 358 368	population
+T32	Concept 369 376	density
+R26	in-context Arg1:T32 Arg2:T31	
+R27	is-a Arg1:T32 Arg2:T25	
+T33	Concept 378 392	transportation
+R28	is-a Arg1:T33 Arg2:T25	
+R29	subject Arg1:T24 Arg2:T23	
+R30	in-context Arg1:T23 Arg2:T22	
+R31	target Arg1:T24 Arg2:T27	
+R32	target Arg1:T24 Arg2:T30	
+R33	target Arg1:T24 Arg2:T32	
+R34	target Arg1:T24 Arg2:T33	
+T34	Concept 394 402	cultural
+T35	Concept 403 410	aspects
+R35	in-context Arg1:T35 Arg2:T34	
+R36	is-a Arg1:T35 Arg2:T25	
+R37	target Arg1:T24 Arg2:T35	
+T36	Reference 416 420	This
+T37	Action 421 429	supports
+T38	Concept 434 444	robustness
+T39	Concept 448 454	fredox
+R38	subject Arg1:T37 Arg2:T36	
+R39	target Arg1:T37 Arg2:T38	
+R40	has-property Arg1:T39 Arg2:T38	
+T40	Action 460 466	marker
+T41	Concept 471 479	organism
+T42	Concept 480 490	complexity
+R41	in-context Arg1:T38 Arg2:T40	
+R42	in-context Arg1:T42 Arg2:T41	
+R43	target Arg1:T40 Arg2:T42	
+T43	Concept 509 519	breakpoint
+T44	Concept 501 508	largest
+R44	has-property Arg1:T43 Arg2:T44	
+T45	Action 520 533	corresponding
+T46	Action 541 547	advent
+T47	Concept 551 567	multicellularity
+R45	subject Arg1:T45 Arg2:T43	
+R46	target Arg1:T45 Arg2:T46	
+R47	target Arg1:T46 Arg2:T47	
+R48	in-context Arg1:T40 Arg2:T45	
+T48	Concept 572 597	World Health Organization
+T49	Concept 599 602	WHO
+*	same-as T49 T48
+T50	Action 608 616	declared
+R49	subject Arg1:T50 Arg2:T48	
+T51	Reference 617 621	this
+R50	target Arg1:T50 Arg2:T51	
+T52	Concept 628 639	coronavirus
+T53	Concept 622 627	novel
+R51	has-property Arg1:T52 Arg2:T53	
+R52	in-context Arg1:T51 Arg2:T52	
+T54	Concept 665 674	emergency
+T55	Concept 658 664	health
+T56	Concept 651 657	global
+R53	has-property Arg1:T54 Arg2:T56	
+R54	in-context Arg1:T54 Arg2:T55	
+R55	in-context Arg1:T50 Arg2:T54	
+T57	Concept 702 705	DUB
+T58	Concept 706 714	negative
+R56	has-property Arg1:T57 Arg2:T58	
+T59	Concept 715 722	viruses
+R57	is-a Arg1:T57 Arg2:T59	
+T60	Action 743 753	containing
+T61	Concept 758 764	V1691R
+T62	Concept 769 781	substitution
+R58	is-a Arg1:T61 Arg2:T62	
+T63	Action 783 790	induced
+T64	Concept 791 797	higher
+T65	Concept 798 804	levels
+T66	Concept 808 813	IFN-β
+T67	Concept 818 821	ISG
+T68	Concept 822 827	mRNAs
+T69	Concept 833 835	wt
+T70	Concept 836 841	virus
+R59	is-a Arg1:T69 Arg2:T70	
+T71	Concept 845 849	MRC5
+T72	Concept 850 855	cells
+R60	is-a Arg1:T71 Arg2:T72	
+R61	target Arg1:T60 Arg2:T61	
+R62	in-context Arg1:T57 Arg2:T60	
+R63	subject Arg1:T63 Arg2:T57	
+R64	has-property Arg1:T63 Arg2:T64	
+R65	target Arg1:T63 Arg2:T65	
+R66	in-context Arg1:T65 Arg2:T66	
+R67	in-context Arg1:T65 Arg2:T67	
+R68	in-context Arg1:T64 Arg2:T69	
+R69	in-place Arg1:T69 Arg2:T71	
+T73	Action 857 867	confirming
+T74	Concept 874 878	role
+T75	Concept 882 884	PL
+T76	Concept 885 888	pro
+T77	Concept 892 898	innate
+T78	Concept 906 917	suppression
+T79	Concept 899 905	immune
+T80	Action 923 935	demonstrated
+T81	Concept 943 952	infection
+T82	Concept 919 922	now
+R70	entails Arg1:T63 Arg2:T73	
+R71	target Arg1:T73 Arg2:T74	
+R72	has-property Arg1:T75 Arg2:T76	
+R73	has-property Arg1:T78 Arg2:T79	
+R74	has-property Arg1:T78 Arg2:T77	
+R75	in-context Arg1:T74 Arg2:T75	
+R76	in-context Arg1:T75 Arg2:T78	
+R77	subject Arg1:T80 Arg2:T74	
+R78	has-property Arg1:T80 Arg2:T82	
+R79	in-time Arg1:T80 Arg2:T81	
