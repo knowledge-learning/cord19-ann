@@ -1,0 +1,98 @@
+T2	Concept 45 61	strongyloidiasis
+T3	Concept 71 75	high
+A1	Emphasized T3
+T4	Concept 82 90	migrants
+R1	in-context Arg1:T3 Arg2:T4	
+T5	Action 91 97	living
+T1	Concept 31 41	prevalence
+R2	has-property Arg1:T1 Arg2:T3	
+R3	has-property Arg1:T2 Arg2:T1	
+T6	Concept 101 106	Spain
+R4	in-place Arg1:T5 Arg2:T6	
+T7	Concept 128 137	programme
+T8	Concept 118 127	screening
+R5	has-property Arg1:T7 Arg2:T8	
+T9	Action 148 156	designed
+R6	target Arg1:T9 Arg2:T7	
+T10	Concept 191 199	patients
+R7	in-context Arg1:T9 Arg2:T10	
+T11	Concept 174 190	immunosuppressed
+R8	has-property Arg1:T11 Arg2:T10	
+T12	Concept 217 221	risk
+A2	Emphasized T12
+T13	Concept 242 255	complications
+A3	Emphasized T13
+T14	Concept 263 272	infection
+R9	in-context Arg1:T10 Arg2:T12	
+R10	entails Arg1:T13 Arg2:T12	
+R11	in-context Arg1:T13 Arg2:T14	
+T15	Concept 297 307	households
+T16	Concept 294 296	US
+R12	in-place Arg1:T15 Arg2:T16	
+T17	Concept 287 290	29%
+R13	has-part Arg1:T15 Arg2:T17	
+T18	Concept 315 332	healthcare worker
+R14	in-context Arg1:T15 Arg2:T18	
+T19	Concept 363 368	child
+T20	Action 333 337	have
+T21	Concept 351 362	school-aged
+R15	has-property Arg1:T19 Arg2:T21	
+T22	Concept 347 350	one
+R16	has-part Arg1:T19 Arg2:T22	
+T23	Concept 369 377	age 3-12
+R17	has-property Arg1:T19 Arg2:T23	
+R18	target Arg1:T20 Arg2:T19	
+R19	subject Arg1:T20 Arg2:T15	
+T24	Action 383 391	requires
+T25	Concept 392 402	child care
+R20	target Arg1:T24 Arg2:T25	
+R21	has-property Arg1:T19 Arg2:T24	
+T26	Concept 458 470	ICU patients
+T27	Concept 482 501	respiratory failure
+A4	Emphasized T27
+T28	Concept 507 525	Influenza A (H1N1)
+R22	causes Arg1:T28 Arg2:T27	
+R23	has-property Arg1:T26 Arg2:T27	
+T29	Action 530 539	requiring
+T30	Concept 551 562	ventilation
+T31	Concept 540 550	mechanical
+R25	target Arg1:T29 Arg2:T30	
+R24	in-context Arg1:T26 Arg2:T29	
+R26	has-property Arg1:T30 Arg2:T31	
+T32	Action 568 571	had
+T33	Concept 443 447	case
+T34	Concept 420 442	a little less than one
+R27	has-part Arg1:T33 Arg2:T34	
+R28	is-a Arg1:T33 Arg2:T26	
+R29	subject Arg1:T32 Arg2:T33	
+T35	Concept 574 577	CFR
+T36	Concept 581 584	46%
+R30	has-property Arg1:T35 Arg2:T36	
+R31	target Arg1:T32 Arg2:T35	
+T37	Concept 635 659	nucleocapsid (N) protein
+T38	Concept 681 688	protein
+R32	is-a Arg1:T37 Arg2:T38	
+T39	Concept 675 680	viral
+R33	has-property Arg1:T38 Arg2:T39	
+A5	Emphasized T39
+T40	Action 725 735	translated
+T41	Concept 713 724	efficiently
+R34	has-property Arg1:T40 Arg2:T41	
+T42	Concept 769 777	proteins
+T43	Concept 758 768	structural
+R35	has-property Arg1:T42 Arg2:T43	
+R36	subject Arg1:T40 Arg2:T37	
+A6	Negated T41
+T44	Concept 736 744	relative
+R37	in-context Arg1:T40 Arg2:T44	
+R38	in-context Arg1:T44 Arg2:T43	
+T45	Concept 857 864	patient
+T46	Concept 874 884	contagious
+A7	Uncertain T46
+R39	has-property Arg1:T45 Arg2:T46	
+T47	Concept 889 902	up to 14 days
+R40	in-time Arg1:T46 Arg2:T47	
+T48	Action 903 912	following
+R41	subject Arg1:T48 Arg2:T47	
+T49	Concept 913 922	infection
+R42	target Arg1:T48 Arg2:T49	

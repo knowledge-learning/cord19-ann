@@ -1,10 +1,10 @@
 T1	Action 118 123	clash
-T2	Concept 92 111	second conformation
+T2	Concept 99 111	conformation
 T3	Concept 133 146	ACE2 receptor
 R2	subject Arg1:T1 Arg2:T2	
 R1	target Arg1:T1 Arg2:T3	
 T4	Action 37 44	similar
-T5	Concept 52 69	ligand bound form
+T5	Concept 65 69	form
 T6	Concept 77 80	RBD
 R3	has-property Arg1:T6 Arg2:T5	
 R4	target Arg1:T4 Arg2:T5	
@@ -14,8 +14,8 @@ T8	Concept 156 164	approach
 T9	Action 165 173	combines
 T10	Concept 174 185	mutagenesis
 T11	Concept 189 192	PCR
-T12	Concept 198 222	degenerate (NNK) primers
-T13	Concept 228 249	in-cell recombination
+T12	Concept 215 222	primers
+T13	Concept 236 249	recombination
 R6	subject Arg1:T9 Arg2:T8	
 T14	Concept 149 155	recent
 R7	in-time Arg1:T8 Arg2:T14	
@@ -54,7 +54,7 @@ T30	Action 376 386	efficiency
 R24	subject Arg1:T30 Arg2:T19	
 R25	target Arg1:T20 Arg2:T30	
 T31	Concept 390 395	bases
-T32	Concept 399 419	particular positions
+T32	Concept 410 419	positions
 T33	Action 420 426	define
 T34	Concept 427 433	target
 T35	Action 434 445	recognition
@@ -66,7 +66,7 @@ R29	in-place Arg1:T31 Arg2:T32
 R30	target Arg1:T35 Arg2:T34	
 R31	target Arg1:T36 Arg2:T34	
 T37	Concept 641 651	life cycle
-T38	Concept 670 680	wild yeast
+T38	Concept 675 680	yeast
 T39	Concept 597 604	strains
 T40	Action 605 614	retaining
 T41	Action 626 637	re-acquired
@@ -78,3 +78,19 @@ T42	Action 652 658	closer
 R36	subject Arg1:T42 Arg2:T37	
 R37	target Arg1:T42 Arg2:T38	
 R38	in-context Arg1:T37 Arg2:T38	
+T43	Concept 670 674	wild
+R39	has-property Arg1:T38 Arg2:T43	
+T44	Concept 399 409	particular
+R40	has-property Arg1:T32 Arg2:T44	
+T45	Concept 228 235	in-cell
+R41	in-place Arg1:T13 Arg2:T45	
+T46	Concept 210 213	NNK
+R42	is-a Arg1:T46 Arg2:T12	
+T47	Concept 198 208	degenerate
+R43	has-property Arg1:T12 Arg2:T47	
+T48	Concept 59 64	bound
+R44	has-property Arg1:T5 Arg2:T48	
+T49	Concept 52 58	ligand
+R45	in-place Arg1:T5 Arg2:T49	
+T50	Concept 92 98	second
+R46	has-property Arg1:T2 Arg2:T50	
