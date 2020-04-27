@@ -18,8 +18,7 @@ T16	Concept 438 444	assays
 T17	Concept 528 543	CCoV strain A76
 T18	Concept 555 580	recombinant S 103 protein
 R14	has-property Arg1:T17 Arg2:T18	
-T19	Concept 584 649	product of recombination between serotype I and II CCoV sequences
-R15	has-property Arg1:T17 Arg2:T19	
+T19	Concept 584 591	product
 T20	Concept 650 660	SARS-CoV-2
 T21	Concept 668 707	isordered segment from 168-289 residues
 R16	has-property Arg1:T20 Arg2:T21	
@@ -86,3 +85,6 @@ R37	subject Arg1:T47 Arg2:T16
 R38	has-property Arg1:T15 Arg2:T48	
 R39	target Arg1:T47 Arg2:T15	
 R40	in-context Arg1:T47 Arg2:T6	
+R15	is-a Arg1:T18 Arg2:T19	
+T49	Action 595 608	recombination
+R41	has-property Arg1:T49 Arg2:T19	
