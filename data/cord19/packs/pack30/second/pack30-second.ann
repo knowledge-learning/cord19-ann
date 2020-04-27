@@ -19,7 +19,6 @@ T15	Concept 810 817	protein
 T16	Concept 839 848	vitamin D
 T18	Concept 908 919	fatty acids
 T19	Concept 794 809	multifunctional
-R8	is-a Arg1:T14 Arg2:T19	
 R9	is-a Arg1:T14 Arg2:T15	
 R7	has-property Arg1:T15 Arg2:T19	
 T17	Concept 876 891	actin scavenger
@@ -27,7 +26,6 @@ R11	is-a Arg1:T14 Arg2:T17
 T20	Action 850 855	binds
 T21	Concept 856 861	actin
 R10	target Arg1:T20 Arg2:T21	
-R12	has-property Arg1:T14 Arg2:T20	
 T22	Action 902 907	binds
 R13	target Arg1:T22 Arg2:T18	
 R14	has-property Arg1:T14 Arg2:T22	
@@ -61,3 +59,4 @@ R22	has-property Arg1:T24 Arg2:T37
 T38	Concept 392 399	kingdom
 T39	Concept 385 391	animal
 R23	has-property Arg1:T38 Arg2:T39	
+R8	subject Arg1:T20 Arg2:T14	

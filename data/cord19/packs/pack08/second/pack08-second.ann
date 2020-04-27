@@ -8,16 +8,13 @@ T7	Concept 188 196	cytokine
 T11	Action 197 204	release
 T10	Concept 239 256	COVID-19 patients
 R5	in-place Arg1:T5 Arg2:T10	
-T6	Concept 354 369	high viral load
+T6	Concept 365 369	load
 T12	Concept 373 383	SARS-CoV-2
-R10	has-property Arg1:T6 Arg2:T12	
-T13	Concept 384 418	at early stage after symptom onset
+R10	has-property Arg1:T12 Arg2:T6	
+T13	Concept 393 398	stage
 R11	in-time Arg1:T12 Arg2:T13	
-T14	Action 420 444	suggested RT-LAMP assays
-T15	Concept 469 484	screening tests
-R12	target Arg1:T14 Arg2:T15	
-T16	Concept 420 444	suggested RT-LAMP assays
-R13	subject Arg1:T16 Arg2:T15	
+T15	Concept 479 484	tests
+T16	Concept 438 444	assays
 T17	Concept 528 543	CCoV strain A76
 T18	Concept 555 580	recombinant S 103 protein
 R14	has-property Arg1:T17 Arg2:T18	
@@ -69,3 +66,23 @@ R29	subject Arg1:T39 Arg2:T36
 T40	Concept 320 328	hospital
 R30	target Arg1:T39 Arg2:T40	
 R31	in-place Arg1:T36 Arg2:T40	
+T41	Concept 359 364	viral
+T42	Concept 354 358	high
+R32	has-property Arg1:T6 Arg2:T41	
+R33	has-property Arg1:T6 Arg2:T42	
+T43	Concept 387 392	early
+R34	has-property Arg1:T13 Arg2:T43	
+T44	Concept 413 418	onset
+T45	Concept 405 412	symptom
+R35	has-property Arg1:T45 Arg2:T44	
+R36	in-context Arg1:T13 Arg2:T44	
+T14	Concept 430 437	RT-LAMP
+R12	is-a Arg1:T14 Arg2:T16	
+T46	Concept 420 429	suggested
+R13	has-property Arg1:T16 Arg2:T46	
+T47	Action 458 464	usable
+T48	Concept 469 478	screening
+R37	subject Arg1:T47 Arg2:T16	
+R38	has-property Arg1:T15 Arg2:T48	
+R39	target Arg1:T47 Arg2:T15	
+R40	in-context Arg1:T47 Arg2:T6	
