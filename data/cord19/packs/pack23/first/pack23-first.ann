@@ -40,23 +40,23 @@ R20	has-property Arg1:T18 Arg2:T19
 T20	Action 241 252	Considering
 T21	Concept 257 267	complexity
 R21	subject Arg1:T20 Arg2:T21	
-T22	Concept 295 317	transmission potential
+T22	Concept 308 316	potentia
 R22	subject Arg1:T20 Arg2:T22	
-T23	Concept 321 344	asymptomatic infectives
+T23	Concept 334 344	infectives
 R23	in-context Arg1:T22 Arg2:T23	
 T24	Action 349 356	suggest
 R24	target Arg1:T20 Arg2:T24	
 T25	Concept 362 368	people
-T26	Concept 386 401	epidemic areas,
+T26	Concept 395 400	areas
 T27	Concept 369 378	who lived
-R25	subject Arg1:T24 Arg2:T25	
+R25	target Arg1:T24 Arg2:T25	
 R27	in-place Arg1:T27 Arg2:T26	
-T28	Concept 402 422	have tourism history
-R28	in-context Arg1:T25 Arg2:T28	
-T29	Concept 428 442	epidemic areas
+T28	Concept 415 422	history
+R28	has-property Arg1:T25 Arg2:T28	
+T29	Concept 437 442	areas
 R29	in-place Arg1:T28 Arg2:T29	
-T30	Concept 447 485	were potentially asymptomatic infected
-R30	in-context Arg1:T25 Arg2:T30	
+T30	Concept 477 485	infected
+R30	has-property Arg1:T25 Arg2:T30	
 R26	in-context Arg1:T25 Arg2:T27	
 T31	Action 486 495	should be
 T32	Concept 496 509	very cautious
@@ -68,9 +68,9 @@ T34	Action 533 538	avoid
 T35	Concept 539 563	oral/anal sex especially
 R34	subject Arg1:T34 Arg2:T25	
 R35	target Arg1:T34 Arg2:T35	
-T36	Concept 571 585	may be helpful
+T36	Concept 578 585	helpful
 T37	Concept 589 596	prevent
-T38	Concept 597 628	further spreading of SARS-CoV-2
+T38	Concept 605 614	spreading
 R36	entails Arg1:T32 Arg2:T36	
 R37	entails Arg1:T34 Arg2:T36	
 R38	in-context Arg1:T36 Arg2:T37	
@@ -98,3 +98,73 @@ R46	target Arg1:T47 Arg2:T48
 R47	subject Arg1:T47 Arg2:T39	
 T50	Concept 780 787	serious
 R48	has-property Arg1:T47 Arg2:T50	
+T51	Concept 271 277	sexual
+T52	Concept 278 286	behavior
+R49	has-property Arg1:T52 Arg2:T51	
+R50	has-property Arg1:T52 Arg2:T21	
+T53	Concept 295 307	transmission
+R51	has-property Arg1:T53 Arg2:T22	
+T54	Concept 321 333	asymptomatic
+R52	has-property Arg1:T23 Arg2:T54	
+T55	Concept 407 414	tourism
+R53	has-property Arg1:T55 Arg2:T28	
+T56	Concept 386 394	epidemic
+R54	has-property Arg1:T26 Arg2:T56	
+T57	Concept 428 436	epidemic
+R55	has-property Arg1:T29 Arg2:T57	
+T58	Concept 464 476	asymptomatic
+R56	in-context Arg1:T30 Arg2:T58	
+T59	Concept 618 628	SARS-CoV-2
+T60	Concept 597 604	further
+R57	has-property Arg1:T59 Arg2:T38	
+R58	has-property Arg1:T38 Arg2:T60	
+T61	Concept 822 827	batch
+T62	Concept 816 821	first
+T63	Concept 845 852	reports
+T64	Concept 840 844	data
+T65	Concept 831 839	clinical
+T66	Concept 856 866	SARS-CoV-2
+T67	Concept 867 876	infection
+T68	Concept 877 882	cases
+T69	Concept 886 891	China
+T70	Action 892 900	revealed
+T71	Concept 911 917	storms
+T72	Concept 902 910	cytokine
+T73	Concept 933 936	ill
+T74	Concept 922 932	critically
+T75	Concept 937 945	patients
+R59	has-property Arg1:T75 Arg2:T73	
+R60	has-property Arg1:T73 Arg2:T74	
+R61	has-property Arg1:T72 Arg2:T71	
+R62	in-place Arg1:T68 Arg2:T69	
+R63	has-property Arg1:T67 Arg2:T68	
+R64	causes Arg1:T66 Arg2:T67	
+R65	has-part Arg1:T63 Arg2:T64	
+R66	has-property Arg1:T64 Arg2:T65	
+R67	has-property Arg1:T61 Arg2:T62	
+R68	has-part Arg1:T63 Arg2:T61	
+R69	has-property Arg1:T68 Arg2:T63	
+R70	subject Arg1:T70 Arg2:T63	
+R71	target Arg1:T70 Arg2:T71	
+R72	in-place Arg1:T71 Arg2:T75	
+T76	Action 983 993	supporting
+T77	Concept 950 957	results
+T78	Concept 974 982	strongly
+R73	has-property Arg1:T76 Arg2:T78	
+R74	subject Arg1:T76 Arg2:T77	
+T79	Action 998 1004	action
+T80	Concept 1017 1026	selection
+T81	Concept 1008 1016	positive
+T82	Concept 1030 1040	spike gene
+R75	has-property Arg1:T80 Arg2:T81	
+R76	subject Arg1:T79 Arg2:T80	
+R77	in-place Arg1:T79 Arg2:T82	
+T83	Concept 1059 1068	evolution
+T84	Concept 1052 1058	recent
+T85	Concept 1072 1082	SARS-CoV-2
+T86	Concept 1087 1093	RaTG13
+R78	has-property Arg1:T86 Arg2:T83	
+R79	has-property Arg1:T85 Arg2:T83	
+R80	has-property Arg1:T83 Arg2:T84	
+R81	in-time Arg1:T79 Arg2:T83	
+R82	target Arg1:T76 Arg2:T79	

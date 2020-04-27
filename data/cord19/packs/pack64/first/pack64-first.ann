@@ -32,3 +32,64 @@ T17	Concept 349 356	aspects
 T18	Action 379 386	similar
 R13	has-property Arg1:T17 Arg2:T16	
 R14	in-context Arg1:T17 Arg2:T14	
+R15	subject Arg1:T18 Arg2:T5	
+R16	target Arg1:T18 Arg2:T11	
+R17	in-context Arg1:T18 Arg2:T17	
+R18	target Arg1:T13 Arg2:T18	
+T19	Action 435 443	Analysis
+T20	Concept 447 456	allele 60
+T21	Concept 457 464	effects
+T22	Action 465 473	revealed
+R19	in-context Arg1:T21 Arg2:T20	
+R20	target Arg1:T19 Arg2:T21	
+R21	subject Arg1:T22 Arg2:T19	
+T23	Concept 483 490	founder
+T24	Concept 491 498	PWK/PhJ
+T25	Concept 526 534	SARS-CoV
+T26	Concept 548 552	lung
+R22	is-a Arg1:T24 Arg2:T23	
+T27	Action 512 518	driver
+T28	Concept 507 511	main
+R23	has-property Arg1:T27 Arg2:T28	
+R24	subject Arg1:T27 Arg2:T24	
+T29	Concept 522 525	low
+T30	Concept 535 540	titer
+R25	has-property Arg1:T30 Arg2:T29	
+R26	has-part Arg1:T25 Arg2:T30	
+R27	target Arg1:T27 Arg2:T30	
+R28	in-place Arg1:T27 Arg2:T26	
+T31	Action 553 566	Superposition
+T32	Concept 598 608	poliovirus
+T33	Concept 616 625	norovirus
+T34	Concept 638 646	SARS-CoV
+T35	Concept 647 652	NSP12
+T36	Concept 677 680	RNA
+T37	Concept 574 584	elongation
+T38	Concept 585 594	complexes
+R29	has-property Arg1:T38 Arg2:T37	
+R30	target Arg1:T31 Arg2:T38	
+R31	in-context Arg1:T38 Arg2:T32	
+R32	in-context Arg1:T38 Arg2:T33	
+R33	in-place Arg1:T31 Arg2:T34	
+R34	in-context Arg1:T34 Arg2:T35	
+T39	Action 653 660	reveals
+T40	Concept 665 669	path
+T41	Action 706 715	indicates
+T42	Concept 716 727	amino acids
+T43	Action 728 736	involved
+T44	Action 740 747	binding
+T45	Action 751 760	catalysis
+R35	subject Arg1:T43 Arg2:T42	
+R36	target Arg1:T43 Arg2:T44	
+R37	target Arg1:T43 Arg2:T45	
+R38	target Arg1:T41 Arg2:T43	
+T46	Concept 697 701	site
+T47	Concept 690 696	active
+R39	has-property Arg1:T46 Arg2:T47	
+R40	subject Arg1:T39 Arg2:T31	
+R41	target Arg1:T39 Arg2:T40	
+R42	in-context Arg1:T40 Arg2:T36	
+T48	Concept 681 685	past
+R43	has-property Arg1:T40 Arg2:T48	
+R44	in-context Arg1:T48 Arg2:T46	
+R45	subject Arg1:T41 Arg2:T31	
