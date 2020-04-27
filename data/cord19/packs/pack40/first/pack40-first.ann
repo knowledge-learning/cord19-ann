@@ -1,3 +1,73 @@
-T1	Concept 576 585;618 627;652 661;678 681	signaling Vitamin D Chemokine RAS
-T2	Concept 632 646	RXR activation
+T1	Concept 576 585	signaling
 T3	Concept 598 600	C3
+T4	Concept 613 616	RAS
+T5	Concept 86 90	ASFV
+T6	Concept 4 9	swine
+T7	Concept 10 18	proteins
+R1	has-property Arg1:T7 Arg2:T6	
+T8	Concept 91 99	proteins
+R2	is-a Arg1:T5 Arg2:T8	
+T2	Concept 678 681	RAS
+T9	Concept 618 627	Vitamin D
+T10	Concept 632 635	RXR
+A1	Emphasized T2
+T11	Concept 45 49	hits
+T12	Action 25 35	interacted
+R3	subject Arg1:T12 Arg2:T7	
+R4	target Arg1:T12 Arg2:T11	
+T13	Action 68 76	interact
+R5	causes Arg1:T7 Arg2:T13	
+A2	Uncertain T13
+R6	target Arg1:T13 Arg2:T5	
+T14	Concept 273 278	cases
+T15	Concept 263 269	number
+R7	in-context Arg1:T14 Arg2:T15	
+A3	Diminished T14
+T16	Concept 345 369	administratively-imposed
+T17	Concept 370 380	quarantine
+R8	has-property Arg1:T17 Arg2:T16	
+T18	Action 314 320	reduce
+T19	Concept 325 337	contact rate
+R9	subject Arg1:T18 Arg2:T19	
+R10	target Arg1:T18 Arg2:T17	
+R11	in-time Arg1:T19 Arg2:T14	
+T20	Concept 513 519	genome
+T21	Concept 502 512	infectious
+R12	has-property Arg1:T20 Arg2:T21	
+T22	Action 532 538	scored
+T23	Concept 542 554	plaque assay
+R13	subject Arg1:T22 Arg2:T20	
+R14	target Arg1:T22 Arg2:T23	
+T24	Concept 652 671	Chemokine signaling
+T25	Action 395 406	replication
+T26	Concept 414 419	donor
+R15	target Arg1:T25 Arg2:T26	
+T27	Action 434 440	switch
+T28	Concept 448 456	acceptor
+R16	target Arg1:T27 Arg2:T28	
+T29	Action 420 428	followed
+R17	subject Arg1:T29 Arg2:T25	
+R18	target Arg1:T29 Arg2:T27	
+T30	Concept 462 466	site
+T31	Concept 477 487	oriI locus
+T32	Concept 467 472	after
+R19	in-place Arg1:T28 Arg2:T30	
+R20	in-context Arg1:T30 Arg2:T31	
+R21	in-time Arg1:T31 Arg2:T32	
+R22	causes Arg1:T27 Arg2:T20	
+R23	causes Arg1:T25 Arg2:T20	
+T33	Concept 189 195	agents
+T34	Concept 176 188	transfection
+R24	has-property Arg1:T33 Arg2:T34	
+T35	Concept 220 230	time-lapse
+T36	Concept 203 208	stage
+R25	in-place Arg1:T33 Arg2:T36	
+R26	in-time Arg1:T36 Arg2:T35	
+T37	Concept 104 120	perfusion system
+T38	Concept 139 147	exchange
+T39	Concept 133 138	fluid
+R27	has-property Arg1:T38 Arg2:T39	
+T40	Action 164 172	addition
+R28	target Arg1:T40 Arg2:T33	
+R29	causes Arg1:T37 Arg2:T38	
+R30	causes Arg1:T37 Arg2:T40	
