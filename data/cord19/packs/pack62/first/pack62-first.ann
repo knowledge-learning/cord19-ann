@@ -1,0 +1,100 @@
+T1	Action 9 17	analysis
+T2	Concept 0 8	Sequence
+T3	Concept 32 40	subunits
+T4	Concept 21 31	polymerase
+R1	has-part Arg1:T4 Arg2:T3	
+R2	target Arg1:T1 Arg2:T2	
+R3	in-context Arg1:T2 Arg2:T3	
+T5	Concept 52 63	Nidovirales
+T6	Concept 64 69	order
+T8	Concept 86 99	coronaviruses
+R4	in-context Arg1:T6 Arg2:T5	
+R5	has-part Arg1:T5 Arg2:T8	
+R6	in-place Arg1:T1 Arg2:T6	
+T7	Action 101 109	revealed
+R7	subject Arg1:T7 Arg2:T1	
+T10	Concept 126 134	sequence
+T11	Concept 116 125	conserved
+R8	has-property Arg1:T10 Arg2:T11	
+T12	Concept 135 141	motifs
+R9	in-context Arg1:T12 Arg2:T10	
+R10	target Arg1:T7 Arg2:T12	
+T9	Concept 162 164	AN
+T13	Concept 188 190	BN
+T14	Concept 211 213	CN
+R11	is-a Arg1:T9 Arg2:T12	
+R12	is-a Arg1:T13 Arg2:T12	
+R13	is-a Arg1:T14 Arg2:T12	
+T15	Concept 243 256	thiohemiketal
+T16	Concept 233 242	resulting
+R14	has-property Arg1:T16 Arg2:T15	
+T17	Concept 267 268	R
+T18	Concept 269 282	configuration
+T19	Concept 290 298	SARS-CoV
+T20	Concept 303 318	HCoV-NL63 M pro
+T21	Concept 330 331	S
+T22	Concept 332 345	configuration
+T23	Concept 353 364	CVB3 3C pro
+T24	Concept 365 372	complex
+R15	is-a Arg1:T23 Arg2:T24	
+R16	is-a Arg1:T21 Arg2:T22	
+R17	is-a Arg1:T17 Arg2:T18	
+R18	in-place Arg1:T16 Arg2:T17	
+R19	in-context Arg1:T17 Arg2:T19	
+R20	in-context Arg1:T17 Arg2:T20	
+R21	in-place Arg1:T16 Arg2:T21	
+R22	in-context Arg1:T21 Arg2:T23	
+T25	Concept 395 396	T
+T26	Concept 397 402	cells
+R23	is-a Arg1:T25 Arg2:T26	
+T27	Action 507 513	proved
+A1	Negated T27
+A2	Uncertain T27
+T28	Action 436 447	controlling
+T29	Concept 386 391	roles
+R24	subject Arg1:T28 Arg2:T29	
+R25	in-context Arg1:T29 Arg2:T25	
+T30	Concept 452 459	disease
+T31	Concept 460 468	severity
+R26	in-context Arg1:T31 Arg2:T30	
+T32	Concept 472 480	SARS-CoV
+T33	Concept 490 498	patients
+R27	target Arg1:T28 Arg2:T31	
+R28	in-place Arg1:T28 Arg2:T33	
+R29	in-context Arg1:T33 Arg2:T32	
+R30	target Arg1:T27 Arg2:T28	
+T34	Concept 518 522	ACE2
+T35	Concept 550 558	receptor
+T36	Concept 563 571	SARS-Cov
+T37	Concept 576 580	NL63
+R31	is-a Arg1:T34 Arg2:T35	
+R32	in-context Arg1:T35 Arg2:T36	
+R33	in-context Arg1:T35 Arg2:T37	
+T38	Concept 638 647	2019-nCoV
+T39	Concept 648 654	genome
+R34	in-context Arg1:T39 Arg2:T38	
+T40	Concept 693 726	severe acute respiratory syndrome
+T41	Concept 728 732	SARS
+*	same-as T41 T40
+T42	Concept 739 752	coronaviruses
+T43	Concept 681 692	bat-derived
+T44	Concept 754 768	bat-SL-CoVZC45
+T45	Concept 773 788	bat-SL-CoVZXC21
+T46	Concept 791 794	79%
+T47	Concept 658 661	88%
+T48	Concept 800 808	SARS-CoV
+T49	Concept 814 817	50%
+T50	Concept 823 827	MERS
+T51	Action 662 671	identical
+R35	has-property Arg1:T40 Arg2:T43	
+R36	subject Arg1:T51 Arg2:T39	
+R37	target Arg1:T51 Arg2:T47	
+R38	is-a Arg1:T44 Arg2:T42	
+R39	is-a Arg1:T45 Arg2:T42	
+R40	in-context Arg1:T42 Arg2:T40	
+R41	in-context Arg1:T47 Arg2:T44	
+R42	in-context Arg1:T47 Arg2:T45	
+R43	target Arg1:T51 Arg2:T46	
+R44	target Arg1:T51 Arg2:T49	
+R45	in-context Arg1:T46 Arg2:T48	
+R46	in-context Arg1:T49 Arg2:T50	

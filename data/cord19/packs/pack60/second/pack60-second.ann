@@ -19,10 +19,8 @@ T11	Concept 248 269	Betacoronavirus genus
 R8	is-a Arg1:T8 Arg2:T11	
 R9	is-a Arg1:T9 Arg2:T11	
 R10	is-a Arg1:T10 Arg2:T11	
-T12	Concept 308 319	MERS-CoV FP
 T13	Concept 295 300	Ca 2+
 T14	Concept 365 370	FP1_2
-T15	Concept 374 385	SARS-CoV FP
 T16	Concept 427 435	SARS-CoV
 T17	Concept 562 570	SARS-CoV
 T18	Concept 575 583	MERS-CoV
@@ -56,3 +54,53 @@ T31	Concept 716 724	infected
 R23	has-property Arg1:T30 Arg2:T31	
 R24	in-place Arg1:T30 Arg2:T29	
 T32	Concept 736 740	ACE2
+R25	in-context Arg1:T32 Arg2:T30	
+T33	Concept 759 769	correlated
+A3	Emphasized T33
+R26	has-property Arg1:T32 Arg2:T33	
+T34	Concept 775 786	neutrophils
+T35	Concept 788 796	NK cells
+T36	Concept 798 808	Th17 cells
+T37	Concept 810 819	Th2 cells
+T38	Concept 821 830	Th1 cells
+T39	Concept 832 834	DC
+R27	in-context Arg1:T33 Arg2:T34	
+R28	in-context Arg1:T33 Arg2:T35	
+R29	in-context Arg1:T33 Arg2:T36	
+R30	in-context Arg1:T33 Arg2:T37	
+R31	in-context Arg1:T33 Arg2:T38	
+R32	in-context Arg1:T33 Arg2:T39	
+T40	Concept 274 287	stoichiometry
+T12	Concept 308 316	MERS-CoV
+T41	Concept 317 319	FP
+R33	has-property Arg1:T12 Arg2:T41	
+T15	Concept 374 382	SARS-CoV
+T42	Concept 383 385	FP
+T43	Concept 387 392	n=1.7
+R35	has-property Arg1:T15 Arg2:T14	
+R36	has-property Arg1:T15 Arg2:T42	
+T44	Concept 409 412	FP1
+T45	Concept 416 419	FP2
+R34	in-context Arg1:T14 Arg2:T43	
+T46	Concept 440 442;442 446	n= 0.92
+T48	Concept 440 442;451 455	n= 1.02
+R37	in-context Arg1:T44 Arg2:T46	
+R38	in-context Arg1:T45 Arg2:T48	
+R39	has-property Arg1:T16 Arg2:T45	
+R40	has-property Arg1:T16 Arg2:T44	
+T47	Concept 436 438	FP
+R41	has-property Arg1:T16 Arg2:T47	
+R42	has-property Arg1:T13 Arg2:T40	
+R43	in-context Arg1:T40 Arg2:T12	
+T49	Concept 337 346	different
+A4	Emphasized T49
+R44	has-property Arg1:T40 Arg2:T49	
+R45	in-context Arg1:T49 Arg2:T14	
+T50	Concept 398 405	similar
+R46	has-property Arg1:T40 Arg2:T50	
+R47	in-context Arg1:T50 Arg2:T44	
+R48	in-context Arg1:T50 Arg2:T45	
+T51	Concept 9 14	study
+T52	Concept 0 8	Previous
+R49	in-time Arg1:T51 Arg2:T52	
+R50	causes Arg1:T51 Arg2:T2	

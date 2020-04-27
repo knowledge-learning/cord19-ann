@@ -1,21 +1,12 @@
 T1	Concept 37 46	monocytes
 T2	Concept 51 62	macrophages
-T3	Concept 75 100	pro-inflammatory cytokine
-T4	Concept 108 149	murine hepatitis virus strain-3 infection
-R1	causes Arg1:T2 Arg2:T3	
-R2	causes Arg1:T1 Arg2:T3	
+T3	Concept 92 100	cytokine
 T5	Concept 163 173	SARS-CoV-2
-R4	in-context Arg1:T3 Arg2:T4	
 T8	Concept 210 219	monocytes
 T9	Concept 224 235	macrophages
-T7	Concept 188 204	cytokine release
-R3	causes Arg1:T5 Arg2:T7	
-R6	has-part Arg1:T8 Arg2:T7	
-R7	has-part Arg1:T9 Arg2:T7	
+T7	Concept 188 196	cytokine
 T11	Action 197 204	release
 T10	Concept 239 256	COVID-19 patients
-R8	subject Arg1:T11 Arg2:T8	
-R9	subject Arg1:T11 Arg2:T9	
 R5	in-place Arg1:T5 Arg2:T10	
 T6	Concept 354 369	high viral load
 T12	Concept 373 383	SARS-CoV-2
@@ -41,3 +32,40 @@ R17	has-property Arg1:T22 Arg2:T23
 T24	Concept 798 817	potential evolution
 T25	Action 844 854	appearance
 T26	Concept 858 882	mild subtype of COVID-19
+T27	Concept 13 17	work
+T28	Concept 4 12	previous
+R18	has-property Arg1:T27 Arg2:T28	
+T29	Action 18 31	demonstrating
+R19	subject Arg1:T29 Arg2:T27	
+T30	Action 67 74	produce
+R1	target Arg1:T29 Arg2:T30	
+R2	subject Arg1:T30 Arg2:T2	
+R20	subject Arg1:T30 Arg2:T1	
+T31	Concept 75 91	pro-inflammatory
+R4	has-property Arg1:T3 Arg2:T31	
+R21	target Arg1:T30 Arg2:T3	
+T4	Concept 140 149	infection
+T32	Concept 125 130	virus
+T33	Concept 108 124	murine hepatitis
+T34	Concept 131 139	strain-3
+R22	causes Arg1:T32 Arg2:T33	
+R23	has-property Arg1:T32 Arg2:T34	
+R24	has-property Arg1:T32 Arg2:T4	
+R25	in-time Arg1:T30 Arg2:T4	
+T35	Action 257 261	need
+T36	Concept 270 283	investigation
+T37	Concept 262 269	further
+R26	has-property Arg1:T36 Arg2:T37	
+R3	target Arg1:T11 Arg2:T7	
+R6	subject Arg1:T11 Arg2:T8	
+R7	subject Arg1:T11 Arg2:T9	
+T38	Action 179 187	triggers
+R8	subject Arg1:T38 Arg2:T5	
+R9	target Arg1:T38 Arg2:T11	
+R27	subject Arg1:T35 Arg2:T38	
+R28	target Arg1:T35 Arg2:T36	
+T39	Action 304 312	progress
+R29	subject Arg1:T39 Arg2:T36	
+T40	Concept 320 328	hospital
+R30	target Arg1:T39 Arg2:T40	
+R31	in-place Arg1:T36 Arg2:T40	

@@ -1,0 +1,87 @@
+T1	Action 0 17	Sequence analysis
+T2	Concept 21 40	polymerase subunits
+T3	Concept 52 63	Nidovirales
+R1	target Arg1:T1 Arg2:T2	
+R2	in-place Arg1:T1 Arg2:T3	
+T4	Concept 86 99	coronaviruses
+R3	is-a Arg1:T4 Arg2:T3	
+T5	Concept 110 141	three conserved sequence motifs
+T6	Concept 154 160	region
+T7	Concept 162 164	AN
+T8	Concept 166 174	SARS-CoV
+T9	Concept 188 190	BN
+T10	Concept 211 213	CN
+T11	Action 101 109	revealed
+R4	causes Arg1:T1 Arg2:T11	
+R5	target Arg1:T11 Arg2:T5	
+R6	in-place Arg1:T11 Arg2:T6	
+*	same-as T7 T8
+R7	is-a Arg1:T7 Arg2:T5	
+R8	is-a Arg1:T9 Arg2:T5	
+R9	is-a Arg1:T10 Arg2:T5	
+T12	Concept 243 256	thiohemiketal
+T13	Concept 290 298	SARS-CoV
+T14	Concept 303 318	HCoV-NL63 M pro
+T15	Concept 330 345	S configuration
+T16	Concept 353 372	CVB3 3C pro complex
+T17	Concept 267 282	R configuration
+R10	has-property Arg1:T12 Arg2:T17	
+R11	in-context Arg1:T17 Arg2:T13	
+R12	in-context Arg1:T17 Arg2:T14	
+R13	has-property Arg1:T12 Arg2:T15	
+R14	in-context Arg1:T15 Arg2:T16	
+T18	Action 507 513	proved
+T19	Concept 472 480	SARS-CoV
+T20	Concept 490 498	patients
+T21	Action 481 489	infected
+R15	subject Arg1:T21 Arg2:T19	
+R16	target Arg1:T21 Arg2:T20	
+T22	Action 436 447	controlling
+T23	Concept 452 468	disease severity
+R17	has-property Arg1:T21 Arg2:T23	
+R18	target Arg1:T22 Arg2:T23	
+T24	Concept 395 402	T cells
+T25	Concept 415 431	resident T cells
+R19	is-a Arg1:T25 Arg2:T24	
+R20	subject Arg1:T22 Arg2:T24	
+R21	target Arg1:T18 Arg2:T22	
+A1	Uncertain T18
+T26	Concept 518 522	ACE2
+T27	Concept 563 571	SARS-Cov
+T28	Concept 576 580	NL63
+T29	Concept 550 558	receptor
+R22	has-property Arg1:T27 Arg2:T29	
+R23	has-property Arg1:T28 Arg2:T29	
+*	same-as T29 T26
+T30	Concept 638 647	2019-nCoV
+T31	Concept 648 654	genome
+R24	has-property Arg1:T30 Arg2:T31	
+T32	Concept 681 692	bat-derived
+T33	Concept 693 726	severe acute respiratory syndrome
+T34	Concept 728 732	SARS
+T35	Concept 739 752	coronaviruses
+T36	Concept 754 768	bat-SL-CoVZC45
+T37	Concept 773 788	bat-SL-CoVZXC21
+T38	Concept 800 808	SARS-CoV
+T39	Concept 823 827	MERS
+T40	Concept 791 794	79%
+T41	Concept 814 817	50%
+T42	Concept 658 661	88%
+T43	Action 662 671	identical
+R25	subject Arg1:T43 Arg2:T31	
+R26	in-context Arg1:T43 Arg2:T42	
+R27	subject Arg1:T43 Arg2:T36	
+R28	subject Arg1:T43 Arg2:T37	
+*	same-as T33 T34
+R29	is-a Arg1:T33 Arg2:T35	
+R30	is-a Arg1:T37 Arg2:T33	
+R31	is-a Arg1:T36 Arg2:T33	
+T44	Action 662 671	identical
+R32	subject Arg1:T44 Arg2:T38	
+R33	in-context Arg1:T43 Arg2:T40	
+R34	subject Arg1:T43 Arg2:T31	
+T45	Action 662 671	identical
+R35	in-context Arg1:T45 Arg2:T41	
+R36	subject Arg1:T45 Arg2:T39	
+R37	subject Arg1:T45 Arg2:T31	
+R38	has-property Arg1:T33 Arg2:T32	
