@@ -1,0 +1,111 @@
+T1	Concept 805 815	amino acid
+T2	Concept 816 824	homology
+T4	Concept 837 853	modeled proteins
+T5	Concept 858 868	SARS-CoV S
+T3	Concept 881 884	red
+T6	Concept 889 899	amino acid
+T7	Concept 900 911	differences
+T8	Concept 915 919	blue
+T10	Concept 948 953	scale
+T11	Concept 939 947	identity
+R1	has-property Arg1:T10 Arg2:T11	
+R2	in-context Arg1:T2 Arg2:T1	
+R3	in-context Arg1:T7 Arg2:T6	
+R4	has-property Arg1:T2 Arg2:T3	
+R5	in-context Arg1:T2 Arg2:T4	
+R6	in-context Arg1:T2 Arg2:T5	
+R7	has-property Arg1:T7 Arg2:T8	
+R8	in-context Arg1:T7 Arg2:T4	
+R9	in-context Arg1:T8 Arg2:T5	
+T12	Concept 234 243	2019-nCoV
+T13	Concept 244 250	genome
+T15	Concept 272 282	similarity
+T16	Concept 290 303	2002 SARS-CoV
+T17	Concept 304 310	genome
+T18	Concept 315 323	proteome
+T19	Concept 358 370	interactions
+T20	Concept 346 350	many
+T21	Concept 387 400	SARS proteome
+R10	in-context Arg1:T10 Arg2:T5	
+R11	in-context Arg1:T10 Arg2:T4	
+T9	Concept 682 691	2019-nCoV
+T23	Concept 692 700	3D model
+T22	Concept 716 725	2019-nCoV
+T24	Concept 730 736	highly
+T25	Concept 737 744	similar
+T26	Concept 752 775	receptor-binding domain
+T27	Concept 777 780	RBD
+T28	Concept 792 800	SARS-CoV
+R12	has-property Arg1:T22 Arg2:T25	
+R13	has-property Arg1:T25 Arg2:T24	
+R14	in-context Arg1:T22 Arg2:T26	
+R15	in-context Arg1:T26 Arg2:T28	
+*	same-as T26 T27
+R16	in-context Arg1:T23 Arg2:T9	
+R17	entails Arg1:T23 Arg2:T22	
+T29	Concept 539 551	convalescent
+T30	Concept 552 558	plasma
+T31	Concept 559 568	treatment
+T32	Action 569 576	reduced
+T33	Concept 581 589	hospital
+T34	Concept 590 594	stay
+T35	Concept 599 608	mortality
+T36	Concept 612 620	patients
+T37	Concept 626 634	SARS-CoV
+T38	Concept 635 644	infection
+T39	Concept 649 655	severe
+T40	Concept 656 674	influenza A (H1N1)
+R18	in-context Arg1:T31 Arg2:T29	
+R19	in-context Arg1:T29 Arg2:T30	
+R20	subject Arg1:T32 Arg2:T31	
+R21	target Arg1:T32 Arg2:T34	
+R22	target Arg1:T32 Arg2:T35	
+R23	in-context Arg1:T34 Arg2:T33	
+R24	has-property Arg1:T36 Arg2:T38	
+R25	has-property Arg1:T36 Arg2:T40	
+R26	has-property Arg1:T40 Arg2:T39	
+R27	in-context Arg1:T38 Arg2:T37	
+R28	in-context Arg1:T32 Arg2:T36	
+R29	in-context Arg1:T13 Arg2:T12	
+T14	Concept 34 39	CD147
+T44	Action 67 79	facilitating
+T45	Concept 80 88	SARS-CoV
+T46	Concept 89 97	invasion
+T48	Concept 102 112	host cells
+T50	Concept 118 146	CD147-antagonistic peptide-9
+T49	Concept 158 170	binding rate
+T51	Concept 174 186	HEK293 cells
+T52	Concept 205 211	effect
+T53	Concept 215 223	SARS-CoV
+T54	Concept 153 157	high
+R30	has-property Arg1:T49 Arg2:T54	
+T55	Concept 194 204	inhibitory
+R31	has-property Arg1:T52 Arg2:T55	
+R32	in-context Arg1:T52 Arg2:T53	
+R33	in-context Arg1:T49 Arg2:T51	
+R34	has-property Arg1:T50 Arg2:T49	
+R35	has-property Arg1:T50 Arg2:T52	
+T56	Concept 437 446	2019-nCoV
+T57	Concept 447 455	proteome
+R39	subject Arg1:T44 Arg2:T14	
+R40	target Arg1:T44 Arg2:T46	
+R41	in-context Arg1:T46 Arg2:T45	
+R42	in-place Arg1:T44 Arg2:T48	
+R38	in-context Arg1:T15 Arg2:T17	
+R43	in-place Arg1:T17 Arg2:T16	
+R37	in-context Arg1:T15 Arg2:T18	
+R44	in-place Arg1:T18 Arg2:T16	
+T41	Action 251 259	exhibits
+R36	subject Arg1:T41 Arg2:T13	
+R45	target Arg1:T41 Arg2:T15	
+T42	Action 329 340	hypothesize
+R48	in-place Arg1:T19 Arg2:T21	
+R49	has-property Arg1:T19 Arg2:T20	
+R50	causes Arg1:T41 Arg2:T42	
+T47	Action 417 429	be preserved
+R51	target Arg1:T47 Arg2:T57	
+R52	in-context Arg1:T57 Arg2:T56	
+R47	subject Arg1:T47 Arg2:T19	
+R46	target Arg1:T42 Arg2:T47	
+T43	Reference 326 328	we
+R53	subject Arg1:T42 Arg2:T43	

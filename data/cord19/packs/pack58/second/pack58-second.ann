@@ -1,3 +1,165 @@
 T1	Concept 357 366	S protein
 T2	Concept 374 382	SARS-CoV
 R1	in-place Arg1:T1 Arg2:T2	
+T3	Concept 392 398	domain
+T4	Concept 386 391	small
+R2	has-property Arg1:T3 Arg2:T4	
+T5	Concept 410 426	residues 306-575
+R3	has-part Arg1:T3 Arg2:T5	
+T6	Action 431 441	identified
+R4	subject Arg1:T6 Arg2:T3	
+R5	in-place Arg1:T3 Arg2:T1	
+T7	Concept 469 475	domain
+T8	Concept 452 468	receptor binding
+R6	has-property Arg1:T7 Arg2:T8	
+R7	target Arg1:T6 Arg2:T7	
+T9	Concept 477 480	RBD
+R8	is-a Arg1:T9 Arg2:T7	
+T10	Concept 492 508	residues 424-494
+T11	Concept 539 544	motif
+T12	Concept 522 538	receptor binding
+R9	has-property Arg1:T11 Arg2:T12	
+*	same-as T10 T11
+R10	in-place Arg1:T10 Arg2:T7	
+T13	Concept 546 549	RBM
+R11	is-a Arg1:T13 Arg2:T11	
+T14	Action 560 567	mediate
+R12	subject Arg1:T14 Arg2:T10	
+T15	Concept 551 559	directly
+R13	has-property Arg1:T14 Arg2:T15	
+T16	Action 572 583	interaction
+R14	target Arg1:T14 Arg2:T16	
+T17	Concept 589 593	ACE2
+R15	target Arg1:T16 Arg2:T17	
+T18	Concept 799 807	SARS-CoV
+T19	Action 842 850	detected
+A1	Negated T19
+T20	Concept 863 869	muscle
+T21	Concept 854 862	skeletal
+R16	in-place Arg1:T20 Arg2:T21	
+R17	subject Arg1:T19 Arg2:T18	
+R18	target Arg1:T19 Arg2:T21	
+T22	Concept 824 832	receptor
+T23	Concept 819 823	same
+R19	has-property Arg1:T22 Arg2:T23	
+R20	in-context Arg1:T19 Arg2:T22	
+T24	Concept 873 884	post-mortem
+T25	Concept 885 896	examination
+R21	in-time Arg1:T25 Arg2:T24	
+R22	causes Arg1:T25 Arg2:T19	
+T26	Concept 912 920	SARS-Cov
+T27	Concept 953 962	2019-nCoV
+T28	Concept 944 949	virus
+R23	is-a Arg1:T26 Arg2:T28	
+T29	Action 928 935	closest
+R24	subject Arg1:T29 Arg2:T26	
+R25	target Arg1:T29 Arg2:T27	
+T30	Concept 987 993	number
+T31	Concept 975 986	significant
+R26	has-property Arg1:T30 Arg2:T31	
+T32	Concept 997 1005	epitopes
+R27	has-part Arg1:T30 Arg2:T32	
+T33	Action 1015 1022	defined
+R28	target Arg1:T33 Arg2:T30	
+T34	Concept 1026 1032	humans
+T35	Concept 1044 1051	species
+T36	Concept 1038 1043	other
+R29	has-property Arg1:T35 Arg2:T36	
+R30	in-place Arg1:T33 Arg2:T34	
+R31	in-place Arg1:T33 Arg2:T35	
+R32	has-part Arg1:T27 Arg2:T30	
+T37	Action 1068 1074	causes
+T38	Concept 1081 1088	disease
+T39	Concept 1075 1080	human
+R33	in-place Arg1:T38 Arg2:T39	
+R34	target Arg1:T37 Arg2:T38	
+T40	Concept 1101 1109	outcomes
+T41	Concept 1094 1100	lethal
+R35	subject Arg1:T37 Arg2:T27	
+R36	has-property Arg1:T38 Arg2:T40	
+R37	has-property Arg1:T40 Arg2:T41	
+T42	Concept 45 53	pathogen
+T43	Concept 33 44	respiratory
+T44	Concept 26 32	common
+R38	has-property Arg1:T42 Arg2:T43	
+R39	has-property Arg1:T42 Arg2:T44	
+T45	Concept 63 72	influenza
+T46	Concept 77 90	parainfluenza
+R40	is-a Arg1:T45 Arg2:T42	
+R41	is-a Arg1:T46 Arg2:T42	
+T47	Concept 91 98	viruses
+R42	is-a Arg1:T46 Arg2:T47	
+R43	is-a Arg1:T45 Arg2:T47	
+T48	Concept 100 103	RSV
+T49	Concept 105 108	ADV
+T50	Concept 110 112	MP
+T51	Concept 117 119	CP
+R44	is-a Arg1:T48 Arg2:T42	
+R45	is-a Arg1:T49 Arg2:T42	
+R46	is-a Arg1:T50 Arg2:T42	
+R47	is-a Arg1:T51 Arg2:T42	
+T52	Concept 152 165	coronaviruses
+T53	Concept 146 151	novel
+T54	Concept 137 145	emerging
+T55	Concept 128 136	previous
+R48	has-property Arg1:T52 Arg2:T53	
+R49	has-property Arg1:T52 Arg2:T54	
+R50	has-property Arg1:T52 Arg2:T55	
+T56	Concept 176 184	SARS-CoV
+T57	Concept 189 197	MERS-CoV
+R51	is-a Arg1:T56 Arg2:T52	
+R52	is-a Arg1:T57 Arg2:T52	
+T58	Action 203 211	isolated
+R53	target Arg1:T58 Arg2:T42	
+R54	target Arg1:T58 Arg2:T52	
+T59	Concept 222 228	fluids
+T60	Concept 233 243	secretions
+T61	Concept 217 221	body
+R55	in-place Arg1:T58 Arg2:T60	
+R56	in-place Arg1:T58 Arg2:T59	
+R57	has-part Arg1:T61 Arg2:T59	
+R58	has-part Arg1:T61 Arg2:T60	
+T62	Concept 260 268	patients
+R59	has-property Arg1:T62 Arg2:T61	
+T63	Concept 251 259	infected
+R60	has-property Arg1:T62 Arg2:T63	
+T64	Concept 278 287	treatment
+T65	Concept 292 302	management
+T66	Concept 270 277	related
+R61	has-property Arg1:T64 Arg2:T66	
+R62	has-property Arg1:T65 Arg2:T66	
+T67	Action 319 330	implemented
+T68	Concept 344 349	place
+T69	Concept 338 343	first
+R63	has-property Arg1:T68 Arg2:T69	
+R64	in-time Arg1:T67 Arg2:T68	
+R65	target Arg1:T67 Arg2:T65	
+R66	target Arg1:T67 Arg2:T64	
+R67	entails Arg1:T58 Arg2:T67	
+T70	Concept 631 640	2019-nCoV
+T71	Concept 645 653	SARS-CoV
+T72	Concept 677 689	Sarbecovirus
+T73	Concept 668 676	subgenus
+T74	Action 714 721	related
+T75	Concept 704 713	distantly
+T76	Concept 744 752	identity
+T77	Concept 735 743	sequence
+T78	Action 620 625	shown
+T79	Action 654 660	belong
+T80	Concept 607 614	studies
+T81	Concept 594 606	Phylogenetic
+R68	has-property Arg1:T80 Arg2:T81	
+R69	subject Arg1:T78 Arg2:T80	
+R70	target Arg1:T78 Arg2:T79	
+R71	subject Arg1:T79 Arg2:T71	
+R72	subject Arg1:T79 Arg2:T70	
+R73	target Arg1:T79 Arg2:T72	
+R74	is-a Arg1:T72 Arg2:T73	
+R75	has-property Arg1:T74 Arg2:T75	
+R76	target Arg1:T74 Arg2:T71	
+R77	target Arg1:T74 Arg2:T70	
+R78	has-property Arg1:T77 Arg2:T76	
+T82	Concept 769 789	whole-genome level 5
+R79	in-context Arg1:T76 Arg2:T82	
+R80	has-property Arg1:T71 Arg2:T77	
+R81	has-property Arg1:T70 Arg2:T77	

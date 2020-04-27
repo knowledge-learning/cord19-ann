@@ -1,0 +1,58 @@
+T1	Concept 54 62	SARS-CoV
+T2	Concept 37 50	main protease
+T3	Concept 66 75	essential
+R1	has-property Arg1:T2 Arg2:T3	
+R2	in-context Arg1:T2 Arg2:T1	
+T4	Concept 84 94	life cycle
+T5	Concept 147 153	target
+T6	Concept 136 146	attractive
+R3	has-property Arg1:T5 Arg2:T6	
+T7	Concept 158 174	drug development
+R4	in-context Arg1:T5 Arg2:T7	
+T8	Concept 175 183	MERS-CoV
+R5	has-part Arg1:T1 Arg2:T4	
+R6	in-context Arg1:T3 Arg2:T4	
+R7	is-a Arg1:T2 Arg2:T5	
+T9	Concept 196 218	Murine hepatitis virus
+T10	Concept 223 231	SARS-CoV
+T11	Concept 248 269	Betacoronavirus genus
+R8	is-a Arg1:T8 Arg2:T11	
+R9	is-a Arg1:T9 Arg2:T11	
+R10	is-a Arg1:T10 Arg2:T11	
+T12	Concept 308 319	MERS-CoV FP
+T13	Concept 295 300	Ca 2+
+T14	Concept 365 370	FP1_2
+T15	Concept 374 385	SARS-CoV FP
+T16	Concept 427 435	SARS-CoV
+T17	Concept 562 570	SARS-CoV
+T18	Concept 575 583	MERS-CoV
+T19	Concept 650 659	2019-nCoV
+T20	Concept 668 678	contagious
+A1	Emphasized T20
+T21	Concept 525 531	severe
+A2	Diminished T21
+T22	Concept 490 495	cases
+T23	Concept 484 489	early
+R11	in-time Arg1:T22 Arg2:T23	
+T24	Concept 509 516	illness
+R12	has-property Arg1:T24 Arg2:T21	
+R13	causes Arg1:T22 Arg2:T24	
+R14	in-context Arg1:T21 Arg2:T17	
+R15	in-context Arg1:T21 Arg2:T18	
+R16	has-property Arg1:T19 Arg2:T20	
+T25	Concept 543 556	coronaviruses
+R17	is-a Arg1:T17 Arg2:T25	
+R18	is-a Arg1:T18 Arg2:T25	
+T26	Concept 589 598	evidences
+T27	Concept 602 634	rapid human-tohuman transmission
+R19	in-context Arg1:T26 Arg2:T27	
+R20	causes Arg1:T26 Arg2:T19	
+T28	Concept 684 690	others
+R21	in-context Arg1:T28 Arg2:T25	
+R22	in-context Arg1:T20 Arg2:T28	
+T29	Concept 707 715	SARS-CoV
+T30	Concept 725 730	cells
+T31	Concept 716 724	infected
+R23	has-property Arg1:T30 Arg2:T31	
+R24	in-place Arg1:T30 Arg2:T29	
+T32	Concept 736 740	ACE2
