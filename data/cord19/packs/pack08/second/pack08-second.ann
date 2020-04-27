@@ -20,14 +20,9 @@ T18	Concept 555 580	recombinant S 103 protein
 R14	has-property Arg1:T17 Arg2:T18	
 T19	Concept 584 591	product
 T20	Concept 650 660	SARS-CoV-2
-T21	Concept 668 707	isordered segment from 168-289 residues
-R16	has-property Arg1:T20 Arg2:T21	
 T22	Concept 714 724	Human SARS
-T23	Concept 747 792	an unstructured segment from 145-289 residues
-R17	has-property Arg1:T22 Arg2:T23	
 T24	Concept 798 817	potential evolution
 T25	Action 844 854	appearance
-T26	Concept 858 882	mild subtype of COVID-19
 T27	Concept 13 17	work
 T28	Concept 4 12	previous
 R18	has-property Arg1:T27 Arg2:T28	
@@ -88,3 +83,29 @@ R40	in-context Arg1:T47 Arg2:T6
 R15	is-a Arg1:T18 Arg2:T19	
 T49	Action 595 608	recombination
 R41	has-property Arg1:T49 Arg2:T19	
+T50	Concept 626 627	I
+T51	Concept 632 634	II
+T52	Concept 617 625	serotype
+R42	is-a Arg1:T50 Arg2:T52	
+T53	Concept 635 649	CCoV sequences
+R43	has-property Arg1:T53 Arg2:T52	
+R44	target Arg1:T49 Arg2:T53	
+T21	Concept 678 685	segment
+T54	Concept 667 677	disordered
+R16	has-property Arg1:T21 Arg2:T54	
+T55	Concept 691 707	168-289 residues
+R45	in-place Arg1:T21 Arg2:T55	
+R46	has-part Arg1:T20 Arg2:T21	
+T23	Concept 763 770	segment
+T56	Concept 750 762	unstructured
+T57	Concept 776 792	145-289 residues
+R17	has-part Arg1:T22 Arg2:T23	
+R47	has-property Arg1:T23 Arg2:T56	
+R48	in-place Arg1:T23 Arg2:T57	
+T26	Concept 863 870	subtype
+T58	Concept 858 862	mild
+R49	has-property Arg1:T26 Arg2:T58	
+T59	Concept 874 882	COVID-19
+R50	subject Arg1:T25 Arg2:T26	
+R51	in-context Arg1:T25 Arg2:T24	
+R52	has-property Arg1:T59 Arg2:T26	

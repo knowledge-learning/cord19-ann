@@ -38,7 +38,7 @@ R19	target Arg1:T18 Arg2:T15
 T19	Concept 225 239	but still high
 R20	has-property Arg1:T18 Arg2:T19	
 T20	Action 241 252	Considering
-T21	Concept 257 286	complexity of sexual behavior
+T21	Concept 257 267	complexity
 R21	subject Arg1:T20 Arg2:T21	
 T22	Concept 295 317	transmission potential
 R22	subject Arg1:T20 Arg2:T22	
@@ -85,5 +85,16 @@ T43	Concept 707 754	severe acute respiratory syndrome coronavirus 2
 T44	Concept 756 766	SARS-CoV-2
 *	same-as T43 T44
 T45	Concept 701 706	novel
-R41	subject Arg1:T42 Arg2:T40	
 R42	has-property Arg1:T43 Arg2:T45	
+R41	subject Arg1:T42 Arg2:T43	
+R43	target Arg1:T42 Arg2:T39	
+T46	Concept 633 640	current
+R44	has-property Arg1:T39 Arg2:T46	
+T47	Action 788 794	threat
+T48	Concept 805 811	health
+T49	Concept 798 804	public
+R45	has-property Arg1:T48 Arg2:T49	
+R46	target Arg1:T47 Arg2:T48	
+R47	subject Arg1:T47 Arg2:T39	
+T50	Concept 780 787	serious
+R48	has-property Arg1:T47 Arg2:T50	
