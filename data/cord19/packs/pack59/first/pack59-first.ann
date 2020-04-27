@@ -1,0 +1,55 @@
+T1	Concept 34 39	CD147
+T2	Action 40 45	plays
+T3	Concept 48 58	functional
+T4	Concept 59 63	role
+T5	Action 67 79	facilitating
+T6	Action 89 97	invasion
+T7	Concept 80 88	SARS-CoV
+T8	Concept 107 112	cells
+T9	Concept 102 106	host
+R1	has-property Arg1:T8 Arg2:T9	
+R2	subject Arg1:T2 Arg2:T1	
+R3	has-property Arg1:T4 Arg2:T3	
+R4	target Arg1:T2 Arg2:T4	
+R5	in-context Arg1:T2 Arg2:T5	
+R6	target Arg1:T5 Arg2:T6	
+R7	subject Arg1:T6 Arg2:T7	
+R8	in-place Arg1:T6 Arg2:T8	
+T10	Concept 118 123	CD147
+T11	Concept 124 136	antagonistic
+T13	Concept 805 815	amino acid
+T12	Concept 858 866	SARS-CoV
+T15	Concept 137 146	peptide-9
+T16	Concept 889 899	amino acid
+R9	has-property Arg1:T15 Arg2:T11	
+R10	has-part Arg1:T10 Arg2:T15	
+T17	Concept 174 180	HEK293
+T18	Concept 181 186	cells
+R11	is-a Arg1:T17 Arg2:T18	
+T20	Concept 194 204	inhibitory
+T21	Action 205 211	effect
+R12	has-property Arg1:T21 Arg2:T20	
+T22	Action 816 824	homology
+R13	subject Arg1:T21 Arg2:T15	
+T23	Concept 215 223	SARS-CoV
+R14	target Arg1:T21 Arg2:T23	
+T24	Concept 158 165	binding
+T25	Concept 166 170	rate
+R15	has-property Arg1:T25 Arg2:T24	
+A1	Emphasized T25
+R18	in-context Arg1:T24 Arg2:T17	
+R19	has-property Arg1:T15 Arg2:T25	
+T27	Concept 234 243	2019-nCoV
+T28	Concept 244 250	genome
+T26	Concept 290 303	2002 SARS-CoV
+T29	Concept 304 310	genome
+T30	Concept 315 323	proteome
+T31	Action 272 282	similarity
+A2	Emphasized T31
+R16	has-part Arg1:T27 Arg2:T28	
+R20	subject Arg1:T31 Arg2:T28	
+R21	has-part Arg1:T29 Arg2:T26	
+R22	has-part Arg1:T30 Arg2:T26	
+R23	target Arg1:T31 Arg2:T29	
+R17	target Arg1:T31 Arg2:T30	
+T14	Concept 837 853	modeled proteins

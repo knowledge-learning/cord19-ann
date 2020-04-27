@@ -1,0 +1,107 @@
+T1	Concept 33 53	respiratory pathogen
+T2	Concept 26 32	common
+R1	in-context Arg1:T1 Arg2:T2	
+T3	Concept 63 72	influenza
+T4	Concept 77 90	parainfluenza
+T5	Concept 91 98	viruses
+R2	is-a Arg1:T4 Arg2:T5	
+R3	is-a Arg1:T3 Arg2:T5	
+R4	is-a Arg1:T3 Arg2:T1	
+R5	is-a Arg1:T4 Arg2:T1	
+T6	Concept 100 103	RSV
+T7	Concept 105 108	ADV
+T8	Concept 110 112	MP
+T9	Concept 117 119	CP
+T10	Concept 152 165	coronaviruses
+T11	Concept 146 151	novel
+R6	has-property Arg1:T10 Arg2:T11	
+T12	Concept 176 184	SARS-CoV
+T13	Concept 189 197	MERS-CoV
+R7	is-a Arg1:T12 Arg2:T10	
+R8	is-a Arg1:T13 Arg2:T10	
+R9	is-a Arg1:T12 Arg2:T1	
+R10	is-a Arg1:T13 Arg2:T1	
+T14	Action 203 211	isolated
+T15	Concept 217 228	body fluids
+T16	Concept 233 243	secretions
+T17	Concept 260 268	patients
+T18	Concept 251 259	infected
+R11	has-property Arg1:T17 Arg2:T18	
+R12	target Arg1:T14 Arg2:T1	
+R13	in-place Arg1:T14 Arg2:T15	
+R14	in-place Arg1:T14 Arg2:T16	
+R15	has-property Arg1:T17 Arg2:T16	
+R16	has-property Arg1:T17 Arg2:T15	
+T19	Action 278 287	treatment
+T20	Action 292 302	management
+T21	Action 319 330	implemented
+R17	target Arg1:T21 Arg2:T20	
+R18	target Arg1:T21 Arg2:T19	
+R19	entails Arg1:T14 Arg2:T21	
+R20	target Arg1:T19 Arg2:T1	
+R21	subject Arg1:T20 Arg2:T1	
+T22	Concept 357 366	S protein
+T23	Concept 374 382	SARS-CoV
+R22	has-part Arg1:T23 Arg2:T22	
+T24	Concept 452 475	receptor binding domain
+T25	Concept 477 480	RBD
+*	same-as T24 T25 T26
+T26	Concept 392 398	domain
+T27	Concept 410 418	residues
+R23	has-part Arg1:T26 Arg2:T27	
+T28	Concept 386 391	small
+R24	has-property Arg1:T26 Arg2:T28	
+R25	in-place Arg1:T26 Arg2:T22	
+T29	Concept 522 544	receptor binding motif
+T30	Concept 546 549	RBM
+*	same-as T29 T30
+T31	Action 572 583	interaction
+T32	Concept 589 593	ACE2
+R26	subject Arg1:T31 Arg2:T29	
+R27	target Arg1:T31 Arg2:T32	
+R28	in-place Arg1:T31 Arg2:T24	
+T34	Concept 631 640	2019-nCoV
+T35	Concept 645 653	SARS-CoV
+T36	Concept 677 689	Sarbecovirus
+R29	is-a Arg1:T35 Arg2:T36	
+R30	is-a Arg1:T34 Arg2:T36	
+T33	Action 714 721	related
+A1	Diminished T33
+T37	Concept 735 752	sequence identity
+T38	Concept 756 761	79.6%
+R31	subject Arg1:T33 Arg2:T35	
+R32	subject Arg1:T33 Arg2:T34	
+R33	has-property Arg1:T33 Arg2:T37	
+R34	in-context Arg1:T37 Arg2:T38	
+T39	Concept 769 787	whole-genome level
+R35	in-context Arg1:T37 Arg2:T39	
+T40	Concept 799 807	SARS-CoV
+T41	Action 842 850	detected
+A2	Negated T41
+R36	target Arg1:T41 Arg2:T40	
+T42	Concept 854 869	skeletal muscle
+T43	Action 885 896	examination
+T44	Concept 873 884	post-mortem
+R37	in-context Arg1:T43 Arg2:T44	
+R38	target Arg1:T43 Arg2:T42	
+R39	entails Arg1:T43 Arg2:T41	
+T45	Concept 912 920	SARS-Cov
+T46	Concept 953 962	2019-nCoV
+T47	Concept 997 1005	epitopes
+T48	Action 1015 1022	defined
+T49	Concept 1026 1032	humans
+R40	target Arg1:T48 Arg2:T47	
+R41	in-place Arg1:T48 Arg2:T49	
+T50	Concept 1038 1051	other species
+R42	in-place Arg1:T48 Arg2:T50	
+T51	Action 1075 1088	human disease
+T52	Concept 944 949	virus
+T53	Action 936 943	related
+R43	is-a Arg1:T45 Arg2:T52	
+R44	subject Arg1:T53 Arg2:T45	
+R45	subject Arg1:T53 Arg2:T46	
+A3	Emphasized T53
+R46	in-context Arg1:T48 Arg2:T45	
+R47	causes Arg1:T45 Arg2:T51	
+T54	Concept 1094 1109	lethal outcomes
+R48	in-context Arg1:T51 Arg2:T54	

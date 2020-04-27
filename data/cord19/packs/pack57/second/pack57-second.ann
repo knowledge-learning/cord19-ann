@@ -1,0 +1,115 @@
+T1	Action 17 22	delay
+T2	Concept 4 16	confirmation
+T3	Action 32 38	affect
+A1	Negated T3
+T4	Concept 43 52	infecting
+T5	Concept 53 60	process
+T6	Action 66 72	brings
+T7	Action 92 102	inspecting
+T8	Concept 112 118	number
+T9	Concept 107 111	real
+T10	Concept 122 131	confirmed
+T11	Concept 132 137	cases
+R1	has-property Arg1:T11 Arg2:T10	
+R2	has-property Arg1:T8 Arg2:T9	
+R3	in-context Arg1:T8 Arg2:T11	
+R4	target Arg1:T7 Arg2:T8	
+R5	target Arg1:T6 Arg2:T7	
+R6	target Arg1:T1 Arg2:T2	
+R7	entails Arg1:T1 Arg2:T3	
+R8	in-context Arg1:T5 Arg2:T4	
+R9	target Arg1:T3 Arg2:T5	
+R10	entails Arg1:T1 Arg2:T6	
+T12	Concept 143 148	model
+T13	Concept 138 142	MSIR
+T14	Action 149 157	predicts
+T15	Concept 179 189	infectious
+T16	Concept 190 194	peak
+T17	Concept 172 178	higher
+T18	Concept 160 167	earlier
+R11	has-property Arg1:T16 Arg2:T15	
+T19	Concept 195 203	position
+R12	has-property Arg1:T19 Arg2:T17	
+R13	has-property Arg1:T19 Arg2:T18	
+R14	in-context Arg1:T19 Arg2:T16	
+R15	is-a Arg1:T13 Arg2:T12	
+T20	Concept 209 214	MSEIR
+R16	subject Arg1:T14 Arg2:T13	
+R17	target Arg1:T14 Arg2:T19	
+R18	in-context Arg1:T14 Arg2:T20	
+R19	is-a Arg1:T20 Arg2:T12	
+T21	Concept 239 243	role
+T22	Concept 247 252	DUSP1
+T23	Action 260 277	dephosphorylation
+T24	Concept 281 284	JNK
+T25	Concept 289 292	p38
+R20	target Arg1:T23 Arg2:T24	
+R21	target Arg1:T23 Arg2:T25	
+T26	Concept 327 330	JNK
+T27	Concept 335 338	p38
+T28	Action 339 354	phosphorylation
+R22	target Arg1:T28 Arg2:T27	
+R23	target Arg1:T28 Arg2:T26	
+T29	Action 362 369	absence
+T30	Concept 373 378	DUSP1
+T31	Concept 386 389	SeV
+T32	Concept 394 397	RSV
+T33	Concept 398 407	infection
+R24	in-context Arg1:T28 Arg2:T29	
+R25	target Arg1:T29 Arg2:T30	
+R26	in-time Arg1:T29 Arg2:T33	
+R27	in-context Arg1:T33 Arg2:T32	
+R28	in-context Arg1:T33 Arg2:T31	
+T34	Action 315 323	increase
+A2	Emphasized T34
+R29	target Arg1:T34 Arg2:T28	
+R30	in-context Arg1:T21 Arg2:T22	
+R31	in-context Arg1:T22 Arg2:T23	
+R32	in-context Arg1:T34 Arg2:T21	
+T35	Concept 448 454	events
+T36	Concept 408 422	Phage-mediated
+T37	Concept 423 433	horizontal
+T38	Concept 434 438	gene
+T39	Action 439 447	transfer
+T40	Action 479 485	spread
+T41	Concept 495 504	functions
+T42	Concept 489 494	novel
+R33	has-property Arg1:T41 Arg2:T42	
+R34	target Arg1:T40 Arg2:T41	
+T43	Action 519 530	development
+T44	Concept 534 547	pathogenicity
+T45	Concept 551 560	bacterial
+T46	Concept 561 568	strains
+R35	in-context Arg1:T35 Arg2:T39	
+R36	has-property Arg1:T39 Arg2:T37	
+R37	target Arg1:T39 Arg2:T38	
+R38	in-context Arg1:T39 Arg2:T36	
+R39	subject Arg1:T40 Arg2:T35	
+R40	is-a Arg1:T43 Arg2:T41	
+R41	target Arg1:T43 Arg2:T44	
+R42	in-context Arg1:T46 Arg2:T45	
+R43	in-place Arg1:T43 Arg2:T46	
+T47	Concept 577 593	Escherichia coli
+T48	Concept 595 610	Vibrio cholerae
+T50	Concept 644 658	Staphylococcus
+A3	Emphasized T50
+T51	Concept 659 665	aureus
+R44	has-property Arg1:T50 Arg2:T51	
+T49	Concept 612 625	Streptococcus
+T52	Concept 626 634	pyogenes
+R45	has-property Arg1:T49 Arg2:T52	
+R46	is-a Arg1:T50 Arg2:T46	
+R47	is-a Arg1:T49 Arg2:T46	
+R48	is-a Arg1:T48 Arg2:T46	
+R49	is-a Arg1:T47 Arg2:T46	
+T55	Concept 708 711	3CL
+T56	Concept 712 721	proteases
+R50	is-a Arg1:T55 Arg2:T56	
+T57	Concept 725 733	SARS-CoV
+T58	Concept 738 747	2019-nCoV
+T59	Concept 751 757	96.08%
+R51	in-context Arg1:T55 Arg2:T57	
+R52	in-context Arg1:T55 Arg2:T58	
+T53	Action 678 695	sequence identity
+R53	target Arg1:T53 Arg2:T55	
+R54	has-property Arg1:T53 Arg2:T59	

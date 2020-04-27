@@ -1,0 +1,100 @@
+T1	Concept 4 16	confirmation
+T2	Concept 17 22	delay
+T3	Action 32 38	affect
+A1	Negated T3
+T4	Concept 43 52	infecting
+T5	Concept 53 60	process
+T6	Concept 75 81	direct
+T7	Concept 82 88	hinder
+T8	Action 66 72	brings
+T9	Concept 92 102	inspecting
+T10	Concept 107 111	real
+T11	Concept 112 118	number
+T12	Concept 122 131	confirmed
+T13	Concept 132 137	cases
+R1	subject Arg1:T3 Arg2:T2	
+R2	in-context Arg1:T2 Arg2:T1	
+R3	target Arg1:T3 Arg2:T5	
+R4	in-context Arg1:T5 Arg2:T4	
+R5	subject Arg1:T8 Arg2:T2	
+T16	Action 149 157	predicts
+T17	Concept 160 167	earlier
+T18	Concept 172 178	higher
+T19	Concept 179 189	infectious
+T20	Concept 190 194	peak
+T21	Concept 195 203	position
+T14	Concept 138 148	MSIR model
+R6	subject Arg1:T16 Arg2:T14	
+R7	target Arg1:T16 Arg2:T21	
+R8	has-property Arg1:T21 Arg2:T17	
+R9	has-property Arg1:T21 Arg2:T18	
+R10	in-context Arg1:T21 Arg2:T20	
+R11	in-context Arg1:T20 Arg2:T19	
+T22	Concept 327 330	JNK
+T23	Concept 335 354	p38 phosphorylation
+T24	Concept 362 369	absence
+T25	Concept 373 378	DUSP1
+T26	Concept 386 389	SeV
+T27	Concept 394 397	RSV
+T28	Concept 398 407	infection
+T29	Concept 678 695	sequence identity
+T32	Concept 708 721	3CL proteases
+T33	Concept 725 733	SARS-CoV
+T34	Concept 738 747	2019-nCoV
+T35	Concept 751 757	96.08%
+R12	target Arg1:T8 Arg2:T7	
+R13	has-property Arg1:T7 Arg2:T6	
+R15	in-context Arg1:T8 Arg2:T9	
+R16	in-context Arg1:T9 Arg2:T11	
+R17	in-context Arg1:T11 Arg2:T13	
+R18	has-property Arg1:T13 Arg2:T12	
+R19	has-property Arg1:T11 Arg2:T10	
+T36	Concept 408 422	Phage-mediated
+T37	Concept 423 433	horizontal
+T38	Concept 434 438	gene
+T39	Concept 439 447	transfer
+T40	Concept 448 454	events
+T42	Action 479 485	spread
+T45	Concept 519 530	development
+T46	Concept 534 547	pathogenicity
+T48	Concept 551 568	bacterial strains
+T49	Concept 577 593	Escherichia coli
+T50	Concept 595 610	Vibrio cholerae
+T51	Concept 612 634	Streptococcus pyogenes
+T52	Concept 644 673	Staphylococcus aureus strains
+T53	Concept 247 252	DUSP1
+T54	Concept 260 277	dephosphorylation
+T55	Concept 281 284	JNK
+T56	Concept 289 292	p38
+T58	Action 315 323	increase
+R14	subject Arg1:T42 Arg2:T40	
+R20	target Arg1:T42 Arg2:T45	
+R23	in-context Arg1:T45 Arg2:T46	
+R30	has-property Arg1:T39 Arg2:T37	
+R31	in-context Arg1:T40 Arg2:T39	
+R32	in-context Arg1:T39 Arg2:T38	
+R33	in-context Arg1:T38 Arg2:T36	
+R21	has-property Arg1:T29 Arg2:T35	
+R22	in-context Arg1:T35 Arg2:T32	
+R26	in-context Arg1:T32 Arg2:T33	
+R27	has-property Arg1:T32 Arg2:T34	
+R28	in-context Arg1:T53 Arg2:T54	
+R29	in-context Arg1:T54 Arg2:T55	
+R34	in-context Arg1:T54 Arg2:T56	
+R35	causes Arg1:T53 Arg2:T58	
+T30	Concept 308 314	marked
+R36	has-property Arg1:T58 Arg2:T30	
+R37	target Arg1:T58 Arg2:T22	
+R38	target Arg1:T58 Arg2:T23	
+R39	in-context Arg1:T58 Arg2:T24	
+R40	in-context Arg1:T24 Arg2:T25	
+R41	in-time Arg1:T58 Arg2:T28	
+R42	in-context Arg1:T28 Arg2:T27	
+R43	in-context Arg1:T28 Arg2:T26	
+R44	is-a Arg1:T49 Arg2:T48	
+R45	is-a Arg1:T50 Arg2:T48	
+R46	is-a Arg1:T51 Arg2:T48	
+R47	is-a Arg1:T52 Arg2:T48	
+R24	in-place Arg1:T46 Arg2:T48	
+T15	Concept 209 219	MSEIR mode
+R25	in-context Arg1:T16 Arg2:T15	

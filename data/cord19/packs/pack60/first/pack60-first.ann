@@ -1,0 +1,79 @@
+T1	Concept 54 62	SARS-CoV
+T2	Concept 37 50	main protease
+R1	has-property Arg1:T1 Arg2:T2	
+T3	Concept 66 75	essential
+T4	Action 84 94	life cycle
+R2	subject Arg1:T4 Arg2:T1	
+R3	has-property Arg1:T2 Arg2:T3	
+R4	in-context Arg1:T3 Arg2:T4	
+T5	Action 158 174	drug development
+T6	Action 147 153	target
+R5	has-property Arg1:T5 Arg2:T6	
+R6	is-a Arg1:T2 Arg2:T6	
+T7	Concept 175 183	MERS-CoV
+T8	Concept 196 218	Murine hepatitis virus
+T9	Concept 223 231	SARS-CoV
+T10	Concept 248 269	Betacoronavirus genus
+R7	is-a Arg1:T9 Arg2:T10	
+R8	is-a Arg1:T8 Arg2:T10	
+R9	is-a Arg1:T7 Arg2:T10	
+T11	Concept 274 287	stoichiometry
+T12	Concept 295 300	Ca 2+
+T13	Concept 308 316	MERS-CoV
+T14	Concept 317 319	FP
+R10	in-context Arg1:T11 Arg2:T12	
+T15	Concept 365 370	FP1_2
+T16	Concept 374 382	SARS-CoV
+T17	Concept 383 385	FP
+T18	Concept 409 412	FP1
+T19	Concept 416 419	FP2
+T20	Concept 427 435	SARS-CoV
+T21	Concept 436 438	FP
+R13	has-property Arg1:T20 Arg2:T21	
+R14	in-context Arg1:T19 Arg2:T21	
+R15	in-context Arg1:T18 Arg2:T21	
+R16	in-context Arg1:T15 Arg2:T17	
+R17	has-property Arg1:T16 Arg2:T17	
+R11	has-property Arg1:T13 Arg2:T14	
+R12	in-context Arg1:T12 Arg2:T13	
+T22	Action 337 346	different
+R18	subject Arg1:T22 Arg2:T11	
+R19	subject Arg1:T22 Arg2:T15	
+T23	Action 398 405	similar
+R20	subject Arg1:T23 Arg2:T11	
+R21	subject Arg1:T23 Arg2:T18	
+R22	subject Arg1:T23 Arg2:T19	
+T24	Concept 562 570	SARS-CoV
+T25	Concept 575 583	MERS-CoV
+T26	Action 608 634	human-tohuman transmission
+T27	Concept 650 659	2019-nCoV
+T28	Concept 668 678	contagious
+R23	has-property Arg1:T27 Arg2:T28	
+A1	Emphasized T28
+T29	Concept 525 531	severe
+R24	has-property Arg1:T27 Arg2:T29	
+A2	Diminished T29
+R25	in-context Arg1:T29 Arg2:T24	
+R26	in-context Arg1:T29 Arg2:T25	
+R27	entails Arg1:T26 Arg2:T28	
+T30	Concept 707 715	SARS-CoV
+T31	Concept 725 730	cells
+T32	Concept 736 740	ACE2
+T33	Action 716 724	infected
+R28	subject Arg1:T33 Arg2:T30	
+R29	target Arg1:T33 Arg2:T31	
+R30	in-place Arg1:T32 Arg2:T33	
+T34	Action 759 769	correlated
+T35	Concept 775 786	neutrophils
+T36	Concept 788 796	NK cells
+T37	Concept 798 808	Th17 cells
+T38	Concept 810 819	Th2 cells
+T39	Concept 821 830	Th1 cells
+T40	Concept 832 834	DC
+R31	subject Arg1:T34 Arg2:T32	
+R32	subject Arg1:T34 Arg2:T35	
+R33	subject Arg1:T34 Arg2:T36	
+R34	subject Arg1:T34 Arg2:T37	
+R35	subject Arg1:T34 Arg2:T38	
+R36	subject Arg1:T34 Arg2:T39	
+R37	subject Arg1:T34 Arg2:T40	
