@@ -1,0 +1,134 @@
+T1	Concept 72 81	2019-nCoV
+T2	Concept 115 122	clade 1
+T3	Concept 131 143	other clades
+T4	Action 93 106	recombination
+R1	subject Arg1:T4 Arg2:T2	
+R2	target Arg1:T4 Arg2:T3	
+R3	causes Arg1:T4 Arg2:T1	
+T5	Action 82 87	arose
+R4	subject Arg1:T5 Arg2:T1	
+R5	in-context Arg1:T5 Arg2:T4	
+T7	Concept 632 645	pGKL plasmids
+T8	Action 621 628	encoded
+R6	subject Arg1:T8 Arg2:T7	
+T9	Action 649 659	translated
+T10	Concept 683 690	pathway
+T11	Concept 667 682	cap-independent
+R7	has-property Arg1:T10 Arg2:T11	
+T6	Concept 615 620	toxin
+T12	Concept 608 614	Killer
+R8	has-property Arg1:T6 Arg2:T12	
+R9	target Arg1:T8 Arg2:T6	
+R10	target Arg1:T9 Arg2:T6	
+R11	subject Arg1:T9 Arg2:T10	
+T13	Concept 435 440	sugar
+T14	Concept 422 434	concentrated
+R12	has-property Arg1:T13 Arg2:T14	
+T15	Action 453 457	rare
+R13	subject Arg1:T15 Arg2:T13	
+T16	Concept 466 472	niches
+T17	Concept 461 465	wild
+R14	has-property Arg1:T16 Arg2:T17	
+R15	target Arg1:T15 Arg2:T16	
+T18	Action 477 488	competition
+T19	Concept 499 505	fierce
+R16	has-property Arg1:T18 Arg2:T19	
+T20	Concept 493 495	it
+R17	target Arg1:T18 Arg2:T20	
+*	same-as T13 T20
+T21	Concept 512 526	concentrations
+T22	Action 545 551	exceed
+A1	Negated T22
+T23	Concept 556 560	0.5%
+T24	Concept 561 570	threshold
+T25	Concept 586 598	fermentation
+T26	Concept 580 585	sugar
+T27	Action 599 607	kicks in
+R18	has-property Arg1:T26 Arg2:T25	
+R19	subject Arg1:T27 Arg2:T25	
+R20	in-time Arg1:T22 Arg2:T27	
+R21	has-property Arg1:T24 Arg2:T23	
+R22	target Arg1:T22 Arg2:T24	
+R23	subject Arg1:T22 Arg2:T21	
+R24	has-property Arg1:T13 Arg2:T21	
+T28	Concept 24 46	receptor assay results
+T29	Action 58 66	possible
+R25	subject Arg1:T29 Arg2:T28	
+R26	target Arg1:T29 Arg2:T5	
+T30	Concept 154 163	principle
+T31	Concept 146 153	similar
+R27	has-property Arg1:T30 Arg2:T31	
+T32	Concept 180 191	contraction
+T33	Concept 167 179	antagonistic
+R28	has-property Arg1:T32 Arg2:T33	
+R29	has-property Arg1:T32 Arg2:T30	
+T34	Concept 223 231	families
+T35	Concept 235 241	fibers
+T36	Concept 198 222	perpendicularly oriented
+R30	has-property Arg1:T34 Arg2:T36	
+R31	in-place Arg1:T32 Arg2:T34	
+R32	has-part Arg1:T34 Arg2:T35	
+T37	Action 248 252	work
+R33	subject Arg1:T37 Arg2:T32	
+T38	Concept 260 278	sub-cellualr level
+R34	in-place Arg1:T37 Arg2:T38	
+T39	Concept 725 734	2019-nCoV
+T40	Action 760 771	transmitted
+T41	Concept 777 782	human
+R35	subject Arg1:T40 Arg2:T41	
+R36	target Arg1:T40 Arg2:T39	
+T42	Concept 786 791	human
+R37	in-place Arg1:T40 Arg2:T42	
+T43	Action 691 700	Comparing
+T44	Concept 706 714	SARS-CoV
+T45	Concept 719 723	MERS
+R38	subject Arg1:T43 Arg2:T39	
+R39	target Arg1:T43 Arg2:T44	
+R40	target Arg1:T43 Arg2:T45	
+T46	Action 793 802	spreading
+R41	subject Arg1:T46 Arg2:T39	
+T47	Concept 815 824	countries
+T48	Concept 806 814	multiple
+T49	Concept 829 836	regions
+R42	in-place Arg1:T46 Arg2:T49	
+R43	in-place Arg1:T46 Arg2:T47	
+R44	has-property Arg1:T47 Arg2:T48	
+R45	has-property Arg1:T49 Arg2:T48	
+T50	Action 841 848	leading
+R46	subject Arg1:T50 Arg2:T46	
+T51	Action 860 871	declaration
+T52	Concept 856 859	WHO
+R47	subject Arg1:T51 Arg2:T52	
+R48	target Arg1:T50 Arg2:T51	
+T53	Concept 891 900	Emergency
+R49	target Arg1:T51 Arg2:T53	
+T54	Concept 884 890	Health
+T55	Concept 877 883	Public
+R50	has-property Arg1:T54 Arg2:T55	
+R51	in-context Arg1:T53 Arg2:T54	
+T56	Concept 904 917	International
+T57	Action 918 925	Concern
+R52	subject Arg1:T57 Arg2:T53	
+R53	target Arg1:T57 Arg2:T56	
+R54	has-property Arg1:T57 Arg2:T56	
+T58	Concept 326 334	dynamics
+T59	Concept 318 325	protein
+R55	has-property Arg1:T59 Arg2:T58	
+T60	Concept 312 317	motor
+T61	Concept 299 311	antagonistic
+R56	has-property Arg1:T60 Arg2:T61	
+R57	has-property Arg1:T59 Arg2:T60	
+T62	Concept 355 365	structures
+R58	in-place Arg1:T58 Arg2:T62	
+T63	Concept 350 354	ring
+T64	Concept 338 349	contractile
+R59	has-property Arg1:T62 Arg2:T63	
+R60	has-property Arg1:T62 Arg2:T64	
+T65	Concept 379 383	cell
+T66	Concept 384 392	division
+T67	Concept 397 408	development
+R61	has-property Arg1:T65 Arg2:T66	
+R62	has-property Arg1:T65 Arg2:T67	
+R63	in-context Arg1:T58 Arg2:T66	
+R64	in-context Arg1:T58 Arg2:T67	
+R65	is-a Arg1:T58 Arg2:T32	

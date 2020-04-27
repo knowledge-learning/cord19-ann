@@ -1,0 +1,19 @@
+T1	Concept 39 51	MTase region
+T2	Concept 24 38	non-functional
+R1	has-property Arg1:T1 Arg2:T2	
+T3	Concept 81 89	plasmids
+T4	Concept 97 106	evolution
+T5	Action 62 75	be eliminated
+R2	target Arg1:T5 Arg2:T1	
+A1	Negated T5
+A2	Uncertain T5
+R3	in-place Arg1:T3 Arg2:T5	
+R4	in-context Arg1:T4 Arg2:T5	
+T6	Reference 146 151	motif
+T7	Action 158 164	confer
+A3	Uncertain T7
+T8	Concept 180 190	properties
+R5	subject Arg1:T7 Arg2:T6	
+T9	Concept 165 179	poor substrate
+R6	has-property Arg1:T9 Arg2:T8	
+R7	target Arg1:T7 Arg2:T8	

@@ -1,0 +1,81 @@
+T1	Action 31 41	exacerbate
+T2	Concept 42 50	COVID-19
+T3	Concept 6 16	infections
+R1	target Arg1:T1 Arg2:T2	
+R2	subject Arg1:T1 Arg2:T3	
+T4	Concept 93 101	COVID-19
+T5	Concept 102 107	cases
+T6	Action 108 117	displayed
+T7	Concept 134 144	lymphocyte
+T8	Concept 122 133	circulating
+T9	Concept 118 121	low
+T10	Concept 145 151	counts
+T11	Concept 84 89	82.1%
+T12	Concept 166 178	pathological
+T13	Concept 179 187	features
+T14	Concept 191 199	COVID-19
+T15	Concept 200 209	pneumonia
+T19	Action 260 264	show
+T20	Concept 265 272	diffuse
+T21	Concept 273 281	alveolar
+T22	Concept 282 288	damage
+T23	Concept 294 302	cellular
+T24	Concept 303 314	fibromyxoid
+T25	Concept 315 323	exudates
+T26	Concept 325 337	desquamation
+T27	Concept 341 352	pneumocytes
+T31	Action 385 395	indicating
+T36	Concept 433 437	ARDS
+T32	Concept 396 431	acute respiratory distress syndrome
+*	same-as T32 T36
+R3	target Arg1:T31 Arg2:T32	
+T35	Concept 492 499	typical
+T37	Concept 500 512	asymptomatic
+T38	Concept 513 525	transmission
+T39	Concept 533 543	cohabiting
+T40	Concept 544 550	family
+T41	Concept 551 558	members
+T43	Concept 578 584	severe
+T44	Concept 585 593	COVID-19
+T45	Concept 594 603	pneumonia
+T48	Concept 638 643	older
+T49	Concept 644 652	patients
+T50	Concept 697 703	severe
+T52	Concept 712 720	COVID-19
+R4	subject Arg1:T6 Arg2:T11	
+R5	in-context Arg1:T11 Arg2:T5	
+R6	in-context Arg1:T5 Arg2:T4	
+R7	target Arg1:T6 Arg2:T10	
+R8	in-context Arg1:T10 Arg2:T7	
+R9	has-property Arg1:T7 Arg2:T8	
+R10	has-property Arg1:T10 Arg2:T9	
+R11	in-context Arg1:T15 Arg2:T14	
+R12	in-context Arg1:T13 Arg2:T15	
+R13	has-property Arg1:T13 Arg2:T12	
+R14	subject Arg1:T19 Arg2:T13	
+R15	has-property Arg1:T19 Arg2:T22	
+R16	in-context Arg1:T22 Arg2:T21	
+R17	has-property Arg1:T22 Arg2:T20	
+R18	has-part Arg1:T22 Arg2:T25	
+R19	has-part Arg1:T22 Arg2:T26	
+R21	in-context Arg1:T26 Arg2:T27	
+T28	Concept 374 383	formation
+T29	Concept 357 373	hyaline membrane
+R20	in-context Arg1:T28 Arg2:T29	
+R22	has-part Arg1:T22 Arg2:T28	
+R23	in-context Arg1:T25 Arg2:T23	
+R24	in-context Arg1:T23 Arg2:T24	
+R25	subject Arg1:T31 Arg2:T19	
+R30	has-property Arg1:T38 Arg2:T37	
+R31	has-property Arg1:T38 Arg2:T35	
+R32	in-context Arg1:T38 Arg2:T41	
+R33	in-context Arg1:T41 Arg2:T40	
+R34	causes Arg1:T38 Arg2:T45	
+R35	in-context Arg1:T45 Arg2:T44	
+R36	has-property Arg1:T45 Arg2:T43	
+R26	in-context Arg1:T41 Arg2:T39	
+R27	has-property Arg1:T49 Arg2:T48	
+T16	Action 690 694	have
+R37	subject Arg1:T16 Arg2:T49	
+R38	target Arg1:T16 Arg2:T52	
+R28	has-property Arg1:T52 Arg2:T50	
