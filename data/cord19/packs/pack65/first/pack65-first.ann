@@ -1,0 +1,115 @@
+T1	Concept 53 61	SARS-CoV
+T2	Concept 81 86	HIV-1
+T3	Concept 96 106	inhibitors
+T4	Concept 87 95	protease
+T5	Concept 115 124	lopinavir
+T6	Concept 129 138	ritonavir
+T7	Concept 44 49	M pro
+T9	Concept 30 35	drugs
+R1	has-part Arg1:T1 Arg2:T7	
+T10	Action 66 76	identified
+A1	Uncertain T10
+R2	in-context Arg1:T3 Arg2:T4	
+R3	has-part Arg1:T2 Arg2:T4	
+R4	is-a Arg1:T5 Arg2:T3	
+R5	is-a Arg1:T6 Arg2:T3	
+R6	target Arg1:T10 Arg2:T5	
+R7	target Arg1:T10 Arg2:T6	
+R8	in-context Arg1:T9 Arg2:T7	
+R9	in-context Arg1:T10 Arg2:T9	
+T8	Concept 258 262	data
+T11	Concept 245 257	experimental
+R10	has-property Arg1:T8 Arg2:T11	
+T12	Concept 235 244	available
+R11	has-property Arg1:T8 Arg2:T12	
+T13	Concept 266 274	SARS-CoV
+T14	Concept 275 283	protease
+T15	Concept 284 294	inhibitors
+R12	has-part Arg1:T13 Arg2:T14	
+R13	in-context Arg1:T15 Arg2:T14	
+R14	in-context Arg1:T8 Arg2:T15	
+T16	Action 302 306	used
+A2	Uncertain T16
+T17	Action 330 338	generate
+T18	Concept 343 353	inhibitors
+T19	Concept 339 342	new
+R15	has-property Arg1:T18 Arg2:T19	
+T20	Concept 357 366	2019-nCoV
+T21	Concept 367 375	protease
+R16	has-part Arg1:T20 Arg2:T21	
+R17	in-context Arg1:T18 Arg2:T21	
+R18	target Arg1:T17 Arg2:T18	
+R19	target Arg1:T16 Arg2:T17	
+R20	subject Arg1:T16 Arg2:T8	
+T22	Reference 404 409	model
+T23	Concept 391 403	mathematical
+R21	has-property Arg1:T22 Arg2:T23	
+T24	Action 488 494	detect
+A3	Uncertain T24
+T25	Concept 495 499	1.15
+T26	Concept 500 506	copies
+T28	Concept 523 526	95%
+T29	Concept 527 538	probability
+T30	Concept 458 468	SARS-CoV-2
+T31	Concept 478 483	panel
+T32	Concept 469 477	designed
+R22	has-property Arg1:T31 Arg2:T32	
+R23	in-context Arg1:T31 Arg2:T30	
+R24	subject Arg1:T24 Arg2:T31	
+R25	target Arg1:T24 Arg2:T25	
+R26	in-context Arg1:T25 Arg2:T26	
+R27	has-property Arg1:T24 Arg2:T28	
+R28	in-context Arg1:T28 Arg2:T29	
+R29	in-context Arg1:T26 Arg2:T30	
+R30	in-context Arg1:T24 Arg2:T22	
+T27	Concept 584 591	binding
+T33	Concept 592 598	energy
+R31	has-property Arg1:T33 Arg2:T27	
+T34	Concept 607 616	interface
+T35	Concept 617 625	sequence
+R32	has-property Arg1:T35 Arg2:T34	
+T36	Concept 629 639	SARS-CoV-2
+T37	Action 652 658	closer
+T38	Concept 662 670	SARS-CoV
+T39	Action 671 678	related
+T40	Concept 679 687	isolates
+T41	Concept 701 706	Human
+T42	Concept 710 715	other
+T43	Concept 720 727	species
+R33	in-context Arg1:T42 Arg2:T43	
+R34	has-part Arg1:T36 Arg2:T35	
+R35	has-part Arg1:T36 Arg2:T33	
+R36	subject Arg1:T37 Arg2:T35	
+R37	subject Arg1:T37 Arg2:T33	
+R38	subject Arg1:T39 Arg2:T40	
+R39	target Arg1:T39 Arg2:T38	
+R40	target Arg1:T37 Arg2:T40	
+R41	in-place Arg1:T37 Arg2:T41	
+R42	in-place Arg1:T37 Arg2:T42	
+T44	Concept 733 741	SARS-CoV
+T45	Concept 743 747	K929
+T46	Concept 751 754	HR1
+T47	Concept 764 769	E1163
+T48	Concept 773 776	HR2
+T49	Concept 787 791	salt
+T50	Concept 792 798	bridge
+T51	Concept 828 832	T925
+T52	Action 840 848	involved
+A4	Negated T52
+T53	Concept 856 867	interaction
+T54	Concept 799 808	214 3.2 Å
+T55	Concept 812 820	distance
+R43	has-property Arg1:T50 Arg2:T49	
+R44	in-place Arg1:T45 Arg2:T46	
+T56	Action 755 760	binds
+R45	in-place Arg1:T47 Arg2:T48	
+R46	subject Arg1:T56 Arg2:T45	
+R47	target Arg1:T56 Arg2:T47	
+R48	in-place Arg1:T56 Arg2:T44	
+R49	has-property Arg1:T50 Arg2:T54	
+R50	in-context Arg1:T54 Arg2:T55	
+R51	in-context Arg1:T54 Arg2:T55	
+R52	in-context Arg1:T56 Arg2:T50	
+R53	subject Arg1:T52 Arg2:T51	
+R54	target Arg1:T52 Arg2:T53	
+R55	in-context Arg1:T53 Arg2:T56	
