@@ -151,9 +151,9 @@ This a list of everyone currently involved and what they are doing.
 | 63       | second   | In progress    | @Dcardenas2019       | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack63/second/pack63-second) |
 | 64       | first    | Done           | @edvard_munch        | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack64/first/pack64-first) |
 | 64       | second   | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack64/second/pack64-second) |
-| 65       | first    | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack65/first/pack65-first) |
+| 65       | first    | Done           | @edvard_munch        | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack65/first/pack65-first) |
 | 65       | second   | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack65/second/pack65-second) |
-| 66       | first    | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack66/first/pack66-first) |
+| 66       | first    | Done           | @edvard_munch        | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack66/first/pack66-first) |
 | 66       | second   | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack66/second/pack66-second) |
 | 67       | first    | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack67/first/pack67-first) |
 | 67       | second   | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack67/second/pack67-second) |
