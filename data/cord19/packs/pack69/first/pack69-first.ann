@@ -1,0 +1,95 @@
+T1	Concept 4 12	CoViD-19
+T2	Concept 13 21	outbreak
+R1	in-context Arg1:T2 Arg2:T1	
+T3	Concept 46 52	severe
+R2	has-property Arg1:T2 Arg2:T3	
+T4	Action 97 105	stemming
+T5	Action 110 122	viral growth
+R3	target Arg1:T4 Arg2:T5	
+T7	Concept 67 73	so far
+T8	Concept 61 66	drugs
+A1	Negated T4
+R4	target Arg1:T4 Arg2:T8	
+R5	in-time Arg1:T4 Arg2:T7	
+R6	subject Arg1:T5 Arg2:T1	
+T6	Concept 150 158	COVID-19
+T9	Concept 159 168	mortality
+R7	in-context Arg1:T9 Arg2:T6	
+T10	Concept 196 201	lower
+T11	Concept 202 210	humidity
+R8	has-property Arg1:T11 Arg2:T10	
+T12	Concept 214 220	winter
+R9	in-time Arg1:T11 Arg2:T12	
+T13	Concept 181 188	related
+A2	Uncertain T13
+R10	has-property Arg1:T9 Arg2:T13	
+R11	in-context Arg1:T13 Arg2:T11	
+T14	Action 237 247	infections
+T15	Concept 224 236	asymptomatic
+R12	has-property Arg1:T14 Arg2:T15	
+T16	Concept 273 284	symptomatic
+T17	Action 237 247	infections
+T18	Concept 257 267	persistent
+T19	Concept 252 256	more
+R13	in-context Arg1:T19 Arg2:T18	
+R15	has-property Arg1:T17 Arg2:T16	
+R14	in-context Arg1:T19 Arg2:T17	
+R16	has-property Arg1:T14 Arg2:T19	
+T20	Concept 324 332	COVID-19
+T22	Concept 295 299;300 310;311 319	mean generation interval
+T21	Concept 342 348	longer
+A3	Uncertain T21
+T23	Concept 354 363	estimated
+T24	Concept 369 380;381 386	symptomatic cases
+R17	in-context Arg1:T22 Arg2:T20	
+R18	has-property Arg1:T22 Arg2:T21	
+R19	in-context Arg1:T21 Arg2:T23	
+R20	in-context Arg1:T23 Arg2:T24	
+R21	causes Arg1:T14 Arg2:T22	
+T25	Action 397 407	protection
+T26	Action 409 420	maintenance
+T27	Action 424 433	promotion
+T28	Concept 437 454	lymphocyte levels
+T29	Concept 437 454	lymphocyte levels
+T30	Concept 437 454	lymphocyte levels
+R22	target Arg1:T25 Arg2:T30	
+R23	target Arg1:T26 Arg2:T29	
+R24	target Arg1:T27 Arg2:T28	
+T31	Concept 473 479	effect
+T32	Concept 468 472	good
+R25	has-property Arg1:T31 Arg2:T32	
+T33	Action 487 497	prevention
+T34	Action 502 511	treatment
+T35	Concept 515 523	COVID-19
+R26	target Arg1:T33 Arg2:T35	
+R27	target Arg1:T34 Arg2:T35	
+R28	in-context Arg1:T31 Arg2:T33	
+R29	in-context Arg1:T31 Arg2:T34	
+R30	causes Arg1:T25 Arg2:T31	
+R31	causes Arg1:T26 Arg2:T31	
+R32	causes Arg1:T27 Arg2:T31	
+T36	Action 547 556	screening
+T37	Concept 535 546	temperature
+R33	target Arg1:T36 Arg2:T37	
+T38	Concept 564 573	high-risk
+T39	Concept 577 587	population
+R34	in-context Arg1:T39 Arg2:T38	
+T40	Action 611 625	identification
+T41	Concept 591 600	important
+R35	in-context Arg1:T36 Arg2:T39	
+R36	has-property Arg1:T36 Arg2:T41	
+T42	Concept 605 610	early
+R37	has-property Arg1:T40 Arg2:T42	
+T43	Concept 629 637	COVID-19
+T44	Action 638 647	infection
+R38	subject Arg1:T44 Arg2:T43	
+R39	target Arg1:T40 Arg2:T44	
+T45	Action 660 668	reducing
+T46	Concept 673 677	risk
+T47	Action 687 696	infection
+T48	Concept 681 686	cross
+R40	has-property Arg1:T47 Arg2:T48	
+R41	in-context Arg1:T46 Arg2:T47	
+R42	target Arg1:T45 Arg2:T46	
+R43	causes Arg1:T36 Arg2:T40	
+R44	causes Arg1:T40 Arg2:T45	

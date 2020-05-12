@@ -1,0 +1,111 @@
+T1	Action 19 22	use
+T2	Concept 36 47	information
+T3	Concept 26 35	available
+R1	has-property Arg1:T2 Arg2:T3	
+T4	Concept 68 76	epitopes
+T5	Concept 59 67	SARS-CoV
+R2	has-property Arg1:T4 Arg2:T5	
+T6	Concept 110 121	predictions
+T7	Concept 97 109	bionformatic
+R3	target Arg1:T1 Arg2:T2	
+R4	has-property Arg1:T2 Arg2:T5	
+R5	has-property Arg1:T6 Arg2:T7	
+T8	Action 122 128	points
+T9	Concept 141 148	regions
+T10	Concept 132 140	specific
+R6	has-property Arg1:T9 Arg2:T10	
+T11	Concept 152 161	2019-nCoV
+R7	has-part Arg1:T11 Arg2:T9	
+R8	subject Arg1:T8 Arg2:T7	
+R9	subject Arg1:T8 Arg2:T1	
+R10	target Arg1:T8 Arg2:T9	
+T13	Action 200 210	recognized
+T14	Concept 214 236	human immune responses
+R11	target Arg1:T13 Arg2:T14	
+R12	subject Arg1:T13 Arg2:T11	
+T12	Concept 241 246	virus
+T15	Concept 275 282	similar
+T16	Concept 263 274	genetically
+R13	has-property Arg1:T15 Arg2:T16	
+T17	Concept 306 311	virus
+T18	Concept 295 305	SARS-CoV-1
+R14	is-a Arg1:T17 Arg2:T18	
+T19	Concept 290 294	2003
+R15	in-time Arg1:T18 Arg2:T19	
+R16	has-property Arg1:T12 Arg2:T15	
+R17	in-context Arg1:T15 Arg2:T17	
+T20	Concept 349 356	aspects
+T21	Concept 360 372	epidemiology
+T22	Concept 379 386	similar
+R18	has-part Arg1:T21 Arg2:T20	
+R19	has-property Arg1:T20 Arg2:T22	
+T23	Concept 410 415	views
+T24	Action 428 434	emerge
+T25	Concept 423 427	data
+T26	Concept 419 422	new
+T27	Action 397 403	update
+T28	Action 337 343	expect
+T29	Concept 323 333	reasonable
+R20	has-property Arg1:T28 Arg2:T29	
+R21	causes Arg1:T15 Arg2:T28	
+R22	subject Arg1:T28 Arg2:T20	
+R23	target Arg1:T27 Arg2:T23	
+R24	target Arg1:T24 Arg2:T25	
+R25	has-property Arg1:T25 Arg2:T26	
+T30	Concept 491 498	PWK/PhJ
+T31	Concept 483 490	founder
+R26	has-property Arg1:T30 Arg2:T31	
+T32	Action 512 518	driver
+T33	Concept 526 534	SARS-CoV
+T34	Concept 535 540	titer
+R27	has-property Arg1:T34 Arg2:T33	
+A1	Diminished T34
+R28	subject Arg1:T32 Arg2:T30	
+R29	target Arg1:T32 Arg2:T34	
+T35	Concept 548 552	lung
+R30	in-place Arg1:T34 Arg2:T35	
+T36	Concept 435 443	Analysis
+T37	Concept 457 464	effects
+T38	Concept 454 456	60
+R31	has-property Arg1:T37 Arg2:T38	
+T39	Action 465 473	revealed
+R32	subject Arg1:T39 Arg2:T36	
+R33	in-context Arg1:T36 Arg2:T37	
+R34	target Arg1:T39 Arg2:T32	
+T40	Action 653 660	reveals
+T41	Concept 553 566	Superposition
+R35	subject Arg1:T40 Arg2:T41	
+T42	Concept 665 669	path
+R36	target Arg1:T40 Arg2:T42	
+T43	Concept 598 611	poliovirus 23
+T44	Concept 616 628	norovirus 24
+T45	Concept 574 594	elongation complexes
+R37	has-part Arg1:T45 Arg2:T43	
+R38	has-part Arg1:T45 Arg2:T44	
+T46	Concept 638 652	SARS-CoV NSP12
+R39	has-part Arg1:T46 Arg2:T44	
+R40	has-part Arg1:T46 Arg2:T45	
+T47	Concept 677 680	RNA
+R41	causes Arg1:T47 Arg2:T42	
+T48	Concept 690 701	active site
+R42	in-place Arg1:T47 Arg2:T48	
+T49	Action 706 715	indicates
+R43	subject Arg1:T49 Arg2:T41	
+T50	Concept 716 727	amino acids
+R44	target Arg1:T49 Arg2:T50	
+T51	Action 740 747	binding
+R45	subject Arg1:T51 Arg2:T50	
+T52	Action 751 760	catalysis
+R46	subject Arg1:T52 Arg2:T50	
+T53	Concept 781 790	particles
+T54	Concept 770 780	virus-like
+T55	Concept 761 769	SARS-CoV
+R47	has-property Arg1:T53 Arg2:T54	
+R48	has-part Arg1:T55 Arg2:T53	
+T56	Action 798 807	formation
+T57	Action 829 835	depend
+R49	subject Arg1:T57 Arg2:T56	
+T58	Concept 854 864	E proteins
+T59	Concept 874 884	N proteins
+R50	in-context Arg1:T57 Arg2:T58	
+R51	in-context Arg1:T57 Arg2:T59	

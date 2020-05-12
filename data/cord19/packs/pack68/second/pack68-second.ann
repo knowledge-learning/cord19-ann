@@ -1,0 +1,97 @@
+T1	Concept 36 46	SARS-CoV-2
+T2	Concept 51 55	SARS
+T3	Concept 56 69	coronaviruses
+T4	Action 70 76	invade
+T5	Concept 83 88	cells
+T6	Concept 77 82	human
+R1	in-place Arg1:T5 Arg2:T6	
+T7	Concept 99 106	tissues
+R2	in-place Arg1:T5 Arg2:T7	
+T8	Concept 131 144	high-affinity
+T9	Action 145 152;153 155	binding to
+T10	Concept 156 187	angiotensin-converting enzyme 2
+T11	Concept 189 193	ACE2
+*	same-as T10 T11
+R3	target Arg1:T9 Arg2:T10	
+R4	has-property Arg1:T9 Arg2:T8	
+R5	entails Arg1:T9 Arg2:T4	
+R6	subject Arg1:T9 Arg2:T2	
+R7	subject Arg1:T9 Arg2:T1	
+R8	is-a Arg1:T2 Arg2:T3	
+R9	is-a Arg1:T1 Arg2:T3	
+R10	subject Arg1:T4 Arg2:T2	
+R11	subject Arg1:T4 Arg2:T1	
+R12	target Arg1:T4 Arg2:T5	
+T12	Concept 201 214	coronaviruses
+T13	Concept 195 200	Novel
+T14	Concept 216 224	COVID-19
+T15	Action 238 243	found
+T16	Concept 247 252	Wuhan
+T17	Concept 254 259	China
+R13	target Arg1:T15 Arg2:T14	
+R14	has-property Arg1:T12 Arg2:T13	
+R15	is-a Arg1:T14 Arg2:T12	
+R16	in-place Arg1:T15 Arg2:T16	
+R17	in-place Arg1:T16 Arg2:T17	
+T18	Concept 263 276	December 2019
+R18	in-time Arg1:T15 Arg2:T18	
+T19	Concept 302 308;309 315	health threat
+T20	Concept 329 334	world
+T21	Concept 289 294	acute
+R20	has-property Arg1:T19 Arg2:T21	
+R21	in-place Arg1:T19 Arg2:T20	
+R19	is-a Arg1:T14 Arg2:T19	
+T22	Concept 353 361	COVID-19
+T23	Concept 376 388	CT-confirmed
+T24	Concept 389 398	pneumonia
+R22	has-property Arg1:T24 Arg2:T23	
+T25	Concept 408 417	2019-nCoV
+T26	Concept 339 349	prevalence
+R24	in-context Arg1:T26 Arg2:T22	
+T27	Concept 430 435	23.9%
+T28	Concept 437 442	21/88
+*	same-as T27 T28 T26
+T29	Action 418 425	testing
+R25	in-context Arg1:T29 Arg2:T25	
+T30	Concept 365 370	cases
+R26	in-context Arg1:T30 Arg2:T24	
+R27	in-context Arg1:T30 Arg2:T29	
+R23	in-context Arg1:T22 Arg2:T30	
+T31	Concept 459 461	R0
+T32	Concept 468 469	2
+T33	Concept 462 467	above
+R28	in-context Arg1:T33 Arg2:T32	
+R29	has-property Arg1:T31 Arg2:T33	
+T34	Concept 471 481	comparable
+T35	Concept 493 502	estimates
+T36	Concept 485 492	current
+R30	has-property Arg1:T35 Arg2:T36	
+T37	Concept 507 515	COVID-19
+R31	in-context Arg1:T35 Arg2:T37	
+R32	has-property Arg1:T31 Arg2:T34	
+R33	in-context Arg1:T34 Arg2:T35	
+T38	Concept 579 584	onset
+T39	Concept 588 596	COVID-19
+T40	Concept 600 610	associated
+R34	in-context Arg1:T38 Arg2:T39	
+R35	has-property Arg1:T38 Arg2:T40	
+T41	Concept 616 624	symptoms
+T42	Concept 634 644	associated
+A1	Emphasized T42
+A2	Uncertain T42
+T43	Concept 650 655;656 665	viral pneumonia
+R36	has-property Arg1:T41 Arg2:T42	
+R37	in-context Arg1:T42 Arg2:T43	
+T44	Concept 681 686	fever
+A3	Emphasized T44
+A4	Uncertain T44
+T45	Concept 688 693	cough
+T46	Concept 694 698;699 705	sore throat
+R38	is-a Arg1:T45 Arg2:T42	
+R39	is-a Arg1:T44 Arg2:T42	
+R40	is-a Arg1:T46 Arg2:T42	
+T47	Concept 710 717	myalgia
+T48	Concept 718 725	fatigue
+R41	is-a Arg1:T47 Arg2:T42	
+R42	is-a Arg1:T48 Arg2:T42	
+R43	in-context Arg1:T40 Arg2:T41	

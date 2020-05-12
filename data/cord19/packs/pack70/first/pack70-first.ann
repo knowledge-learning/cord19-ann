@@ -1,0 +1,77 @@
+T1	Action 10 19	mutations
+T2	Action 21 30	insertion
+T3	Action 35 43	deletion
+T4	Concept 63 71	COVID-19
+T6	Action 49 59	discovered
+T5	Concept 72 78	strain
+T8	Concept 101 111;89 100	sequencing comparative
+R2	subject Arg1:T6 Arg2:T8	
+R3	target Arg1:T6 Arg2:T3	
+R4	target Arg1:T6 Arg2:T2	
+R5	target Arg1:T6 Arg2:T1	
+R1	has-part Arg1:T4 Arg2:T5	
+R6	in-place Arg1:T3 Arg2:T5	
+R7	in-place Arg1:T2 Arg2:T5	
+R8	in-place Arg1:T1 Arg2:T5	
+T7	Concept 118 124	T cell
+T9	Concept 125 131	number
+T10	Action 150 159	decreased
+A1	Emphasized T10
+R9	in-context Arg1:T9 Arg2:T7	
+R10	target Arg1:T10 Arg2:T9	
+T11	Concept 172 180	patients
+T12	Concept 163 171	COVID-19
+R11	in-context Arg1:T11 Arg2:T12	
+R12	in-place Arg1:T10 Arg2:T11	
+T13	Concept 201 211	difference
+A2	Diminished T13
+R13	in-context Arg1:T13 Arg2:T9	
+T14	Concept 233 237	mild
+T15	Concept 249 257	patients
+T16	Concept 249 257	patients
+R14	has-property Arg1:T16 Arg2:T14	
+T17	Concept 242 248	severe
+R15	has-property Arg1:T15 Arg2:T17	
+R16	is-a Arg1:T15 Arg2:T11	
+R17	is-a Arg1:T16 Arg2:T11	
+R18	in-context Arg1:T13 Arg2:T15	
+R19	in-context Arg1:T13 Arg2:T16	
+T18	Concept 280 288	COVID-19
+T19	Action 270 276	impact
+R20	subject Arg1:T19 Arg2:T18	
+T20	Concept 302 317	kidney function
+T21	Concept 292 300	patients
+R21	in-context Arg1:T20 Arg2:T21	
+R22	in-context Arg1:T21 Arg2:T18	
+R23	target Arg1:T19 Arg2:T20	
+T22	Concept 411 426	future research
+T23	Concept 402 407	focus
+A3	Emphasized T23
+A4	Uncertain T23
+R25	in-context Arg1:T23 Arg2:T19	
+R24	has-property Arg1:T22 Arg2:T23	
+T24	Concept 431 439	COVID-19
+T25	Concept 440 445	virus
+R26	in-context Arg1:T25 Arg2:T24	
+T26	Action 457 466	establish
+T27	Concept 475 489	human-to-human
+T28	Action 490 502	transmission
+R27	subject Arg1:T26 Arg2:T25	
+R28	target Arg1:T26 Arg2:T25	
+R29	has-property Arg1:T28 Arg2:T27	
+R30	in-context Arg1:T26 Arg2:T28	
+T29	Action 520 529	spreading
+T30	Concept 535 540	Wuhan
+T31	Concept 556 559	268
+T32	Concept 560 566	cities
+R31	in-context Arg1:T31 Arg2:T32	
+T33	Concept 571 580	countries
+R32	subject Arg1:T29 Arg2:T25	
+R33	in-place Arg1:T29 Arg2:T31	
+R34	in-place Arg1:T29 Arg2:T33	
+R35	in-place Arg1:T29 Arg2:T30	
+T34	Concept 611 630	reproductive number
+T35	Concept 634 642	COVID-19
+T36	Concept 652 656	3.28
+R36	in-context Arg1:T34 Arg2:T35	
+R37	is-a Arg1:T36 Arg2:T34	

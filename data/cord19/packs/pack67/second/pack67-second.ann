@@ -1,0 +1,101 @@
+T1	Concept 0 8	SARS-CoV
+T2	Action 33 39	depend
+T3	Concept 48 61	extracellular
+T4	Concept 66 79	intracellular
+T5	Concept 80 85	Ca 2+
+T6	Concept 86 91	pools
+T7	Concept 107 116	infection
+T8	Concept 96 106	successful
+R1	has-property Arg1:T7 Arg2:T8	
+R2	subject Arg1:T2 Arg2:T1	
+R3	in-context Arg1:T6 Arg2:T5	
+R4	in-context Arg1:T3 Arg2:T6	
+R5	in-context Arg1:T4 Arg2:T6	
+R6	target Arg1:T2 Arg2:T3	
+R7	target Arg1:T2 Arg2:T4	
+R8	in-time Arg1:T2 Arg2:T7	
+T9	Concept 168 173	Ca 2+
+T10	Action 174 186	interactions
+T11	Concept 205 207	FP
+T12	Concept 196 204	SARS-CoV
+R9	has-part Arg1:T12 Arg2:T11	
+R10	subject Arg1:T10 Arg2:T9	
+R11	target Arg1:T10 Arg2:T11	
+A1	Uncertain T10
+R12	entails Arg1:T10 Arg2:T2	
+T13	Concept 252 260	facemask
+T14	Action 261 268	wearing
+T15	Concept 302 316	cost-effective
+T16	Concept 371 381	SARS-CoV-2
+T17	Concept 321 330	important
+R13	target Arg1:T14 Arg2:T13	
+A2	Uncertain T14
+T18	Action 355 367	transmission
+T19	Action 343 350	prevent
+R14	target Arg1:T18 Arg2:T16	
+R15	target Arg1:T19 Arg2:T18	
+R16	has-property Arg1:T14 Arg2:T15	
+R18	in-context Arg1:T14 Arg2:T19	
+T20	Action 487 497	activation
+T21	Concept 505 520	interferon-MAPK
+T22	Concept 531 538	pathway
+T23	Concept 521 530	signaling
+R17	has-property Arg1:T22 Arg2:T23	
+R19	in-context Arg1:T22 Arg2:T21	
+R20	target Arg1:T20 Arg2:T22	
+T24	Concept 543 546	TCR
+T25	Concept 551 554	BCR
+T26	Action 554 562	produced
+T27	Concept 563 573	antibodies
+R21	subject Arg1:T26 Arg2:T24	
+R22	subject Arg1:T26 Arg2:T25	
+R23	target Arg1:T26 Arg2:T27	
+T28	Concept 602 612	SARS-CoV-2
+T29	Concept 613 622	infection
+R24	in-context Arg1:T29 Arg2:T28	
+T30	Action 592 601	combating
+R25	target Arg1:T30 Arg2:T29	
+R26	subject Arg1:T30 Arg2:T27	
+R27	subject Arg1:T30 Arg2:T20	
+A3	Emphasized T30
+T31	Concept 689 697	official
+T32	Concept 698 702	data
+T33	Action 710 719	diffusion
+T34	Concept 723 733	SARS-CoV-2
+T35	Concept 774 782	COIVD-19
+R28	causes Arg1:T34 Arg2:T35	
+R29	has-property Arg1:T32 Arg2:T31	
+T36	Action 816 822	suffer
+A4	Emphasized T36
+A5	Uncertain T36
+T37	Concept 837 845	downward
+T38	Concept 846 850	bias
+R30	has-property Arg1:T38 Arg2:T37	
+R31	target Arg1:T36 Arg2:T38	
+R32	target Arg1:T33 Arg2:T34	
+R33	in-context Arg1:T32 Arg2:T33	
+R34	subject Arg1:T36 Arg2:T32	
+T39	Concept 855 865	antibodies
+T40	Concept 869 879	SARS-CoV-2
+T41	Concept 884 892	specific
+T42	Concept 894 903	sensitive
+T43	Action 933 942	detection
+T44	Concept 955 961	faster
+T45	Concept 966 973	simpler
+T46	Concept 979 985	RT-PCR
+R35	in-context Arg1:T39 Arg2:T40	
+R36	has-property Arg1:T39 Arg2:T41	
+R37	has-property Arg1:T39 Arg2:T42	
+R38	subject Arg1:T43 Arg2:T39	
+R39	has-property Arg1:T43 Arg2:T44	
+R40	has-property Arg1:T43 Arg2:T45	
+R41	in-context Arg1:T44 Arg2:T46	
+R42	in-context Arg1:T45 Arg2:T46	
+T47	Action 1006 1015	screening
+T48	Concept 1027 1032	cases
+T49	Concept 1019 1026	suspect
+R43	has-property Arg1:T48 Arg2:T49	
+T50	Concept 1000 1005	rapid
+R44	has-property Arg1:T47 Arg2:T50	
+R45	entails Arg1:T43 Arg2:T47	
+R46	target Arg1:T47 Arg2:T48	

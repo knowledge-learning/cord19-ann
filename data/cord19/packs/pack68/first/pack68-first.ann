@@ -1,0 +1,65 @@
+T1	Concept 195 225	Novel coronaviruses (COVID-19)
+T3	Concept 247 259	Wuhan, China
+T4	Concept 263 276	December 2019
+T5	Action 277 285	presents
+R4	subject Arg1:T5 Arg2:T1	
+T6	Action 295 315	public health threat
+T7	Concept 289 294	acute
+R5	has-property Arg1:T6 Arg2:T7	
+R6	target Arg1:T5 Arg2:T6	
+T8	Concept 376 398	CT-confirmed pneumonia
+T10	Action 70 76	invade
+T12	Concept 156 194	angiotensin-converting enzyme 2 (ACE2)
+T13	Action 131 152	high-affinity binding
+R9	target Arg1:T13 Arg2:T12	
+T14	Concept 365 370	cases
+R10	has-property Arg1:T14 Arg2:T8	
+T16	Concept 430 443	23.9% (21/88)
+T17	Concept 408 425	2019-nCoV testing
+R11	in-context Arg1:T17 Arg2:T14	
+T15	Reference 444 448	This
+T21	Concept 516 532	Clinical studies
+T22	Concept 559 564	cases
+T23	Concept 546 558	hospitalised
+R16	has-property Arg1:T22 Arg2:T23	
+T25	Action 565 569	show
+R19	subject Arg1:T25 Arg2:T21	
+R17	in-context Arg1:T21 Arg2:T22	
+T24	Concept 579 596	onset of COVID-19
+T26	Action 600 610	associated
+R18	target Arg1:T25 Arg2:T26	
+R20	subject Arg1:T26 Arg2:T24	
+T28	Concept 650 665	viral pneumonia
+T29	Concept 681 686	fever
+T30	Concept 688 705	cough/sore throat
+T31	Concept 710 725	myalgia/fatigue
+R25	target Arg1:T26 Arg2:T29	
+T32	Concept 0 11	Researchers
+R28	in-context Arg1:T10 Arg2:T13	
+T11	Concept 77 88	human cells
+R8	target Arg1:T10 Arg2:T11	
+T34	Concept 92 106	target tissues
+R29	in-place Arg1:T11 Arg2:T34	
+T35	Concept 323 334	whole world
+R30	target Arg1:T6 Arg2:T35	
+T36	Concept 339 361	prevalence of COVID-19
+R31	in-place Arg1:T36 Arg2:T14	
+T37	Action 426 429	was
+R12	subject Arg1:T37 Arg2:T36	
+R32	target Arg1:T37 Arg2:T16	
+T19	Concept 459 469	R0 above 2
+R13	causes Arg1:T15 Arg2:T19	
+R14	target Arg1:T26 Arg2:T28	
+R15	target Arg1:T26 Arg2:T30	
+R21	target Arg1:T26 Arg2:T31	
+T18	Action 12 22	have found
+R22	subject Arg1:T18 Arg2:T32	
+R23	target Arg1:T18 Arg2:T10	
+T2	Action 234 243	was found
+R1	subject Arg1:T2 Arg2:T1	
+R2	in-place Arg1:T2 Arg2:T3	
+R3	in-time Arg1:T2 Arg2:T4	
+T9	Concept 36 46;56 69	SARS-CoV-2 coronaviruses
+T20	Concept 51 55;56 69	SARS coronaviruses
+R7	subject Arg1:T10 Arg2:T9	
+R24	subject Arg1:T10 Arg2:T20	
