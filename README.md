@@ -181,3 +181,5 @@ This a list of everyone currently involved and what they are doing.
 | 78       | second   | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack78/second/pack78-second) |
 | 79       | first    | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack79/first/pack79-first) |
 | 79       | second   | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack79/second/pack79-second) |
+| 80       | first    | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack80/first/pack80-first) |
+| 80       | second   | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack80/second/pack80-second) |
