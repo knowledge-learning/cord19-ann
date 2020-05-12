@@ -167,3 +167,17 @@ This a list of everyone currently involved and what they are doing.
 | 71       | second   | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack71/second/pack71-second) |
 | 72       | first    | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack72/first/pack72-first) |
 | 72       | second   | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack72/second/pack72-second) |
+| 73       | first    | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack73/first/pack73-first) |
+| 73       | second   | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack73/second/pack73-second) |
+| 74       | first    | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack74/first/pack74-first) |
+| 74       | second   | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack74/second/pack74-second) |
+| 75       | first    | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack75/first/pack75-first) |
+| 75       | second   | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack75/second/pack75-second) |
+| 76       | first    | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack76/first/pack76-first) |
+| 76       | second   | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack76/second/pack76-second) |
+| 77       | first    | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack77/first/pack77-first) |
+| 77       | second   | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack77/second/pack77-second) |
+| 78       | first    | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack78/first/pack78-first) |
+| 78       | second   | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack78/second/pack78-second) |
+| 79       | first    | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack79/first/pack79-first) |
+| 79       | second   | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack79/second/pack79-second) |
