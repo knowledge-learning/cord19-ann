@@ -1,0 +1,57 @@
+T1	Concept 22 39	blood lymphocytes
+T2	Concept 84 94	lymphocyte
+T3	Concept 153 161	COVID-19
+T4	Action 69 78	suggested
+T5	Concept 49 68	disease progression
+T6	Concept 95 105	deficiency
+T7	Concept 109 119	incapacity
+R1	has-property Arg1:T6 Arg2:T2	
+R2	has-property Arg1:T7 Arg2:T2	
+T8	Action 7 18	correlation
+T9	Concept 2 6	high
+R5	has-property Arg1:T9 Arg2:T8	
+T10	Concept 131 149	cellular pathology
+R6	in-context Arg1:T10 Arg2:T3	
+R7	causes Arg1:T2 Arg2:T10	
+R8	subject Arg1:T4 Arg2:T8	
+R9	target Arg1:T4 Arg2:T10	
+R10	target Arg1:T8 Arg2:T1	
+R3	target Arg1:T8 Arg2:T5	
+T11	Action 197 209	relationship
+T12	Concept 222 230	severity
+T13	Concept 234 242	COVID-19
+R4	in-context Arg1:T12 Arg2:T13	
+T14	Concept 261 278	life satisfaction
+R11	target Arg1:T11 Arg2:T12	
+R12	target Arg1:T11 Arg2:T14	
+T15	Concept 303 320	level of exercise
+T16	Concept 291 301	ndividuals
+R13	has-property Arg1:T16 Arg2:T15	
+R14	causes Arg1:T15 Arg2:T11	
+T17	Concept 417 439	clinical manifestation
+T18	Concept 451 471	respiratory symptoms
+T19	Concept 473 480	myalgia
+T20	Concept 485 492	fatigue
+R15	is-a Arg1:T17 Arg2:T18	
+R16	is-a Arg1:T17 Arg2:T19	
+R17	is-a Arg1:T17 Arg2:T20	
+T21	Concept 526 534	lockdown
+T22	Action 539 548	effective
+T23	Action 552 561	reduction
+T24	Concept 578 593	confirmed cases
+T25	Concept 599 607	COVID-19
+R18	in-context Arg1:T24 Arg2:T25	
+R19	subject Arg1:T22 Arg2:T21	
+R20	target Arg1:T22 Arg2:T23	
+R21	target Arg1:T23 Arg2:T24	
+T26	Concept 608 627	after about 11 days
+R22	in-time Arg1:T23 Arg2:T26	
+T27	Concept 631 636	china
+R23	in-place Arg1:T23 Arg2:T27	
+T28	Concept 674 691	incubation period
+T29	Concept 695 703	COVID-19
+R24	in-context Arg1:T28 Arg2:T29	
+T31	Action 748 754	spread
+R25	in-context Arg1:T31 Arg2:T29	
+T30	Concept 376 384	COVID-19
+R26	causes Arg1:T28 Arg2:T31	

@@ -1,0 +1,76 @@
+T1	Concept 33 43	treatments
+T2	Concept 24 32	specific
+R1	has-property Arg1:T1 Arg2:T2	
+T3	Concept 60 68	COVID-19
+T4	Concept 47 55	vaccines
+T5	Action 11 20	there are
+A1	Negated T5
+R2	target Arg1:T5 Arg2:T1	
+R3	target Arg1:T5 Arg2:T4	
+R4	in-context Arg1:T5 Arg2:T3	
+T6	Concept 89 101	asymptomatic
+T7	Concept 102 110	carriers
+R5	has-property Arg1:T7 Arg2:T6	
+T8	Concept 114 122	COVID-19
+T9	Action 145 156	contributed
+A2	Uncertain T9
+T10	Concept 164 170	source
+T11	Concept 174 185	virus-laden
+T12	Concept 186 193	aerosol
+T13	Concept 205 213	sampling
+T14	Concept 214 220	period
+R6	has-property Arg1:T14 Arg2:T13	
+R7	has-property Arg1:T12 Arg2:T11	
+R8	in-context Arg1:T10 Arg2:T12	
+R9	target Arg1:T9 Arg2:T10	
+R10	in-time Arg1:T9 Arg2:T14	
+R11	in-context Arg1:T7 Arg2:T8	
+R12	subject Arg1:T9 Arg2:T7	
+T15	Concept 225 233	epidemic
+T16	Action 234 244	has spread
+T17	Concept 254 258	main
+T18	Concept 259 267	epidemic
+T19	Concept 268 273	areas
+R13	has-property Arg1:T19 Arg2:T18	
+R14	has-property Arg1:T19 Arg2:T17	
+T20	Concept 275 289	Hubei Province
+T21	Concept 294 304	Wuhan city
+R15	is-a Arg1:T20 Arg2:T19	
+R16	is-a Arg1:T21 Arg2:T19	
+T22	Concept 367 375	COVID-19
+T23	Action 245 249	from
+R17	target Arg1:T23 Arg2:T19	
+T24	Action 306 308	to
+T25	Concept 315 324	provinces
+T26	Concept 329 335	cities
+T27	Concept 309 314	other
+R18	target Arg1:T24 Arg2:T27	
+R19	in-context Arg1:T27 Arg2:T25	
+R20	in-context Arg1:T27 Arg2:T26	
+R21	is-a Arg1:T22 Arg2:T15	
+R22	subject Arg1:T16 Arg2:T22	
+R23	in-context Arg1:T16 Arg2:T23	
+R24	in-context Arg1:T16 Arg2:T24	
+T28	Concept 452 455	WHO
+T29	Action 456 468	has declared
+T30	Concept 478 486	COVID-19
+T31	Concept 487 495	epidemic
+R25	is-a Arg1:T30 Arg2:T31	
+T32	Concept 502 532	global public health emergency
+R26	subject Arg1:T29 Arg2:T28	
+R27	target Arg1:T29 Arg2:T30	
+R28	in-context Arg1:T29 Arg2:T32	
+T33	Concept 556 572	immuno-depletion
+T34	Concept 583 589	higher
+T35	Concept 590 594	risk
+T36	Concept 598 603	death
+T37	Concept 619 627	patients
+T38	Concept 608 618	COVID-2019
+T39	Action 573 580	carries
+R29	has-property Arg1:T35 Arg2:T34	
+R30	subject Arg1:T39 Arg2:T33	
+A3	Uncertain T39
+R31	target Arg1:T39 Arg2:T35	
+R32	in-context Arg1:T35 Arg2:T36	
+R34	in-context Arg1:T37 Arg2:T38	
+R33	in-place Arg1:T39 Arg2:T37	

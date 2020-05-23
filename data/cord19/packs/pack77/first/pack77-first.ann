@@ -1,0 +1,112 @@
+T1	Concept 2 6	high
+T3	Concept 28 39	lymphocytes
+T4	Concept 22 27	blood
+T2	Action 7 18	correlation
+R1	has-part Arg1:T4 Arg2:T3	
+R2	has-property Arg1:T2 Arg2:T1	
+R3	has-property Arg1:T2 Arg2:T1	
+R4	target Arg1:T2 Arg2:T3	
+T5	Action 57 68	progression
+T6	Concept 49 56	disease
+R5	target Arg1:T5 Arg2:T6	
+R6	in-context Arg1:T2 Arg2:T5	
+T7	Concept 95 105	deficiency
+T8	Concept 109 119	incapacity
+T9	Concept 84 94	lymphocyte
+T10	Concept 131 139	cellular
+T11	Concept 140 149	pathology
+T12	Concept 153 161	COVID-19
+R7	in-context Arg1:T6 Arg2:T12	
+R10	has-property Arg1:T11 Arg2:T10	
+R11	in-context Arg1:T11 Arg2:T12	
+R8	in-context Arg1:T7 Arg2:T9	
+R9	in-context Arg1:T8 Arg2:T9	
+T13	Action 120 130	is the key
+A1	Uncertain T13
+R12	subject Arg1:T13 Arg2:T7	
+R13	subject Arg1:T13 Arg2:T8	
+R14	entails Arg1:T2 Arg2:T13	
+R15	target Arg1:T13 Arg2:T11	
+T14	Reference 166 173	results
+T15	Action 197 209	relationship
+T16	Concept 222 230	severity
+T17	Concept 234 242	COVID-19
+R16	in-context Arg1:T16 Arg2:T17	
+T18	Concept 248 256	location
+R17	in-place Arg1:T16 Arg2:T18	
+T19	Concept 261 265	life
+T20	Concept 266 278	satisfaction
+R18	in-context Arg1:T20 Arg2:T19	
+R19	subject Arg1:T15 Arg2:T16	
+R20	target Arg1:T15 Arg2:T20	
+T21	Concept 290 302	individuals'
+T22	Concept 303 308	level
+T23	Concept 312 320	exercise
+T24	Concept 331 340	direction
+T25	Concept 341 349	opposite
+T26	Reference 357 368	expectation
+R21	has-property Arg1:T24 Arg2:T25	
+T27	Action 279 286	depends
+R22	has-property Arg1:T22 Arg2:T21	
+R23	in-context Arg1:T22 Arg2:T23	
+R24	subject Arg1:T27 Arg2:T15	
+R25	subject Arg1:T27 Arg2:T22	
+R26	entails Arg1:T14 Arg2:T27	
+R27	has-property Arg1:T27 Arg2:T24	
+R28	in-context Arg1:T24 Arg2:T26	
+T28	Concept 485 492	fatigue
+T29	Concept 473 480	myalgia
+T30	Concept 451 462	respiratory
+T31	Concept 463 471	symptoms
+R29	has-property Arg1:T31 Arg2:T30	
+T32	Concept 376 384	COVID-19
+T33	Concept 417 425	clinical
+T34	Concept 426 440	manifestations
+R30	has-property Arg1:T34 Arg2:T33	
+R31	is-a Arg1:T31 Arg2:T34	
+R32	is-a Arg1:T29 Arg2:T34	
+R33	is-a Arg1:T28 Arg2:T34	
+R34	entails Arg1:T32 Arg2:T34	
+T35	Concept 497 502	daily
+T36	Concept 503 513	statistics
+R35	has-property Arg1:T36 Arg2:T35	
+T37	Action 526 534	lockdown
+T38	Concept 539 548	effective
+T39	Action 552 561	reduction
+T40	Concept 565 574	incidence
+T41	Concept 578 587	confirmed
+T42	Concept 588 593	cases
+R36	has-property Arg1:T42 Arg2:T41	
+T43	Concept 599 607	COVID-19
+R37	in-context Arg1:T42 Arg2:T43	
+T44	Action 514 520	showed
+R38	subject Arg1:T44 Arg2:T36	
+R39	target Arg1:T44 Arg2:T38	
+R40	in-context Arg1:T38 Arg2:T37	
+R41	in-context Arg1:T44 Arg2:T39	
+R43	target Arg1:T39 Arg2:T40	
+R42	in-context Arg1:T40 Arg2:T41	
+T45	Concept 608 613	after
+T46	Concept 620 627	11 days
+T47	Concept 631 636	china
+R44	in-time Arg1:T44 Arg2:T45	
+R45	in-context Arg1:T45 Arg2:T46	
+R46	in-place Arg1:T44 Arg2:T47	
+T48	Concept 643 652	essential
+T49	Action 653 660	to know
+T50	Concept 674 684	incubation
+T51	Concept 685 691	period
+T52	Concept 665 673	accurate
+R47	has-property Arg1:T51 Arg2:T50	
+R48	has-property Arg1:T51 Arg2:T52	
+T53	Concept 695 703	COVID-19
+R49	in-context Arg1:T51 Arg2:T53	
+T54	Action 720 731	deciphering
+T55	Concept 732 740	dynamics
+T56	Action 748 754	spread
+R50	has-property Arg1:T49 Arg2:T48	
+R51	target Arg1:T49 Arg2:T51	
+R52	in-context Arg1:T48 Arg2:T54	
+R53	target Arg1:T54 Arg2:T55	
+R54	in-context Arg1:T55 Arg2:T56	
+R55	target Arg1:T56 Arg2:T53	

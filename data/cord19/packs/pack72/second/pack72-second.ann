@@ -1,0 +1,97 @@
+T1	Action 17 26	depletion
+T2	Concept 40 54	social network
+T3	Concept 34 39	local
+R1	has-property Arg1:T2 Arg2:T3	
+R2	in-place Arg1:T1 Arg2:T2	
+T4	Action 67 74	explain
+R3	subject Arg1:T4 Arg2:T1	
+A1	Uncertain T4
+T5	Action 79 85	change
+T6	Concept 94 103	over time
+T7	Concept 89 93	R(t)
+R4	in-place Arg1:T5 Arg2:T7	
+R5	in-time Arg1:T5 Arg2:T6	
+T8	Concept 117 125	COVID-19
+R6	in-context Arg1:T5 Arg2:T8	
+R7	target Arg1:T4 Arg2:T5	
+T9	Concept 130 140	difference
+T10	Concept 155 168	distributions
+R8	in-context Arg1:T9 Arg2:T10	
+T11	Action 169 177	suggests
+T12	Concept 189 215	serial intervals estimates
+T13	Concept 221 225	SARS
+T14	Concept 226 230	data
+R9	in-context Arg1:T14 Arg2:T13	
+R10	in-context Arg1:T12 Arg2:T14	
+T15	Concept 246 260	overestimation
+T16	Concept 268 276	COVID-19
+T17	Concept 277 282	basic
+T18	Concept 283 295;296 302	reproduction number
+R11	has-property Arg1:T18 Arg2:T17	
+R12	in-context Arg1:T18 Arg2:T16	
+R13	in-context Arg1:T15 Arg2:T18	
+R14	causes Arg1:T12 Arg2:T15	
+R15	target Arg1:T11 Arg2:T12	
+R16	subject Arg1:T11 Arg2:T9	
+T19	Concept 318 323	drugs
+T20	Concept 336 345;346 354	antiviral efficacy
+T21	Concept 329 335	potent
+R17	has-property Arg1:T20 Arg2:T21	
+R18	has-property Arg1:T19 Arg2:T20	
+T22	Concept 388 396	COVID-19
+T23	Concept 402 412	short time
+T24	Action 371 378	applied
+A2	Emphasized T24
+A3	Uncertain T24
+T25	Concept 362 370	directly
+R19	has-property Arg1:T24 Arg2:T25	
+R20	subject Arg1:T24 Arg2:T19	
+R21	in-context Arg1:T24 Arg2:T22	
+R22	in-time Arg1:T24 Arg2:T23	
+T26	Action 439 447	verified
+T27	Concept 423 429	safety
+R23	in-context Arg1:T27 Arg2:T19	
+R24	target Arg1:T26 Arg2:T27	
+T28	Concept 464 479	clinical trials
+R25	in-context Arg1:T26 Arg2:T28	
+R26	entails Arg1:T26 Arg2:T24	
+T29	Concept 492 501	treatment
+A4	Negated T29
+T30	Concept 480 487	To-date
+R27	in-time Arg1:T29 Arg2:T30	
+T31	Action 512 520	increase
+T32	Concept 521 529	survival
+T33	Concept 579 587	patients
+T34	Concept 634 642	COVID-19
+R28	in-context Arg1:T33 Arg2:T34	
+T35	Action 534 542	decrease
+R29	subject Arg1:T31 Arg2:T29	
+T36	Concept 556 575	ventilatory support
+T37	Concept 547 551	need
+R30	in-context Arg1:T37 Arg2:T36	
+R31	target Arg1:T35 Arg2:T37	
+R32	subject Arg1:T35 Arg2:T29	
+R33	target Arg1:T31 Arg2:T32	
+R34	in-context Arg1:T32 Arg2:T33	
+R35	in-context Arg1:T36 Arg2:T33	
+T38	Concept 671 679	patients
+T39	Action 710 717	managed
+T40	Concept 696 709	pragmatically
+R36	has-property Arg1:T39 Arg2:T40	
+T41	Concept 814 821	therapy
+T42	Concept 800 813	antimicrobial
+R37	has-property Arg1:T41 Arg2:T42	
+T43	Concept 736 745	suspected
+T44	Concept 749 757	COVID-19
+R38	in-context Arg1:T43 Arg2:T44	
+R39	has-property Arg1:T38 Arg2:T43	
+T45	Concept 723 731	patients
+T46	Concept 680 684	need
+R40	in-context Arg1:T46 Arg2:T39	
+R41	has-property Arg1:T38 Arg2:T46	
+T47	Action 789 796	exposed
+A5	Emphasized T47
+A6	Uncertain T47
+R42	in-context Arg1:T47 Arg2:T41	
+R43	target Arg1:T47 Arg2:T38	
+R44	causes Arg1:T39 Arg2:T47	

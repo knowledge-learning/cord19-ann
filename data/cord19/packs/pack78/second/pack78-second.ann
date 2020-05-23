@@ -1,0 +1,25 @@
+T1	Concept 744 752	residues
+T2	Concept 754 757	40%
+T3	Concept 741 743	12
+R1	has-property Arg1:T1 Arg2:T3	
+*	same-as T1 T2
+T4	Concept 762 771	SARS-2002
+T5	Concept 802 810	COVID-19
+T6	Concept 776 785	conserved
+R2	has-property Arg1:T1 Arg2:T6	
+R3	in-context Arg1:T1 Arg2:T4	
+T7	Concept 547 554	disease
+T9	Concept 530 543	interventions
+A1	Negated T9
+T8	Action 598 607	will peak
+T10	Concept 620 628	133 days
+T11	Concept 636 649	126 -147 days
+T12	Concept 691 703	transmission
+T13	Concept 674 690	person-to-person
+T14	Concept 707 714	England
+T15	Concept 719 724	Wales
+R4	has-property Arg1:T12 Arg2:T13	
+T16	Concept 587 597	parameters
+R5	has-part Arg1:T7 Arg2:T16	
+T17	Concept 573 586	CoVID-19-like
+R6	has-property Arg1:T16 Arg2:T17	

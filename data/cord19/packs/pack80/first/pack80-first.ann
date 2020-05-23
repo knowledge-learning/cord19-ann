@@ -1,0 +1,146 @@
+T1	Concept 10 22	conjunctival
+T2	Concept 23 33	congestion
+R1	has-property Arg1:T2 Arg2:T1	
+T3	Concept 38 46	positive
+T4	Concept 47 53	RT-PCR
+R2	in-context Arg1:T3 Arg2:T4	
+T5	Concept 57 67	pharyngeal
+T6	Concept 68 73	swabs
+R3	has-property Arg1:T6 Arg2:T5	
+R4	in-place Arg1:T3 Arg2:T6	
+T7	Action 79 84	found
+T8	Concept 85 101	at the same time
+R5	has-property Arg1:T7 Arg2:T8	
+T9	Concept 105 109	four
+T10	Concept 119 127	patients
+T11	Concept 110 118	COVID-19
+R6	in-context Arg1:T9 Arg2:T10	
+R7	in-context Arg1:T10 Arg2:T11	
+T12	Action 155 163	reported
+A1	Negated T12
+T13	Concept 171 178	disease
+T14	Concept 167 170	eye
+T15	Concept 179 186	history
+R8	in-context Arg1:T15 Arg2:T13	
+R9	in-place Arg1:T13 Arg2:T14	
+R10	target Arg1:T12 Arg2:T15	
+R11	subject Arg1:T12 Arg2:T9	
+R12	target Arg1:T7 Arg2:T3	
+R13	target Arg1:T7 Arg2:T2	
+R14	in-place Arg1:T7 Arg2:T9	
+T16	Concept 191 203	3D lung mask
+T17	Concept 210 215	input
+T18	Concept 216 221	chest
+T19	Concept 222 224	CT
+T20	Concept 225 231	volume
+R15	in-context Arg1:T20 Arg2:T17	
+R16	in-context Arg1:T17 Arg2:T19	
+R17	in-context Arg1:T19 Arg2:T18	
+T21	Action 232 238	helped
+R18	in-context Arg1:T16 Arg2:T20	
+R19	subject Arg1:T21 Arg2:T16	
+T22	Action 242 248	reduce
+R20	target Arg1:T21 Arg2:T22	
+T23	Concept 249 259	background
+T24	Concept 260 271	information
+T25	Action 283 289	detect
+A2	Emphasized T25
+T26	Concept 290 298	COVID-19
+R21	target Arg1:T25 Arg2:T26	
+R22	has-property Arg1:T24 Arg2:T23	
+R23	target Arg1:T22 Arg2:T24	
+R24	target Arg1:T21 Arg2:T25	
+T27	Action 332 337	fewer
+T28	Concept 346 352	clones
+T29	Concept 342 345	TCR
+R25	in-context Arg1:T28 Arg2:T29	
+R26	target Arg1:T27 Arg2:T28	
+T30	Action 358 362	more
+T31	Concept 363 369	severe
+T32	Concept 374 382	COVID-19
+T33	Concept 383 392	condition
+R27	in-context Arg1:T33 Arg2:T32	
+R28	target Arg1:T30 Arg2:T31	
+R29	in-context Arg1:T31 Arg2:T33	
+R30	entails Arg1:T27 Arg2:T30	
+T34	Concept 429 437	scenario
+T35	Concept 444 455	containment
+T36	Concept 463 471	possible
+A3	Negated T36
+R31	has-property Arg1:T34 Arg2:T36	
+T37	Action 482 491	necessary
+T39	Concept 537 547	population
+T40	Action 548 556	immunity
+R32	target Arg1:T40 Arg2:T39	
+T38	Action 517 525	to occur
+T41	Action 526 536	to achieve
+T42	Concept 506 516	infections
+R33	target Arg1:T38 Arg2:T42	
+R34	target Arg1:T37 Arg2:T38	
+R35	has-property Arg1:T34 Arg2:T37	
+R36	entails Arg1:T37 Arg2:T41	
+R37	target Arg1:T41 Arg2:T40	
+T44	Action 577 584	protect
+T45	Concept 596 607	populations
+T46	Concept 585 595	vulnerable
+R38	has-property Arg1:T45 Arg2:T46	
+T47	Concept 658 666	priority
+A4	Emphasized T47
+R39	target Arg1:T44 Arg2:T45	
+T43	Action 558 571	interventions
+R40	in-context Arg1:T43 Arg2:T44	
+R41	has-property Arg1:T43 Arg2:T47	
+T48	Concept 708 715	general
+T49	Concept 716 726	population
+R42	has-property Arg1:T49 Arg2:T48	
+T50	Action 694 703	targeting
+T51	Action 680 693	interventions
+R43	has-property Arg1:T51 Arg2:T50	
+T52	Action 668 676	followed
+R44	target Arg1:T52 Arg2:T51	
+R45	target Arg1:T50 Arg2:T49	
+T53	Action 732 739	finally
+T54	Action 746 755	targeting
+T55	Concept 760 765	least
+T56	Concept 766 776	vulnerable
+R46	has-property Arg1:T56 Arg2:T55	
+T57	Concept 788 796	COVID-19
+T58	Concept 808 816	children
+R47	is-a Arg1:T58 Arg2:T56	
+R48	in-context Arg1:T58 Arg2:T57	
+R49	target Arg1:T53 Arg2:T54	
+R50	target Arg1:T54 Arg2:T56	
+R51	in-context Arg1:T43 Arg2:T34	
+R52	subject Arg1:T52 Arg2:T43	
+R53	in-context Arg1:T53 Arg2:T52	
+T59	Concept 817 827	SARS-CoV-2
+T60	Concept 845 850	viral
+T61	Concept 851 859	pathogen
+R54	has-property Arg1:T61 Arg2:T60	
+R55	is-a Arg1:T59 Arg2:T61	
+T62	Concept 863 871	COVID-19
+R56	causes Arg1:T59 Arg2:T62	
+T63	Concept 885 894	outbreaks
+T64	Action 895 903	resulted
+R57	in-context Arg1:T63 Arg2:T62	
+R58	subject Arg1:T64 Arg2:T63	
+T65	Concept 907 914	106,893
+T66	Concept 915 924	confirmed
+T67	Concept 925 930	cases
+R59	has-property Arg1:T67 Arg2:T66	
+R60	in-context Arg1:T65 Arg2:T67	
+R61	target Arg1:T64 Arg2:T65	
+T68	Concept 941 946	3,639
+T69	Concept 947 953	deaths
+T70	Concept 959 962	103
+T71	Concept 963 972	countries
+T72	Concept 974 979	areas
+T73	Concept 983 994	territories
+R62	in-context Arg1:T68 Arg2:T69	
+R63	target Arg1:T64 Arg2:T68	
+R64	in-context Arg1:T70 Arg2:T71	
+R65	in-context Arg1:T70 Arg2:T72	
+R66	in-context Arg1:T70 Arg2:T73	
+T74	Concept 1001 1014	07 March 2020
+R67	in-place Arg1:T64 Arg2:T70	
+R68	in-time Arg1:T64 Arg2:T74	

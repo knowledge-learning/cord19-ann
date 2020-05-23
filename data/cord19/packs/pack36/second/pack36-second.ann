@@ -3,17 +3,106 @@ T2	Concept 24 38	non-functional
 R1	has-property Arg1:T1 Arg2:T2	
 T3	Concept 81 89	plasmids
 T4	Concept 97 106	evolution
-T5	Action 62 75	be eliminated
-R2	target Arg1:T5 Arg2:T1	
-A1	Negated T5
-A2	Uncertain T5
-R3	in-place Arg1:T3 Arg2:T5	
-R4	in-context Arg1:T4 Arg2:T5	
 T6	Reference 146 151	motif
-T7	Action 158 164	confer
+T7	Action 158 164;191 193	confer to
 A3	Uncertain T7
 T8	Concept 180 190	properties
-R5	subject Arg1:T7 Arg2:T6	
 T9	Concept 165 179	poor substrate
 R6	has-property Arg1:T9 Arg2:T8	
-R7	target Arg1:T7 Arg2:T8	
+T5	Action 65 75	eliminated
+A1	Diminished T5
+A2	Negated T5
+A4	Uncertain T5
+R2	target Arg1:T5 Arg2:T1	
+R3	in-place Arg1:T5 Arg2:T3	
+R4	in-context Arg1:T5 Arg2:T4	
+R5	subject Arg1:T7 Arg2:T6	
+T10	Concept 198 218	nsp8-9 cleavage site
+R7	target Arg1:T7 Arg2:T10	
+R8	in-context Arg1:T7 Arg2:T8	
+T12	Concept 270 280;281 286	processing order
+T13	Concept 291 303	RTC assembly
+T11	Concept 257 266	influence
+T14	Concept 244 256	considerable
+R9	has-property Arg1:T11 Arg2:T14	
+R10	in-context Arg1:T11 Arg2:T12	
+R11	in-context Arg1:T11 Arg2:T13	
+R12	causes Arg1:T7 Arg2:T11	
+T15	Concept 324 333	beginning
+T16	Concept 346 363	infectious period
+R13	has-part Arg1:T16 Arg2:T15	
+T17	Action 368 373	occur
+A5	Uncertain T17
+T18	Concept 374 380	before
+T19	Concept 394 402	symptoms
+T20	Concept 385 390	onset
+R14	in-context Arg1:T20 Arg2:T19	
+R15	in-time Arg1:T17 Arg2:T18	
+R16	in-context Arg1:T18 Arg2:T20	
+R17	subject Arg1:T17 Arg2:T15	
+T21	Concept 421 430	difficult
+T22	Action 434 441	measure
+R18	has-property Arg1:T22 Arg2:T21	
+T24	Concept 479 486	studies
+T25	Action 492 498	report
+T26	Concept 499 505	values
+T27	Concept 514 531	incubation period
+R19	target Arg1:T25 Arg2:T26	
+R20	subject Arg1:T25 Arg2:T24	
+R21	in-time Arg1:T25 Arg2:T27	
+T23	Action 463 471	reported
+A6	Negated T23
+A7	Uncertain T23
+R22	subject Arg1:T23 Arg2:T24	
+R23	target Arg1:T23 Arg2:T17	
+R24	target Arg1:T22 Arg2:T17	
+T30	Concept 597 600	RBD
+T31	Concept 627 640	coronaviruses
+T32	Concept 608 626	Guangdong pangolin
+R26	has-property Arg1:T31 Arg2:T32	
+R27	is-a Arg1:T30 Arg2:T31	
+T33	Concept 645 654	2019-nCoV
+T28	Concept 563 584	amino acid similarity
+R28	in-context Arg1:T28 Arg2:T30	
+R29	in-context Arg1:T28 Arg2:T33	
+T29	Concept 697 706	evolution
+T34	Concept 665 685	selectively-mediated
+T35	Concept 686 696	convergent
+R25	has-property Arg1:T29 Arg2:T35	
+R30	has-property Arg1:T29 Arg2:T34	
+R31	entails Arg1:T29 Arg2:T28	
+T36	Action 844 850;855 859	escape from
+T37	Action 876 886	repression
+T38	Concept 860 875	transcriptional
+R32	has-property Arg1:T37 Arg2:T38	
+T39	Action 890 896	linked
+T40	Action 909 921	conformation
+T41	Concept 931 934	DNA
+T42	Concept 925 930	viral
+T43	Concept 904 908	open
+R33	has-property Arg1:T40 Arg2:T43	
+R34	has-property Arg1:T41 Arg2:T42	
+R35	target Arg1:T40 Arg2:T41	
+T44	Concept 938 949;954 966	replication compartments
+R36	in-place Arg1:T40 Arg2:T44	
+T45	Concept 833 840	ability
+R37	in-context Arg1:T45 Arg2:T36	
+R38	target Arg1:T36 Arg2:T37	
+R39	subject Arg1:T39 Arg2:T45	
+R40	target Arg1:T39 Arg2:T40	
+A8	Uncertain T39
+T46	Action 982 987	helps
+A9	Uncertain T46
+T47	Concept 994 1001	viruses
+T48	Action 1002 1012	counteract
+T49	Concept 1044 1048	loss
+T50	Concept 1013 1026	decay-induced
+T51	Concept 1027 1032	viral
+T52	Concept 1033 1043	transcript
+R41	has-property Arg1:T49 Arg2:T52	
+R42	has-property Arg1:T49 Arg2:T51	
+R43	has-property Arg1:T49 Arg2:T50	
+R44	subject Arg1:T48 Arg2:T47	
+R45	target Arg1:T48 Arg2:T49	
+R46	target Arg1:T46 Arg2:T48	
+R47	subject Arg1:T46 Arg2:T39	

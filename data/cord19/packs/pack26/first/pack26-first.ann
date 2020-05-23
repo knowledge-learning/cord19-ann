@@ -1,2 +1,123 @@
-T1	Concept 28 38	SARS-CoV-2
 T2	Concept 43 51	SARS-CoV
+T3	Concept 58 66	proteins
+T4	Concept 16 27;28 38	recombinant SARS-CoV-2
+T1	Concept 52 57	spike
+R1	has-property Arg1:T3 Arg2:T1	
+T5	Concept 70 86	recombinant ACE2
+T6	Concept 87 94	protein
+T7	Concept 99 103	ACE2
+T8	Concept 115 119	293T
+T9	Concept 120 125	cells
+R2	in-context Arg1:T8 Arg2:T9	
+T10	Action 126 135	confirmed
+T11	Concept 159 166	similar
+T12	Action 167 174	binding
+T14	Concept 195 199	ACE2
+T15	Concept 189 194	human
+R5	has-property Arg1:T14 Arg2:T15	
+R6	in-context Arg1:T11 Arg2:T14	
+T16	Concept 0 12	Measurements
+R7	in-context Arg1:T3 Arg2:T2	
+T17	Concept 58 66	proteins
+R8	has-property Arg1:T17 Arg2:T1	
+R9	in-context Arg1:T17 Arg2:T4	
+R10	is-a Arg1:T5 Arg2:T6	
+R11	is-a Arg1:T7 Arg2:T6	
+T18	Action 104 114	expressing
+R14	target Arg1:T18 Arg2:T8	
+R15	subject Arg1:T10 Arg2:T18	
+R16	in-context Arg1:T16 Arg2:T17	
+R17	is-a Arg1:T16 Arg2:T3	
+R12	subject Arg1:T18 Arg2:T16	
+R13	in-context Arg1:T16 Arg2:T5	
+R18	in-context Arg1:T16 Arg2:T7	
+T19	Concept 28 38	SARS-CoV-2
+T20	Concept 43 51	SARS-CoV
+T21	Concept 144 157	coronaviruses
+R19	is-a Arg1:T19 Arg2:T21	
+R20	is-a Arg1:T20 Arg2:T21	
+R3	has-property Arg1:T12 Arg2:T11	
+R4	subject Arg1:T12 Arg2:T19	
+R21	target Arg1:T10 Arg2:T12	
+R22	subject Arg1:T12 Arg2:T20	
+T13	Concept 325 335	SARS-CoV-2
+T22	Concept 336 347	coronavirus
+R23	is-a Arg1:T13 Arg2:T22	
+T23	Concept 380 388	SARS-CoV
+R24	is-a Arg1:T23 Arg2:T22	
+T24	Concept 352 359	similar
+T25	Action 360 376	transmissibility
+R25	has-property Arg1:T25 Arg2:T24	
+R26	in-context Arg1:T24 Arg2:T23	
+R27	subject Arg1:T25 Arg2:T13	
+T26	Action 288 295	explain
+R28	target Arg1:T26 Arg2:T25	
+R29	subject Arg1:T26 Arg2:T12	
+T27	Action 408 418	enrichment
+T28	Concept 422 429	glycine
+T29	Concept 435 441	serine
+T30	Concept 458 487	acidic residues glutamic acid
+T31	Concept 496 509	aspartic acid
+T32	Concept 431 432	G
+T33	Concept 443 444	S
+T34	Concept 489 490	E
+T35	Concept 511 512	D
+*	same-as T28 T32
+*	same-as T29 T33
+*	same-as T30 T34
+*	same-as T31 T35
+T36	Concept 526 534	compared
+T37	Concept 542 558	original library
+R30	in-context Arg1:T27 Arg2:T28	
+R31	in-context Arg1:T27 Arg2:T29	
+R32	in-context Arg1:T27 Arg2:T30	
+R33	in-context Arg1:T27 Arg2:T31	
+R34	has-property Arg1:T27 Arg2:T36	
+R35	in-context Arg1:T36 Arg2:T37	
+T40	Concept 636 646	Tupanvirus
+T41	Concept 608 613	after
+T42	Action 692 700	decrease
+T43	Concept 652 658	amount
+T44	Concept 662 668	mutant
+T45	Concept 669 676;677 680	Guarani DNA
+R36	has-property Arg1:T45 Arg2:T44	
+R37	in-context Arg1:T43 Arg2:T45	
+R38	subject Arg1:T42 Arg2:T43	
+T38	Concept 622 630	passages
+T39	Concept 614 621	several
+R39	has-property Arg1:T38 Arg2:T39	
+R40	in-context Arg1:T38 Arg2:T40	
+R41	in-context Arg1:T41 Arg2:T38	
+R42	in-time Arg1:T42 Arg2:T41	
+T46	Concept 706 712	CTD 4A
+T47	Concept 717 723	CTD 4E
+T48	Concept 753 759	O-MAD2
+T49	Concept 764 770	C-MAD2
+T50	Action 742 749	binding
+T51	Concept 731 738	defects
+R43	has-property Arg1:T50 Arg2:T51	
+R44	target Arg1:T50 Arg2:T48	
+R45	target Arg1:T50 Arg2:T49	
+T52	Action 742 749	binding
+R46	has-property Arg1:T52 Arg2:T51	
+R47	target Arg1:T52 Arg2:T48	
+R48	target Arg1:T52 Arg2:T49	
+R49	subject Arg1:T52 Arg2:T47	
+R50	subject Arg1:T50 Arg2:T46	
+T53	Concept 773 779	number
+T54	Concept 783 792	HLA types
+T55	Concept 797 817	amino acid positions
+R51	in-context Arg1:T53 Arg2:T54	
+T56	Concept 773 779	number
+R52	in-context Arg1:T56 Arg2:T55	
+T57	Concept 847 857	associated
+T58	Concept 861 864	JIA
+R53	in-context Arg1:T57 Arg2:T58	
+R54	has-property Arg1:T53 Arg2:T57	
+R55	has-property Arg1:T56 Arg2:T57	
+T59	Concept 866 873	uveitis
+R56	in-context Arg1:T57 Arg2:T59	
+T60	Concept 897 905	diseases
+T61	Concept 886 896	autoimmune
+R57	has-property Arg1:T60 Arg2:T61	
+R59	in-context Arg1:T57 Arg2:T60	

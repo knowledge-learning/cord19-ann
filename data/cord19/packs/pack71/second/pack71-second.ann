@@ -1,0 +1,86 @@
+T1	Concept 0 6	People
+T2	Concept 12 25	blood group A
+R1	has-property Arg1:T1 Arg2:T2	
+T6	Concept 232 247	school closures
+T7	Concept 278 296	COVID-19 outbreaks
+T8	Concept 324 343;344 349	levels of prevented cases
+T10	Concept 267 274	earlier
+T11	Action 255 266	implemented
+R5	target Arg1:T11 Arg2:T6	
+R4	in-time Arg1:T11 Arg2:T7	
+R6	in-context Arg1:T11 Arg2:T10	
+R7	entails Arg1:T11 Arg2:T8	
+T12	Action 308 312	lead
+A2	Uncertain T12
+R8	subject Arg1:T11 Arg2:T12	
+R9	target Arg1:T12 Arg2:T8	
+T14	Action 393 401	believed
+T15	Concept 411 422	flu vaccine
+T16	Concept 465 480	COVID-19 spread
+T18	Concept 497 504	persons
+T19	Concept 517 525	symptoms
+A3	Negated T19
+R10	has-property Arg1:T18 Arg2:T19	
+T20	Concept 529 548	clinically negative
+T21	Concept 552 561	infection
+R11	has-property Arg1:T18 Arg2:T20	
+T17	Action 562 565;572 578	can spread
+R12	subject Arg1:T17 Arg2:T18	
+T23	Concept 645 653	COVID-19
+T25	Concept 671 691	respiratory droplets
+T28	Concept 824 836	environments
+T29	Concept 811 823	contaminated
+R15	has-property Arg1:T28 Arg2:T29	
+T26	Concept 702 709	contact
+T30	Concept 696 701	close
+R16	has-property Arg1:T26 Arg2:T30	
+T27	Concept 798 805	contact
+T31	Concept 789 797	indirect
+R17	has-property Arg1:T27 Arg2:T31	
+T32	Concept 841 849	aerosols
+T33	Concept 729 741	limited data
+T34	Action 774 780	spread
+A4	Emphasized T8
+T9	Action 486 491	shows
+R2	subject Arg1:T9 Arg2:T16	
+T35	Concept 465 473	COVID-19
+R13	target Arg1:T17 Arg2:T35	
+R14	target Arg1:T9 Arg2:T17	
+T4	Concept 124 137	blood group O
+T13	Concept 371 392	allied health workers
+R18	subject Arg1:T14 Arg2:T13	
+T22	Action 423 436	is sufficient
+T37	Concept 441 460	COVID-19 prevention
+R19	subject Arg1:T22 Arg2:T15	
+R20	target Arg1:T22 Arg2:T37	
+R21	target Arg1:T14 Arg2:T22	
+T38	Action 747 756	indicates
+R22	subject Arg1:T34 Arg2:T23	
+R23	in-context Arg1:T34 Arg2:T27	
+R26	target Arg1:T38 Arg2:T34	
+R27	subject Arg1:T38 Arg2:T33	
+T39	Concept 364 367	20%
+R28	in-context Arg1:T13 Arg2:T39	
+A5	Uncertain T34
+T24	Concept 624 641	transmission mode
+T40	Concept 616 623	primary
+R29	has-property Arg1:T24 Arg2:T40	
+R30	is-a Arg1:T25 Arg2:T24	
+R31	is-a Arg1:T26 Arg2:T24	
+R32	in-context Arg1:T25 Arg2:T23	
+R33	in-context Arg1:T26 Arg2:T23	
+R24	in-context Arg1:T27 Arg2:T28	
+R25	in-context Arg1:T27 Arg2:T32	
+T5	Action 63 72	acquiring
+T41	Concept 73 81	COVID-19
+R3	target Arg1:T5 Arg2:T41	
+T36	Concept 201 219	non-O blood groups
+T42	Action 158 163	lower
+R36	subject Arg1:T42 Arg2:T4	
+R37	target Arg1:T42 Arg2:T36	
+R38	in-context Arg1:T42 Arg2:T5	
+T3	Action 47 53	higher
+T43	Concept 96 114	non-A blood groups
+R34	subject Arg1:T3 Arg2:T1	
+R35	target Arg1:T3 Arg2:T43	
+R39	in-context Arg1:T3 Arg2:T5	

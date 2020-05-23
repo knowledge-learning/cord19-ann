@@ -1,25 +1,113 @@
-T1	Concept 18 53	reference-sequence-based comparison
-T2	Concept 94 114	M, N, and E proteins
 T3	Concept 118 128	SARS-CoV-2
 T4	Concept 133 141	SARS-CoV
-R1	in-context Arg1:T2 Arg2:T3	
-R2	in-context Arg1:T2 Arg2:T4	
-T5	Action 142 146	have
 T6	Concept 152 155	90%
-A1	Uncertain T6
-T7	Concept 156 174	genetic similarity
-R3	has-part Arg1:T7 Arg2:T6	
-R4	subject Arg1:T5 Arg2:T2	
-R5	target Arg1:T5 Arg2:T7	
-A2	Diminished T1
-T8	Action 61 70	confirmed
-T9	Reference 71 75	this
-R6	subject Arg1:T8 Arg2:T1	
-R7	target Arg1:T8 Arg2:T9	
-T10	Concept 194 203	S protein
-T11	Action 204 207	was
-T12	Concept 235 239	high
-R8	subject Arg1:T11 Arg2:T10	
-R9	target Arg1:T11 Arg2:T12	
-T13	Concept 229 234	still
-R10	has-property Arg1:T12 Arg2:T13	
+T5	Action 164 174	similarity
+T7	Concept 156 163	genetic
+R3	has-property Arg1:T5 Arg2:T7	
+T2	Concept 94 95	M
+T9	Concept 97 98	N
+T14	Concept 104 105	E
+T15	Concept 106 114	proteins
+R1	is-a Arg1:T2 Arg2:T15	
+R2	is-a Arg1:T9 Arg2:T15	
+R4	is-a Arg1:T14 Arg2:T15	
+R5	has-part Arg1:T3 Arg2:T15	
+T16	Concept 106 114	proteins
+R7	has-part Arg1:T4 Arg2:T16	
+R11	is-a Arg1:T14 Arg2:T16	
+R12	is-a Arg1:T9 Arg2:T16	
+R13	is-a Arg1:T2 Arg2:T16	
+R14	subject Arg1:T5 Arg2:T16	
+*	same-as T5 T6
+R15	target Arg1:T5 Arg2:T15	
+T10	Concept 194 195	S
+T17	Concept 106 114	proteins
+R8	is-a Arg1:T10 Arg2:T17	
+R16	has-part Arg1:T3 Arg2:T17	
+R17	has-part Arg1:T4 Arg2:T17	
+T11	Action 164 174	similarity
+R9	has-property Arg1:T11 Arg2:T7	
+T12	Concept 216 223	reduced
+R10	has-property Arg1:T11 Arg2:T12	
+R18	subject Arg1:T11 Arg2:T17	
+T1	Concept 257 267	complexity
+T8	Concept 271 286	sexual behavior
+R6	has-property Arg1:T8 Arg2:T1	
+T13	Concept 308 317	potential
+T18	Action 295 307	transmission
+R19	in-context Arg1:T13 Arg2:T18	
+T19	Concept 334 344	infectives
+T20	Concept 321 333	asymptomatic
+R20	has-property Arg1:T19 Arg2:T20	
+R21	in-context Arg1:T13 Arg2:T19	
+T21	Concept 362 368	people
+T22	Action 373 378	lived
+R22	subject Arg1:T22 Arg2:T21	
+T23	Concept 386 400	epidemic areas
+R23	in-place Arg1:T22 Arg2:T23	
+T24	Concept 362 368	people
+T25	Concept 407 422	tourism history
+R24	in-place Arg1:T25 Arg2:T23	
+R25	has-property Arg1:T24 Arg2:T25	
+T26	Action 493 495;501 509	be cautious
+A1	Emphasized T26
+T27	Concept 516 528	sex behavior
+R26	in-context Arg1:T26 Arg2:T27	
+T28	Action 533 538	avoid
+T29	Concept 539 543;549 552	oral sex
+T30	Concept 544 548;549 552	anal sex
+T31	Action 589 596	prevent
+A2	Uncertain T31
+T32	Action 605 614	spreading
+T33	Concept 618 628	SARS-CoV-2
+R27	subject Arg1:T32 Arg2:T33	
+R28	subject Arg1:T26 Arg2:T21	
+R29	subject Arg1:T26 Arg2:T24	
+R30	subject Arg1:T28 Arg2:T21	
+R31	subject Arg1:T28 Arg2:T24	
+R32	target Arg1:T28 Arg2:T29	
+R33	target Arg1:T28 Arg2:T30	
+R34	causes Arg1:T13 Arg2:T26	
+R35	causes Arg1:T1 Arg2:T26	
+R36	causes Arg1:T13 Arg2:T28	
+R37	causes Arg1:T1 Arg2:T28	
+R38	target Arg1:T31 Arg2:T32	
+R39	subject Arg1:T31 Arg2:T28	
+R40	subject Arg1:T31 Arg2:T26	
+T34	Concept 641 649	outbreak
+T35	Concept 653 664;665 677	coronavirus disease-2019
+T36	Concept 679 687	COVID-19
+*	same-as T35 T36
+R41	in-context Arg1:T34 Arg2:T35	
+T37	Concept 707 754	severe acute respiratory syndrome coronavirus 2
+T38	Concept 701 706	novel
+R42	has-property Arg1:T37 Arg2:T38	
+T39	Concept 756 766	SARS-CoV-2
+*	same-as T37 T39
+R43	causes Arg1:T37 Arg2:T34	
+T40	Concept 788 794	threat
+T41	Concept 798 811	public health
+R44	in-context Arg1:T40 Arg2:T41	
+R45	is-a Arg1:T34 Arg2:T40	
+T42	Concept 780 787	serious
+R46	has-property Arg1:T40 Arg2:T42	
+T43	Concept 856 866	SARS-CoV-2
+T44	Concept 902 917	cytokine storms
+T45	Concept 922 932	critically
+T46	Concept 937 945	patients
+R47	has-property Arg1:T46 Arg2:T45	
+R48	in-context Arg1:T46 Arg2:T43	
+R49	in-context Arg1:T46 Arg2:T44	
+T47	Action 1017 1026	selection
+T48	Concept 1008 1016	positive
+R50	has-property Arg1:T47 Arg2:T48	
+T49	Concept 1030 1040	spike gene
+R51	in-context Arg1:T47 Arg2:T49	
+T50	Concept 1072 1082	SARS-CoV-2
+T51	Concept 1087 1093	RaTG13
+T52	Action 1059 1068	evolution
+R52	subject Arg1:T52 Arg2:T50	
+T53	Action 1059 1068	evolution
+R53	subject Arg1:T53 Arg2:T51	
+R54	in-context Arg1:T47 Arg2:T53	
+R55	in-context Arg1:T47 Arg2:T52	

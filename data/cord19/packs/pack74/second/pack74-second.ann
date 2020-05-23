@@ -1,0 +1,102 @@
+T1	Concept 10 15	cases
+T2	Concept 6 9	new
+R1	has-property Arg1:T1 Arg2:T2	
+T3	Concept 26 32	likely
+A1	Diminished T3
+T4	Action 36 42	attend
+R2	subject Arg1:T4 Arg2:T1	
+R3	has-property Arg1:T4 Arg2:T3	
+T5	Concept 43 53	gatherings
+R4	target Arg1:T4 Arg2:T5	
+T6	Concept 63 72	awareness
+T7	Concept 88 96	COVID-19
+R6	in-context Arg1:T6 Arg2:T7	
+R5	causes Arg1:T6 Arg2:T4	
+T8	Action 111 121	identified
+T9	Concept 106 110	soon
+R7	in-time Arg1:T8 Arg2:T9	
+R8	target Arg1:T8 Arg2:T1	
+T10	Concept 137 151	implementation
+T11	Concept 155 178	disease control actions
+R9	in-context Arg1:T10 Arg2:T11	
+R10	causes Arg1:T10 Arg2:T8	
+T12	Concept 210 218	COVID-19
+T13	Concept 219 226	binding
+R11	has-part Arg1:T12 Arg2:T13	
+T14	Concept 239 248	SARS-2002
+T15	Concept 297 301	RMSF
+T16	Concept 267 295	root-mean-square fluctuation
+*	same-as T16 T15
+T17	Concept 311 318	residue
+T18	Action 253 262	calculate
+R12	target Arg1:T18 Arg2:T16	
+T19	Concept 346 361	energy snapshot
+T20	Concept 339 345	lowest
+R14	has-property Arg1:T19 Arg2:T20	
+T21	Concept 384 389	100ns
+T22	Concept 390 392	MD
+T23	Concept 393 414	simulation trajectory
+T24	Concept 227 235	compared
+R15	in-context Arg1:T24 Arg2:T14	
+R16	has-property Arg1:T13 Arg2:T24	
+T25	Concept 198 206	dynamics
+R17	in-context Arg1:T25 Arg2:T13	
+T26	Action 182 193	investigate
+R18	target Arg1:T26 Arg2:T25	
+R13	in-place Arg1:T16 Arg2:T17	
+R19	in-context Arg1:T16 Arg2:T19	
+R20	in-context Arg1:T21 Arg2:T22	
+R21	in-context Arg1:T22 Arg2:T23	
+R22	in-context Arg1:T16 Arg2:T21	
+T27	Concept 419 424	rates
+T28	Concept 428 440	co-infection
+R23	in-context Arg1:T27 Arg2:T28	
+T29	Concept 507 516	increased
+T30	Concept 527 535	patients
+T31	Concept 520 526	severe
+T32	Concept 541 549	COVID-19
+R24	in-context Arg1:T30 Arg2:T32	
+R25	has-property Arg1:T30 Arg2:T31	
+R26	has-property Arg1:T27 Arg2:T29	
+R27	in-context Arg1:T29 Arg2:T30	
+T33	Concept 596 605	DeCoV-Net
+T34	Action 606 610	took
+T35	Concept 588 595	trained
+R28	has-property Arg1:T33 Arg2:T35	
+T36	Concept 615 627	preprocessed
+T37	Concept 628 635;636 642	CT-Mask volume
+T38	Concept 651 658	patient
+R29	has-property Arg1:T37 Arg2:T36	
+R30	in-context Arg1:T37 Arg2:T38	
+R31	subject Arg1:T34 Arg2:T33	
+R32	target Arg1:T34 Arg2:T38	
+T39	Action 663 669	output
+T40	Concept 674 688	COVID-positive
+T41	Concept 689 700	probability
+R33	in-context Arg1:T41 Arg2:T40	
+T42	Concept 712 726	COVID-negative
+T43	Concept 727 738	probability
+R34	in-context Arg1:T43 Arg2:T42	
+R35	subject Arg1:T39 Arg2:T33	
+R36	target Arg1:T39 Arg2:T41	
+R37	target Arg1:T39 Arg2:T43	
+T44	Concept 749 760	coronavirus
+T45	Concept 743 748	novel
+R38	has-property Arg1:T44 Arg2:T45	
+T46	Concept 779 789	infectious
+R39	has-property Arg1:T44 Arg2:T46	
+T47	Concept 797 807;808 814	incubation period
+R40	in-time Arg1:T46 Arg2:T47	
+T48	Action 836 841	shown
+T49	Concept 849 857	patients
+T50	Concept 823 831	symptoms
+A2	Negated T50
+R41	subject Arg1:T48 Arg2:T49	
+R42	target Arg1:T48 Arg2:T50	
+R43	in-time Arg1:T48 Arg2:T47	
+T51	Action 893 908	differentiating
+T52	Concept 909 917	COVID-19
+R44	subject Arg1:T51 Arg2:T52	
+T53	Concept 942 946	SARS
+R45	target Arg1:T51 Arg2:T53	
+R46	causes Arg1:T46 Arg2:T51	

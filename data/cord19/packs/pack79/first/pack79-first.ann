@@ -1,0 +1,121 @@
+T1	Concept 16 20	half
+T2	Concept 24 32	COVID-19
+T3	Concept 33 41	patients
+T4	Concept 85 95	lymphocyte
+T5	Action 50 54	have
+A1	Negated T5
+A2	Emphasized T5
+A3	Uncertain T5
+T6	Concept 55 60	fever
+T7	Concept 64 73	admission
+T8	Action 96 101	count
+T9	Concept 105 113	patients
+T10	Concept 119 124	heart
+T11	Concept 125 132	failure
+T12	Action 145 154	decreased
+A4	Uncertain T1
+R1	in-context Arg1:T3 Arg2:T2	
+R2	in-context Arg1:T1 Arg2:T3	
+R3	subject Arg1:T5 Arg2:T1	
+R4	target Arg1:T5 Arg2:T6	
+R5	in-time Arg1:T5 Arg2:T7	
+R6	target Arg1:T8 Arg2:T4	
+R8	in-context Arg1:T11 Arg2:T10	
+R9	has-property Arg1:T9 Arg2:T11	
+A5	Uncertain T12
+R7	target Arg1:T12 Arg2:T8	
+R10	in-place Arg1:T12 Arg2:T9	
+T13	Concept 190 198	COVID-19
+T14	Concept 244 253	morbidity
+A6	Emphasized T14
+T15	Concept 258 267	mortality
+A7	Emphasized T15
+T16	Concept 279 294	heterogeneously
+T17	Action 295 306	distributed
+T18	Concept 319 325	groups
+T19	Concept 315 318	age
+R11	subject Arg1:T17 Arg2:T15	
+R12	subject Arg1:T17 Arg2:T14	
+R13	entails Arg1:T13 Arg2:T14	
+R14	entails Arg1:T13 Arg2:T15	
+R15	has-property Arg1:T17 Arg2:T16	
+R16	target Arg1:T17 Arg2:T18	
+R17	in-context Arg1:T18 Arg2:T19	
+T20	Action 433 457	evolutionary convergence
+T21	Concept 465 470	spike
+T22	Concept 471 478	protein
+T23	Concept 491 500	ancestral
+T24	Concept 501 507	branch
+R18	has-property Arg1:T24 Arg2:T23	
+T27	Concept 544 553	ancestral
+T28	Concept 554 560	branch
+R19	has-property Arg1:T28 Arg2:T27	
+T33	Concept 593 599	sister
+T34	Concept 600 607	strains
+T35	Concept 609 616	CoVZC45
+T36	Concept 621 629	CoVZXC21
+R20	has-property Arg1:T22 Arg2:T21	
+T25	Concept 519 535	SARS-related CoV
+T26	Concept 564 584	COVID-19-related CoV
+R21	in-context Arg1:T24 Arg2:T25	
+R22	in-context Arg1:T28 Arg2:T26	
+R23	has-property Arg1:T34 Arg2:T33	
+R24	in-context Arg1:T33 Arg2:T26	
+R25	is-a Arg1:T35 Arg2:T34	
+R26	is-a Arg1:T36 Arg2:T34	
+R27	subject Arg1:T20 Arg2:T24	
+R28	target Arg1:T20 Arg2:T28	
+R29	in-context Arg1:T20 Arg2:T22	
+T29	Action 638 646	harbored
+T30	Concept 647 648	9
+T31	Concept 649 661	evolutionary
+T32	Concept 662 672	convergent
+T37	Concept 684 689	sites
+R30	in-context Arg1:T30 Arg2:T37	
+T38	Concept 673 683	amino acid
+R31	has-property Arg1:T31 Arg2:T32	
+R32	in-context Arg1:T37 Arg2:T38	
+R33	has-property Arg1:T38 Arg2:T31	
+R34	subject Arg1:T29 Arg2:T34	
+R35	target Arg1:T29 Arg2:T30	
+T39	Concept 704 716	reproductive
+T40	Concept 694 703	effective
+T41	Concept 717 723	number
+R36	has-property Arg1:T41 Arg2:T39	
+R37	has-property Arg1:T41 Arg2:T40	
+T42	Concept 725 726	R
+*	same-as T42 T41
+T43	Concept 731 739	COVID-19
+T44	Concept 743 748	Hubei
+T45	Concept 758 763	range
+T46	Concept 767 777	2.1 to 4.2
+T47	Concept 781 790	scenarios
+T48	Action 791 796	based
+T49	Concept 800 809	different
+T50	Concept 810 821	assumptions
+R38	in-context Arg1:T49 Arg2:T50	
+T51	Concept 826 830	data
+T52	Concept 831 838	sources
+R39	in-context Arg1:T52 Arg2:T51	
+R40	target Arg1:T48 Arg2:T49	
+R41	target Arg1:T48 Arg2:T52	
+R42	in-context Arg1:T42 Arg2:T43	
+R43	in-place Arg1:T42 Arg2:T44	
+R44	subject Arg1:T48 Arg2:T47	
+R45	has-property Arg1:T42 Arg2:T46	
+R46	in-context Arg1:T46 Arg2:T47	
+T53	Concept 869 877	COVID-19
+T54	Concept 902 914	inflammatory
+T55	Concept 915 924	pulmonary
+T56	Action 925 930	edema
+T57	Concept 935 943	alveolar
+T58	Action 944 950	damage
+R49	target Arg1:T58 Arg2:T57	
+R47	has-property Arg1:T56 Arg2:T54	
+R48	target Arg1:T56 Arg2:T55	
+R50	entails Arg1:T53 Arg2:T56	
+R51	entails Arg1:T53 Arg2:T58	
+T59	Action 860 867	failure
+T60	Concept 854 859	heart
+R52	target Arg1:T59 Arg2:T60	
+R53	in-context Arg1:T53 Arg2:T59	

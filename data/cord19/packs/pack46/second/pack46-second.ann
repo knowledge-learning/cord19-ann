@@ -1,0 +1,104 @@
+T1	Concept 6 14	symptoms
+T2	Concept 24 43	shortness of breath
+T3	Concept 45 52	myalgia
+T4	Concept 56 66	arthralgia
+T5	Concept 68 79	sore throat
+T6	Concept 100 108	diarrhea
+T7	Concept 81 95	nasal symptoms
+T8	Concept 147 157	lymphocyte
+T9	Concept 137 146	decreased
+T10	Concept 158 163	count
+R1	in-context Arg1:T10 Arg2:T8	
+R2	has-property Arg1:T10 Arg2:T9	
+T11	Concept 179 184	38.1%
+T12	Concept 201 209	patients
+T13	Concept 192 200	COVID-19
+R3	in-context Arg1:T11 Arg2:T12	
+R4	in-context Arg1:T12 Arg2:T13	
+R5	has-property Arg1:T11 Arg2:T10	
+R6	is-a Arg1:T2 Arg2:T1	
+R7	is-a Arg1:T3 Arg2:T1	
+R8	is-a Arg1:T4 Arg2:T1	
+R9	is-a Arg1:T5 Arg2:T1	
+R10	is-a Arg1:T7 Arg2:T1	
+R11	is-a Arg1:T6 Arg2:T1	
+T14	Concept 240 248	COVID-19
+T15	Concept 249 254	cases
+T16	Concept 227 239	hospitalised
+R12	in-context Arg1:T15 Arg2:T14	
+R13	has-property Arg1:T15 Arg2:T16	
+T17	Concept 217 223	number
+R14	in-context Arg1:T17 Arg2:T15	
+T18	Action 268 276	increase
+R15	subject Arg1:T18 Arg2:T17	
+T19	Action 314 320	ration
+T20	Concept 278 287	hospitals
+T21	Concept 329 338	resources
+T22	Action 343 350	improve
+T23	Concept 360 368	pathways
+T24	Action 384 394	prioritise
+T25	Concept 395 403	patients
+T26	Concept 409 417	greatest
+T27	Concept 427 431	need
+R16	in-context Arg1:T26 Arg2:T27	
+R17	has-property Arg1:T25 Arg2:T26	
+R18	target Arg1:T24 Arg2:T25	
+R19	subject Arg1:T19 Arg2:T20	
+R20	target Arg1:T19 Arg2:T21	
+R21	subject Arg1:T22 Arg2:T20	
+R22	target Arg1:T22 Arg2:T23	
+R23	causes Arg1:T22 Arg2:T24	
+R24	causes Arg1:T18 Arg2:T19	
+R25	causes Arg1:T18 Arg2:T22	
+T28	Concept 438 450	RT-PCR-based
+T29	Concept 451 458	methods
+R26	has-property Arg1:T29 Arg2:T28	
+T30	Concept 484 492	COVID-19
+T31	Action 493 502	diagnosis
+T32	Action 476 480	used
+R27	in-context Arg1:T32 Arg2:T31	
+R28	target Arg1:T32 Arg2:T29	
+R29	target Arg1:T31 Arg2:T30	
+T33	Concept 628 642	time-consuming
+T34	Concept 614 623	laborious
+T35	Concept 643 666	sample processing steps
+R30	has-property Arg1:T35 Arg2:T33	
+R31	has-property Arg1:T35 Arg2:T34	
+T36	Concept 596 604	hampered
+T37	Action 510 521	application
+R32	subject Arg1:T37 Arg2:T29	
+T38	Concept 553 562	infection
+T39	Concept 547 552	viral
+R33	has-property Arg1:T38 Arg2:T39	
+T40	Action 576 583	control
+T41	Concept 567 575	epidemic
+R34	target Arg1:T40 Arg2:T41	
+T42	Action 534 543	diagnosis
+T43	Concept 525 533	accurate
+R35	has-property Arg1:T42 Arg2:T43	
+R36	target Arg1:T42 Arg2:T38	
+R37	in-context Arg1:T37 Arg2:T42	
+R38	in-context Arg1:T37 Arg2:T40	
+R39	has-property Arg1:T37 Arg2:T36	
+R40	causes Arg1:T35 Arg2:T37	
+T44	Concept 711 714	NLR
+A1	Emphasized T44
+T45	Concept 718 726	COVID-19
+T46	Concept 727 735	patients
+R41	in-context Arg1:T46 Arg2:T45	
+R42	in-place Arg1:T44 Arg2:T46	
+T47	Action 759 766;767 769	related to
+T48	Concept 774 790	disease severity
+R43	subject Arg1:T47 Arg2:T44	
+R44	target Arg1:T47 Arg2:T48	
+T49	Concept 791 793	CT
+T50	Concept 810 816	method
+R45	is-a Arg1:T49 Arg2:T50	
+T51	Concept 800 809	important
+R46	has-property Arg1:T50 Arg2:T51	
+T52	Action 824 833	diagnosis
+T53	Concept 837 841	lung
+T54	Concept 842 849	lesions
+R47	in-place Arg1:T54 Arg2:T53	
+R48	target Arg1:T52 Arg2:T54	
+R49	subject Arg1:T52 Arg2:T50	
