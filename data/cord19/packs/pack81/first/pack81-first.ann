@@ -1,0 +1,146 @@
+T1	Concept 12 20	COVID-19
+T2	Concept 24 30	severe
+T3	Concept 31 36	cases
+R1	has-property Arg1:T3 Arg2:T2	
+T4	Concept 59 65	lethal
+T5	Concept 66 79	complications
+R2	has-property Arg1:T5 Arg2:T4	
+T6	Concept 81 85	ARDS
+T7	Concept 87 99	septic shock
+T8	Concept 101 121	acute cardiac injury
+T9	Concept 123 152	refractory metabolic acidosis
+R3	is-a Arg1:T6 Arg2:T5	
+R4	is-a Arg1:T7 Arg2:T5	
+R5	is-a Arg1:T8 Arg2:T5	
+R6	is-a Arg1:T9 Arg2:T5	
+T10	Action 170 177	leading
+T11	Concept 181 186	death
+R7	in-place Arg1:T1 Arg2:T3	
+R8	causes Arg1:T1 Arg2:T5	
+A1	Uncertain T10
+R9	target Arg1:T10 Arg2:T11	
+R10	subject Arg1:T10 Arg2:T5	
+T12	Concept 221 223	CT
+T13	Concept 224 228	scan
+T14	Action 239 247	positive
+T15	Concept 233 238	COVID
+T18	Concept 276 277	1
+R11	in-context Arg1:T14 Arg2:T15	
+R12	target Arg1:T14 Arg2:T13	
+R13	in-context Arg1:T13 Arg2:T12	
+T16	Concept 253 271	ground-truth label
+R15	entails Arg1:T14 Arg2:T16	
+R16	has-property Arg1:T16 Arg2:T18	
+T17	Action 314 322	examined
+T19	Concept 323 326	113
+T20	Concept 327 335	patients
+T21	Concept 341 349	COVID-19
+T22	Concept 375 380	Wuhan
+T23	Concept 381 385	City
+R14	is-a Arg1:T22 Arg2:T23	
+T25	Concept 391 397	Renmin
+T26	Concept 398 406	Hospital
+R18	is-a Arg1:T25 Arg2:T26	
+T27	Concept 410 426	Wuhan University
+R17	has-part Arg1:T27 Arg2:T25	
+T28	Action 432 437	found
+T29	Reference 306 308	We
+R19	subject Arg1:T17 Arg2:T29	
+R20	has-property Arg1:T20 Arg2:T19	
+R21	target Arg1:T17 Arg2:T20	
+R22	in-context Arg1:T20 Arg2:T21	
+R23	in-place Arg1:T17 Arg2:T25	
+R24	in-place Arg1:T27 Arg2:T22	
+R25	entails Arg1:T17 Arg2:T28	
+T24	Concept 440 447	similar
+T30	Concept 448 452	risk
+T31	Action 453 465	distribution
+T32	Action 466 471	trend
+R26	has-property Arg1:T32 Arg2:T24	
+R27	target Arg1:T31 Arg2:T30	
+T33	Concept 485 491	groups
+T34	Concept 479 484	blood
+R28	has-property Arg1:T33 Arg2:T34	
+T35	Concept 475 476	A
+T36	Concept 476 477	B
+T37	Concept 477 478	O
+R29	is-a Arg1:T35 Arg2:T33	
+R30	is-a Arg1:T37 Arg2:T33	
+R31	is-a Arg1:T36 Arg2:T33	
+R32	target Arg1:T32 Arg2:T31	
+R33	target Arg1:T28 Arg2:T32	
+R34	in-context Arg1:T28 Arg2:T35	
+R35	in-context Arg1:T28 Arg2:T36	
+R36	in-context Arg1:T28 Arg2:T37	
+T38	Concept 522 530	COVID-19
+T39	Concept 531 535	case
+T40	Concept 541 548	symptom
+T41	Action 549 554	onset
+T42	Concept 562 570	t-th day
+R37	subject Arg1:T41 Arg2:T40	
+R38	target Arg1:T41 Arg2:T42	
+T43	Concept 576 582	number
+T44	Concept 586 595	secondary
+T45	Concept 596 601	cases
+T46	Action 602 609	follows
+T47	Concept 612 629	negative binomial
+T48	Concept 631 633	NB
+*	same-as T48 T47
+T49	Concept 635 647	distribution
+T50	Concept 655 659	mean
+T51	Concept 663 670	Reff(t)
+T52	Concept 677 687	dispersion
+T53	Concept 688 697	parameter
+T54	Concept 701 702	k
+R39	in-context Arg1:T39 Arg2:T38	
+R40	has-property Arg1:T39 Arg2:T41	
+R41	has-property Arg1:T45 Arg2:T44	
+R42	in-context Arg1:T43 Arg2:T45	
+R43	subject Arg1:T46 Arg2:T43	
+R44	target Arg1:T46 Arg2:T49	
+R45	has-property Arg1:T49 Arg2:T47	
+R46	has-property Arg1:T50 Arg2:T51	
+R47	has-property Arg1:T53 Arg2:T52	
+R48	in-context Arg1:T53 Arg2:T54	
+R49	in-context Arg1:T49 Arg2:T50	
+R50	in-context Arg1:T49 Arg2:T53	
+R51	in-context Arg1:T46 Arg2:T39	
+T55	Concept 724 732	COVID-19
+T56	Concept 733 741	patients
+T57	Action 746 753	defined
+T58	Concept 760 769	pneumonia
+A2	Negated T58
+T59	Concept 773 780	imaging
+T60	Concept 719 723	mild
+T61	Concept 824 832	atypical
+T62	Concept 786 793	imaging
+T63	Action 794 802	findings
+T64	Concept 811 819	patients
+T65	Concept 806 810	some
+R52	has-property Arg1:T62 Arg2:T61	
+R53	target Arg1:T63 Arg2:T65	
+R54	in-context Arg1:T65 Arg2:T64	
+R55	subject Arg1:T63 Arg2:T62	
+R56	has-property Arg1:T55 Arg2:T60	
+R57	subject Arg1:T57 Arg2:T56	
+R58	target Arg1:T57 Arg2:T58	
+R59	in-place Arg1:T57 Arg2:T59	
+T66	Action 834 843	screening
+T67	Action 844 849	based
+T68	Concept 853 855	CT
+T69	Action 856 864	findings
+R60	target Arg1:T69 Arg2:T68	
+T70	Action 876 885	dependent
+A3	Emphasized T70
+T71	Concept 893 904	physician's
+T72	Concept 905 915	experience
+T73	Concept 924 937	effectiveness
+T74	Concept 941 948	limited
+R62	has-property Arg1:T73 Arg2:T74	
+R63	in-context Arg1:T72 Arg2:T71	
+R64	target Arg1:T70 Arg2:T72	
+R65	in-context Arg1:T70 Arg2:T73	
+R66	subject Arg1:T67 Arg2:T66	
+R67	target Arg1:T67 Arg2:T69	
+R61	subject Arg1:T70 Arg2:T66	
+R68	in-context Arg1:T66 Arg2:T55	

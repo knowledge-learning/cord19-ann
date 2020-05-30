@@ -1,0 +1,123 @@
+T1	Concept 12 20	COVID-19
+T2	Concept 31 36	cases
+T3	Concept 24 30	severe
+R1	has-property Arg1:T2 Arg2:T3	
+R2	in-context Arg1:T1 Arg2:T2	
+T4	Action 37 47;56 58	progresses to
+T5	Concept 48 55	rapidly
+R3	has-property Arg1:T4 Arg2:T5	
+R4	subject Arg1:T4 Arg2:T1	
+T6	Concept 59 65	lethal
+T7	Concept 66 79	complications
+R5	has-property Arg1:T7 Arg2:T6	
+R6	is-a Arg1:T4 Arg2:T7	
+T8	Concept 81 85	ARDS
+T9	Concept 87 99	septic shock
+T10	Concept 101 121	acute cardiac injury
+T11	Concept 123 152	refractory metabolic acidosis
+R7	is-a Arg1:T8 Arg2:T7	
+R8	is-a Arg1:T9 Arg2:T7	
+R9	is-a Arg1:T10 Arg2:T7	
+R10	is-a Arg1:T11 Arg2:T7	
+T13	Concept 181 186	death
+A1	Uncertain T13
+R11	causes Arg1:T4 Arg2:T13	
+T12	Concept 221 228	CT scan
+T14	Concept 233 247	COVID-positive
+R12	has-property Arg1:T12 Arg2:T14	
+T15	Concept 253 265	ground-truth
+T16	Concept 276 277	1
+*	same-as T15 T16
+R13	in-context Arg1:T15 Arg2:T12	
+T17	Concept 233 247	COVID-positive
+A2	Negated T17
+T18	Concept 221 228	CT scan
+R14	has-property Arg1:T18 Arg2:T17	
+T19	Concept 253 265	ground-truth
+T20	Concept 304 305	0
+*	same-as T19 T20
+R15	in-context Arg1:T19 Arg2:T18	
+T21	Concept 440 447	similar
+T22	Concept 448 471	risk distribution trend
+T23	Concept 479 491	blood groups
+T24	Concept 475 478	ABO
+R16	is-a Arg1:T24 Arg2:T23	
+R17	in-context Arg1:T22 Arg2:T24	
+T25	Concept 500 509	infection
+R18	in-context Arg1:T22 Arg2:T25	
+R19	has-property Arg1:T22 Arg2:T21	
+T26	Concept 323 326	113
+T27	Concept 327 335	patients
+T28	Concept 341 349	COVID-19
+R20	in-context Arg1:T27 Arg2:T28	
+R21	in-context Arg1:T26 Arg2:T27	
+R22	in-place Arg1:T22 Arg2:T26	
+T29	Concept 522 530	COVID-19
+T30	Concept 531 535	case
+R23	in-context Arg1:T30 Arg2:T29	
+T31	Concept 541 548;549 554	symptom onset
+T32	Concept 562 570	t-th day
+R24	in-time Arg1:T31 Arg2:T32	
+R25	in-context Arg1:T30 Arg2:T31	
+T33	Concept 576 582	number
+T34	Concept 596 601	cases
+T35	Concept 586 595	secondary
+T36	Action 602 609	follows
+T37	Concept 612 629	negative binomial
+T38	Concept 635 647	distribution
+T39	Concept 631 633	NB
+R26	has-property Arg1:T38 Arg2:T37	
+*	same-as T39 T37
+R27	target Arg1:T36 Arg2:T38	
+T40	Concept 655 659	mean
+T41	Concept 663 670	Reff(t)
+R28	in-context Arg1:T40 Arg2:T41	
+T42	Concept 677 697	dispersion parameter
+T43	Concept 701 702	k
+R29	in-context Arg1:T42 Arg2:T43	
+R30	has-part Arg1:T38 Arg2:T40	
+R31	has-part Arg1:T38 Arg2:T42	
+R32	in-context Arg1:T33 Arg2:T34	
+R33	has-property Arg1:T34 Arg2:T35	
+R34	subject Arg1:T36 Arg2:T33	
+R35	in-context Arg1:T36 Arg2:T30	
+T44	Concept 733 741	patients
+T45	Concept 719 723	mild
+T46	Concept 724 732	COVID-19
+R36	has-property Arg1:T44 Arg2:T45	
+R37	in-context Arg1:T44 Arg2:T46	
+T47	Action 773 780	imaging
+T48	Concept 760 769	pneumonia
+A3	Negated T48
+R38	in-context Arg1:T48 Arg2:T47	
+T49	Action 746 756	defined as
+R39	subject Arg1:T49 Arg2:T44	
+R40	target Arg1:T49 Arg2:T48	
+T50	Action 786 793	imaging
+T51	Concept 794 802	findings
+R41	in-context Arg1:T51 Arg2:T50	
+T52	Concept 811 819	patients
+T53	Concept 806 810	some
+R42	in-context Arg1:T53 Arg2:T52	
+R43	in-place Arg1:T51 Arg2:T53	
+T54	Concept 824 832	atypical
+R44	has-property Arg1:T51 Arg2:T54	
+T55	Action 834 843	screening
+T56	Concept 844 849	based
+T57	Concept 853 864	CT findings
+R45	in-context Arg1:T56 Arg2:T57	
+R46	has-property Arg1:T55 Arg2:T56	
+T58	Concept 876 885	dependent
+T59	Concept 868 875	greatly
+R47	has-property Arg1:T58 Arg2:T59	
+T60	Concept 893 902	physician
+T61	Concept 905 915	experience
+R48	in-context Arg1:T61 Arg2:T60	
+T62	Concept 924 937	effectiveness
+T63	Concept 941 948	limited
+R49	has-property Arg1:T62 Arg2:T63	
+R50	has-property Arg1:T55 Arg2:T58	
+R51	in-context Arg1:T58 Arg2:T61	
+R52	has-property Arg1:T55 Arg2:T62	
+R53	causes Arg1:T50 Arg2:T55	
+R54	causes Arg1:T49 Arg2:T55	

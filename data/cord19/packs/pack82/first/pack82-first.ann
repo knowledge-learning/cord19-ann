@@ -1,0 +1,111 @@
+T1	Concept 9 12	CFR
+T2	Concept 16 24	COVID-19
+T3	Concept 4 8	true
+R1	has-property Arg1:T1 Arg2:T3	
+R2	in-context Arg1:T1 Arg2:T2	
+T4	Concept 28 33	China
+R3	in-place Arg1:T1 Arg2:T4	
+T5	Concept 72 79	between
+T6	Concept 80 84	0.8%
+T7	Concept 89 93	0.9%
+R4	in-context Arg1:T5 Arg2:T6	
+R5	in-context Arg1:T5 Arg2:T7	
+T8	Concept 41 46	Hubei
+A1	Negated T8
+R6	in-place Arg1:T1 Arg2:T8	
+*	same-as T1 T5
+T9	Action 102 115	encouragement
+T10	Concept 128 139	authorities
+T11	Concept 121 127	health
+R7	in-context Arg1:T10 Arg2:T11	
+T12	Concept 143 149	needed
+T13	Action 153 163	assimilate
+R8	has-property Arg1:T9 Arg2:T12	
+R9	subject Arg1:T9 Arg2:T10	
+R10	in-context Arg1:T12 Arg2:T13	
+T14	Concept 164 180	COVID-19-related
+T15	Concept 181 190	knowledge
+T16	Concept 197 201	HCWs
+R11	has-property Arg1:T15 Arg2:T14	
+R12	subject Arg1:T13 Arg2:T16	
+R13	target Arg1:T13 Arg2:T15	
+T17	Concept 213 220	doctors
+R14	subject Arg1:T13 Arg2:T17	
+T18	Concept 240 247	numbers
+T19	Concept 257 264	T cells
+T20	Concept 251 256	total
+R15	has-property Arg1:T19 Arg2:T20	
+R16	in-context Arg1:T18 Arg2:T19	
+T21	Concept 266 273	CD4 + T
+T22	Concept 278 285	CD8 + T
+T23	Action 307 320	correlated to
+T24	Concept 296 306	negatively
+R19	has-property Arg1:T23 Arg2:T24	
+T25	Concept 286 291	cells
+R17	is-a Arg1:T22 Arg2:T25	
+R18	is-a Arg1:T21 Arg2:T25	
+T26	Concept 240 247	numbers
+R20	in-context Arg1:T26 Arg2:T21	
+T27	Concept 240 247	numbers
+R21	in-context Arg1:T27 Arg2:T22	
+T28	Concept 321 327	levels
+T29	Concept 331 336	TNF-α
+T30	Concept 338 342	IL-6
+T31	Concept 347 352	IL-10
+T33	Concept 321 327	levels
+T34	Concept 321 327	levels
+T35	Action 307 320	correlated to
+T36	Action 307 320	correlated to
+R22	has-property Arg1:T36 Arg2:T24	
+R23	has-property Arg1:T35 Arg2:T24	
+R24	subject Arg1:T23 Arg2:T18	
+R25	subject Arg1:T36 Arg2:T27	
+R26	subject Arg1:T35 Arg2:T26	
+R27	target Arg1:T23 Arg2:T28	
+R28	target Arg1:T35 Arg2:T34	
+R29	target Arg1:T36 Arg2:T33	
+R30	in-context Arg1:T28 Arg2:T29	
+R31	in-context Arg1:T33 Arg2:T30	
+R32	in-context Arg1:T34 Arg2:T31	
+T32	Concept 398 407	cytokines
+T37	Action 424 432	decrease
+T38	Concept 416 423	T cells
+T39	Concept 436 444	COVID-19
+T40	Concept 445 453	patients
+R33	in-context Arg1:T40 Arg2:T39	
+R34	target Arg1:T37 Arg2:T38	
+R35	in-context Arg1:T37 Arg2:T40	
+R36	causes Arg1:T32 Arg2:T37	
+R37	entails Arg1:T36 Arg2:T32	
+R38	entails Arg1:T35 Arg2:T32	
+R39	entails Arg1:T23 Arg2:T32	
+T41	Concept 461 470	pneumonia
+T42	Concept 487 496	pathogens
+T43	Concept 481 486	other
+R40	has-property Arg1:T42 Arg2:T43	
+T44	Concept 498 506	COVID-19
+R41	in-context Arg1:T43 Arg2:T44	
+T45	Concept 461 470	pneumonia
+R42	causes Arg1:T42 Arg2:T41	
+R43	causes Arg1:T44 Arg2:T45	
+T46	Concept 523 538	characteristics
+T47	Concept 516 522	unique
+R44	has-property Arg1:T46 Arg2:T47	
+R45	has-property Arg1:T45 Arg2:T46	
+T48	Concept 546 553	CT scan
+R46	in-context Arg1:T46 Arg2:T48	
+T49	Reference 560 567	results
+T50	Concept 610 614	risk
+T51	Concept 600 609	increased
+T52	Concept 618 629	blood group
+T53	Concept 630 631	A
+R47	is-a Arg1:T53 Arg2:T52	
+R48	in-context Arg1:T50 Arg2:T53	
+R49	has-property Arg1:T50 Arg2:T51	
+T54	Concept 636 644	COVID-19
+T55	Concept 653 655	OR
+T56	Concept 659 664	1.279
+*	same-as T55 T56
+R50	in-context Arg1:T50 Arg2:T54	
+R51	in-context Arg1:T50 Arg2:T55	
+R52	entails Arg1:T50 Arg2:T49	

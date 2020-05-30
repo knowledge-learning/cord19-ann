@@ -1,0 +1,121 @@
+T1	Concept 0 6	Longer
+T2	Concept 7 20	working times
+T3	Concept 32 36	HCWs
+R1	has-property Arg1:T2 Arg2:T1	
+T5	Concept 51 55	more
+T6	Concept 56 60	time
+R2	has-property Arg1:T6 Arg2:T5	
+T7	Action 64 74;75 79	contacting with
+R3	in-time Arg1:T7 Arg2:T6	
+R4	subject Arg1:T7 Arg2:T3	
+T4	Concept 80 89	confirmed
+T8	Concept 93 102	suspected
+T9	Concept 112 120	patients
+T10	Concept 103 111	COVID-19
+R5	in-context Arg1:T9 Arg2:T10	
+T11	Concept 112 120	patients
+R6	in-context Arg1:T11 Arg2:T10	
+R7	has-property Arg1:T9 Arg2:T8	
+R8	has-property Arg1:T11 Arg2:T4	
+T12	Action 132 140	increase
+T13	Concept 147 154	chances
+A1	Uncertain T12
+R9	subject Arg1:T12 Arg2:T7	
+R10	target Arg1:T12 Arg2:T13	
+T14	Action 164 172	infected
+T15	Concept 178 186	COVID-19
+R11	in-context Arg1:T13 Arg2:T14	
+R12	target Arg1:T14 Arg2:T3	
+R13	subject Arg1:T14 Arg2:T15	
+R14	causes Arg1:T2 Arg2:T7	
+T16	Concept 215 234	depressive symptoms
+T17	Concept 244 250	family
+R15	causes Arg1:T7 Arg2:T16	
+R16	in-context Arg1:T16 Arg2:T17	
+R17	in-context Arg1:T17 Arg2:T3	
+T18	Concept 278 283	PARP1
+T19	Concept 284 293	inhibitor
+R18	is-a Arg1:T18 Arg2:T19	
+T20	Concept 294 300	CVL218
+T21	Action 301 311	discovered
+R19	subject Arg1:T21 Arg2:T20	
+R20	target Arg1:T21 Arg2:T18	
+T22	Concept 319 354	in silico drug repurposing framewor
+R21	in-context Arg1:T21 Arg2:T22	
+T23	Action 399 408	treatment
+T24	Concept 381 390	potential
+T25	Concept 412 420	COVID-19
+R22	target Arg1:T23 Arg2:T25	
+R23	has-property Arg1:T18 Arg2:T24	
+A2	Uncertain T24
+R24	in-context Arg1:T24 Arg2:T23	
+T26	Concept 432 437	23.5%
+T27	Concept 442 447	21.1%
+T28	Concept 448 455	preterm
+T29	Concept 456 462	births
+R25	has-property Arg1:T29 Arg2:T28	
+T30	Concept 473 481	newborns
+T31	Concept 489 496	mothers
+R26	in-context Arg1:T29 Arg2:T30	
+R27	in-context Arg1:T30 Arg2:T31	
+T32	Concept 502 511	confirmed
+T33	Concept 515 524	suspected
+T34	Concept 525 533	COVID-19
+T35	Concept 534 543	pneumonia
+R30	in-context Arg1:T35 Arg2:T34	
+R31	in-context Arg1:T31 Arg2:T35	
+T36	Concept 489 496	mothers
+R28	has-property Arg1:T35 Arg2:T33	
+T37	Concept 534 543	pneumonia
+R29	in-context Arg1:T37 Arg2:T34	
+R32	has-property Arg1:T37 Arg2:T32	
+R33	in-context Arg1:T36 Arg2:T37	
+*	same-as T27 T29
+T38	Concept 456 462	births
+T39	Concept 448 455	preterm
+R34	has-property Arg1:T38 Arg2:T39	
+T40	Concept 473 481	newborns
+R35	in-context Arg1:T38 Arg2:T40	
+R36	in-context Arg1:T40 Arg2:T36	
+*	same-as T26 T38
+T42	Concept 672 684	blood groups
+T43	Concept 705 716;717 722	association risks
+T44	Action 685 694	displayed
+T41	Concept 668 669	A
+T45	Concept 669 670	B
+T46	Concept 670 671	O
+R37	is-a Arg1:T46 Arg2:T42	
+R38	is-a Arg1:T45 Arg2:T42	
+R39	is-a Arg1:T41 Arg2:T42	
+R40	subject Arg1:T44 Arg2:T46	
+R41	subject Arg1:T44 Arg2:T45	
+R42	subject Arg1:T44 Arg2:T41	
+T47	Concept 695 704	different
+R43	has-property Arg1:T43 Arg2:T47	
+T48	Action 731 740	infection
+T49	Concept 746 756	SARS-CoV-2
+R44	in-context Arg1:T43 Arg2:T48	
+R45	subject Arg1:T48 Arg2:T49	
+T50	Concept 770 778	COVID-19
+R46	entails Arg1:T48 Arg2:T50	
+R47	target Arg1:T44 Arg2:T43	
+T51	Concept 783 795	transmission
+T52	Concept 796 811	characteristics
+R48	in-context Arg1:T52 Arg2:T51	
+T53	Concept 815 823	COVID-19
+R49	in-context Arg1:T52 Arg2:T53	
+T54	Concept 837 844	similar
+R50	has-property Arg1:T52 Arg2:T54	
+T55	Concept 857 865	pandemic
+T56	Concept 866 875	influenza
+R51	in-context Arg1:T54 Arg2:T56	
+R52	has-property Arg1:T56 Arg2:T55	
+T57	Action 892 902	facilitate
+A3	Emphasized T57
+A4	Uncertain T57
+T58	Action 918 924	spread
+T59	Concept 911 917	global
+R53	has-property Arg1:T58 Arg2:T59	
+R54	subject Arg1:T58 Arg2:T53	
+R55	target Arg1:T57 Arg2:T58	
+R56	subject Arg1:T57 Arg2:T52	

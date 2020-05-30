@@ -1,0 +1,132 @@
+T1	Concept 4 13	high risk
+T2	Concept 14 21	factors
+R1	has-property Arg1:T2 Arg2:T1	
+T3	Concept 33 39	injury
+T4	Concept 25 32	cardiac
+R2	in-context Arg1:T3 Arg2:T4	
+R3	in-context Arg1:T2 Arg2:T3	
+T5	Concept 50 61	tachycardia
+R4	is-a Arg1:T5 Arg2:T2	
+T6	Action 67 76	elevation
+T7	Concept 63 66	TnI
+R5	subject Arg1:T6 Arg2:T7	
+R6	is-a Arg1:T6 Arg2:T2	
+T8	Concept 81 84	low
+T9	Concept 85 88;89 96	EAT density
+T10	Concept 100 107	CT scan
+R7	in-context Arg1:T9 Arg2:T10	
+R8	has-property Arg1:T9 Arg2:T8	
+R9	is-a Arg1:T9 Arg2:T2	
+T11	Concept 135 141	severe
+T12	Concept 146 154	critical
+T13	Concept 155 163	COVID-19
+T14	Concept 164 172	patients
+T15	Concept 164 172	patients
+R10	in-context Arg1:T14 Arg2:T13	
+R11	in-context Arg1:T15 Arg2:T13	
+R12	has-property Arg1:T15 Arg2:T12	
+R13	has-property Arg1:T14 Arg2:T11	
+R14	in-context Arg1:T2 Arg2:T15	
+R15	in-context Arg1:T2 Arg2:T14	
+T16	Concept 208 216	evidence
+T17	Concept 182 207	statistically significant
+R16	has-property Arg1:T16 Arg2:T17	
+T18	Action 242 251	selection
+T19	Concept 220 241	positive diversifying
+R17	has-property Arg1:T18 Arg2:T19	
+T20	Concept 285 291	branch
+T21	Action 292 299;300 302	leading to
+T22	Concept 303 311	COVID-19
+R18	subject Arg1:T21 Arg2:T20	
+R19	target Arg1:T21 Arg2:T22	
+R20	in-context Arg1:T16 Arg2:T18	
+R21	in-place Arg1:T16 Arg2:T20	
+T23	Concept 353 357	some
+T24	Concept 358 366	COVID-19
+T25	Concept 367 375	patients
+R22	in-context Arg1:T25 Arg2:T24	
+R23	in-context Arg1:T23 Arg2:T25	
+T26	Concept 392 399	history
+T27	Concept 387 391	past
+R24	has-property Arg1:T26 Arg2:T27	
+T28	Concept 403 425	chronic kidney disease
+T29	Concept 427 430	CKD
+*	same-as T28 T29
+R25	in-context Arg1:T25 Arg2:T26	
+R26	in-context Arg1:T26 Arg2:T28	
+T31	Concept 440 448	patients
+R27	in-context Arg1:T31 Arg2:T29	
+T30	Concept 456 471	proinflammatory
+T32	Concept 472 478	milieu
+R28	has-property Arg1:T32 Arg2:T30	
+T33	Concept 494 501	defects
+T34	Concept 483 493	functional
+R29	has-property Arg1:T33 Arg2:T34	
+T35	Concept 505 511	innate
+T36	Concept 516 524	adaptive
+T37	Concept 525 531	immune
+T39	Concept 532 548	cell populations
+T38	Concept 532 548	cell populations
+R30	has-property Arg1:T39 Arg2:T37	
+R31	has-property Arg1:T38 Arg2:T37	
+R32	has-property Arg1:T39 Arg2:T36	
+R33	has-property Arg1:T38 Arg2:T35	
+R34	has-property Arg1:T31 Arg2:T32	
+R35	in-context Arg1:T33 Arg2:T38	
+R36	in-context Arg1:T33 Arg2:T39	
+R37	has-property Arg1:T31 Arg2:T33	
+T40	Concept 553 559	levels
+T41	Concept 563 566	PCT
+R38	in-context Arg1:T40 Arg2:T41	
+T42	Concept 570 576	marker
+T43	Action 577 587	suggesting
+T44	Action 602 611	infection
+T45	Concept 592 601	bacterial
+R39	subject Arg1:T44 Arg2:T45	
+R40	target Arg1:T43 Arg2:T44	
+R41	subject Arg1:T43 Arg2:T42	
+R42	is-a Arg1:T40 Arg2:T42	
+T46	Concept 622 630	elevated
+A1	Negated T46
+T47	Concept 553 559	levels
+T48	Concept 563 566	PCT
+R43	in-context Arg1:T47 Arg2:T48	
+R44	has-property Arg1:T47 Arg2:T46	
+T49	Concept 638 646	patients
+R45	in-context Arg1:T47 Arg2:T49	
+T50	Concept 652 660	COVID-19
+R46	in-context Arg1:T49 Arg2:T50	
+T51	Action 662 672	suggesting
+T52	Concept 677 691	viral-mediated
+T53	Concept 692 701	pneumonia
+R47	has-property Arg1:T53 Arg2:T52	
+R48	subject Arg1:T51 Arg2:T47	
+R49	target Arg1:T51 Arg2:T53	
+T54	Action 754 763	reduction
+T55	Concept 767 775	COVID-19
+T56	Concept 776 781	cases
+R50	in-context Arg1:T56 Arg2:T55	
+T57	Concept 742 753	significant
+R51	has-property Arg1:T54 Arg2:T57	
+R52	subject Arg1:T54 Arg2:T56	
+T60	Concept 844 852	enhanced
+T61	Concept 853 860	control
+T62	Concept 861 869	measures
+R53	has-property Arg1:T62 Arg2:T61	
+R54	has-property Arg1:T62 Arg2:T60	
+T58	Concept 880 894	self-isolation
+T59	Concept 897 912	self-production
+R55	is-a Arg1:T58 Arg2:T62	
+R56	is-a Arg1:T59 Arg2:T62	
+T63	Concept 915 924	effective
+T64	Concept 925 935	quarantine
+T65	Concept 940 945	rapid
+T66	Concept 946 955	detection
+T67	Concept 958 965	testing
+R57	has-property Arg1:T66 Arg2:T65	
+R58	has-property Arg1:T67 Arg2:T65	
+R59	has-property Arg1:T64 Arg2:T63	
+R60	is-a Arg1:T64 Arg2:T62	
+R61	is-a Arg1:T66 Arg2:T62	
+R62	is-a Arg1:T67 Arg2:T62	
+R63	causes Arg1:T62 Arg2:T54	
