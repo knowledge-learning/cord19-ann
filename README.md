@@ -193,3 +193,13 @@ This a list of everyone currently involved and what they are doing.
 | 84       | second   | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack84/second/pack84-second) |
 | 85       | first    | Done           | @Estevanell          | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack85/first/pack85-first) |
 | 85       | second   | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack85/second/pack85-second) |
+| 86       | first    | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack86/first/pack86-first) |
+| 86       | second   | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack86/second/pack86-second) |
+| 87       | first    | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack87/first/pack87-first) |
+| 87       | second   | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack87/second/pack87-second) |
+| 88       | first    | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack88/first/pack88-first) |
+| 88       | second   | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack88/second/pack88-second) |
+| 89       | first    | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack89/first/pack89-first) |
+| 89       | second   | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack89/second/pack89-second) |
+| 90       | first    | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack90/first/pack90-first) |
+| 90       | second   | Open           |                      | [🔗](http://ssh.apiad.net:8080/#/cord19/packs/pack90/second/pack90-second) |
