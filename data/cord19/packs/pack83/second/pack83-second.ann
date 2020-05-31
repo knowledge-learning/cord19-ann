@@ -1,0 +1,147 @@
+T1	Concept 4 21	high risk factors
+T2	Concept 25 32	cardiac
+T3	Concept 33 39	injury
+R1	has-property Arg1:T3 Arg2:T2	
+T4	Concept 50 61	tachycardia
+T5	Action 67 76	elevation
+T6	Concept 63 66	TnI
+R2	target Arg1:T5 Arg2:T6	
+T7	Concept 89 96	density
+T8	Concept 81 84	low
+T9	Concept 85 88	EAT
+T10	Concept 135 141	severe
+T11	Concept 146 154	critical
+T12	Concept 164 172	patients
+T13	Concept 155 163	COVID-19
+R3	has-property Arg1:T12 Arg2:T11	
+R4	has-property Arg1:T12 Arg2:T10	
+R5	in-context Arg1:T12 Arg2:T13	
+T14	Action 109 127	have been observed
+T15	Concept 100 107	CT scan
+R6	in-context Arg1:T1 Arg2:T3	
+R7	is-a Arg1:T4 Arg2:T1	
+R8	is-a Arg1:T5 Arg2:T1	
+R9	has-property Arg1:T7 Arg2:T8	
+R10	in-context Arg1:T7 Arg2:T9	
+R11	is-a Arg1:T7 Arg2:T1	
+R12	subject Arg1:T14 Arg2:T1	
+R13	in-place Arg1:T14 Arg2:T12	
+R14	in-context Arg1:T14 Arg2:T15	
+T16	Reference 173 175	We
+T17	Concept 196 207	significant
+T18	Concept 208 216	evidence
+R15	has-property Arg1:T18 Arg2:T17	
+T19	Concept 242 251	selection
+T20	Concept 229 241	diversifying
+T21	Concept 220 228	positive
+R16	has-property Arg1:T19 Arg2:T20	
+R17	has-property Arg1:T19 Arg2:T21	
+T22	Concept 253 256	~7%
+T23	Concept 260 273	S -gene sites
+R18	in-context Arg1:T22 Arg2:T23	
+T24	Action 275 280	along
+T25	Concept 285 291	branch
+T26	Action 292 299	leading
+T27	Concept 303 311	COVID-19
+R19	subject Arg1:T26 Arg2:T25	
+R20	target Arg1:T26 Arg2:T27	
+R21	target Arg1:T24 Arg2:T25	
+T28	Action 176 181	found
+R22	subject Arg1:T28 Arg2:T16	
+R23	target Arg1:T28 Arg2:T18	
+R24	in-context Arg1:T18 Arg2:T19	
+*	same-as T17 T22
+R25	in-place Arg1:T28 Arg2:T24	
+T29	Concept 353 357	some
+T30	Concept 358 366	COVID-19
+T31	Concept 367 375	patients
+R26	in-context Arg1:T31 Arg2:T30	
+R27	in-context Arg1:T29 Arg2:T31	
+T32	Action 380 384	have
+T33	Concept 387 391	past
+T34	Concept 392 399	history
+R28	has-property Arg1:T34 Arg2:T33	
+T35	Concept 418 425	disease
+T36	Concept 403 410	chronic
+T37	Concept 411 417	kidney
+T38	Concept 427 430	CKD
+R29	has-property Arg1:T35 Arg2:T37	
+R30	has-property Arg1:T35 Arg2:T36	
+*	same-as T35 T38 T39
+T39	Concept 436 439	CKD
+T40	Concept 440 448	patients
+R31	in-context Arg1:T40 Arg2:T39	
+T41	Action 449 453	have
+T42	Concept 456 471	proinflammatory
+T43	Concept 472 478	milieu
+T44	Concept 483 493	functional
+T45	Concept 494 501	defects
+R32	has-property Arg1:T45 Arg2:T44	
+R33	has-property Arg1:T43 Arg2:T42	
+T46	Concept 505 511	innate
+T47	Concept 516 524	adaptive
+T48	Concept 525 531	immune
+T49	Concept 537 548	populations
+T50	Concept 532 536	cell
+R34	has-property Arg1:T50 Arg2:T48	
+R35	has-property Arg1:T48 Arg2:T47	
+R36	has-property Arg1:T50 Arg2:T46	
+R37	in-place Arg1:T49 Arg2:T50	
+A1	Uncertain T32
+R38	subject Arg1:T32 Arg2:T29	
+R39	target Arg1:T32 Arg2:T34	
+R40	in-context Arg1:T34 Arg2:T38	
+R41	subject Arg1:T41 Arg2:T40	
+R42	target Arg1:T41 Arg2:T43	
+R43	target Arg1:T41 Arg2:T45	
+R44	in-place Arg1:T41 Arg2:T49	
+T51	Concept 553 559	levels
+T52	Concept 563 566	PCT
+R45	in-context Arg1:T51 Arg2:T52	
+T53	Concept 570 576	marker
+T54	Action 577 587	suggesting
+T55	Concept 592 601	bacterial
+T56	Concept 602 611	infection
+R46	has-property Arg1:T56 Arg2:T55	
+R47	has-property Arg1:T53 Arg2:T54	
+R48	target Arg1:T54 Arg2:T56	
+R49	is-a Arg1:T52 Arg2:T53	
+T57	Concept 622 630	elevated
+T58	Concept 638 646	patients
+T59	Concept 652 660	COVID-19
+R50	in-context Arg1:T58 Arg2:T59	
+A2	Negated T57
+T60	Concept 692 701	pneumonia
+T61	Concept 677 691	viral-mediated
+R51	has-property Arg1:T60 Arg2:T61	
+R52	has-property Arg1:T51 Arg2:T57	
+R53	has-property Arg1:T58 Arg2:T51	
+R54	entails Arg1:T51 Arg2:T60	
+T62	Concept 861 869	measures
+T63	Concept 853 860	control
+T64	Concept 880 894	self-isolation
+T65	Concept 897 912	self-production
+T66	Concept 925 935	quarantine
+T67	Concept 915 924	effective
+R55	has-property Arg1:T66 Arg2:T67	
+T68	Concept 940 945	rapid
+T69	Concept 946 955	detection
+R56	has-property Arg1:T69 Arg2:T68	
+T70	Concept 958 965	testing
+R57	in-context Arg1:T70 Arg2:T69	
+R58	in-context Arg1:T65 Arg2:T64	
+T71	Concept 844 852	enhanced
+R59	has-property Arg1:T62 Arg2:T71	
+R60	in-context Arg1:T62 Arg2:T63	
+R61	is-a Arg1:T64 Arg2:T62	
+R62	is-a Arg1:T65 Arg2:T62	
+R63	is-a Arg1:T70 Arg2:T62	
+R64	is-a Arg1:T69 Arg2:T62	
+R65	is-a Arg1:T66 Arg2:T62	
+T72	Action 754 763	reduction
+A3	Emphasized T72
+T73	Concept 767 775	COVID-19
+T74	Concept 776 781	cases
+R66	in-context Arg1:T74 Arg2:T73	
+R67	entails Arg1:T62 Arg2:T72	
+R68	target Arg1:T72 Arg2:T74	
