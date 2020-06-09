@@ -1,0 +1,102 @@
+T1	Concept 4 10	signal
+T2	Concept 28 37	ubiquitin
+R1	in-context Arg1:T1 Arg2:T2	
+T3	Action 42 50	elevated
+A1	Emphasized T3
+R2	target Arg1:T3 Arg2:T1	
+T4	Concept 59 63	wild
+T5	Concept 64 68	type
+R3	has-property Arg1:T5 Arg2:T4	
+T6	Concept 83 88	cells
+T7	Concept 73 82	TRIM25 KO
+R4	is-a Arg1:T5 Arg2:T6	
+R5	is-a Arg1:T7 Arg2:T6	
+R6	in-place Arg1:T3 Arg2:T5	
+R7	in-place Arg1:T3 Arg2:T7	
+T8	Action 89 101	Construction
+T9	Concept 109 136	Protein-protein interaction
+T10	Concept 138 141	PPI
+*	same-as T10 T9
+T11	Action 143 149	showed
+R8	target Arg1:T8 Arg2:T10	
+R9	subject Arg1:T11 Arg2:T8	
+T12	Concept 161 169	proteins
+T13	Concept 183 194	interactive
+A2	Emphasized T13
+T14	Concept 201 211	each other
+T15	Action 224 233	exhibited
+T16	Concept 255 258	PPI
+R10	in-context Arg1:T13 Arg2:T14	
+R11	has-property Arg1:T12 Arg2:T13	
+R12	target Arg1:T11 Arg2:T12	
+R13	subject Arg1:T15 Arg2:T8	
+T17	Concept 238 254	most significant
+R14	has-property Arg1:T16 Arg2:T17	
+R15	target Arg1:T15 Arg2:T16	
+T18	Reference 264 268	goal
+T19	Action 269 278	motivates
+T20	Action 293 299	design
+T21	Concept 303 310	optical
+T22	Concept 311 316	probe
+R16	has-property Arg1:T22 Arg2:T21	
+T23	Action 322 332	can report
+T24	Concept 347 360	catecholamine
+T25	Concept 333 346	extracellular
+T26	Action 361 369	dynamics
+R17	has-property Arg1:T24 Arg2:T25	
+R18	subject Arg1:T19 Arg2:T18	
+R19	target Arg1:T19 Arg2:T20	
+R20	target Arg1:T20 Arg2:T22	
+R21	has-property Arg1:T22 Arg2:T23	
+A3	Uncertain T23
+R22	target Arg1:T23 Arg2:T26	
+R23	target Arg1:T26 Arg2:T24	
+T27	Concept 401 409	fidelity
+A4	Emphasized T27
+T28	Concept 392 400	temporal
+T29	Concept 380 387	spatial
+R24	has-property Arg1:T26 Arg2:T27	
+R25	has-property Arg1:T27 Arg2:T28	
+R26	has-property Arg1:T27 Arg2:T29	
+T30	Concept 419 425	unique
+T31	Concept 449 456	profile
+T32	Concept 440 448	spectral
+R27	has-property Arg1:T31 Arg2:T32	
+T33	Concept 431 439	infrared
+T34	Concept 426 430	near
+R28	has-property Arg1:T31 Arg2:T30	
+T35	Action 410 416	within
+R29	target Arg1:T35 Arg2:T31	
+R30	has-property Arg1:T33 Arg2:T34	
+R31	in-context Arg1:T35 Arg2:T33	
+R32	in-place Arg1:T26 Arg2:T35	
+T36	Concept 470 472	CT
+T37	Concept 460 469	pulmonary
+R33	has-property Arg1:T36 Arg2:T37	
+T38	Concept 489 495	method
+T39	Concept 479 488	objective
+R34	has-property Arg1:T38 Arg2:T39	
+T40	Action 506 519	key point for
+T41	Concept 520 528	patients
+R35	in-context Arg1:T36 Arg2:T38	
+R36	subject Arg1:T40 Arg2:T36	
+T43	Concept 537 542	clear
+T44	Concept 543 550	contact
+T42	Concept 551 558	history
+T45	Concept 563 570	typical
+T46	Concept 571 579	symptoms
+R37	has-property Arg1:T46 Arg2:T45	
+R38	has-property Arg1:T42 Arg2:T43	
+R39	in-context Arg1:T42 Arg2:T44	
+A5	Negated T43
+A6	Negated T45
+R40	has-property Arg1:T41 Arg2:T42	
+R41	has-property Arg1:T41 Arg2:T46	
+R42	target Arg1:T40 Arg2:T41	
+T47	Concept 580 588	Patients
+T48	Action 593 601	required
+T49	Concept 602 605	ICU
+R43	subject Arg1:T48 Arg2:T47	
+R44	target Arg1:T48 Arg2:T49	
+T50	Concept 626 631	8.65%
+R45	has-property Arg1:T47 Arg2:T50	

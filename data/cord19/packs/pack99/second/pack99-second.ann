@@ -1,0 +1,147 @@
+T1	Concept 4 16	off-diagonal
+T2	Concept 17 24	numbers
+R1	has-property Arg1:T2 Arg2:T1	
+T3	Concept 29 34	genes
+T4	Concept 45 57	differential
+T5	Concept 58 68	expression
+R2	has-property Arg1:T5 Arg2:T4	
+T6	Concept 72 75	two
+T7	Concept 76 83	viruses
+R3	in-context Arg1:T6 Arg2:T7	
+T8	Action 88 96	compared
+T9	Concept 100 104	mock
+T10	Reference 113 118	third
+T11	Concept 119 124	virus
+R4	in-context Arg1:T10 Arg2:T11	
+T12	Action 152 161	different
+A1	Negated T12
+A2	Emphasized T12
+T13	Action 25 28	are
+R5	subject Arg1:T13 Arg2:T2	
+R6	target Arg1:T13 Arg2:T3	
+R7	has-property Arg1:T3 Arg2:T5	
+R8	in-context Arg1:T5 Arg2:T6	
+R9	subject Arg1:T8 Arg2:T5	
+R10	target Arg1:T8 Arg2:T9	
+R11	target Arg1:T8 Arg2:T10	
+T14	Concept 167 177	each other
+R12	target Arg1:T12 Arg2:T14	
+R13	in-context Arg1:T8 Arg2:T12	
+T15	Action 194 206	availability
+T16	Concept 187 193	sample
+T17	Action 207 210	was
+A3	Negated T17
+R14	target Arg1:T15 Arg2:T16	
+R15	subject Arg1:T17 Arg2:T15	
+T18	Concept 217 225	limiting
+T19	Action 226 232	factor
+R16	has-property Arg1:T19 Arg2:T18	
+R17	target Arg1:T17 Arg2:T19	
+T20	Reference 243 246	two
+T21	Concept 247 256	specimens
+R18	in-context Arg1:T20 Arg2:T21	
+R19	target Arg1:T19 Arg2:T20	
+T22	Reference 258 262	both
+R20	in-context Arg1:T22 Arg2:T20	
+T23	Action 263 269	proved
+T24	Action 270 279	reluctant
+T25	Action 283 289	spread
+T26	Concept 308 314	cryoEM
+T27	Concept 315 320	grids
+R21	has-property Arg1:T27 Arg2:T26	
+T28	Concept 299 304	holes
+R22	subject Arg1:T23 Arg2:T22	
+R23	target Arg1:T23 Arg2:T24	
+R24	in-context Arg1:T23 Arg2:T17	
+R25	target Arg1:T24 Arg2:T25	
+R26	has-part Arg1:T27 Arg2:T28	
+R27	in-place Arg1:T25 Arg2:T28	
+T29	Concept 396 399	L-A
+T30	Concept 400 408	proteins
+R28	is-a Arg1:T29 Arg2:T30	
+T31	Concept 325 331	killer
+T32	Concept 332 337	virus
+R29	has-property Arg1:T32 Arg2:T31	
+T33	Concept 343 352	satellite
+T34	Concept 353 356	RNA
+T35	Concept 360 363	L-A
+R30	has-property Arg1:T34 Arg2:T33	
+R31	in-context Arg1:T33 Arg2:T35	
+R32	is-a Arg1:T32 Arg2:T33	
+T36	Concept 371 378	totally
+T37	Action 379 388	dependent
+R33	has-property Arg1:T37 Arg2:T36	
+R34	subject Arg1:T37 Arg2:T32	
+R35	target Arg1:T37 Arg2:T29	
+T38	Action 413 424	replication
+R36	in-context Arg1:T37 Arg2:T38	
+T39	Concept 433 446	homopolymeric
+T40	Action 447 454	stretch
+T41	Concept 427 432	short
+R37	has-property Arg1:T40 Arg2:T39	
+R38	has-property Arg1:T40 Arg2:T41	
+T42	Concept 471 482	nucleotides
+T43	Concept 461 470	adenosine
+R39	in-context Arg1:T42 Arg2:T43	
+R40	target Arg1:T40 Arg2:T42	
+T44	Concept 458 460	5'
+R41	has-property Arg1:T43 Arg2:T44	
+T45	Action 494 505	destabilize
+A4	Uncertain T45
+T46	Action 512 519	binding
+R42	entails Arg1:T40 Arg2:T45	
+T47	Concept 506 511	eIF4E
+T48	Concept 527 531	mRNA
+T49	Concept 532 535	cap
+R43	in-context Arg1:T49 Arg2:T48	
+R44	target Arg1:T45 Arg2:T46	
+R45	subject Arg1:T46 Arg2:T47	
+R46	target Arg1:T46 Arg2:T49	
+T50	Concept 758 764	tailed
+T51	Concept 765 772	primers
+R47	has-property Arg1:T51 Arg2:T50	
+T52	Action 773 781	suppress
+T53	Action 786 795	formation
+T54	Concept 803 812	artifacts
+R48	subject Arg1:T52 Arg2:T51	
+R49	target Arg1:T52 Arg2:T53	
+T55	Concept 799 802	PCR
+R50	target Arg1:T53 Arg2:T54	
+R51	in-context Arg1:T54 Arg2:T55	
+T56	Action 814 824	determined
+T57	Concept 828 835	primers
+T58	Concept 845 849	type
+T59	Concept 840 844	dNTP
+R52	is-a Arg1:T59 Arg2:T58	
+R53	target Arg1:T56 Arg2:T57	
+R54	subject Arg1:T56 Arg2:T54	
+R55	target Arg1:T56 Arg2:T59	
+T60	Concept 681 691	completely
+A5	Negated T60
+T61	Action 692 697	clear
+R56	has-property Arg1:T61 Arg2:T60	
+R57	in-context Arg1:T52 Arg2:T61	
+T62	Concept 557 566	mechanism
+T63	Concept 549 556	overall
+R58	has-property Arg1:T62 Arg2:T63	
+T64	Action 567 575	involved
+T65	Action 579 587	improved
+T66	Concept 588 599	sensitivity
+T67	Concept 604 614	efficiency
+R59	subject Arg1:T64 Arg2:T62	
+R60	target Arg1:T64 Arg2:T65	
+R61	target Arg1:T65 Arg2:T66	
+R62	target Arg1:T65 Arg2:T67	
+T68	Action 626 629	use
+R63	in-context Arg1:T65 Arg2:T68	
+T69	Concept 638 645	primers
+T70	Concept 633 637	flap
+R64	has-property Arg1:T69 Arg2:T70	
+R65	target Arg1:T68 Arg2:T69	
+T71	Action 661 667	assays
+T72	Concept 649 655	TaqMan
+T73	Concept 656 660	qPCR
+R66	target Arg1:T71 Arg2:T73	
+R67	in-context Arg1:T73 Arg2:T72	
+R68	in-place Arg1:T68 Arg2:T71	
+R69	target Arg1:T61 Arg2:T62	

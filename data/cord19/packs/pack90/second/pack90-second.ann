@@ -1,0 +1,83 @@
+T1	Action 10 24	superspreading
+T2	Concept 82 90	COVID-19
+T3	Action 91 99	outbreak
+T4	Action 103 111	reducing
+T5	Concept 116 135	reproduction number
+T6	Concept 145 150	unity
+T7	Concept 28 36	unlikely
+R1	has-property Arg1:T1 Arg2:T7	
+T8	Action 70 77	control
+R2	entails Arg1:T7 Arg2:T8	
+R3	target Arg1:T8 Arg2:T4	
+R4	subject Arg1:T3 Arg2:T2	
+R5	target Arg1:T4 Arg2:T5	
+R6	in-context Arg1:T4 Arg2:T6	
+R7	causes Arg1:T4 Arg2:T3	
+T9	Concept 257 267	SARS-CoV-2
+T10	Concept 271 292	asymptomatic carriers
+R8	in-place Arg1:T9 Arg2:T10	
+T11	Concept 237 253	transmissibility
+R9	has-property Arg1:T9 Arg2:T11	
+T12	Concept 186 194	COVID-19
+T13	Concept 168 182	disease course
+R10	has-property Arg1:T12 Arg2:T13	
+T14	Concept 200 208	duration
+R11	has-property Arg1:T12 Arg2:T14	
+T15	Concept 300 307	unknown
+R12	has-property Arg1:T14 Arg2:T15	
+R13	has-property Arg1:T11 Arg2:T15	
+R14	has-property Arg1:T13 Arg2:T15	
+T16	Concept 332 340	COVID-19
+T17	Concept 357 361	HCWs
+T18	Concept 363 385	mental health problems
+T19	Concept 394 400	stress
+T20	Concept 402 409	anxiety
+T21	Concept 414 433	depressive symptoms
+T22	Concept 437 442	China
+R15	in-context Arg1:T18 Arg2:T17	
+R16	is-a Arg1:T19 Arg2:T18	
+R17	is-a Arg1:T20 Arg2:T18	
+R18	is-a Arg1:T21 Arg2:T18	
+R19	in-place Arg1:T16 Arg2:T22	
+R20	causes Arg1:T16 Arg2:T17	
+T23	Concept 443 451	COVID-19
+T24	Action 456 462	spread
+T25	Concept 463 470	rapidly
+R21	subject Arg1:T24 Arg2:T23	
+R22	has-property Arg1:T24 Arg2:T25	
+T26	Concept 504 509	Wuhan
+R23	in-place Arg1:T24 Arg2:T26	
+T27	Concept 556 564	severity
+T28	Concept 539 552	wide spectrum
+R24	has-property Arg1:T27 Arg2:T28	
+R25	has-property Arg1:T23 Arg2:T27	
+T29	Concept 568 578	SARS-CoV-2
+T30	Action 579 584	binds
+T31	Concept 588 592;593 602	ACE2 receptors
+T32	Concept 638 646	SARS-CoV
+T33	Concept 606 632	10-20 fold higher affinity
+R26	subject Arg1:T30 Arg2:T29	
+R27	target Arg1:T30 Arg2:T31	
+T34	Action 647 652	binds
+R28	subject Arg1:T34 Arg2:T32	
+R29	target Arg1:T34 Arg2:T31	
+R30	has-property Arg1:T30 Arg2:T33	
+R31	in-context Arg1:T33 Arg2:T34	
+T35	Concept 686 690	ORF8
+T36	Concept 695 699	ORF6
+T37	Concept 724 732	COVID-19
+T38	Concept 754 763	HCov-HKU1
+T39	Concept 794 822	horizontal gene transmission
+T40	Concept 679 684	genes
+R32	is-a Arg1:T35 Arg2:T40	
+R33	is-a Arg1:T36 Arg2:T40	
+T41	Action 706 711	found
+R34	subject Arg1:T41 Arg2:T36	
+R35	subject Arg1:T41 Arg2:T35	
+R36	in-place Arg1:T41 Arg2:T37	
+T42	Action 744 750	absent
+R37	subject Arg1:T42 Arg2:T36	
+R38	subject Arg1:T42 Arg2:T35	
+A1	Negated T42
+R39	target Arg1:T42 Arg2:T38	
+R40	in-context Arg1:T41 Arg2:T39	

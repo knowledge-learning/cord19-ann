@@ -1,0 +1,74 @@
+T1	Concept 4 10	signal
+T2	Concept 28 37	ubiquitin
+T3	Concept 42 50	elevated
+T4	Concept 73 88	TRIM25 KO cells
+R1	in-context Arg1:T1 Arg2:T2	
+R2	has-property Arg1:T1 Arg2:T3	
+R3	in-place Arg1:T1 Arg2:T4	
+T5	Concept 109 124	Protein-protein
+T6	Action 125 136	interaction
+R4	has-property Arg1:T6 Arg2:T5	
+T7	Concept 138 141	PPI
+*	same-as T7 T6
+T8	Concept 161 169	proteins
+T9	Concept 183 194	interactive
+T10	Concept 201 211	each other
+R5	has-property Arg1:T8 Arg2:T9	
+T11	Concept 175 182	tightly
+R6	has-property Arg1:T9 Arg2:T11	
+R7	in-context Arg1:T8 Arg2:T10	
+T12	Action 224 233	exhibited
+T13	Concept 255 258	PPI
+T14	Concept 238 242;243 254	most significant
+R8	has-property Arg1:T13 Arg2:T14	
+R9	target Arg1:T12 Arg2:T13	
+R10	subject Arg1:T12 Arg2:T8	
+T15	Concept 264 268	goal
+T16	Reference 259 263	This
+R11	is-a Arg1:T16 Arg2:T15	
+T17	Action 293 299	design
+T18	Action 269 278	motivates
+R12	subject Arg1:T18 Arg2:T16	
+R13	target Arg1:T18 Arg2:T17	
+T19	Concept 303 316	optical probe
+T20	Action 326 332	report
+R14	subject Arg1:T20 Arg2:T19	
+T21	Concept 347 369	catecholamine dynamics
+T22	Concept 333 346	extracellular
+R15	has-property Arg1:T21 Arg2:T22	
+T23	Concept 375 387;401 409	high spatial fidelity
+T24	Concept 392 409	temporal fidelity
+T25	Concept 419 425	unique
+T26	Concept 426 439	near-infrared
+T27	Concept 440 456	spectral profile
+R16	has-property Arg1:T27 Arg2:T26	
+R17	has-property Arg1:T27 Arg2:T25	
+R18	target Arg1:T20 Arg2:T21	
+R19	has-property Arg1:T20 Arg2:T23	
+R20	has-property Arg1:T20 Arg2:T24	
+R21	in-place Arg1:T20 Arg2:T27	
+R22	target Arg1:T17 Arg2:T20	
+T28	Concept 470 472	CT
+T29	Concept 460 469	pulmonary
+R23	has-property Arg1:T28 Arg2:T29	
+T30	Concept 506 515	key point
+T31	Concept 520 528	patients
+T32	Concept 543 558	contact history
+A1	Negated T32
+T33	Concept 571 579	symptoms
+A2	Negated T33
+T34	Concept 563 570	typical
+T35	Concept 537 542	clear
+R24	has-property Arg1:T33 Arg2:T34	
+R25	has-property Arg1:T32 Arg2:T35	
+R26	in-context Arg1:T31 Arg2:T32	
+R27	in-context Arg1:T31 Arg2:T33	
+R28	in-context Arg1:T30 Arg2:T31	
+R29	is-a Arg1:T28 Arg2:T30	
+T36	Concept 580 588	Patients
+T37	Action 593 601	required
+T38	Concept 602 610	ICU care
+R30	subject Arg1:T37 Arg2:T36	
+R31	target Arg1:T37 Arg2:T38	
+T39	Concept 626 631	8.65%
+*	same-as T37 T39

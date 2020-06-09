@@ -1,0 +1,111 @@
+T1	Concept 4 13	confirmed
+T2	Concept 14 23	diagnosis
+T3	Concept 27 35	COVID-19
+R1	has-property Arg1:T2 Arg2:T1	
+R2	in-context Arg1:T2 Arg2:T3	
+T4	Action 40 47	defined
+T5	Concept 78 135	real-time reverse-transcriptase polymerase-chain-reaction
+T6	Concept 137 143	RT-PCR
+*	same-as T5 T6
+T8	Concept 177 187	pharyngeal
+T10	Concept 167 172	nasal
+T11	Concept 188 192	swab
+R4	is-a Arg1:T10 Arg2:T11	
+R5	is-a Arg1:T8 Arg2:T11	
+T9	Concept 53 61	positive
+R3	has-property Arg1:T4 Arg2:T9	
+R6	subject Arg1:T4 Arg2:T6	
+R7	target Arg1:T4 Arg2:T2	
+T12	Concept 193 202	specimens
+R8	in-context Arg1:T11 Arg2:T12	
+R9	in-context Arg1:T6 Arg2:T10	
+R10	in-context Arg1:T6 Arg2:T8	
+T7	Concept 272 280	COVID-19
+T14	Action 455 466	implemented
+T15	Action 407 416	Isolation
+T16	Concept 420 425	cases
+T17	Action 438 445	tracing
+T18	Concept 430 437	contact
+R11	target Arg1:T17 Arg2:T18	
+R12	target Arg1:T15 Arg2:T16	
+R13	target Arg1:T14 Arg2:T17	
+R14	target Arg1:T14 Arg2:T15	
+T19	Concept 471 479	COVID-19
+R15	in-context Arg1:T14 Arg2:T19	
+T20	Concept 638 646	COVID-19
+T21	Concept 578 590	distribution
+T22	Concept 567 577	peripheral
+R16	has-property Arg1:T21 Arg2:T22	
+T23	Concept 603 609	lesion
+T24	Concept 595 602	fibrous
+R17	has-property Arg1:T23 Arg2:T24	
+T25	Reference 489 502	both diseases
+T26	Action 507 511	have
+T27	Concept 512 519	similar
+R18	has-property Arg1:T26 Arg2:T27	
+T28	Concept 520 523	GGO
+R19	subject Arg1:T26 Arg2:T25	
+T29	Concept 528 545	septal thickening
+R20	target Arg1:T26 Arg2:T28	
+R21	target Arg1:T26 Arg2:T29	
+T30	Action 626 634	specific
+T31	Concept 615 625	relatively
+R22	has-property Arg1:T30 Arg2:T31	
+R23	target Arg1:T30 Arg2:T23	
+R24	target Arg1:T30 Arg2:T21	
+R25	in-place Arg1:T30 Arg2:T20	
+R26	in-context Arg1:T30 Arg2:T26	
+T32	Concept 685 696	department,
+T33	Concept 681 684	NCP
+R27	has-property Arg1:T32 Arg2:T33	
+T34	Reference 654 662	hospital
+T35	Action 664 677	establishment
+R28	subject Arg1:T35 Arg2:T34	
+R29	target Arg1:T35 Arg2:T32	
+T36	Action 723 726	led
+T37	Concept 706 722	administratively
+R30	has-property Arg1:T36 Arg2:T37	
+R31	subject Arg1:T36 Arg2:T32	
+T13	Concept 734 743	president
+T38	Concept 747 755	hospital
+R32	in-context Arg1:T13 Arg2:T38	
+T39	Concept 756 764	directly
+R33	has-property Arg1:T36 Arg2:T39	
+R34	target Arg1:T36 Arg2:T13	
+T40	Action 822 828	key to
+T41	Concept 829 836	success
+T42	Action 840 850	management
+T43	Action 855 864	treatment
+T44	Concept 877 885	patients
+T45	Concept 868 876	COVID-19
+R35	in-context Arg1:T44 Arg2:T45	
+R36	target Arg1:T43 Arg2:T44	
+R37	target Arg1:T42 Arg2:T44	
+R38	subject Arg1:T40 Arg2:T35	
+R39	target Arg1:T40 Arg2:T41	
+R40	in-context Arg1:T41 Arg2:T42	
+R41	in-context Arg1:T41 Arg2:T43	
+T46	Concept 257 262	early
+T47	Concept 263 268	phase
+R42	has-property Arg1:T47 Arg2:T46	
+T48	Concept 281 289	epidemic
+R43	is-a Arg1:T7 Arg2:T48	
+T49	Concept 311 315	HCWs
+T50	Concept 303 310	Chinese
+R44	has-property Arg1:T49 Arg2:T50	
+T51	Action 316 331	had been facing
+T52	Concept 348 357	situation
+A1	Emphasized T49
+T53	Concept 341 347	severe
+A2	Emphasized T53
+R45	has-property Arg1:T52 Arg2:T53	
+R46	subject Arg1:T51 Arg2:T49	
+R47	target Arg1:T51 Arg2:T52	
+T54	Concept 398 406	response
+T55	Concept 384 397	psychological
+T56	Concept 376 383	extreme
+R48	has-property Arg1:T54 Arg2:T55	
+R49	has-property Arg1:T54 Arg2:T56	
+R50	in-time Arg1:T51 Arg2:T47	
+R51	in-context Arg1:T47 Arg2:T7	
+R52	causes Arg1:T51 Arg2:T54	

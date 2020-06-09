@@ -1,0 +1,72 @@
+T2	Concept 20 28	COVID-19
+T1	Concept 57 64	similar
+T3	Concept 68 113	severe acute respiratory syndrome coronavirus
+T4	Concept 115 123	SARS-CoV
+T5	Concept 47 52	virus
+R1	in-context Arg1:T5 Arg2:T2	
+R2	has-property Arg1:T5 Arg2:T1	
+R3	in-context Arg1:T1 Arg2:T3	
+*	same-as T3 T4
+T6	Concept 154 165	Coronavirus
+T7	Concept 182 186	SARS
+T8	Concept 191 199	COVID-19
+T9	Concept 132 144	similarities
+T10	Concept 154 165	Coronavirus
+R4	in-context Arg1:T6 Arg2:T7	
+R5	in-context Arg1:T10 Arg2:T8	
+R6	in-context Arg1:T9 Arg2:T10	
+R7	in-context Arg1:T9 Arg2:T6	
+T11	Concept 285 288	gas
+A1	Negated T11
+A2	Emphasized T11
+T12	Concept 304 322	antiviral activity
+T13	Concept 297 303	potent
+R8	has-property Arg1:T12 Arg2:T13	
+R9	has-property Arg1:T11 Arg2:T12	
+T14	Concept 331 340	2019-nCoV
+R10	in-context Arg1:T12 Arg2:T14	
+T15	Concept 357 367	SARS-CoV-2
+R11	causes Arg1:T14 Arg2:T15	
+T16	Action 408 416	decrease
+T17	Concept 397 407	persisting
+R12	has-property Arg1:T16 Arg2:T17	
+T18	Concept 420 431	lymphocytes
+R13	target Arg1:T16 Arg2:T18	
+T19	Concept 462 469	disease
+T20	Concept 455 461	severe
+R14	has-property Arg1:T19 Arg2:T20	
+T21	Concept 442 451	indicator
+R15	in-context Arg1:T21 Arg2:T19	
+A3	Uncertain T21
+R16	is-a Arg1:T16 Arg2:T21	
+T22	Action 503 512	diagnosis
+T23	Concept 516 524	COVID-19
+A4	Emphasized T21
+T24	Concept 485 494	criterion
+R17	in-context Arg1:T24 Arg2:T22	
+R18	target Arg1:T22 Arg2:T23	
+R19	is-a Arg1:T16 Arg2:T24	
+A5	Diminished T24
+A6	Uncertain T24
+T25	Action 562 571	increases
+T26	Concept 550 561	temperature
+T27	Concept 576 589	doubling time
+R20	subject Arg1:T25 Arg2:T26	
+R21	target Arg1:T25 Arg2:T27	
+T28	Action 611 617	delays
+T29	Action 622 628	spread
+T30	Concept 632 640	COVID-19
+R22	subject Arg1:T29 Arg2:T30	
+R23	target Arg1:T28 Arg2:T29	
+R24	entails Arg1:T25 Arg2:T28	
+T31	Concept 641 646	Fever
+T32	Concept 655 665	widespread
+T33	Action 650 654	less
+T34	Concept 694 702	COVID-19
+R27	target Arg1:T33 Arg2:T34	
+R25	has-property Arg1:T31 Arg2:T33	
+R26	target Arg1:T33 Arg2:T32	
+T35	Concept 719 727	SARS-CoV
+T36	Concept 738 746	MERS-CoV
+R28	in-context Arg1:T33 Arg2:T35	
+R29	in-context Arg1:T33 Arg2:T36	

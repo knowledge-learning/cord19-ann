@@ -1,0 +1,99 @@
+T1	Action 8 16	analysis
+T2	Concept 0 7	Genetic
+R1	has-property Arg1:T1 Arg2:T2	
+T3	Action 29 37	revealed
+T4	Concept 20 28	COVID-19
+R2	target Arg1:T1 Arg2:T4	
+R3	subject Arg1:T3 Arg2:T1	
+T5	Concept 68 113	severe acute respiratory syndrome coronavirus
+T6	Concept 115 123	SARS-CoV
+*	same-as T5 T6
+T7	Action 57 64	similar
+R4	subject Arg1:T7 Arg2:T4	
+R5	target Arg1:T7 Arg2:T5	
+R6	target Arg1:T3 Arg2:T7	
+T8	Concept 281 288	iNO gas
+T9	Action 289 296	retains
+T10	Concept 314 322	activity
+T11	Concept 304 313	antiviral
+T12	Concept 297 303	potent
+R7	has-property Arg1:T10 Arg2:T11	
+R8	has-property Arg1:T10 Arg2:T12	
+T13	Concept 331 340	2019-nCoV
+T14	Concept 357 367	SARS-CoV-2
+T15	Action 236 243	improve
+T16	Action 248 259	oxygenation
+T17	Concept 274 279	cases
+T18	Concept 267 273	severe
+R9	has-property Arg1:T17 Arg2:T18	
+R10	target Arg1:T16 Arg2:T17	
+R11	target Arg1:T15 Arg2:T16	
+R12	subject Arg1:T15 Arg2:T8	
+R13	subject Arg1:T9 Arg2:T8	
+R14	target Arg1:T9 Arg2:T10	
+R15	causes Arg1:T13 Arg2:T14	
+T19	Concept 323 330	against
+R16	in-context Arg1:T10 Arg2:T19	
+R17	in-context Arg1:T10 Arg2:T13	
+T20	Concept 154 165	Coronavirus
+T21	Concept 182 186	SARS
+R18	causes Arg1:T20 Arg2:T21	
+T22	Concept 154 165	Coronavirus
+T23	Concept 191 199	COVID-19
+R19	causes Arg1:T22 Arg2:T23	
+T24	Concept 132 144	similarities
+R20	in-context Arg1:T24 Arg2:T22	
+R21	in-context Arg1:T24 Arg2:T20	
+R22	entails Arg1:T24 Arg2:T9	
+T25	Action 408 416	decrease
+T26	Concept 420 431	lymphocytes
+T27	Concept 397 407	persisting
+R23	has-property Arg1:T25 Arg2:T27	
+R24	target Arg1:T25 Arg2:T26	
+T28	Action 442 451	indicator
+T29	Concept 462 469	disease
+T30	Concept 455 461	severe
+R25	has-property Arg1:T29 Arg2:T30	
+T31	Concept 485 494	criterion
+T32	Action 503 512	diagnosis
+T33	Concept 516 524	COVID-19
+R26	target Arg1:T32 Arg2:T33	
+A1	Uncertain T28
+R27	target Arg1:T28 Arg2:T29	
+R28	subject Arg1:T28 Arg2:T25	
+R29	in-context Arg1:T31 Arg2:T32	
+T34	Concept 538 548	all models
+T35	Concept 550 561	temperature
+T36	Action 562 571	increases
+R30	subject Arg1:T36 Arg2:T35	
+T37	Action 611 617	delays
+T38	Action 622 628	spread
+T39	Concept 632 640	COVID-19
+R31	target Arg1:T38 Arg2:T39	
+R32	target Arg1:T37 Arg2:T38	
+R33	subject Arg1:T37 Arg2:T35	
+T40	Concept 576 589	doubling time
+R34	target Arg1:T36 Arg2:T40	
+R35	entails Arg1:T34 Arg2:T36	
+T41	Concept 641 646	Fever
+T42	Concept 680 688	infected
+T43	Concept 694 702	COVID-19
+R36	in-context Arg1:T42 Arg2:T43	
+T44	Concept 719 727	SARS-CoV
+T45	Concept 738 746	MERS-CoV
+T46	Action 650 654	less
+T47	Concept 680 688	infected
+T48	Concept 680 688	infected
+R37	in-context Arg1:T48 Arg2:T44	
+R38	in-context Arg1:T47 Arg2:T45	
+T49	Action 655 665	widespread
+R39	subject Arg1:T49 Arg2:T41	
+R40	in-context Arg1:T49 Arg2:T42	
+R41	in-context Arg1:T49 Arg2:T48	
+R42	in-context Arg1:T49 Arg2:T47	
+R43	in-context Arg1:T46 Arg2:T49	
+R44	subject Arg1:T46 Arg2:T42	
+R45	target Arg1:T46 Arg2:T48	
+R46	target Arg1:T46 Arg2:T47	
+A2	Negated T31
+R47	is-a Arg1:T25 Arg2:T31	

@@ -1,0 +1,88 @@
+T1	Concept 19 25	glycan
+T2	Concept 30 40	fatty acid
+T3	Concept 41 48	ligands
+R1	is-a Arg1:T2 Arg2:T3	
+R2	is-a Arg1:T1 Arg2:T3	
+T5	Concept 58 68	interfaces
+T4	Concept 52 54	S1
+T6	Concept 55 57	S2
+R3	in-place Arg1:T2 Arg2:T4	
+R4	in-place Arg1:T2 Arg2:T6	
+R5	in-place Arg1:T1 Arg2:T4	
+R6	in-place Arg1:T1 Arg2:T6	
+R7	is-a Arg1:T4 Arg2:T5	
+R8	is-a Arg1:T6 Arg2:T5	
+T7	Concept 80 84	role
+R10	has-property Arg1:T1 Arg2:T7	
+T8	Action 106 116	modulating
+R11	target Arg1:T8 Arg2:T6	
+R12	target Arg1:T8 Arg2:T4	
+R13	in-context Arg1:T7 Arg2:T8	
+R9	has-property Arg1:T2 Arg2:T7	
+A1	Uncertain T7
+T9	Action 186 198	interactions
+R14	subject Arg1:T9 Arg2:T2	
+R15	subject Arg1:T9 Arg2:T1	
+T10	Action 208 217	stabilize
+T11	Concept 222 233	viral spike
+R16	target Arg1:T10 Arg2:T11	
+R17	causes Arg1:T9 Arg2:T10	
+T12	Concept 292 302	rhinovirus
+T13	Concept 304 306	RV
+*	same-as T12 T13
+T14	Concept 308 317	species C
+T15	Concept 292 302	rhinovirus
+R18	has-property Arg1:T15 Arg2:T14	
+T16	Concept 330 338	frequent
+T17	Concept 345 353	pathogen
+T18	Concept 339 344	viral
+R19	has-property Arg1:T17 Arg2:T18	
+R20	has-property Arg1:T17 Arg2:T16	
+A2	Emphasized T16
+T19	Concept 366 374	children
+R21	is-a Arg1:T15 Arg2:T12	
+R22	is-a Arg1:T15 Arg2:T17	
+T20	Concept 422 424	ED
+T21	Concept 400 420	emergency department
+*	same-as T20 T21
+T22	Concept 437 456	asthma exacerbation
+R23	in-context Arg1:T19 Arg2:T22	
+R24	in-place Arg1:T19 Arg2:T21	
+R25	in-context Arg1:T17 Arg2:T19	
+T23	Concept 526 529	RSV
+T24	Action 530 541	accelerated
+T25	Concept 546 554	kinetics
+T27	Concept 583 628	model amyloidogenic peptide derived from IAPP
+T28	Concept 630 637	NNFGAIL
+*	same-as T27 T28
+T26	Action 566 577	aggregation
+T29	Concept 558 565	amyloid
+R26	target Arg1:T26 Arg2:T29	
+R27	subject Arg1:T26 Arg2:T27	
+R28	in-context Arg1:T25 Arg2:T26	
+R29	subject Arg1:T24 Arg2:T23	
+R30	target Arg1:T24 Arg2:T25	
+T30	Concept 661 669	evidence
+T32	Concept 711 725	presymptomatic
+A3	Emphasized T30
+T31	Concept 695 707	asymptomatic
+T33	Concept 726 731	cases
+R31	has-property Arg1:T33 Arg2:T32	
+T34	Concept 726 731	cases
+R32	has-property Arg1:T34 Arg2:T31	
+T35	Concept 690 694	many
+R33	in-context Arg1:T35 Arg2:T33	
+R34	in-context Arg1:T35 Arg2:T34	
+R35	in-context Arg1:T30 Arg2:T35	
+T36	Concept 736 744	function
+T37	Concept 755 763	proteins
+T38	Action 764 771	encoded
+T39	Concept 780 782	U1
+T40	Concept 787 789	U2
+R36	subject Arg1:T38 Arg2:T39	
+R37	subject Arg1:T38 Arg2:T40	
+R38	target Arg1:T38 Arg2:T37	
+T41	Concept 803 813	elucidated
+A4	Negated T41
+R39	has-property Arg1:T36 Arg2:T41	
+R40	in-context Arg1:T36 Arg2:T37	

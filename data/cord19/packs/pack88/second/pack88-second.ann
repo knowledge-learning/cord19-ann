@@ -1,0 +1,151 @@
+T1	Concept 0 1	7
+T2	Concept 2 6	mNGS
+R1	in-context Arg1:T1 Arg2:T2	
+T3	Concept 10 15	field
+T4	Concept 16 24	settings
+R2	has-property Arg1:T4 Arg2:T3	
+T5	Action 25 31	proved
+R3	in-context Arg1:T5 Arg2:T4	
+R4	subject Arg1:T5 Arg2:T1	
+T6	Concept 32 40	critical
+R5	target Arg1:T5 Arg2:T6	
+T7	Action 44 55	development
+T8	Concept 59 74	countermeasures
+T9	Concept 93 98	Ebola
+T10	Concept 99 104	virus
+T11	Concept 105 113	epidemic
+R6	is-a Arg1:T9 Arg2:T10	
+R7	is-a Arg1:T9 Arg2:T11	
+T12	Concept 83 92	2014-2016
+R8	in-context Arg1:T6 Arg2:T7	
+R9	target Arg1:T7 Arg2:T8	
+R10	in-context Arg1:T8 Arg2:T9	
+R11	in-time Arg1:T7 Arg2:T12	
+T13	Concept 117 128	West Africa
+R12	in-place Arg1:T7 Arg2:T13	
+T15	Concept 160 168	COVID-19
+T16	Concept 169 174	cases
+R14	in-context Arg1:T16 Arg2:T15	
+T17	Concept 187 196	developed
+A1	Diminished T17
+T18	Concept 197 202	areas
+R15	has-property Arg1:T18 Arg2:T17	
+T19	Concept 206 220	Southeast Asia
+T14	Action 146 156	sequencing
+T20	Concept 138 145	ongoing
+R13	has-property Arg1:T14 Arg2:T20	
+R16	subject Arg1:T14 Arg2:T1	
+R17	target Arg1:T14 Arg2:T16	
+R18	in-place Arg1:T14 Arg2:T18	
+R19	in-context Arg1:T18 Arg2:T19	
+T21	Action 226 236	contribute
+A2	Uncertain T21
+T22	Action 248 261	understanding
+T23	Concept 240 247	overall
+R20	has-property Arg1:T22 Arg2:T23	
+R21	target Arg1:T21 Arg2:T22	
+T24	Action 274 286	transmission
+T25	Action 288 294	origin
+T26	Action 300 309	evolution
+T27	Concept 265 273	pathogen
+R22	target Arg1:T24 Arg2:T27	
+R23	target Arg1:T25 Arg2:T27	
+R24	target Arg1:T26 Arg2:T27	
+R25	target Arg1:T22 Arg2:T24	
+R26	target Arg1:T22 Arg2:T25	
+R27	target Arg1:T22 Arg2:T26	
+T28	Concept 331 341	incubation
+T29	Concept 351 357	median
+T30	Concept 342 346	mean
+R28	in-context Arg1:T30 Arg2:T28	
+R29	in-context Arg1:T29 Arg2:T28	
+T31	Concept 361 369	COVID-19
+R30	in-context Arg1:T29 Arg2:T31	
+R31	in-context Arg1:T30 Arg2:T31	
+T32	Concept 374 378	5.84
+R32	has-property Arg1:T30 Arg2:T32	
+T33	Concept 383 386	5.0
+R33	has-property Arg1:T29 Arg2:T33	
+T34	Concept 387 391	days
+R34	in-context Arg1:T32 Arg2:T34	
+R35	in-context Arg1:T33 Arg2:T34	
+T35	Action 409 417	there is
+T36	Concept 420 431	statistical
+T37	Concept 432 444	significance
+R36	has-property Arg1:T37 Arg2:T36	
+T38	Concept 454 458	role
+T39	Concept 462 468	gender
+R37	target Arg1:T35 Arg2:T37	
+R38	has-property Arg1:T38 Arg2:T39	
+R39	in-context Arg1:T37 Arg2:T38	
+T40	Concept 469 470	X
+T41	Action 471 480	indicates
+R40	subject Arg1:T41 Arg2:T40	
+T42	Concept 485 490	cases
+R41	target Arg1:T41 Arg2:T42	
+T43	Action 503 511	included
+A3	Negated T43
+R42	subject Arg1:T43 Arg2:T42	
+T44	Concept 520 525	study
+T45	Concept 526 536	population
+R43	has-property Arg1:T44 Arg2:T45	
+R44	in-place Arg1:T43 Arg2:T44	
+T47	Action 551 560	confirmed
+T46	Concept 573 582	pneumonia
+T48	Concept 564 572	COVID-19
+R45	causes Arg1:T48 Arg2:T46	
+R46	subject Arg1:T47 Arg2:T42	
+R47	target Arg1:T47 Arg2:T46	
+T50	Action 595 602	carrier
+T49	Concept 589 594	virus
+R48	is-a Arg1:T48 Arg2:T49	
+R49	target Arg1:T47 Arg2:T50	
+R50	target Arg1:T50 Arg2:T48	
+T51	Concept 620 630	SARS-CoV-2
+T52	Concept 644 652	clinical
+T53	Concept 653 662	specimens
+R51	has-property Arg1:T53 Arg2:T52	
+T54	Action 631 640	detection
+T55	Concept 611 619	positive
+R52	has-property Arg1:T54 Arg2:T55	
+R53	target Arg1:T54 Arg2:T51	
+R54	in-place Arg1:T54 Arg2:T53	
+T56	Concept 672 677	upper
+T57	Concept 678 689	respiratory
+T58	Concept 690 695	tract
+R55	has-property Arg1:T58 Arg2:T57	
+R56	has-property Arg1:T58 Arg2:T56	
+R57	in-context Arg1:T53 Arg2:T58	
+T59	Action 696 714	has been described
+R58	target Arg1:T59 Arg2:T54	
+T60	Action 743 750	address
+A4	Negated T60
+R59	subject Arg1:T60 Arg2:T59	
+T61	Action 761 772	differences
+T62	Concept 751 760	principal
+R60	has-property Arg1:T61 Arg2:T62	
+R61	target Arg1:T60 Arg2:T61	
+T63	Concept 781 785	SARS
+T64	Concept 790 798	COVID-19
+T65	Concept 811 819	clinical
+T66	Concept 820 829	pathology
+R62	has-property Arg1:T66 Arg2:T65	
+R63	subject Arg1:T61 Arg2:T64	
+R64	target Arg1:T61 Arg2:T63	
+R65	in-context Arg1:T61 Arg2:T66	
+T67	Concept 856 871	interferon-MAPK
+T68	Concept 872 881	signaling
+T69	Concept 882 889	pathway
+R66	has-property Arg1:T69 Arg2:T68	
+R67	in-context Arg1:T69 Arg2:T67	
+T70	Action 917 925	response
+T71	Concept 910 916	immune
+A5	Emphasized T70
+R68	has-property Arg1:T70 Arg2:T71	
+T72	Concept 904 909	blood
+T73	Concept 930 938	COVID-19
+T74	Concept 939 948	infection
+R69	subject Arg1:T70 Arg2:T72	
+R70	in-context Arg1:T74 Arg2:T73	
+R71	target Arg1:T70 Arg2:T74	
+R72	is-a Arg1:T69 Arg2:T70	

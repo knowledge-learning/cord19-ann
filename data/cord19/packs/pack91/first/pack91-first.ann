@@ -1,0 +1,126 @@
+T1	Action 31 40	diagnosis
+T2	Action 45 54	isolation
+T3	Action 58 68	infections
+T4	Concept 78 86	COVID-19
+T5	Concept 25 30	rapid
+R1	has-property Arg1:T1 Arg2:T5	
+R2	has-property Arg1:T2 Arg2:T5	
+R3	target Arg1:T1 Arg2:T3	
+R4	target Arg1:T2 Arg2:T3	
+R5	in-context Arg1:T3 Arg2:T4	
+T6	Action 108 115	control
+A1	Negated T6
+T7	Concept 95 100	alone
+R6	has-property Arg1:T6 Arg2:T7	
+T8	Action 116 125	outbreaks
+T9	Concept 129 139	SARS-CoV-2
+R7	subject Arg1:T8 Arg2:T9	
+T10	Action 166 173	tracing
+T11	Action 178 187	isolation
+T12	Concept 198 203	cases
+T13	Concept 191 197	traced
+R8	has-property Arg1:T12 Arg2:T13	
+T14	Concept 223 233	successful
+R9	subject Arg1:T6 Arg2:T1	
+R10	subject Arg1:T6 Arg2:T2	
+R11	target Arg1:T6 Arg2:T8	
+T15	Action 108 115	control
+R12	target Arg1:T15 Arg2:T8	
+R13	subject Arg1:T15 Arg2:T2	
+R14	subject Arg1:T15 Arg2:T1	
+R15	subject Arg1:T15 Arg2:T10	
+R16	subject Arg1:T15 Arg2:T11	
+R17	target Arg1:T11 Arg2:T12	
+R18	has-property Arg1:T15 Arg2:T14	
+T16	Concept 255 263	symptoms
+T17	Concept 246 254	systemic
+T18	Concept 239 245	common
+R19	has-property Arg1:T16 Arg2:T17	
+R20	is-a Arg1:T16 Arg2:T18	
+T19	Concept 267 275	COVID-19
+R21	in-context Arg1:T16 Arg2:T19	
+T20	Concept 285 290	fever
+T21	Concept 292 299	fatigue
+T22	Concept 301 307	sputum
+T23	Concept 312 319	myalgia
+R22	is-a Arg1:T20 Arg2:T16	
+R23	is-a Arg1:T21 Arg2:T16	
+R24	is-a Arg1:T22 Arg2:T16	
+R25	is-a Arg1:T23 Arg2:T16	
+T24	Concept 331 340	prominent
+T25	Concept 348 356	patients
+T26	Concept 366 372	before
+T27	Action 357 365	admitted
+T28	Concept 373 383	January 23
+R26	target Arg1:T27 Arg2:T25	
+R27	in-time Arg1:T27 Arg2:T26	
+R28	in-time Arg1:T26 Arg2:T28	
+R29	has-property Arg1:T23 Arg2:T24	
+R30	has-property Arg1:T22 Arg2:T24	
+R31	has-property Arg1:T21 Arg2:T24	
+R32	has-property Arg1:T20 Arg2:T24	
+R33	in-context Arg1:T25 Arg2:T19	
+R34	in-context Arg1:T24 Arg2:T27	
+T29	Action 426 434	admitted
+T30	Concept 417 425	patients
+T31	Concept 404 413	insidious
+T32	Concept 435 440	later
+R35	in-time Arg1:T29 Arg2:T32	
+R36	in-time Arg1:T32 Arg2:T28	
+R37	has-property Arg1:T23 Arg2:T31	
+R38	has-property Arg1:T22 Arg2:T31	
+R39	has-property Arg1:T21 Arg2:T31	
+R40	has-property Arg1:T20 Arg2:T31	
+R41	target Arg1:T29 Arg2:T30	
+R42	in-context Arg1:T30 Arg2:T19	
+R43	in-context Arg1:T31 Arg2:T29	
+T33	Action 474 484	monitoring
+T34	Concept 468 473	fetal
+R44	target Arg1:T33 Arg2:T34	
+T35	Concept 495 512	serial ultrasound
+T36	Concept 517 522	women
+T37	Concept 528 536	COVID-19
+R45	is-a Arg1:T35 Arg2:T33	
+R46	in-context Arg1:T35 Arg2:T36	
+R47	in-context Arg1:T36 Arg2:T37	
+T38	Action 655 670	immunodepletion
+T39	Concept 676 696	refractory hypoxemia
+R48	in-context Arg1:T38 Arg2:T39	
+T40	Concept 712 721	high risk
+T41	Concept 702 711	potential
+T42	Concept 722 729	subtype
+R49	has-property Arg1:T42 Arg2:T40	
+R50	has-property Arg1:T42 Arg2:T41	
+T43	Concept 733 743	COVID-2019
+R51	in-context Arg1:T42 Arg2:T43	
+T44	Concept 760 766	circle
+T45	Concept 752 759	vicious
+R52	has-property Arg1:T44 Arg2:T45	
+T46	Concept 767 774	between
+R53	in-context Arg1:T44 Arg2:T46	
+T47	Concept 775 790	immune disorder
+T48	Concept 795 808	gut dysbiosis
+R54	in-context Arg1:T46 Arg2:T47	
+R55	in-context Arg1:T46 Arg2:T48	
+T49	Concept 818 827	high risk
+T50	Concept 837 846	pneumonia
+T51	Concept 831 836	fatal
+R56	has-property Arg1:T50 Arg2:T51	
+R57	in-context Arg1:T49 Arg2:T50	
+R58	is-a Arg1:T44 Arg2:T49	
+R59	is-a Arg1:T38 Arg2:T42	
+T52	Concept 847 858	Lymphopenia
+T53	Concept 865 874	effective
+T54	Action 888 897	indicator
+T55	Concept 879 887	reliable
+R60	has-property Arg1:T54 Arg2:T55	
+R61	has-property Arg1:T54 Arg2:T53	
+T56	Concept 901 909	severity
+T57	Concept 914 929	hospitalization
+R62	target Arg1:T54 Arg2:T56	
+R63	target Arg1:T54 Arg2:T57	
+T58	Concept 942 950	patients
+T59	Concept 933 941	COVID-19
+R64	in-context Arg1:T54 Arg2:T58	
+R65	is-a Arg1:T52 Arg2:T54	
+R66	in-context Arg1:T58 Arg2:T59	

@@ -1,0 +1,91 @@
+T1	Action 15 23	targeted
+T2	Concept 5 9	AIPs
+R1	target Arg1:T1 Arg2:T2	
+T3	Concept 0 4	Some
+T4	Concept 36 41	drugs
+T5	Concept 27 35	multiple
+R2	in-context Arg1:T4 Arg2:T5	
+R3	in-context Arg1:T2 Arg2:T3	
+T6	Concept 55 106	heat shock protein 90 alpha family class A member 1
+T7	Concept 108 116	HSP90AA1
+*	same-as T6 T7
+T8	Concept 122 143	tumor necrosis factor
+T9	Concept 145 148	TNF
+*	same-as T8 T9
+R6	subject Arg1:T1 Arg2:T4	
+T10	Concept 173 180	changes
+T11	Concept 188 206	subunit structures
+T12	Reference 150 155	These
+T13	Concept 167 172	small
+R4	has-property Arg1:T10 Arg2:T13	
+R5	is-a Arg1:T12 Arg2:T10	
+R7	in-place Arg1:T12 Arg2:T11	
+T14	Action 207 216	translate
+T15	Concept 217 221	into
+R8	subject Arg1:T14 Arg2:T12	
+R9	in-context Arg1:T14 Arg2:T15	
+T16	Concept 229 235	shifts
+T17	Concept 222 228	larger
+R10	has-property Arg1:T16 Arg2:T17	
+T18	Concept 243 250	hexamer
+R11	in-place Arg1:T16 Arg2:T18	
+R12	target Arg1:T14 Arg2:T16	
+T19	Concept 266 274	patients
+T20	Action 275 281	showed
+T21	Concept 282 291	increased
+T24	Concept 258 262	half
+T25	Concept 313 322	one-third
+T26	Concept 326 334	patients
+T27	Action 335 343	suffered
+T28	Concept 344 356	liver injury
+T29	Concept 371 391	levels of prealbumin
+T22	Concept 292 305	levels of LDH
+R13	in-context Arg1:T19 Arg2:T24	
+R14	subject Arg1:T20 Arg2:T19	
+R15	has-property Arg1:T22 Arg2:T21	
+R16	target Arg1:T20 Arg2:T22	
+R17	in-context Arg1:T26 Arg2:T25	
+T23	Concept 361 370	decreased
+R18	has-property Arg1:T29 Arg2:T23	
+R19	subject Arg1:T27 Arg2:T26	
+R20	target Arg1:T27 Arg2:T28	
+R21	target Arg1:T27 Arg2:T29	
+T30	Action 478 483	lower
+A1	Uncertain T30
+T31	Action 557 564	prevent
+A2	Negated T30
+T32	Concept 466 477	effectively
+R22	has-property Arg1:T30 Arg2:T32	
+T33	Concept 550 556	easily
+A3	Uncertain T31
+R23	has-property Arg1:T31 Arg2:T33	
+T34	Concept 569 578	epidemics
+T35	Action 592 601	spreading
+R24	target Arg1:T35 Arg2:T34	
+R25	target Arg1:T31 Arg2:T35	
+T36	Concept 401 408	studies
+T37	Concept 392 400	Previous
+R26	has-property Arg1:T36 Arg2:T37	
+R27	entails Arg1:T36 Arg2:T30	
+R28	entails Arg1:T36 Arg2:T31	
+T38	Concept 437 455	mobility reduction
+R30	subject Arg1:T30 Arg2:T38	
+T40	Concept 488 502	incidence rate
+R31	target Arg1:T30 Arg2:T40	
+T41	Action 629 637	selected
+T42	Concept 616 624	one pair
+T43	Concept 611 615	only
+R32	target Arg1:T41 Arg2:T42	
+R33	in-context Arg1:T41 Arg2:T43	
+T44	Concept 659 670	bond energy
+R34	has-property Arg1:T42 Arg2:T44	
+T45	Concept 682 695	2.00 kcal/mol
+R35	in-context Arg1:T44 Arg2:T45	
+T39	Concept 513 529;534 543	transmissibility reduction
+T46	Concept 509 512	50%
+R29	in-context Arg1:T39 Arg2:T46	
+R36	subject Arg1:T31 Arg2:T39	
+R37	subject Arg1:T1 Arg2:T6	
+R38	subject Arg1:T1 Arg2:T8	
+R39	is-a Arg1:T6 Arg2:T4	
+R40	is-a Arg1:T8 Arg2:T4	

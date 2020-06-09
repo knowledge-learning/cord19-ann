@@ -1,0 +1,85 @@
+T1	Concept 5 9	half
+T2	Concept 31 39	COVID-19
+T3	Concept 40 48	patients
+T4	Concept 59 67	elevated
+T5	Concept 68 75	cardiac
+T6	Concept 76 89	marker levels
+R1	has-property Arg1:T6 Arg2:T5	
+R2	has-property Arg1:T6 Arg2:T4	
+R3	in-context Arg1:T6 Arg2:T1	
+R4	in-context Arg1:T1 Arg2:T3	
+R5	in-context Arg1:T3 Arg2:T2	
+T7	Concept 158 164	strong
+T8	Concept 165 173	positive
+T9	Concept 174 185	correlation
+R6	has-property Arg1:T9 Arg2:T8	
+R7	has-property Arg1:T9 Arg2:T7	
+T10	Concept 194 211	clinical severity
+T11	Concept 216 230	antibody titer
+R8	in-context Arg1:T9 Arg2:T10	
+R9	in-context Arg1:T9 Arg2:T11	
+T12	Concept 237 243	2-week
+T13	Concept 244 249	after
+T14	Concept 250 257	illness
+R10	in-context Arg1:T13 Arg2:T14	
+R11	in-time Arg1:T13 Arg2:T12	
+R12	in-time Arg1:T9 Arg2:T13	
+T15	Concept 287 295	COVID-19
+T16	Concept 296 304	patients
+R13	in-context Arg1:T16 Arg2:T15	
+R14	in-place Arg1:T9 Arg2:T16	
+T17	Concept 324 330	median
+T18	Concept 331 334	age
+R15	has-property Arg1:T18 Arg2:T17	
+T19	Concept 338 341	116
+T20	Concept 342 350	COVID-19
+T21	Concept 361 369	patients
+R16	in-context Arg1:T21 Arg2:T20	
+R17	in-context Arg1:T19 Arg2:T21	
+T22	Concept 374 376	54
+T23	Concept 377 382	years
+R18	in-context Arg1:T22 Arg2:T23	
+*	same-as T18 T22
+R19	in-context Arg1:T18 Arg2:T19	
+T24	Concept 425 427	67
+R20	in-context Arg1:T24 Arg2:T19	
+T25	Concept 441 445	male
+R21	has-property Arg1:T24 Arg2:T25	
+T26	Concept 567 571	rare
+T27	Concept 577 585	patients
+T28	Concept 614 623	suspected
+T29	Concept 624 628	case
+R22	has-property Arg1:T29 Arg2:T28	
+T30	Action 634 641	require
+T31	Concept 651 655	care
+T32	Concept 642 650	enhanced
+R23	has-property Arg1:T31 Arg2:T32	
+R24	has-property Arg1:T30 Arg2:T26	
+R25	target Arg1:T30 Arg2:T31	
+R26	in-context Arg1:T27 Arg2:T29	
+R27	subject Arg1:T30 Arg2:T27	
+T33	Concept 672 680	COVID-19
+T34	Concept 696 700	rare
+T35	Concept 708 710	UK
+R28	in-place Arg1:T33 Arg2:T35	
+R29	has-property Arg1:T33 Arg2:T34	
+R30	entails Arg1:T33 Arg2:T30	
+T36	Concept 726 735	2002/2003
+T37	Action 736 744	outbreak
+T38	Concept 748 752	SARS
+R31	subject Arg1:T37 Arg2:T38	
+R32	in-time Arg1:T37 Arg2:T36	
+T39	Concept 754 762	severity
+T40	Concept 711 718	Similar
+R33	in-context Arg1:T40 Arg2:T37	
+T41	Concept 766 774	COVID-19
+R34	in-context Arg1:T39 Arg2:T41	
+T42	Concept 786 796	associated
+T43	Concept 812 815	age
+T44	Concept 802 811	increased
+T45	Concept 825 836	comorbidity
+R35	has-property Arg1:T43 Arg2:T44	
+R36	has-property Arg1:T39 Arg2:T42	
+R37	has-property Arg1:T39 Arg2:T40	
+R38	in-context Arg1:T42 Arg2:T43	
+R39	in-context Arg1:T42 Arg2:T45	

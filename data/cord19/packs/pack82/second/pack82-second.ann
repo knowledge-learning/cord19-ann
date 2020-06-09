@@ -3,12 +3,85 @@ T2	Concept 16 24	COVID-19
 T3	Concept 28 33	China
 R1	in-context Arg1:T1 Arg2:T2	
 R2	in-place Arg1:T1 Arg2:T3	
-T4	Action 60 71	should fall
+T4	Action 67 71	fall
 R3	subject Arg1:T4 Arg2:T1	
 T5	Concept 80 84	0.8%
 T6	Concept 89 93	0.9%
-R4	target Arg1:T4 Arg2:T5	
-R5	target Arg1:T4 Arg2:T6	
+R4	has-property Arg1:T4 Arg2:T5	
+R5	has-property Arg1:T4 Arg2:T6	
 T7	Action 153 163	assimilate
 T8	Concept 164 172;181 190	COVID-19 knowledge
 R6	target Arg1:T7 Arg2:T8	
+A1	Uncertain T4
+T9	Action 143 149	needed
+T10	Concept 102 115	encouragement
+T11	Concept 121 139	health authorities
+R7	in-context Arg1:T10 Arg2:T11	
+R8	subject Arg1:T9 Arg2:T10	
+R9	in-context Arg1:T9 Arg2:T7	
+T12	Concept 197 201	HCWs
+R10	subject Arg1:T7 Arg2:T12	
+T13	Concept 213 220	doctors
+R11	subject Arg1:T7 Arg2:T13	
+T14	Concept 41 46	Hubei
+T15	Concept 47 55	Province
+R12	is-a Arg1:T14 Arg2:T15	
+A2	Negated T14
+R13	in-place Arg1:T1 Arg2:T14	
+T16	Action 408 415	promote
+T17	Concept 398 407	cytokines
+T18	Concept 416 423	T cells
+T19	Action 424 432	decrease
+T20	Concept 436 453	COVID-19 patients
+R14	subject Arg1:T19 Arg2:T18	
+R15	in-place Arg1:T19 Arg2:T20	
+R16	target Arg1:T16 Arg2:T19	
+T21	Concept 240 247	numbers
+T22	Concept 257 264	T cells
+T23	Concept 266 273;286 291	CD4 + T cells
+T24	Concept 278 291	CD8 + T cells
+T25	Concept 331 336	TNF-α
+T26	Concept 338 342	IL-6
+T27	Concept 347 352	IL-10
+T28	Action 307 317	correlated
+T29	Concept 321 327	levels
+R17	entails Arg1:T28 Arg2:T16	
+T30	Concept 296 306	negatively
+R18	has-property Arg1:T28 Arg2:T30	
+R22	in-context Arg1:T21 Arg2:T23	
+R23	in-context Arg1:T21 Arg2:T23	
+R19	subject Arg1:T28 Arg2:T21	
+R24	target Arg1:T28 Arg2:T29	
+R25	in-context Arg1:T29 Arg2:T25	
+R26	in-context Arg1:T29 Arg2:T26	
+R27	in-context Arg1:T29 Arg2:T27	
+R20	in-context Arg1:T21 Arg2:T22	
+R21	is-a Arg1:T25 Arg2:T17	
+R28	is-a Arg1:T26 Arg2:T17	
+R29	is-a Arg1:T27 Arg2:T17	
+R30	subject Arg1:T16 Arg2:T25	
+R31	subject Arg1:T16 Arg2:T26	
+R32	subject Arg1:T16 Arg2:T27	
+T31	Concept 498 506	COVID-19
+T32	Concept 546 553	CT scan
+T33	Concept 523 538	characteristics
+T34	Concept 516 522	unique
+R33	has-part Arg1:T32 Arg2:T33	
+R34	has-property Arg1:T33 Arg2:T34	
+R35	in-context Arg1:T32 Arg2:T31	
+T35	Reference 554 559	These
+T36	Concept 560 567	results
+R36	is-a Arg1:T35 Arg2:T36	
+T38	Action 600 609	increased
+A3	Emphasized T38
+T39	Concept 618 631	blood group A
+T40	Concept 610 614	risk
+R38	subject Arg1:T38 Arg2:T40	
+R39	in-place Arg1:T38 Arg2:T39	
+T41	Concept 636 644	COVID-19
+R40	in-context Arg1:T40 Arg2:T41	
+T42	Concept 653 655	OR
+T43	Concept 659 664	1.279
+R41	in-context Arg1:T42 Arg2:T43	
+R37	causes Arg1:T38 Arg2:T35	
+R42	in-context Arg1:T38 Arg2:T42	

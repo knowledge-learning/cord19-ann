@@ -1,0 +1,112 @@
+T1	Action 205 217	to stabilize
+A1	Uncertain T1
+T2	Concept 228 233	spike
+T3	Concept 222 227	viral
+R1	has-property Arg1:T2 Arg2:T3	
+R2	target Arg1:T1 Arg2:T2	
+T4	Action 186 198	interactions
+T5	Concept 164 170	glycan
+T6	Concept 175 180	fatty
+T7	Concept 181 185	acid
+R3	subject Arg1:T4 Arg2:T5	
+R4	has-property Arg1:T7 Arg2:T6	
+R5	subject Arg1:T4 Arg2:T7	
+R6	subject Arg1:T1 Arg2:T4	
+T8	Concept 19 25	glycan
+T9	Concept 36 40	acid
+T10	Concept 30 35	fatty
+R7	has-property Arg1:T9 Arg2:T10	
+T11	Concept 58 68	interfaces
+T12	Concept 52 57	S1-S2
+R8	is-a Arg1:T12 Arg2:T11	
+T13	Concept 41 48	ligands
+R9	in-context Arg1:T13 Arg2:T8	
+R10	in-context Arg1:T13 Arg2:T9	
+R11	in-place Arg1:T13 Arg2:T12	
+T14	Action 80 84	role
+A2	Uncertain T14
+R12	entails Arg1:T13 Arg2:T14	
+R13	subject Arg1:T14 Arg2:T13	
+T15	Action 106 116	modulating
+T16	Concept 123 133	interfaces
+R14	target Arg1:T14 Arg2:T15	
+R15	target Arg1:T15 Arg2:T16	
+R16	in-context Arg1:T4 Arg2:T14	
+T17	Concept 292 302	rhinovirus
+T18	Concept 304 306	RV
+*	same-as T17 T18
+T19	Concept 316 317	C
+T20	Concept 308 315	species
+R17	is-a Arg1:T19 Arg2:T20	
+R18	in-context Arg1:T20 Arg2:T17	
+T21	Concept 345 353	pathogen
+T22	Concept 339 344	viral
+R19	has-property Arg1:T21 Arg2:T22	
+T23	Action 354 362	detected
+T24	Concept 366 374	children
+T25	Action 379 386	present
+T26	Concept 410 420	department
+T27	Concept 400 409	emergency
+T28	Concept 394 399	local
+R20	has-property Arg1:T26 Arg2:T27	
+R21	has-property Arg1:T26 Arg2:T28	
+T29	Concept 422 424	ED
+*	same-as T26 T29
+T31	Action 444 456	exacerbation
+T32	Concept 437 443	asthma
+R22	target Arg1:T31 Arg2:T32	
+T33	Concept 325 329	most
+R24	is-a Arg1:T19 Arg2:T21	
+R25	subject Arg1:T23 Arg2:T19	
+R26	has-property Arg1:T23 Arg2:T33	
+R27	in-place Arg1:T23 Arg2:T24	
+R28	subject Arg1:T25 Arg2:T24	
+R29	target Arg1:T25 Arg2:T26	
+R23	has-property Arg1:T24 Arg2:T31	
+T30	Concept 526 529	RSV
+T34	Action 530 541	accelerated
+T35	Concept 546 554	kinetics
+T36	Concept 558 565	amyloid
+T37	Concept 566 577	aggregation
+R30	has-property Arg1:T37 Arg2:T36	
+R31	target Arg1:T34 Arg2:T35	
+R32	in-context Arg1:T35 Arg2:T37	
+T38	Concept 589 602	amyloidogenic
+T39	Concept 603 610	peptide
+T40	Concept 583 588	model
+R33	has-property Arg1:T39 Arg2:T38	
+R34	has-property Arg1:T39 Arg2:T40	
+T41	Action 611 618	derived
+R35	subject Arg1:T41 Arg2:T39	
+T42	Concept 624 628	IAPP
+T43	Concept 630 637	NNFGAIL
+*	same-as T42 T43
+R36	target Arg1:T41 Arg2:T42	
+R37	subject Arg1:T34 Arg2:T30	
+T44	Action 648 660	accumulating
+T45	Concept 661 669	evidence
+T46	Action 677 686	existence
+T47	Concept 695 707	asymptomatic
+A3	Emphasized T47
+T48	Concept 711 725	presymptomatic
+A4	Emphasized T48
+T49	Concept 726 731	cases
+R38	in-context Arg1:T48 Arg2:T49	
+R39	in-context Arg1:T47 Arg2:T49	
+R40	target Arg1:T44 Arg2:T45	
+R41	in-context Arg1:T45 Arg2:T46	
+R42	target Arg1:T46 Arg2:T47	
+R43	target Arg1:T46 Arg2:T48	
+T50	Action 736 747	function(s)
+T51	Concept 755 763	proteins
+T52	Concept 764 771	encoded
+T53	Concept 780 782	U1
+T54	Concept 787 789	U2
+R44	has-property Arg1:T51 Arg2:T52	
+R45	in-context Arg1:T52 Arg2:T53	
+R46	in-context Arg1:T52 Arg2:T54	
+R47	target Arg1:T50 Arg2:T51	
+T55	Action 797 813	to be elucidated
+A5	Negated T55
+A6	Uncertain T55
+R48	target Arg1:T55 Arg2:T50	

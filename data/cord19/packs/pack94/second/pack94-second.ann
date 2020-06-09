@@ -1,0 +1,107 @@
+T1	Concept 31 39	COVID-19
+T2	Concept 40 48	patients
+T3	Concept 59 67	elevated
+T4	Concept 68 75	cardiac
+T5	Concept 76 82	marker
+T6	Concept 83 89	levels
+T7	Concept 5 9	half
+R1	in-context Arg1:T2 Arg2:T1	
+R2	has-property Arg1:T2 Arg2:T7	
+R3	has-property Arg1:T2 Arg2:T6	
+R4	has-property Arg1:T6 Arg2:T3	
+R5	in-context Arg1:T6 Arg2:T5	
+R6	in-context Arg1:T5 Arg2:T4	
+T8	Concept 109 118	diagnosis
+T9	Concept 119 124	value
+T10	Concept 128 135	Ab test
+T11	Concept 137 146	our study
+T12	Action 147 155	revealed
+T13	Concept 158 164	strong
+T14	Concept 165 173	positive
+T15	Concept 174 185	correlation
+T16	Concept 231 263	since 2-week after illness onset
+T17	Concept 203 211	severity
+T18	Concept 216 230	antibody titer
+T20	Concept 273 283	first time
+T22	Concept 287 295	COVID-19
+T23	Concept 296 304	patients
+R7	in-context Arg1:T9 Arg2:T8	
+R8	in-context Arg1:T9 Arg2:T10	
+R9	subject Arg1:T12 Arg2:T9	
+R10	subject Arg1:T12 Arg2:T11	
+R11	target Arg1:T12 Arg2:T15	
+R12	has-property Arg1:T15 Arg2:T14	
+R13	has-property Arg1:T15 Arg2:T13	
+R14	in-time Arg1:T15 Arg2:T16	
+R15	in-context Arg1:T15 Arg2:T18	
+T24	Concept 194 202	clinical
+R16	in-context Arg1:T17 Arg2:T24	
+R17	in-context Arg1:T15 Arg2:T17	
+R19	in-context Arg1:T17 Arg2:T23	
+R18	in-context Arg1:T18 Arg2:T23	
+R20	in-context Arg1:T23 Arg2:T22	
+R21	in-time Arg1:T17 Arg2:T20	
+R22	in-time Arg1:T18 Arg2:T20	
+T25	Concept 342 360	COVID-19-confirmed
+T26	Concept 361 369	patients
+T27	Concept 338 341	116
+T28	Concept 374 376	54
+T29	Concept 377 382	years
+R23	in-context Arg1:T26 Arg2:T25	
+R24	in-context Arg1:T27 Arg2:T26	
+R25	has-property Arg1:T26 Arg2:T28	
+R26	in-context Arg1:T28 Arg2:T29	
+T30	Concept 441 445	male
+R27	has-property Arg1:T26 Arg2:T30	
+T19	Concept 468 474	severe
+T21	Concept 475 486	respiratory
+T31	Concept 487 494	illness
+T32	Concept 505 517	non-invasive
+T33	Concept 521 531	mechanical
+T34	Concept 532 543	ventilation
+T35	Concept 454 463	our cases
+T37	Action 464 467	had
+R28	subject Arg1:T37 Arg2:T35	
+R29	target Arg1:T37 Arg2:T31	
+R30	in-context Arg1:T31 Arg2:T21	
+R31	has-property Arg1:T31 Arg2:T19	
+A1	Negated T37
+R34	has-property Arg1:T34 Arg2:T33	
+R35	has-property Arg1:T34 Arg2:T32	
+T38	Concept 614 623	suspected
+T39	Concept 624 628	case
+T40	Action 634 641	require
+A2	Negated T40
+T41	Concept 642 650	enhanced
+T42	Concept 651 655	care
+R36	target Arg1:T40 Arg2:T42	
+R37	subject Arg1:T40 Arg2:T39	
+R38	has-property Arg1:T39 Arg2:T38	
+R39	has-property Arg1:T42 Arg2:T41	
+R40	target Arg1:T37 Arg2:T34	
+R32	entails Arg1:T37 Arg2:T40	
+T36	Concept 708 710	UK
+R33	in-place Arg1:T40 Arg2:T36	
+T43	Concept 754 762	severity
+T44	Concept 766 774	COVID-19
+T45	Concept 775 782	disease
+R41	in-context Arg1:T45 Arg2:T44	
+R42	in-context Arg1:T43 Arg2:T45	
+T46	Action 786 796	associated
+R43	subject Arg1:T46 Arg2:T43	
+T47	Concept 812 815	age
+T48	Concept 802 811	increased
+R44	has-property Arg1:T47 Arg2:T48	
+R45	target Arg1:T46 Arg2:T47	
+T49	Concept 825 836	comorbidity
+R46	is-a Arg1:T46 Arg2:T49	
+T50	Concept 847 853	severe
+T51	Concept 854 861	disease
+T53	Concept 869 876	limited
+A3	Negated T53
+T52	Concept 891 897	groups
+T54	Concept 886 890	risk
+R47	has-property Arg1:T52 Arg2:T54	
+R48	has-property Arg1:T51 Arg2:T53	
+R49	in-context Arg1:T53 Arg2:T52	
+R50	has-property Arg1:T51 Arg2:T50	

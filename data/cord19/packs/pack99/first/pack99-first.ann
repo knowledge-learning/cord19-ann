@@ -1,0 +1,71 @@
+T1	Concept 4 16	off-diagonal
+T2	Concept 17 24	numbers
+R1	in-context Arg1:T2 Arg2:T1	
+T3	Concept 29 34	genes
+T4	Concept 45 57	differential
+T5	Concept 58 68	expression
+R2	has-property Arg1:T5 Arg2:T4	
+T6	Concept 72 75	two
+T7	Concept 76 83	viruses
+R3	in-context Arg1:T6 Arg2:T7	
+T8	Concept 100 104	mock
+T9	Action 88 96	compared
+R5	in-context Arg1:T9 Arg2:T8	
+T10	Concept 113 118	third
+T11	Concept 119 124	virus
+R6	has-property Arg1:T11 Arg2:T10	
+R7	in-context Arg1:T9 Arg2:T11	
+R4	target Arg1:T9 Arg2:T6	
+R8	in-place Arg1:T5 Arg2:T6	
+R9	has-property Arg1:T3 Arg2:T5	
+R10	is-a Arg1:T2 Arg2:T3	
+T12	Concept 194 206	availability
+T13	Concept 187 193	sample
+R11	in-context Arg1:T12 Arg2:T13	
+T14	Concept 226 232	factor
+T15	Concept 217 225	limiting
+A1	Negated T15
+R12	has-property Arg1:T14 Arg2:T15	
+R13	is-a Arg1:T12 Arg2:T14	
+T16	Concept 332 337	virus
+T17	Concept 325 331	killer
+R14	has-property Arg1:T16 Arg2:T17	
+T18	Concept 343 356	satellite RNA
+T19	Concept 360 363	L-A
+R15	in-context Arg1:T18 Arg2:T19	
+R16	is-a Arg1:T16 Arg2:T18	
+T20	Concept 379 388	dependent
+T21	Concept 396 399	L-A
+T22	Concept 400 408	proteins
+T23	Action 413 424	replication
+R17	is-a Arg1:T21 Arg2:T22	
+R18	has-property Arg1:T16 Arg2:T20	
+R19	in-context Arg1:T20 Arg2:T23	
+R20	subject Arg1:T23 Arg2:T16	
+R21	in-context Arg1:T20 Arg2:T22	
+T24	Action 494 505	destabilize
+T25	Concept 506 511	eIF4E
+T26	Action 512 519	binding
+R22	target Arg1:T26 Arg2:T25	
+R23	target Arg1:T24 Arg2:T26	
+T27	Concept 527 531	mRNA
+T28	Concept 532 535	cap
+R24	in-context Arg1:T28 Arg2:T27	
+R25	in-context Arg1:T24 Arg2:T28	
+T29	Concept 557 566	mechanism
+T31	Concept 588 599	sensitivity
+T32	Concept 604 614	efficiency
+T33	Concept 579 587	improved
+R26	has-property Arg1:T31 Arg2:T33	
+R27	has-property Arg1:T32 Arg2:T33	
+R28	in-context Arg1:T29 Arg2:T31	
+R29	in-context Arg1:T29 Arg2:T32	
+T30	Concept 758 764	tailed
+T34	Concept 765 772	primers
+R30	has-property Arg1:T34 Arg2:T30	
+T35	Action 773 781	suppress
+T36	Action 786 795	formation
+T37	Concept 799 812	PCR artifacts
+R31	subject Arg1:T36 Arg2:T37	
+R32	subject Arg1:T35 Arg2:T34	
+R33	target Arg1:T35 Arg2:T36	

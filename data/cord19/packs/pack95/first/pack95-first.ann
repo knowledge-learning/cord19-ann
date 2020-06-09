@@ -1,0 +1,78 @@
+T1	Concept 44 52	COVID-19
+T2	Concept 56 65	currently
+T3	Action 87 99	transmission
+T4	Concept 77 86	sustained
+R1	subject Arg1:T3 Arg2:T1	
+R2	has-property Arg1:T3 Arg2:T4	
+R3	in-time Arg1:T3 Arg2:T2	
+T5	Concept 103 108	China
+R4	in-place Arg1:T3 Arg2:T5	
+T6	Concept 137 143	severe
+T7	Concept 144 152	COVID-19
+T8	Concept 153 162	pneumonia
+T9	Concept 126 133	process
+T10	Concept 113 125	pathological
+R5	has-property Arg1:T9 Arg2:T10	
+R6	has-property Arg1:T8 Arg2:T6	
+R7	in-context Arg1:T8 Arg2:T7	
+T11	Action 170 182	inflammation
+T12	Action 209 220	destruction
+T13	Concept 229 235	airway
+T14	Concept 224 228	deep
+T15	Concept 240 248	alveolar
+R8	has-property Arg1:T13 Arg2:T14	
+R9	target Arg1:T12 Arg2:T13	
+R10	target Arg1:T12 Arg2:T15	
+R11	causes Arg1:T11 Arg2:T12	
+R12	is-a Arg1:T9 Arg2:T11	
+R13	in-context Arg1:T9 Arg2:T8	
+T16	Concept 249 257	COVID-19
+T17	Action 272 278	spread
+R14	subject Arg1:T17 Arg2:T16	
+T18	Concept 282 284	85
+T19	Concept 285 294	countries
+R15	in-context Arg1:T18 Arg2:T19	
+R16	target Arg1:T17 Arg2:T18	
+T20	Concept 262 271	currently
+R17	in-time Arg1:T17 Arg2:T20	
+T21	Reference 389 391	it
+T22	Concept 401 408	related
+T23	Concept 412 432	bystander activation
+T24	Action 433 440	induced
+T25	Concept 450 462	inflammation
+T26	Concept 444 449	hyper
+R18	has-property Arg1:T25 Arg2:T26	
+R19	subject Arg1:T24 Arg2:T25	
+R20	target Arg1:T24 Arg2:T23	
+A1	Uncertain T22
+R21	has-property Arg1:T21 Arg2:T22	
+R22	in-context Arg1:T22 Arg2:T24	
+T27	Concept 401 408	related
+A2	Uncertain T27
+R23	has-property Arg1:T21 Arg2:T27	
+T28	Action 477 485	response
+T29	Concept 469 476	delayed
+R24	has-property Arg1:T28 Arg2:T29	
+T30	Action 493 502	infection
+T31	Concept 513 521	COVID-19
+T32	Concept 506 512	severe
+R25	subject Arg1:T30 Arg2:T31	
+R26	in-context Arg1:T30 Arg2:T32	
+R27	target Arg1:T28 Arg2:T30	
+R28	in-context Arg1:T27 Arg2:T28	
+T33	Concept 526 541	epidemiological
+T34	Concept 542 548	curves
+R29	has-property Arg1:T34 Arg2:T33	
+T35	Concept 552 560	COVID-19
+T36	Concept 564 569	China
+R30	in-context Arg1:T34 Arg2:T35	
+R31	in-place Arg1:T34 Arg2:T36	
+T37	Action 570 576	showed
+T38	Action 581 592	progression
+R32	subject Arg1:T38 Arg2:T35	
+T39	Concept 611 619	outbreak
+T40	Concept 620 629	over time
+R33	has-property Arg1:T39 Arg2:T40	
+R34	target Arg1:T37 Arg2:T38	
+R35	in-context Arg1:T38 Arg2:T39	
+R36	subject Arg1:T37 Arg2:T34	

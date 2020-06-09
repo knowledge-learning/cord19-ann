@@ -1,0 +1,97 @@
+T1	Concept 22 39	incubation period
+T2	Concept 43 51	COVID-19
+T3	Concept 52 62	infections
+T4	Concept 17 21	mean
+T5	Concept 69 77	4.9 days
+R1	is-a Arg1:T2 Arg2:T3	
+R2	in-context Arg1:T1 Arg2:T2	
+T6	Action 3 12	estimated
+R3	target Arg1:T6 Arg2:T1	
+R4	has-property Arg1:T1 Arg2:T4	
+*	same-as T1 T5
+T8	Concept 138 142	data
+T9	Concept 132 137	valid
+R5	has-property Arg1:T8 Arg2:T9	
+T10	Concept 115 121	sample
+T11	Concept 111 114	big
+R7	has-property Arg1:T10 Arg2:T11	
+R8	in-context Arg1:T10 Arg2:T8	
+T12	Action 193 198	limit
+T13	Concept 199 213	COVID-19 cases
+R10	target Arg1:T12 Arg2:T13	
+T14	Concept 143 160	Social distancing
+T15	Concept 172 187	school closures
+R11	subject Arg1:T12 Arg2:T15	
+R12	subject Arg1:T12 Arg2:T14	
+T16	Concept 345 358	breakthroughs
+T17	Concept 341 344	new
+R13	has-property Arg1:T16 Arg2:T17	
+T18	Action 366 373	control
+T19	Concept 377 395	COVID-19 pneumonia
+R14	target Arg1:T18 Arg2:T19	
+R15	in-context Arg1:T16 Arg2:T18	
+T20	Action 214 224	Preventing
+T21	Action 240 248	blocking
+T22	Concept 280 286	action
+T23	Concept 267 279	inflammatory
+R16	has-property Arg1:T22 Arg2:T23	
+T24	Concept 225 236	recognition
+R17	target Arg1:T20 Arg2:T24	
+T25	Action 253 263	occurrence
+R18	target Arg1:T25 Arg2:T22	
+R19	target Arg1:T21 Arg2:T25	
+T26	Action 298 309	development
+T27	Concept 292 297	drugs
+T28	Concept 288 291	new
+R20	has-property Arg1:T27 Arg2:T28	
+R21	target Arg1:T26 Arg2:T27	
+T29	Concept 320 330	regulation
+T30	Concept 313 319	immune
+R22	has-property Arg1:T29 Arg2:T30	
+R23	in-context Arg1:T26 Arg2:T29	
+R24	is-a Arg1:T20 Arg2:T16	
+R25	is-a Arg1:T21 Arg2:T16	
+R26	is-a Arg1:T26 Arg2:T16	
+T31	Concept 396 403	RT-LAMP
+T32	Action 404 409	meets
+T33	Reference 410 415	these
+T34	Concept 416 428	requirements
+R27	is-a Arg1:T33 Arg2:T34	
+R28	subject Arg1:T32 Arg2:T31	
+R29	target Arg1:T32 Arg2:T33	
+T35	Action 443 446	has
+R30	entails Arg1:T32 Arg2:T35	
+R31	subject Arg1:T35 Arg2:T31	
+T36	Concept 453 458	value
+T37	Concept 447 452	large
+R32	has-property Arg1:T36 Arg2:T37	
+T38	Action 463 472	screening
+T39	Action 477 484	testing
+T40	Concept 489 497	COVID-19
+T41	Concept 521 532	populations
+T42	Concept 501 520	potentially exposed
+R33	has-property Arg1:T41 Arg2:T42	
+R34	target Arg1:T38 Arg2:T41	
+R35	target Arg1:T39 Arg2:T41	
+R36	in-context Arg1:T38 Arg2:T40	
+R37	in-context Arg1:T39 Arg2:T40	
+R38	in-context Arg1:T36 Arg2:T38	
+R39	in-context Arg1:T36 Arg2:T39	
+T43	Concept 621 626	China
+T44	Concept 630 648	late-December 2019
+T45	Action 609 617	occurred
+R40	in-place Arg1:T45 Arg2:T43	
+R41	in-time Arg1:T45 Arg2:T44	
+T47	Concept 588 608	SARS-CoV-2 infection
+T48	Concept 562 570;572 580	COVID-19 outbreak
+T49	Concept 541 560	coronavirus disease
+T50	Concept 535 540	novel
+R42	has-property Arg1:T49 Arg2:T50	
+T46	Concept 562 570	COVID-19
+R43	is-a Arg1:T46 Arg2:T49	
+R44	causes Arg1:T47 Arg2:T48	
+R45	subject Arg1:T45 Arg2:T47	
+T7	Action 89 99	calculated
+R6	in-context Arg1:T7 Arg2:T10	
+R9	entails Arg1:T7 Arg2:T6	
+R46	target Arg1:T35 Arg2:T36	

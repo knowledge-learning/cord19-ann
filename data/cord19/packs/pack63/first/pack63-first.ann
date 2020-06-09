@@ -19,3 +19,81 @@ R7	in-context Arg1:T7 Arg2:T8
 R8	in-context Arg1:T7 Arg2:T9	
 R9	target Arg1:T8 Arg2:T10	
 R10	target Arg1:T9 Arg2:T10	
+T11	Concept 189 197	sequence
+T13	Concept 206 213	protein
+T14	Concept 219 227	SARS-CoV
+T15	Concept 245 248	70%
+T16	Concept 267 268	S
+T12	Concept 201 202	S
+T17	Concept 269 276	protein
+T18	Concept 282 286	2019
+R11	is-a Arg1:T12 Arg2:T13	
+R12	is-a Arg1:T16 Arg2:T17	
+R13	has-part Arg1:T18 Arg2:T16	
+R14	has-part Arg1:T14 Arg2:T12	
+T19	Action 249 257	identity
+R15	has-property Arg1:T19 Arg2:T15	
+R16	in-context Arg1:T11 Arg2:T12	
+R17	subject Arg1:T19 Arg2:T11	
+R18	target Arg1:T19 Arg2:T16	
+T20	Concept 311 319	SARS-Cov
+T21	Concept 324 332	MERS-Cov
+T22	Concept 338 343	human
+T23	Concept 344 355	populations
+R19	has-property Arg1:T23 Arg2:T22	
+T24	Action 356 362	showed
+T25	Concept 363 374	disparities
+T26	Concept 378 392	susceptibility
+T27	Concept 402 409	viruses
+R20	is-a Arg1:T21 Arg2:T27	
+R21	is-a Arg1:T20 Arg2:T27	
+R22	subject Arg1:T24 Arg2:T23	
+R23	target Arg1:T24 Arg2:T26	
+R24	has-property Arg1:T26 Arg2:T25	
+R25	in-context Arg1:T24 Arg2:T21	
+R26	in-context Arg1:T24 Arg2:T20	
+T28	Concept 410 421	Gemcitabine
+T29	Concept 433 443	originally
+T30	Action 444 452	approved
+R27	has-property Arg1:T30 Arg2:T29	
+T31	Action 457 465	treating
+T32	Concept 466 473	certain
+T33	Concept 474 479	types
+T34	Concept 483 490	cancers
+R28	has-property Arg1:T33 Arg2:T32	
+R29	in-context Arg1:T33 Arg2:T34	
+R30	target Arg1:T31 Arg2:T33	
+R31	target Arg1:T30 Arg2:T31	
+R32	subject Arg1:T30 Arg2:T28	
+T35	Action 516 525	targeting
+A2	Uncertain T35
+T36	Concept 526 534	SARS-CoV
+R33	subject Arg1:T35 Arg2:T28	
+R34	target Arg1:T35 Arg2:T36	
+T37	Action 540 550	validation
+T38	Concept 554 562	previous
+T39	Concept 563 571	in vitro
+T40	Concept 572 579	studies
+R35	has-property Arg1:T40 Arg2:T39	
+R36	in-context Arg1:T35 Arg2:T37	
+R37	target Arg1:T37 Arg2:T38	
+R38	in-context Arg1:T38 Arg2:T40	
+T41	Concept 603 606	two
+T42	Concept 607 612	sites
+T43	Concept 627 632	short
+T44	Concept 633 638	helix
+T45	Action 613 619	belong
+R39	has-property Arg1:T42 Arg2:T41	
+R40	subject Arg1:T45 Arg2:T42	
+R41	target Arg1:T45 Arg2:T44	
+R42	has-property Arg1:T44 Arg2:T43	
+T46	Action 639 648	including
+R43	in-context Arg1:T46 Arg2:T45	
+T47	Reference 649 656	changes
+T48	Action 662 672	were found
+T49	Concept 676 681	human
+T50	Concept 682 690	SARS-CoV
+R44	in-place Arg1:T48 Arg2:T50	
+R45	in-context Arg1:T50 Arg2:T49	
+R46	subject Arg1:T48 Arg2:T47	
+R47	target Arg1:T46 Arg2:T47	

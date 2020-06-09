@@ -1,0 +1,119 @@
+T1	Reference 7 13	survey
+T2	Concept 38 43	81.1%
+T3	Concept 51 58	parents
+R1	in-context Arg1:T2 Arg2:T3	
+T4	Action 64 80	paying attention
+T5	Concept 88 96	COVID-19
+T6	Concept 97 105	epidemic
+R2	is-a Arg1:T5 Arg2:T6	
+T7	Concept 131 134	CKD
+T8	Concept 148 153	4.32%
+T9	Action 154 161	planned
+T10	Action 165 171	adjust
+T11	Concept 187 193	dosage
+T12	Concept 176 186	medication
+R3	in-context Arg1:T8 Arg2:T3	
+R4	subject Arg1:T4 Arg2:T2	
+R5	target Arg1:T4 Arg2:T5	
+R6	target Arg1:T4 Arg2:T7	
+R7	subject Arg1:T9 Arg2:T8	
+R8	target Arg1:T9 Arg2:T10	
+R9	has-property Arg1:T11 Arg2:T12	
+R10	target Arg1:T10 Arg2:T11	
+T13	Action 194 199	based
+T14	Concept 209 217	previous
+T15	Concept 218 225	medical
+T16	Concept 226 235	knowledge
+T17	Concept 240 250	experience
+R11	has-property Arg1:T16 Arg2:T15	
+R12	has-property Arg1:T16 Arg2:T14	
+R13	in-context Arg1:T10 Arg2:T13	
+R14	target Arg1:T13 Arg2:T16	
+R15	target Arg1:T13 Arg2:T17	
+R16	in-context Arg1:T4 Arg2:T1	
+R17	in-context Arg1:T9 Arg2:T1	
+T18	Action 289 297	severity
+T19	Concept 301 316	lymphocytopenia
+T20	Action 323 331	indicate
+A1	Uncertain T20
+T21	Action 336 344	severity
+T22	Concept 348 356	COVID-19
+R18	target Arg1:T18 Arg2:T19	
+R19	target Arg1:T20 Arg2:T21	
+R20	target Arg1:T21 Arg2:T22	
+R21	subject Arg1:T20 Arg2:T18	
+T23	Action 368 378	assumption
+T24	Concept 382 392	SARS-CoV-2
+T25	Action 405 411	attack
+T26	Action 416 423	destroy
+A3	Uncertain T26
+A2	Uncertain T25
+T27	Concept 439 449	targetedly
+T28	Concept 428 438	lymphocyte
+R22	in-context Arg1:T20 Arg2:T23	
+R23	target Arg1:T23 Arg2:T25	
+R24	target Arg1:T23 Arg2:T26	
+R25	subject Arg1:T25 Arg2:T24	
+R26	subject Arg1:T26 Arg2:T24	
+R27	has-property Arg1:T28 Arg2:T27	
+R28	target Arg1:T26 Arg2:T28	
+R29	target Arg1:T25 Arg2:T28	
+T29	Concept 479 485	44,672
+T30	Action 486 495	confirmed
+T31	Concept 505 510	cases
+T32	Concept 496 504	COVID-19
+T33	Concept 514 519	China
+R30	in-context Arg1:T29 Arg2:T31	
+R31	subject Arg1:T30 Arg2:T29	
+R32	target Arg1:T30 Arg2:T32	
+R33	in-place Arg1:T30 Arg2:T33	
+T34	Concept 526 530	2.1%
+T35	Concept 539 548	pediatric
+T36	Concept 549 557	patients
+R34	has-property Arg1:T36 Arg2:T35	
+T37	Concept 559 575	≤19 years of age
+R35	entails Arg1:T36 Arg2:T37	
+R36	in-context Arg1:T34 Arg2:T29	
+R37	is-a Arg1:T34 Arg2:T36	
+T38	Concept 592 598	levels
+T39	Concept 611 614	ALT
+T40	Concept 619 622	AST
+T41	Concept 602 610	elevated
+T42	Concept 688 696	COVID-19
+T43	Concept 706 711	liver
+T44	Action 698 705	related
+T45	Concept 712 718	injury
+R38	has-property Arg1:T45 Arg2:T43	
+T46	Concept 726 733	serious
+A4	Negated T46
+T47	Concept 741 748	initial
+T48	Concept 749 754	stage
+R39	has-property Arg1:T48 Arg2:T47	
+T49	Concept 758 767	infection
+R40	in-context Arg1:T49 Arg2:T42	
+R41	subject Arg1:T44 Arg2:T45	
+R42	target Arg1:T44 Arg2:T42	
+R43	has-property Arg1:T38 Arg2:T41	
+R44	in-context Arg1:T38 Arg2:T39	
+R45	in-context Arg1:T38 Arg2:T40	
+T50	Action 641 645	high
+A5	Uncertain T50
+R46	target Arg1:T50 Arg2:T38	
+A6	Negated T50
+R47	has-property Arg1:T45 Arg2:T46	
+R48	in-time Arg1:T46 Arg2:T47	
+R49	entails Arg1:T50 Arg2:T46	
+T51	Concept 840 855	lymphocytopenia
+T52	Concept 829 839	peripheral
+R50	has-property Arg1:T51 Arg2:T52	
+T53	Concept 868 875	crucial
+A7	Emphasized T53
+T54	Concept 887 894	feature
+T55	Concept 880 886	common
+T56	Concept 899 907	COVID-19
+T57	Concept 908 917	infection
+R51	in-context Arg1:T57 Arg2:T56	
+R52	has-property Arg1:T54 Arg2:T55	
+R53	has-property Arg1:T54 Arg2:T53	
+R54	is-a Arg1:T51 Arg2:T54	
+R55	in-context Arg1:T54 Arg2:T57	

@@ -1,0 +1,118 @@
+T1	Action 13 19	spread
+T2	Concept 23 31	COVID-19
+R1	subject Arg1:T1 Arg2:T2	
+T3	Concept 35 41	faster
+R2	has-property Arg1:T1 Arg2:T3	
+T4	Concept 47 51	SARS
+R3	in-context Arg1:T3 Arg2:T4	
+T5	Action 93 99	spread
+T6	Concept 100 108	dynamics
+T7	Concept 82 92	complicate
+R4	has-property Arg1:T5 Arg2:T6	
+R5	has-property Arg1:T6 Arg2:T7	
+R6	entails Arg1:T5 Arg2:T1	
+T8	Concept 109 117	COVID-19
+T9	Concept 132 147	more contagious
+R7	has-property Arg1:T8 Arg2:T9	
+T10	Concept 153 157	SARS
+R8	in-context Arg1:T9 Arg2:T10	
+T11	Concept 171 181	protection
+A1	Negated T11
+T12	Concept 183 189	people
+T13	Action 204 212	infected
+T14	Concept 197 203	easily
+T15	Concept 216 229	close contact
+R10	target Arg1:T13 Arg2:T12	
+R11	subject Arg1:T13 Arg2:T8	
+R9	has-property Arg1:T13 Arg2:T14	
+R12	in-context Arg1:T13 Arg2:T15	
+R13	in-context Arg1:T13 Arg2:T11	
+T16	Concept 256 258	24
+T17	Concept 265 273	COVID-19
+T18	Concept 274 282	patients
+R14	in-context Arg1:T18 Arg2:T17	
+R15	in-context Arg1:T16 Arg2:T18	
+T19	Concept 288 297	elevation
+T20	Concept 305 311	levels
+T21	Concept 327 345	myocardial enzymes
+T22	Concept 350 357	markers
+T23	Concept 361 378	myocardial damage
+R16	has-property Arg1:T16 Arg2:T19	
+R17	in-context Arg1:T19 Arg2:T20	
+R18	in-context Arg1:T20 Arg2:T21	
+R20	in-context Arg1:T22 Arg2:T23	
+T24	Concept 432 449	myocardial injury
+T25	Concept 418 428	definition
+T26	Concept 411 417	strict
+R21	has-property Arg1:T25 Arg2:T26	
+T27	Action 402 406	meet
+A3	Negated T27
+R22	in-context Arg1:T25 Arg2:T24	
+R23	subject Arg1:T27 Arg2:T22	
+R19	target Arg1:T27 Arg2:T25	
+R24	in-context Arg1:T20 Arg2:T27	
+T28	Concept 487 490;491 495	NCP type
+T29	Concept 480 486	common
+R25	has-property Arg1:T28 Arg2:T29	
+T30	Concept 456 460	most
+R26	in-context Arg1:T30 Arg2:T16	
+R27	has-property Arg1:T30 Arg2:T28	
+T31	Action 519 527	recovery
+T32	Concept 513 518	quick
+R28	subject Arg1:T31 Arg2:T30	
+R29	has-property Arg1:T31 Arg2:T32	
+T33	Concept 538 544	58.33%
+T34	Action 563 572	exhibited
+T35	Concept 573 587	LV dysfunction
+T36	Concept 591 595	echo
+R30	subject Arg1:T34 Arg2:T33	
+R31	target Arg1:T34 Arg2:T35	
+R32	in-context Arg1:T34 Arg2:T36	
+R33	in-context Arg1:T33 Arg2:T16	
+T37	Concept 696 704	COVID-19
+T38	Concept 705 713	patients
+R34	in-context Arg1:T38 Arg2:T37	
+T39	Concept 729 735	levels
+T40	Concept 719 728	very high
+R35	has-property Arg1:T39 Arg2:T40	
+T41	Concept 745 750	IL-10
+T42	Concept 739 744	serum
+R36	is-a Arg1:T41 Arg2:T42	
+R37	in-context Arg1:T39 Arg2:T41	
+R38	has-property Arg1:T38 Arg2:T39	
+T43	Concept 761 771	SARS-CoV-2
+T44	Action 772 781	infection
+T45	Concept 751 760	following
+R39	in-time Arg1:T38 Arg2:T45	
+R40	in-context Arg1:T45 Arg2:T44	
+R41	subject Arg1:T44 Arg2:T43	
+T46	Concept 810 816	levels
+T47	Concept 805 809	high
+R42	has-property Arg1:T46 Arg2:T47	
+T48	Concept 824 828	PD-1
+T49	Concept 833 838	Tim-3
+T50	Concept 839 857	exhaustion markers
+T51	Concept 867 874	T cells
+R43	in-place Arg1:T46 Arg2:T51	
+R44	is-a Arg1:T49 Arg2:T50	
+R45	is-a Arg1:T48 Arg2:T50	
+R46	in-context Arg1:T46 Arg2:T48	
+R47	in-context Arg1:T46 Arg2:T49	
+R48	has-property Arg1:T38 Arg2:T46	
+T52	Concept 1016 1021	China
+T53	Concept 1002 1005	130
+T54	Concept 1006 1012	cities
+R49	in-context Arg1:T53 Arg2:T54	
+R50	in-place Arg1:T54 Arg2:T52	
+T55	Concept 1027 1031	≥50%
+T56	Concept 1032 1038	chance
+R51	in-context Arg1:T55 Arg2:T56	
+T57	Concept 1051 1059	COVID-19
+T58	Concept 1060 1064	case
+T59	Concept 1065 1073	imported
+R52	in-context Arg1:T58 Arg2:T57	
+R53	has-property Arg1:T58 Arg2:T59	
+T60	Concept 1079 1084	Wuhan
+R54	in-place Arg1:T59 Arg2:T60	
+R55	has-property Arg1:T54 Arg2:T55	
+R56	in-context Arg1:T56 Arg2:T59	

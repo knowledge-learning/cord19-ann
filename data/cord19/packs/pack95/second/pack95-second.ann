@@ -1,0 +1,112 @@
+T1	Concept 44 52	COVID-19
+T2	Action 66 76	exhibiting
+T3	Concept 56 65	currently
+R1	in-time Arg1:T2 Arg2:T3	
+T4	Action 87 99	transmission
+T5	Concept 77 86	sustained
+R2	has-property Arg1:T4 Arg2:T5	
+T6	Concept 103 108	China
+R3	target Arg1:T2 Arg2:T4	
+R4	subject Arg1:T2 Arg2:T1	
+R5	in-place Arg1:T2 Arg2:T6	
+T7	Concept 113 125	pathological
+T8	Concept 126 133	process
+R6	has-property Arg1:T8 Arg2:T7	
+T9	Concept 137 143	severe
+T10	Concept 144 152	COVID-19
+T11	Concept 153 162	pneumonia
+R7	has-property Arg1:T11 Arg2:T9	
+R8	in-context Arg1:T11 Arg2:T10	
+T12	Concept 183 191	reaction
+T13	Concept 170 182	inflammation
+R10	has-property Arg1:T12 Arg2:T13	
+T14	Action 192 205	characterized
+T15	Action 209 220	destruction
+T16	Concept 224 228	deep
+T17	Concept 229 235	airway
+T18	Concept 240 248	alveolar
+R9	in-context Arg1:T8 Arg2:T11	
+T19	Action 163 165	is
+R11	subject Arg1:T19 Arg2:T8	
+R12	target Arg1:T19 Arg2:T12	
+R13	subject Arg1:T14 Arg2:T12	
+R14	target Arg1:T14 Arg2:T15	
+R15	has-property Arg1:T17 Arg2:T16	
+R16	target Arg1:T15 Arg2:T17	
+R17	target Arg1:T15 Arg2:T18	
+T20	Concept 249 257	COVID-19
+T21	Action 272 278	spread
+T22	Concept 262 271	currently
+R18	has-property Arg1:T21 Arg2:T22	
+T23	Concept 282 284	85
+T24	Concept 285 294	countries
+R19	subject Arg1:T21 Arg2:T20	
+R20	target Arg1:T21 Arg2:T23	
+R21	in-context Arg1:T23 Arg2:T24	
+T25	Concept 304 312	national
+T26	Concept 313 324	authorities
+A1	Emphasized T26
+R22	has-property Arg1:T26 Arg2:T25	
+T27	Action 340 344	keep
+R23	subject Arg1:T27 Arg2:T26	
+T28	Concept 350 355	rapid
+T29	Action 356 362	spread
+T30	Action 363 372	contained
+R24	has-property Arg1:T29 Arg2:T28	
+R25	target Arg1:T27 Arg2:T30	
+R26	target Arg1:T30 Arg2:T29	
+R27	target Arg1:T29 Arg2:T20	
+T31	Reference 389 391	it
+T32	Action 401 411	related to
+A2	Uncertain T32
+T33	Action 422 432	activation
+T34	Concept 412 421	bystander
+R28	subject Arg1:T32 Arg2:T31	
+R29	target Arg1:T32 Arg2:T33	
+R30	target Arg1:T33 Arg2:T34	
+T35	Action 433 440	induced
+R31	subject Arg1:T35 Arg2:T33	
+T36	Concept 444 449	hyper
+T37	Concept 450 462	inflammation
+R32	has-property Arg1:T37 Arg2:T36	
+R33	target Arg1:T35 Arg2:T37	
+T38	Action 477 485	response
+T39	Concept 469 476	delayed
+R34	has-property Arg1:T38 Arg2:T39	
+T40	Concept 493 502	infection
+T41	Concept 506 512	severe
+T42	Concept 513 521	COVID-19
+R35	has-property Arg1:T42 Arg2:T41	
+R36	in-context Arg1:T40 Arg2:T42	
+R37	target Arg1:T38 Arg2:T40	
+R38	target Arg1:T32 Arg2:T38	
+T43	Concept 526 540	epidemiologica
+T44	Concept 542 548	curves
+R39	has-property Arg1:T44 Arg2:T43	
+T45	Concept 552 560	COVID-19
+T46	Concept 564 569	China
+T47	Action 570 576	showed
+T48	Action 581 592	progression
+R40	target Arg1:T47 Arg2:T48	
+T50	Concept 620 629	over time
+R41	target Arg1:T48 Arg2:T45	
+R42	in-time Arg1:T48 Arg2:T50	
+T49	Action 630 634	from
+T51	Concept 635 651	December 8, 2019
+T52	Action 655 657	to
+T53	Concept 658 675	February 11, 2020
+R43	target Arg1:T49 Arg2:T51	
+R44	target Arg1:T52 Arg2:T53	
+R45	has-property Arg1:T50 Arg2:T49	
+R46	has-property Arg1:T50 Arg2:T52	
+R47	in-context Arg1:T44 Arg2:T45	
+R48	subject Arg1:T47 Arg2:T44	
+R49	in-place Arg1:T44 Arg2:T46	
+T54	Action 685 695	there were
+R50	subject Arg1:T54 Arg2:T53	
+T55	Concept 707 712	72314
+T56	Concept 713 722	confirmed
+T57	Concept 723 728	cases
+R51	has-property Arg1:T57 Arg2:T56	
+R52	in-context Arg1:T55 Arg2:T57	
+R53	target Arg1:T54 Arg2:T55	

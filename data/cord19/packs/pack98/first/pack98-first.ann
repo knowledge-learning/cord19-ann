@@ -1,0 +1,87 @@
+T1	Concept 10 20	C-terminal
+T2	Concept 31 33	XP
+T3	Concept 21 27	domain
+R1	has-property Arg1:T3 Arg2:T1	
+R2	in-context Arg1:T3 Arg2:T2	
+T4	Concept 49 74	membrane permeabilization
+T5	Concept 106 115	viroporin
+T6	Concept 88 91	key
+T7	Concept 92 100	features
+R3	has-property Arg1:T7 Arg2:T6	
+T8	Concept 79 87	harbours
+R4	has-property Arg1:T7 Arg2:T8	
+R5	in-context Arg1:T7 Arg2:T5	
+T9	Concept 37 45	involved
+R6	has-property Arg1:T3 Arg2:T9	
+R7	in-context Arg1:T9 Arg2:T4	
+R8	in-context Arg1:T9 Arg2:T7	
+T10	Concept 129 139	N-terminal
+T11	Concept 140 147	regions
+R9	has-property Arg1:T11 Arg2:T10	
+T12	Concept 151 152	S
+T13	Concept 153 161	proteins
+R10	is-a Arg1:T12 Arg2:T13	
+R11	in-context Arg1:T11 Arg2:T12	
+T15	Concept 181 192	differences
+R12	in-place Arg1:T15 Arg2:T11	
+T14	Concept 250 256	EVC3.1
+T16	Concept 261 267	EVC3.2
+T17	Concept 240 248	paralogs
+R13	is-a Arg1:T14 Arg2:T17	
+R14	is-a Arg1:T16 Arg2:T17	
+T18	Concept 281 297	choanoflagellate
+R15	in-context Arg1:T14 Arg2:T18	
+R16	in-context Arg1:T16 Arg2:T18	
+T19	Concept 299 310	sea anenome
+T20	Concept 315 334	sea urchin ciliomes
+R17	in-context Arg1:T16 Arg2:T19	
+R18	in-context Arg1:T16 Arg2:T20	
+R19	in-context Arg1:T14 Arg2:T19	
+R20	in-context Arg1:T14 Arg2:T20	
+T21	Concept 208 211	EVC
+T22	Concept 216 220	EVC2
+R21	is-a Arg1:T22 Arg2:T17	
+R22	is-a Arg1:T21 Arg2:T17	
+T23	Concept 353 362	influenza
+T24	Concept 363 367	data
+R23	in-context Arg1:T24 Arg2:T23	
+T25	Action 392 400	affected
+R24	target Arg1:T25 Arg2:T24	
+T26	Concept 408 415	smaller
+T28	Concept 416 425;426 433	look-back windows
+R26	has-property Arg1:T28 Arg2:T26	
+R25	subject Arg1:T25 Arg2:T28	
+T27	Concept 434 437	SMM
+T29	Concept 438 447	algorithm
+R28	is-a Arg1:T27 Arg2:T29	
+T31	Action 466 477	transporter
+T30	Action 457 464	binding
+T32	Concept 451 456	MHC-1
+R27	target Arg1:T30 Arg2:T32	
+T33	Concept 481 499	antigenic peptides
+R30	target Arg1:T31 Arg2:T33	
+T34	Concept 501 504	TAP
+*	same-as T31 T34
+T35	Concept 516 526	efficiency
+T36	Concept 552 562	efficiency
+T37	Action 506 515	transport
+R32	in-context Arg1:T35 Arg2:T37	
+T38	Concept 531 551	proteasomal cleavage
+R33	in-context Arg1:T36 Arg2:T38	
+T39	Action 586 595	determine
+R29	in-context Arg1:T29 Arg2:T30	
+R31	subject Arg1:T39 Arg2:T27	
+R34	in-context Arg1:T37 Arg2:T31	
+R35	in-context Arg1:T38 Arg2:T31	
+R36	subject Arg1:T39 Arg2:T36	
+R37	subject Arg1:T39 Arg2:T35	
+T40	Concept 600 602;606 612	IC values
+T41	Action 617 627	processing
+T42	Action 628 638	prediction
+R38	target Arg1:T39 Arg2:T40	
+R39	in-context Arg1:T40 Arg2:T41	
+R40	target Arg1:T41 Arg2:T42	
+T43	Concept 642 650	epitopes
+R41	in-context Arg1:T42 Arg2:T43	
+T44	Concept 654 669	MHC-I molecules
+R42	subject Arg1:T42 Arg2:T44	
