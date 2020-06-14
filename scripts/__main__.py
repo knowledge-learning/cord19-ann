@@ -21,10 +21,10 @@ def extract_corpus_entities():
 
     for sentence in corpus.sentences:
         for keyphrase in sentence.keyphrases:
-            entities.add(keyphrase.text)
+            entities.add((keyphrase.text, keyphrase.label))
 
     for e in sorted(entities):
-        print(e)
+        print("\t".join(e))
 
 
 def extract_corpus_relations():
