@@ -34,7 +34,7 @@ from .data import (
 )
 
 
-logger = logging.getLogger("classifier")
+logger = logging.getLogger("cord19.classifier")
 
 
 class Model:
@@ -119,7 +119,7 @@ class Model:
         """
         collection = self.entity_classifier.predict_entities(sentences)
 
-        for sentence in collection:
+        for sentence in tqdm.tqdm(collection):
             sentence.keyphrases = [
                 k
                 for k in sentence.keyphrases
@@ -356,7 +356,7 @@ class ClassifierEntity:
     def predict_relations(self, collection: Collection):
         nlp = spacy_model("es")
 
-        for sentence in collection.sentences:
+        for sentence in collection:
             doc = nlp(sentence.text)
             self.predict_relation_single(doc, sentence)
 
@@ -428,7 +428,7 @@ class ClassifierEntity:
 
         nlp = spacy_model("es")
 
-        for i, sentence in enumerate(tqdm.tqdm(collection.sentences)):
+        for i, sentence in enumerate(tqdm.tqdm(collection)):
             doc = nlp(sentence.text)
 
             for relation in sentence.relations:
@@ -461,7 +461,7 @@ class ClassifierEntity:
                 self.callback(
                     msg="Processing sentence",
                     current=i,
-                    total=len(collection.sentences),
+                    total=len(collection),
                 )
 
         logger.info(f"Training in {len(X_training)} relation pairs")

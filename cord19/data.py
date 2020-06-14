@@ -7,7 +7,7 @@ import random
 import yaml
 import logging
 
-logger = logging.getLogger("autobrat.data")
+logger = logging.getLogger("cord19.data")
 
 from functools import lru_cache
 from pathlib import Path
@@ -42,13 +42,13 @@ def load_training_entities(collection: Collection):
     nlp = spacy_model('es')
     # collection = load_training_data(corpus)
 
-    entity_types = set(keyphrase.label for sentence in collection.sentences for keyphrase in sentence.keyphrases)
-    sentences = [nlp(s.text) for s in collection.sentences]
+    entity_types = set(keyphrase.label for sentence in collection for keyphrase in sentence.keyphrases)
+    sentences = [nlp(s.text) for s in collection]
 
     mapping = [['O'] * len(s) for s in sentences]
 
     for entity_type in sorted(entity_types):
-        entities = [[p.spans for p in s.keyphrases if p.label == entity_type] for s in collection.sentences]
+        entities = [[p.spans for p in s.keyphrases if p.label == entity_type] for s in collection]
         bilouv = to_biluov(sentences, entities)
 
         for accum, tags in zip(mapping, bilouv):
@@ -66,7 +66,7 @@ def load_training_relations(collection: Collection, negative_sampling=1.0):
     word_pairs = []
     relations = []
 
-    for sentence in collection.sentences:
+    for sentence in collection:
         tokens = nlp(sentence.text)
         for relation in sentence.relations:
             k1 = relation.from_phrase
