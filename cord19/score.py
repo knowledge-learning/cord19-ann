@@ -394,8 +394,8 @@ def compute_metrics(data, skipA=False, skipB=False, skipC=True):
 
 
 def full_evaluation(gold, predicted):
-    taskA = subtaskA(gold, predicted)
-    taskB = subtaskB(gold, predicted, taskA)
+    taskA = match_keyphrases(gold, predicted)
+    taskB = match_relations(gold, predicted, taskA, propagate_error=False)
 
     metricsA = { "entity_%s" % k:v for k,v in compute_metrics(taskA, skipB=True).items() }
     metricsB = { "relation_%s" % k:v for k,v in compute_metrics(taskB, skipA=True).items() }

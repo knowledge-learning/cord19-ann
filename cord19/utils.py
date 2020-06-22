@@ -174,10 +174,10 @@ class Sentence:
         self.keyphrases: List[Keyphrase] = []
         self.relations: List[Relation] = []
 
-    def clone(self, shallow=False) -> "Sentence":
+    def clone(self, shallow=False, keep_labels=None) -> "Sentence":
         s = Sentence(self.text)
-        s.keyphrases = [k if shallow else k.clone(s) for k in self.keyphrases]
-        s.relations = [r if shallow else r.clone(s) for r in self.relations]
+        s.keyphrases = [k if shallow else k.clone(s) for k in self.keyphrases if keep_labels is None or k.label in keep_labels]
+        s.relations = [r if shallow else r.clone(s) for r in self.relations if keep_labels is None or r.label in keep_labels]
         return s
 
     def fix_ids(self, start=1):
@@ -334,9 +334,9 @@ class Collection:
     def __init__(self, sentences=None):
         self.sentences: List[Sentence] = sentences or []
 
-    def clone(self, skip_empty=False) -> "Collection":
+    def clone(self, skip_empty=False, keep_labels=None) -> "Collection":
         return Collection(
-            [s.clone() for s in self.sentences if not skip_empty or s.annotated]
+            [s.clone(keep_labels=keep_labels) for s in self.sentences if not skip_empty or s.annotated]
         )
 
     def merge(self, *collections: "Collection", skip_empty=False):

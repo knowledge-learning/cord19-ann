@@ -61,7 +61,7 @@ class Model:
         self.max_relation_uncertainty = max_relation_uncertainty
 
     def train(self):
-        self.train_similarity()
+        # self.train_similarity()
         self.train_entities()
         self.train_relations()
 
