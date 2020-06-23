@@ -366,35 +366,46 @@ def predicted_stats(max_files=None, corpus="output"):
 
 
 def make_graph():
-
     edges = []
 
     with open("data/output/graph.txt") as fp:
         for line in fp:
             src, dst, label, weight = [s.strip() for s in line.split("|")]
-            edges.append(dict(src=src, dst=dst, label=label, custom=label not in ['has-property', 'is-a', 'causes', 'entails']))
+            edges.append(dict(src=src, dst=dst, label=label, custom=label not in ['has-property', 'is-a', 'causes', 'entails', 'has-part', 'in-place']))
 
     labels = set(e['label'] for e in edges)
 
-    for l in ['has-property', 'is-a', 'causes', 'entails']:
-        graph = pydot.Dot()
-        for e in edges:
-            if e['label'] != l:
-                continue
+    # for l in ['has-property', 'is-a', 'causes', 'entails', 'has-part', 'in-place']:
+    #     graph = pydot.Dot()
+    #     for e in edges:
+    #         if e['label'] != l:
+    #             continue
 
-            graph.add_edge(pydot.Edge(**e))
+    #         graph.add_edge(pydot.Edge(**e))
 
-        graph.write_svg("data/output/graph_%s.svg" % l, prog='fdp')
+    #     graph.write_svg("data/output/graph_%s.svg" % l, prog='dot')
 
-    graph = pydot.Dot()
+    # graph = pydot.Dot()
+    # for e in edges:
+    #     if not e['custom']:
+    #         continue
+
+    #     graph.add_edge(pydot.Edge(**e))
+
+    # graph.write_svg("data/output/graph_custom.svg", prog='dot')
+
+    graph = pydot.Dot(strict=True)
+
+    for l in labels:
+        graph.add_node(pydot.Node(l, shape='rectangle'))
+
+    graph.add_node(pydot.Node("COVID-19", shape='circle'))
+
     for e in edges:
-        if not e['custom']:
-            continue
+        graph.add_edge(pydot.Edge(e['src'], e['label']))
+        graph.add_edge(pydot.Edge(e['label'], e['dst']))
 
-        graph.add_edge(pydot.Edge(**e))
-
-    graph.write_svg("data/output/graph_custom.svg" % l, prog='fdp')
-
+    graph.write_svg("data/output/graph_full.svg", prog='fdp')
 
 
 if __name__ == "__main__":
