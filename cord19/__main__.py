@@ -7,6 +7,7 @@ import pandas as pd
 import altair as alt
 import tqdm
 import networkx as nx
+import pydot
 
 from pathlib import Path
 
@@ -49,8 +50,8 @@ def train_test(
                 print(m)
 
 
-def extract_corpus_entities():
-    corpus = load_training_data("cord19")
+def extract_corpus_entities(corpus='cord19'):
+    corpus = load_training_data(corpus)
 
     entities = set()
 
@@ -62,8 +63,8 @@ def extract_corpus_entities():
         print("\t".join(e))
 
 
-def extract_corpus_relations():
-    corpus = load_training_data("cord19")
+def extract_corpus_relations(corpus='cord19'):
+    corpus = load_training_data(corpus)
 
     relations = set()
 
@@ -260,8 +261,8 @@ def execute_model(negative_sampling: float = 0.25, batch_size: int = 100):
             batch = []
 
 
-def predicted_stats(max_files=None):
-    corpus = load_training_data("output", max_files)
+def predicted_stats(max_files=None, corpus="output"):
+    corpus = load_training_data(corpus, max_files)
 
     counter_entities = collections.Counter()
     counter_relations = collections.Counter()
@@ -291,7 +292,7 @@ def predicted_stats(max_files=None):
 
         return False
 
-    graph = nx.DiGraph()
+    actions = []
 
     for s in corpus:
         counter_labels["Sentence"] += 1
@@ -305,6 +306,20 @@ def predicted_stats(max_files=None):
 
             if k.label == "Concept":
                 counter_entities[k.text] += 1
+
+            if k.label == "Action":
+                relations = s.find_relations(orig=k.id)
+                subject = None
+                target = None
+
+                for r in relations:
+                    if r.label == 'subject':
+                        subject = r.to_phrase.text
+                    if r.label == 'target':
+                        target = r.to_phrase.text
+
+                if subject and target:
+                    actions.append(dict(Subject=subject, Action=k.text, Target=target))
 
         for r in s.relations:
             if blacklist(r.from_phrase.text) or blacklist(r.to_phrase.text):
@@ -339,6 +354,47 @@ def predicted_stats(max_files=None):
 
     best = pd.concat([best_is_a, best_has_p])
     print(best.set_index('Relation').to_latex())
+
+    # covid = df[(df['Source'] == 'COVID-19') | (df['Destination'] == 'COVID-19')]
+    # print(covid.to_markdown())
+
+    # actions = pd.DataFrame(actions)
+    # actions['Count'] = 1
+    # actions = actions.groupby(['Subject', 'Action', 'Target']).sum().sort_values('Count', ascending=False).reset_index()
+    # actions = actions[(actions['Subject'] == 'COVID-19') | (actions['Target'] == 'COVID-19')]
+    # print(actions.to_markdown())
+
+
+def make_graph():
+
+    edges = []
+
+    with open("data/output/graph.txt") as fp:
+        for line in fp:
+            src, dst, label, weight = [s.strip() for s in line.split("|")]
+            edges.append(dict(src=src, dst=dst, label=label, custom=label not in ['has-property', 'is-a', 'causes', 'entails']))
+
+    labels = set(e['label'] for e in edges)
+
+    for l in ['has-property', 'is-a', 'causes', 'entails']:
+        graph = pydot.Dot()
+        for e in edges:
+            if e['label'] != l:
+                continue
+
+            graph.add_edge(pydot.Edge(**e))
+
+        graph.write_svg("data/output/graph_%s.svg" % l, prog='fdp')
+
+    graph = pydot.Dot()
+    for e in edges:
+        if not e['custom']:
+            continue
+
+        graph.add_edge(pydot.Edge(**e))
+
+    graph.write_svg("data/output/graph_custom.svg" % l, prog='fdp')
+
 
 
 if __name__ == "__main__":

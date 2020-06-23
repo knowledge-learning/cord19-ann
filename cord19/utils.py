@@ -134,7 +134,7 @@ class Relation:
 
     def as_ann(self, shift):
         self.id = shift
-        
+
         if self.label == "same-as":
             return "*\tsame-as T{0} T{1}\n".format(self.origin, self.destination)
         else:
@@ -274,11 +274,14 @@ class Sentence:
             spans = [(start, end)]
         return self._find_keyphrase_by_spans(spans)
 
-    def find_relations(self, orig, dest) -> List[Relation]:
+    def find_relations(self, orig=None, dest=None) -> List[Relation]:
         results = []
 
+        if orig is None and dest is None:
+            raise ValueError("Either orig or dest must be not None")
+
         for r in self.relations:
-            if r.origin == orig and r.destination == dest:
+            if (orig is None or r.origin == orig) and (dest is None or r.destination == dest):
                 results.append(r)
 
         return results
