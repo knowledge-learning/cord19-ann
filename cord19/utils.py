@@ -133,6 +133,8 @@ class Relation:
         )
 
     def as_ann(self, shift):
+        self.id = shift
+        
         if self.label == "same-as":
             return "*\tsame-as T{0} T{1}\n".format(self.origin, self.destination)
         else:

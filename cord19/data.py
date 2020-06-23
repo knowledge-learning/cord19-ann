@@ -6,6 +6,7 @@ import spacy
 import random
 import yaml
 import logging
+import tqdm
 
 logger = logging.getLogger("cord19.data")
 
@@ -27,12 +28,17 @@ def spacy_model(language):
     return MODELS[language]
 
 
-def load_training_data(corpus) -> Collection:
+def load_training_data(corpus, max_files=None) -> Collection:
     packs = Path("data") / corpus / "packs/submitted/"
 
     collection = Collection()
 
-    for filename in packs.rglob("*.txt"):
+    files = list(packs.rglob("*.txt"))
+
+    if max_files is not None:
+        files = files[:max_files]
+    
+    for filename in tqdm.tqdm(files):
         collection.load(filename)
 
     return collection

@@ -1,0 +1,1546 @@
+T1	Concept 19 27	positive
+T2	Concept 28 35	control
+T3	Concept 36 39	DAA
+T4	Concept 40 44	drug
+T5	Concept 45 56	Oseltamivir
+T6	Concept 96 107	needlepoint
+T7	Concept 108 112	size
+T8	Concept 81 87;88 92	plaque size
+T9	Action 70 76	reduce
+R0	causes Arg1:T1 Arg2:T9
+R1	has-property Arg1:T2 Arg2:T1
+R2	has-property Arg1:T2 Arg2:T6
+*	same-as T3 T5
+R3	causes Arg1:T3 Arg2:T9
+R4	has-property Arg1:T4 Arg2:T1
+R5	causes Arg1:T4 Arg2:T9
+R6	causes Arg1:T5 Arg2:T9
+R7	has-property Arg1:T6 Arg2:T7
+R8	causes Arg1:T6 Arg2:T9
+R9	has-property Arg1:T7 Arg2:T6
+R10	causes Arg1:T7 Arg2:T9
+R11	causes Arg1:T8 Arg2:T9
+R12	target Arg1:T9 Arg2:T2
+R13	subject Arg1:T9 Arg2:T3
+R14	target Arg1:T9 Arg2:T4
+T10	Concept 120 125	drugs
+T11	Concept 126 132	target
+T12	Concept 147 154	protein
+T13	Concept 190 201	proteasomal
+T14	Concept 202 213	degradation
+T15	Concept 269 279	proteasome
+T16	Concept 280 290	inhibitors
+T17	Concept 291 296	MG132
+T18	Concept 252 255;256 259	242 PKR
+R15	in-context Arg1:T16 Arg2:T13
+R16	in-context Arg1:T16 Arg2:T18
+R17	in-context Arg1:T18 Arg2:T13
+T19	Concept 356 364	epidemic
+T20	Concept 381 382	9
+T21	Concept 383 386	Feb
+T22	Concept 410 414	mean
+T23	Concept 415 416	p
+T24	Concept 424 427	0.5
+T25	Concept 457 469	distribution
+T26	Concept 477 481	mean
+T27	Concept 482 483	p
+T28	Concept 491 495	0.75
+T29	Concept 517 529	distribution
+R18	has-property Arg1:T25 Arg2:T24
+R19	has-property Arg1:T29 Arg2:T26
+R20	has-property Arg1:T29 Arg2:T28
+T30	Concept 575 586	ineffective
+T31	Concept 587 595	measures
+T32	Concept 606 615	provinces
+R21	is-a Arg1:T30 Arg2:T31
+R22	has-property Arg1:T31 Arg2:T30
+R23	has-property Arg1:T31 Arg2:T32
+R24	is-a Arg1:T32 Arg2:T31
+T33	Concept 629 637;638 647	clinical knowledge
+T34	Concept 660 667;668 675	disease accrues
+T35	Action 711 718	improve
+R25	is-a Arg1:T33 Arg2:T34
+R26	has-property Arg1:T34 Arg2:T33
+R27	target Arg1:T35 Arg2:T33
+T36	Concept 720 722	CC
+T37	Concept 722 723	-
+T38	Concept 723 725	BY
+T39	Concept 725 726	-
+T40	Concept 726 728	NC
+T41	Concept 728 729	-
+T42	Concept 729 731	ND
+T43	Concept 732 735	4.0
+T44	Concept 736 749	International
+T45	Concept 750 757	license
+T46	Concept 817 824	granted
+T47	Concept 825 832	medRxiv
+R28	has-property Arg1:T36 Arg2:T44
+R29	has-property Arg1:T42 Arg2:T44
+T48	Concept 910 914	used
+T49	Concept 915 918	RNA
+T50	Concept 919 922	147
+T51	Concept 923 935	fluorescence
+T52	Concept 939 943	situ
+T53	Concept 944 957	hybridization
+T54	Concept 959 963	FISH
+T55	Concept 1000 1004	IL-6
+T56	Concept 1005 1008	SRE
+T57	Concept 1009 1012	148
+T58	Concept 1013 1021	impacted
+T59	Concept 1046 1056	associated
+T60	Concept 1057 1061	mRNA
+R30	in-context Arg1:T48 Arg2:T49
+R31	in-context Arg1:T48 Arg2:T50
+R32	in-context Arg1:T48 Arg2:T51
+R33	in-context Arg1:T48 Arg2:T52
+R34	in-context Arg1:T48 Arg2:T53
+R35	in-context Arg1:T48 Arg2:T54
+R36	in-context Arg1:T48 Arg2:T55
+R37	in-context Arg1:T48 Arg2:T56
+R38	in-context Arg1:T48 Arg2:T57
+R39	in-context Arg1:T48 Arg2:T58
+R40	has-property Arg1:T48 Arg2:T59
+R41	in-context Arg1:T48 Arg2:T60
+R42	has-property Arg1:T49 Arg2:T48
+R43	in-context Arg1:T49 Arg2:T50
+R44	in-context Arg1:T49 Arg2:T51
+R45	in-context Arg1:T49 Arg2:T53
+R46	in-context Arg1:T49 Arg2:T54
+R47	in-context Arg1:T49 Arg2:T55
+R48	in-context Arg1:T49 Arg2:T56
+R49	in-context Arg1:T49 Arg2:T58
+R50	has-property Arg1:T49 Arg2:T59
+R51	in-context Arg1:T50 Arg2:T49
+R52	has-property Arg1:T51 Arg2:T48
+R53	in-context Arg1:T51 Arg2:T49
+*	same-as T51 T54
+R54	in-context Arg1:T52 Arg2:T49
+R55	in-context Arg1:T53 Arg2:T49
+R56	in-context Arg1:T53 Arg2:T50
+R57	in-context Arg1:T55 Arg2:T49
+*	same-as T55 T54
+R58	is-a Arg1:T55 Arg2:T59
+*	same-as T56 T54
+R59	in-context Arg1:T57 Arg2:T49
+R60	in-context Arg1:T57 Arg2:T50
+R61	in-context Arg1:T57 Arg2:T55
+R62	has-property Arg1:T58 Arg2:T48
+R63	in-context Arg1:T58 Arg2:T49
+R64	in-context Arg1:T58 Arg2:T50
+R65	in-context Arg1:T58 Arg2:T51
+R66	in-context Arg1:T58 Arg2:T54
+R67	in-context Arg1:T58 Arg2:T55
+R68	has-property Arg1:T58 Arg2:T57
+R69	has-property Arg1:T58 Arg2:T59
+R70	in-context Arg1:T59 Arg2:T49
+R71	in-context Arg1:T59 Arg2:T50
+R72	in-context Arg1:T59 Arg2:T51
+R73	in-context Arg1:T59 Arg2:T53
+R74	in-context Arg1:T59 Arg2:T54
+R75	in-context Arg1:T59 Arg2:T55
+R76	in-context Arg1:T59 Arg2:T56
+R77	in-context Arg1:T59 Arg2:T58
+R78	in-context Arg1:T60 Arg2:T49
+R79	in-context Arg1:T60 Arg2:T50
+R80	in-context Arg1:T60 Arg2:T55
+R81	has-property Arg1:T60 Arg2:T59
+T61	Concept 1086 1090	SARS
+T62	Concept 1090 1091	-
+T63	Concept 1091 1096	CoV-2
+T64	Concept 1174 1180	humans
+T65	Concept 1203 1207	wild
+T66	Concept 1208 1215	animals
+T67	Concept 1216 1225	illegally
+T68	Concept 1226 1230	sold
+T69	Concept 1234 1240;1241 1248;1249 1258;1259 1265;1266 1267;1267 1268;1268 1269	Huanan Seafood Wholesale Market [ 7 ]
+T70	Action 1159 1170	transmitted
+T71	Action 1193 1199	spread
+R82	has-property Arg1:T61 Arg2:T65
+R83	has-property Arg1:T64 Arg2:T65
+R84	has-property Arg1:T66 Arg2:T65
+R85	has-property Arg1:T67 Arg2:T65
+R86	has-property Arg1:T67 Arg2:T68
+R87	in-place Arg1:T67 Arg2:T69
+R88	has-property Arg1:T68 Arg2:T65
+R89	subject Arg1:T70 Arg2:T61
+R90	subject Arg1:T70 Arg2:T62
+R91	subject Arg1:T70 Arg2:T63
+R92	in-context Arg1:T70 Arg2:T65
+R93	in-context Arg1:T70 Arg2:T66
+R94	in-context Arg1:T70 Arg2:T67
+R95	in-context Arg1:T70 Arg2:T68
+R96	in-place Arg1:T70 Arg2:T69
+R97	target Arg1:T70 Arg2:T71
+R98	subject Arg1:T71 Arg2:T61
+R99	subject Arg1:T71 Arg2:T63
+R100	has-property Arg1:T71 Arg2:T65
+R101	has-property Arg1:T71 Arg2:T67
+R102	in-place Arg1:T71 Arg2:T69
+T72	Concept 1285 1294	reflected
+T73	Concept 1329 1337	activity
+T74	Concept 1357 1364;1365 1375;1376 1381;1382 1388;1389 1392	Renilla Luciferase Assay System kit
+T75	Action 1338 1346	detected
+R103	target Arg1:T75 Arg2:T74
+T76	Concept 1491 1503	undocumented
+T77	Concept 1504 1509	cases
+T78	Concept 1520 1530	infections
+T79	Concept 1564 1568	66.4
+T80	Concept 1568 1569	%
+T81	Concept 1584 1589	China
+T82	Concept 1594 1598	64.0
+T83	Concept 1598 1599	%
+T84	Concept 1603 1608	Wuhan
+T85	Concept 1538 1545;1546 1548;1548 1549;1549 1551	January 10 - 23
+T86	Action 1473 1485	transmission
+T87	Action 1556 1563	reduced
+R104	in-time Arg1:T77 Arg2:T85
+R105	in-time Arg1:T78 Arg2:T85
+R106	in-context Arg1:T79 Arg2:T77
+R107	in-context Arg1:T79 Arg2:T78
+R108	in-context Arg1:T79 Arg2:T80
+R109	in-context Arg1:T82 Arg2:T83
+R110	in-time Arg1:T86 Arg2:T85
+R111	subject Arg1:T87 Arg2:T77
+R112	subject Arg1:T87 Arg2:T79
+R113	in-time Arg1:T87 Arg2:T85
+R114	subject Arg1:T87 Arg2:T86
+T88	Concept 1614 1623	multiplex
+T89	Concept 1624 1630	TaqMan
+T90	Concept 1631 1635	qPCR
+T91	Concept 1636 1644	reaction
+T92	Concept 1709 1714	Rotor
+T93	Concept 1714 1715	-
+T94	Concept 1715 1719	Gene
+T95	Concept 1720 1729	Multiplex
+T96	Concept 1730 1733	PCR
+T97	Concept 1734 1740	Master
+T98	Concept 1741 1744	Mix
+T99	Concept 1798 1801	0.5
+T100	Concept 1813 1817	DICg
+T101	Concept 1817 1818	-
+T102	Concept 1884 1892	nuclease
+T103	Concept 1893 1897	free
+T104	Concept 1898 1903	water
+T105	Concept 1920 1926	obtain
+T106	Concept 1927 1932	final
+T107	Concept 1933 1939	volume
+T108	Concept 1664 1666;1667 1669;1670 1678;1679 1686;1687 1697;1698 1702	25 μl reaction mixture containing 12.5
+T109	Concept 1786 1787;1788 1790	l -1
+T110	Concept 1829 1830;1831 1837	P probes
+T111	Concept 1848 1850;1851 1856	-1 stock
+T112	Concept 1867 1875;1876 1879	template DNA
+T113	Concept 1828 1829	-
+T114	Concept 1846 1847	l
+T115	Action 1781 1785	µmol
+T116	Action 1841 1845	µmol
+R115	has-property Arg1:T90 Arg2:T88
+*	same-as T90 T92
+*	same-as T90 T93
+*	same-as T90 T94
+R116	in-place Arg1:T90 Arg2:T95
+R117	in-context Arg1:T90 Arg2:T96
+*	same-as T90 T97
+R118	has-property Arg1:T90 Arg2:T107
+*	same-as T90 T108
+*	same-as T90 T109
+R119	has-property Arg1:T91 Arg2:T88
+R120	has-property Arg1:T91 Arg2:T90
+R121	has-property Arg1:T91 Arg2:T108
+R122	has-property Arg1:T91 Arg2:T109
+*	same-as T94 T90
+*	same-as T94 T108
+R123	has-property Arg1:T102 Arg2:T107
+R124	has-property Arg1:T103 Arg2:T107
+R125	has-property Arg1:T104 Arg2:T107
+R126	has-property Arg1:T105 Arg2:T106
+R127	has-property Arg1:T105 Arg2:T107
+R128	has-property Arg1:T106 Arg2:T107
+R129	has-property Arg1:T107 Arg2:T102
+R130	has-property Arg1:T107 Arg2:T103
+R131	has-property Arg1:T107 Arg2:T105
+R132	has-property Arg1:T107 Arg2:T106
+R133	in-context Arg1:T107 Arg2:T112
+R134	in-context Arg1:T108 Arg2:T96
+R135	in-context Arg1:T108 Arg2:T109
+*	same-as T109 T90
+*	same-as T109 T92
+*	same-as T109 T94
+R136	in-place Arg1:T109 Arg2:T95
+*	same-as T109 T97
+*	same-as T109 T108
+R137	has-property Arg1:T112 Arg2:T107
+R138	target Arg1:T115 Arg2:T90
+R139	in-place Arg1:T115 Arg2:T92
+R140	target Arg1:T115 Arg2:T93
+R141	in-place Arg1:T115 Arg2:T95
+R142	subject Arg1:T115 Arg2:T96
+R143	in-place Arg1:T115 Arg2:T97
+R144	target Arg1:T115 Arg2:T109
+R145	target Arg1:T116 Arg2:T101
+R146	target Arg1:T116 Arg2:T111
+R147	target Arg1:T116 Arg2:T113
+T117	Concept 1988 1991	SVM
+T118	Concept 2025 2033	proteins
+T119	Concept 2041 2046	yeast
+T120	Concept 2047 2049	S.
+T121	Concept 2050 2060	cerevisiae
+T122	Concept 2074 2081	protein
+T123	Concept 2082 2091	evolution
+T124	Concept 2092 2096	rate
+T125	Concept 2098 2105	protein
+T126	Concept 2105 2106	-
+T127	Concept 2106 2117	interaction
+T128	Concept 2118 2130	connectivity
+T129	Concept 2136 2137	-
+T130	Concept 2137 2147	expression
+T131	Concept 2148 2161	cooperativity
+T132	Concept 2166 2170	gene
+T133	Concept 2170 2171	-
+T134	Concept 2171 2182	duplication
+T135	Concept 2183 2187	data
+T136	Concept 2201 2205	2005
+T137	Concept 2206 2215	phenotype
+T138	Concept 2216 2225	lethality
+T139	Concept 2245 2249	copy
+T140	Concept 2250 2256	number
+T141	Concept 2271 2281	expression
+T142	Concept 2282 2288	levels
+T143	Concept 2293 2301	patterns
+T144	Concept 2322 2327	cross
+T145	Concept 2327 2328	-
+T146	Concept 2328 2335	species
+T147	Concept 2336 2348	conservation
+T148	Concept 2384 2390	random
+T149	Concept 2391 2397	forest
+T150	Concept 2397 2398	-
+T151	Concept 2398 2403	based
+T152	Concept 2404 2409	model
+T153	Concept 2441 2444	AUC
+T154	Concept 2448 2452	0.81
+T155	Concept 2506 2512	random
+T156	Concept 2513 2521	guessing
+T157	Concept 1969 1975;1976 1983	neural network
+T158	Concept 2230 2234;2235 2243	gene function
+T159	Concept 2354 2361;2362 2374	network connectivity
+T160	Action 2311 2320	evolution
+T161	Action 2410 2414	used
+R148	has-property Arg1:T123 Arg2:T124
+R149	has-property Arg1:T125 Arg2:T124
+R150	in-context Arg1:T127 Arg2:T123
+R151	has-property Arg1:T127 Arg2:T124
+R152	has-property Arg1:T127 Arg2:T128
+R153	has-property Arg1:T130 Arg2:T138
+R154	has-property Arg1:T132 Arg2:T130
+R155	has-property Arg1:T135 Arg2:T130
+R156	has-property Arg1:T135 Arg2:T138
+R157	has-property Arg1:T137 Arg2:T138
+R158	has-property Arg1:T140 Arg2:T141
+R159	has-property Arg1:T147 Arg2:T144
+R160	has-property Arg1:T148 Arg2:T144
+R161	has-property Arg1:T149 Arg2:T144
+R162	has-property Arg1:T158 Arg2:T130
+R163	has-property Arg1:T158 Arg2:T137
+R164	has-property Arg1:T158 Arg2:T138
+R165	has-property Arg1:T159 Arg2:T144
+R166	has-property Arg1:T160 Arg2:T144
+R167	target Arg1:T160 Arg2:T145
+R168	target Arg1:T160 Arg2:T150
+T162	Concept 2533 2541	directly
+T163	Concept 2542 2547	prior
+T164	Concept 2568 2572	LAIV
+T165	Concept 2573 2575	85
+T166	Concept 2590 2599	increased
+T167	Concept 2600 2606	levels
+T168	Concept 2610 2616	twenty
+T169	Concept 2617 2626	cytokines
+T170	Concept 2627 2632	after
+T171	Concept 2633 2641	multiple
+T172	Concept 2642 2649	testing
+T173	Concept 2650 2660	correction
+T174	Concept 2672 2677	IP-10
+T175	Concept 2679 2681	86
+T176	Concept 2682 2685	TNF
+T177	Concept 2685 2686	-
+T178	Concept 2686 2687	α
+T179	Concept 2689 2694	IL-10
+T180	Concept 2696 2699	IFN
+T181	Concept 2699 2700	-
+T182	Concept 2704 2709	IL-15
+T183	Concept 2728 2730	S1
+T184	Concept 2551 2554;2555 2566	Spn inoculation
+T185	Concept 2711 2714;2715 2717	Fig 1b
+R169	has-property Arg1:T167 Arg2:T162
+R170	has-property Arg1:T167 Arg2:T171
+R171	is-a Arg1:T168 Arg2:T169
+R172	has-property Arg1:T169 Arg2:T162
+R173	has-property Arg1:T169 Arg2:T171
+R174	in-context Arg1:T170 Arg2:T171
+R175	has-property Arg1:T172 Arg2:T173
+*	same-as T175 T179
+R176	is-a Arg1:T176 Arg2:T169
+*	same-as T176 T179
+*	same-as T178 T175
+*	same-as T178 T179
+*	same-as T178 T180
+R177	is-a Arg1:T179 Arg2:T169
+*	same-as T179 T175
+R178	is-a Arg1:T179 Arg2:T178
+*	same-as T179 T180
+*	same-as T180 T175
+*	same-as T180 T179
+*	same-as T182 T179
+*	same-as T183 T179
+*	same-as T185 T179
+T186	Concept 2755 2767	experimental
+T187	Concept 2768 2772	data
+T188	Concept 2807 2814	beating
+T189	Concept 2815 2823	euglenid
+T190	Concept 2824 2833	flagellum
+T191	Concept 2834 2842	obtained
+T192	Concept 2855 2861	freely
+T193	Concept 2862 2870	swimming
+T194	Concept 2871 2880	organisms
+T195	Concept 2782 2784;2785 2799	3d reconstruction
+R179	in-context Arg1:T187 Arg2:T194
+R180	in-context Arg1:T188 Arg2:T187
+R181	in-context Arg1:T188 Arg2:T194
+R182	in-context Arg1:T189 Arg2:T187
+R183	in-context Arg1:T189 Arg2:T194
+R184	in-context Arg1:T190 Arg2:T187
+R185	in-context Arg1:T190 Arg2:T194
+R186	in-context Arg1:T191 Arg2:T187
+R187	in-context Arg1:T191 Arg2:T194
+R188	in-context Arg1:T192 Arg2:T187
+R189	in-context Arg1:T192 Arg2:T194
+R190	in-context Arg1:T193 Arg2:T187
+R191	in-context Arg1:T193 Arg2:T194
+R192	in-context Arg1:T194 Arg2:T187
+R193	in-context Arg1:T195 Arg2:T194
+T196	Concept 2891 2905	transcriptomic
+T197	Concept 2906 2914	patterns
+T198	Concept 2919 2929;2930 2936;2937 2939;2940 2946	expression biases 62 author
+R194	has-property Arg1:T198 Arg2:T196
+T199	Concept 2970 2980	metabolite
+T200	Concept 2981 2993	identication
+T201	Concept 2994 3000	workow
+T202	Concept 3007 3012	makes
+T203	Concept 3023 3027	novo
+T204	Concept 3028 3038	annotation
+T205	Concept 3039 3046	methods
+T206	Concept 3047 3058	facilitates
+T207	Action 3013 3016	use
+R195	has-property Arg1:T205 Arg2:T202
+R196	has-property Arg1:T205 Arg2:T203
+R197	has-property Arg1:T205 Arg2:T206
+R198	subject Arg1:T207 Arg2:T202
+R199	target Arg1:T207 Arg2:T205
+T208	Concept 3099 3102	WHO
+T209	Concept 3104 3112	declared
+T210	Concept 3113 3118	novel
+T211	Concept 3119 3130	coronavirus
+T212	Concept 3132 3141	2019-nCoV
+T213	Concept 3162 3168	public
+T214	Concept 3169 3175	health
+T215	Concept 3176 3185	emergency
+T216	Concept 3189 3202	international
+T217	Concept 3203 3210	concern
+T218	Concept 3078 3084;3085 3097	Health Organization
+*	same-as T218 T208
+T219	Concept 3263 3269	signal
+T220	Concept 3270 3275	files
+T221	Concept 3286 3296	basecalled
+T222	Concept 3297 3301	data
+T223	Concept 3329 3336	Science
+T224	Concept 3337 3346	Framework
+T225	Concept 3348 3351	OSF
+T226	Concept 3353 3382	doi.org/10.17605/OSF.IO/UP7B4
+T227	Concept 3418 3423	types
+T228	Concept 3441 3450	paragraph
+T229	Concept 3451 3456	2.1.4
+R200	in-context Arg1:T227 Arg2:T228
+T230	Concept 3462 3472	additional
+T231	Concept 3473 3480	helices
+T232	Concept 3560 3569	chromatin
+T233	Concept 3570 3580	remodeling
+T234	Concept 3581 3588	ATPases
+T235	Concept 3498 3508;3509 3510	protrusion 2
+T236	Concept 3528 3532;3533 3534	lobe 2
+T237	Concept 3613 3616;3617 3629	DNA translocases
+T238	Concept 3511 3517	region
+T239	Concept 3521 3527	ATPase
+T240	Concept 3609 3612	SF2
+T241	Action 3547 3556	conserved
+R201	in-place Arg1:T241 Arg2:T232
+R202	in-place Arg1:T241 Arg2:T238
+T242	Concept 3655 3667	inflammatory
+T243	Concept 3668 3676	monocyte
+T244	Concept 3677 3682	exist
+T245	Concept 3686 3694	patients
+T246	Concept 3695 3703	infected
+T247	Concept 3704 3713	2019-nCoV
+T248	Concept 3750 3759	monocytes
+T249	Action 3638 3646	identify
+R203	has-property Arg1:T249 Arg2:T242
+R204	target Arg1:T249 Arg2:T244
+R205	in-place Arg1:T249 Arg2:T245
+R206	target Arg1:T249 Arg2:T247
+R207	target Arg1:T249 Arg2:T248
+T250	Concept 3849 3853	SBDD
+T251	Concept 3854 3862	approach
+T252	Concept 3883 3891	proteins
+T253	Concept 3929 3943	evolutionarily
+T254	Concept 3944 3951	ancient
+T255	Concept 3952 3959	ciliary
+T256	Concept 3960 3965	roles
+T257	Concept 3977 3987	structural
+T258	Concept 3988 3998	components
+T259	Concept 4016 4017	β
+T260	Concept 4017 4018	-
+T261	Concept 4018 4025	Tubulin
+T262	Concept 4032 4046	intraflagellar
+T263	Concept 4047 4056	transport
+T264	Concept 4064 4069	IFT57
+T265	Concept 4071 4076	IFT80
+T266	Concept 4078 4083	IFT81
+T267	Concept 4085 4091	IFT122
+T268	Concept 4093 4099	IFT172
+T269	Concept 4105 4112	ciliary
+T270	Concept 4113 4121	movement
+T271	Action 3892 3900	included
+R208	has-property Arg1:T252 Arg2:T253
+R209	has-property Arg1:T252 Arg2:T257
+R210	has-property Arg1:T258 Arg2:T253
+R211	has-property Arg1:T258 Arg2:T257
+R212	has-property Arg1:T259 Arg2:T253
+R213	in-context Arg1:T259 Arg2:T263
+*	same-as T259 T264
+*	same-as T259 T265
+*	same-as T259 T266
+*	same-as T259 T267
+*	same-as T259 T268
+*	same-as T261 T264
+*	same-as T261 T267
+R214	has-property Arg1:T262 Arg2:T253
+R215	has-property Arg1:T263 Arg2:T253
+R216	has-property Arg1:T263 Arg2:T262
+*	same-as T263 T264
+*	same-as T263 T265
+*	same-as T263 T266
+*	same-as T263 T267
+R217	is-a Arg1:T264 Arg2:T252
+R218	has-property Arg1:T264 Arg2:T253
+R219	is-a Arg1:T264 Arg2:T258
+*	same-as T264 T265
+*	same-as T264 T266
+*	same-as T264 T267
+*	same-as T264 T268
+R220	is-a Arg1:T265 Arg2:T252
+R221	is-a Arg1:T265 Arg2:T253
+R222	is-a Arg1:T265 Arg2:T258
+*	same-as T265 T264
+*	same-as T265 T266
+*	same-as T265 T267
+*	same-as T265 T268
+R223	is-a Arg1:T266 Arg2:T252
+R224	is-a Arg1:T266 Arg2:T253
+R225	is-a Arg1:T266 Arg2:T258
+*	same-as T266 T264
+*	same-as T266 T265
+*	same-as T266 T267
+*	same-as T266 T268
+R226	is-a Arg1:T267 Arg2:T252
+R227	is-a Arg1:T267 Arg2:T253
+R228	is-a Arg1:T267 Arg2:T254
+R229	is-a Arg1:T267 Arg2:T255
+R230	is-a Arg1:T267 Arg2:T258
+R231	is-a Arg1:T267 Arg2:T261
+R232	is-a Arg1:T267 Arg2:T262
+R233	is-a Arg1:T267 Arg2:T263
+*	same-as T267 T264
+*	same-as T267 T265
+*	same-as T267 T266
+*	same-as T267 T268
+R234	is-a Arg1:T267 Arg2:T269
+R235	is-a Arg1:T268 Arg2:T252
+R236	is-a Arg1:T268 Arg2:T253
+R237	is-a Arg1:T268 Arg2:T254
+R238	is-a Arg1:T268 Arg2:T255
+R239	is-a Arg1:T268 Arg2:T256
+R240	is-a Arg1:T268 Arg2:T258
+*	same-as T268 T259
+*	same-as T268 T260
+*	same-as T268 T261
+R241	is-a Arg1:T268 Arg2:T262
+R242	is-a Arg1:T268 Arg2:T263
+*	same-as T268 T264
+*	same-as T268 T265
+*	same-as T268 T266
+*	same-as T268 T267
+R243	is-a Arg1:T268 Arg2:T269
+*	same-as T268 T271
+R244	has-property Arg1:T269 Arg2:T253
+*	same-as T269 T264
+R245	has-property Arg1:T270 Arg2:T253
+R246	has-property Arg1:T271 Arg2:T253
+T272	Concept 4144 4153	favorable
+T273	Concept 4154 4164	conditions
+T274	Concept 4200 4202	S2
+T275	Concept 4207 4215	tertiary
+T276	Concept 4216 4228	interactions
+T277	Concept 4229 4238	involving
+T278	Concept 4239 4241	L1
+T279	Concept 4166 4167;4168 4169;4170 4172;4173 4175	f < 10 pN
+T280	Concept 4177 4178;4179 4180;4181 4184;4185 4187	C ≈ 300 mM
+R247	in-context Arg1:T272 Arg2:T273
+R248	target Arg1:T272 Arg2:T280
+R249	has-property Arg1:T273 Arg2:T272
+R250	has-property Arg1:T273 Arg2:T279
+R251	has-property Arg1:T273 Arg2:T280
+R252	is-a Arg1:T274 Arg2:T273
+R253	is-a Arg1:T274 Arg2:T275
+R254	is-a Arg1:T274 Arg2:T276
+*	same-as T274 T280
+*	same-as T276 T280
+*	same-as T278 T280
+R255	is-a Arg1:T279 Arg2:T273
+*	same-as T279 T280
+R256	is-a Arg1:T280 Arg2:T273
+*	same-as T280 T274
+T281	Concept 4320 4326	mixing
+T282	Concept 4327 4335	patterns
+T283	Concept 4343 4353	population
+T284	Action 4310 4316	change
+R257	has-property Arg1:T284 Arg2:T282
+R258	in-context Arg1:T284 Arg2:T283
+T285	Concept 4364 4374	widespread
+T286	Concept 4375 4385	geographic
+T287	Concept 4386 4394	coverage
+T288	Concept 4396 4400	SARS
+T289	Concept 4400 4401	-
+T290	Concept 4401 4405	like
+T291	Concept 4406 4419	coronaviruses
+T292	Concept 4452 4456	bats
+T293	Concept 4463 4467	long
+T294	Concept 4468 4474	period
+T295	Concept 4487 4492	novel
+T296	Concept 4493 4500	strains
+T297	Concept 4510 4523	coronaviruses
+T298	Action 4546 4559	recombination
+R259	in-context Arg1:T285 Arg2:T286
+R260	in-context Arg1:T285 Arg2:T287
+R261	in-context Arg1:T285 Arg2:T288
+R262	in-context Arg1:T285 Arg2:T291
+R263	in-context Arg1:T285 Arg2:T292
+R264	in-context Arg1:T285 Arg2:T294
+R265	in-context Arg1:T285 Arg2:T295
+R266	in-context Arg1:T285 Arg2:T297
+R267	in-context Arg1:T285 Arg2:T298
+R268	in-context Arg1:T286 Arg2:T294
+R269	in-context Arg1:T286 Arg2:T297
+R270	in-context Arg1:T287 Arg2:T294
+R271	in-context Arg1:T287 Arg2:T297
+R272	in-context Arg1:T290 Arg2:T288
+R273	in-context Arg1:T290 Arg2:T294
+R274	in-context Arg1:T290 Arg2:T297
+R275	in-context Arg1:T294 Arg2:T285
+R276	in-context Arg1:T294 Arg2:T288
+R277	has-property Arg1:T294 Arg2:T293
+R278	has-property Arg1:T294 Arg2:T295
+R279	in-context Arg1:T294 Arg2:T297
+R280	in-context Arg1:T296 Arg2:T285
+R281	in-context Arg1:T296 Arg2:T288
+R282	in-context Arg1:T296 Arg2:T294
+R283	in-context Arg1:T296 Arg2:T297
+R284	in-context Arg1:T297 Arg2:T288
+R285	in-context Arg1:T297 Arg2:T294
+T299	Concept 4612 4613	-
+T300	Concept 4613 4617	shot
+T301	Concept 4618 4631	interventions
+T302	Concept 4643 4648	local
+T303	Concept 4649 4658	threshold
+T304	Concept 4673 4679	global
+T305	Concept 4680 4689	threshold
+R286	in-context Arg1:T301 Arg2:T300
+R287	in-context Arg1:T301 Arg2:T302
+R288	in-context Arg1:T301 Arg2:T303
+R289	in-context Arg1:T301 Arg2:T304
+R290	in-context Arg1:T301 Arg2:T305
+R291	in-context Arg1:T303 Arg2:T301
+R292	has-property Arg1:T303 Arg2:T304
+R293	has-property Arg1:T305 Arg2:T304
+T306	Concept 4732 4749	birthfacilitation
+T307	Concept 4750 4757	process
+T308	Concept 4786 4791	novel
+T309	Concept 4792 4797	genes
+T310	Concept 4803 4809	higher
+T311	Concept 4810 4813	ISD
+T312	Concept 4826 4835	ancestral
+T313	Concept 4836 4843	members
+T314	Concept 4870 4882	artificially
+T315	Concept 4882 4883	-
+T316	Concept 4883 4895	frameshifted
+T317	Concept 4896 4904	controls
+T318	Action 4763 4774	controlling
+R294	has-property Arg1:T307 Arg2:T306
+R295	in-context Arg1:T307 Arg2:T308
+R296	in-context Arg1:T307 Arg2:T313
+R297	in-context Arg1:T307 Arg2:T318
+R298	has-property Arg1:T309 Arg2:T310
+R299	in-context Arg1:T309 Arg2:T313
+R300	in-context Arg1:T310 Arg2:T311
+R301	in-context Arg1:T310 Arg2:T313
+R302	is-a Arg1:T311 Arg2:T309
+R303	in-context Arg1:T313 Arg2:T308
+R304	has-property Arg1:T314 Arg2:T316
+R305	in-context Arg1:T316 Arg2:T313
+R306	has-property Arg1:T317 Arg2:T316
+R307	target Arg1:T318 Arg2:T306
+R308	target Arg1:T318 Arg2:T307
+R309	subject Arg1:T318 Arg2:T311
+R310	subject Arg1:T318 Arg2:T313
+T319	Concept 4933 4934;4935 4936	E 1
+T320	Concept 4938 4939;4939 4940;4941 4945;4946 4947;4948 4949;4949 4950	t ) andẼ 1 ( t
+T321	Concept 5001 5010;5011 5017	rescaling factor
+R311	is-a Arg1:T319 Arg2:T320
+T322	Concept 5046 5057	CX3CR1CreER
+T323	Concept 5057 5058	-
+T324	Concept 5058 5067	dependent
+T325	Concept 5068 5080	manipulation
+T326	Concept 5084 5088	gene
+T327	Concept 5089 5099	expression
+T328	Concept 5123 5131	reporter
+T329	Concept 5132 5143	Rosa26-STOP
+T330	Concept 5143 5144	-
+T331	Concept 5144 5149	DsRed
+T332	Concept 5150 5154	mice
+T333	Concept 5206 5210	~0.3
+T334	Concept 5210 5211	%
+T335	Concept 5213 5228	CX3CR1-positive
+T336	Concept 5229 5234	cells
+T337	Concept 5235 5244	expressed
+T338	Concept 5245 5250	DsRed
+T339	Action 5155 5161	showed
+T340	Action 5174 5181	absence
+R312	has-property Arg1:T326 Arg2:T327
+R313	has-property Arg1:T326 Arg2:T337
+R314	has-property Arg1:T327 Arg2:T337
+R315	has-property Arg1:T331 Arg2:T337
+R316	has-property Arg1:T332 Arg2:T327
+R317	has-property Arg1:T332 Arg2:T337
+R318	has-property Arg1:T335 Arg2:T337
+R319	has-property Arg1:T336 Arg2:T337
+R320	has-property Arg1:T338 Arg2:T337
+R321	target Arg1:T339 Arg2:T330
+R322	subject Arg1:T339 Arg2:T332
+R323	target Arg1:T339 Arg2:T334
+T341	Concept 5328 5335	ability
+T342	Concept 5339 5343	CPMP
+T343	Concept 5413 5417	Lys9
+T344	Concept 5418 5419	R
+T345	Concept 5420 5426	leaked
+T346	Concept 5462 5469	nucleus
+T347	Concept 5470 5475	after
+T348	Concept 5476 5485	treatment
+T349	Concept 5494 5503	unlabeled
+T350	Concept 5504 5508	CPMP
+T351	Concept 5512 5515	CPP
+T352	Concept 5519 5521	UL
+T353	Concept 5522 5524	-5
+T354	Concept 5525 5527	UL
+T355	Concept 5533 5547	concentrations
+T356	Concept 5564 5567	2.4
+T357	Concept 5568 5571	μM.
+T358	Concept 5344 5348;5349 5350;5351 5352;5353 5355;5356 5357;5358 5360;5361 5366	CPPs 1 R -5 R to reach
+T359	Action 5258 5268	confirming
+R324	in-context Arg1:T341 Arg2:T342
+*	same-as T352 T354
+*	same-as T354 T352
+T360	Concept 5613 5617	FtsZ
+T361	Concept 5618 5626	polymers
+T362	Concept 5627 5631	form
+T363	Concept 5632 5637	large
+T364	Concept 5638 5645	bundles
+T365	Concept 5649 5652	low
+T366	Concept 5653 5657	salt
+T367	Concept 5692 5696	high
+T368	Concept 5697 5701	salt
+T369	Concept 5572 5580;5581 5586;5587 5589;5590 5597	Negative stain EM imaging
+R325	has-property Arg1:T360 Arg2:T362
+R326	has-property Arg1:T361 Arg2:T362
+R327	in-context Arg1:T362 Arg2:T360
+R328	in-context Arg1:T362 Arg2:T361
+R329	has-property Arg1:T362 Arg2:T363
+R330	has-property Arg1:T362 Arg2:T364
+R331	in-context Arg1:T362 Arg2:T366
+R332	in-context Arg1:T362 Arg2:T368
+R333	in-context Arg1:T362 Arg2:T369
+R334	in-context Arg1:T363 Arg2:T362
+R335	has-property Arg1:T364 Arg2:T362
+R336	in-context Arg1:T366 Arg2:T362
+R337	in-context Arg1:T368 Arg2:T362
+T370	Concept 5725 5736	interesting
+T371	Concept 5737 5742	twist
+T372	Concept 5751 5759	adaptive
+T373	Concept 5760 5768	immunity
+T374	Concept 5869 5874	virus
+T375	Concept 5878 5891	intrinsically
+T376	Concept 5892 5902	inhibitory
+T377	Concept 5911 5919	adaptive
+T378	Concept 5920 5928	immunity
+T379	Concept 5954 5959	limit
+T380	Concept 5960 5967	vaccine
+T381	Concept 5968 5974	growth
+T382	Concept 5984 5989	limit
+T383	Concept 5990 5997	antigen
+T384	Concept 5998 6003	build
+T385	Concept 6003 6004	-
+T386	Concept 5776 5783;5784 5789;5790 5794;5795 5798;5799 5803;5804 5814	antigen might feed 186 back negatively
+T387	Concept 5842 5848;5849 5858	growth -immunity
+T388	Concept 6018 6021;6022 6026;6027 6034;6035 6043	188 fuel further immunity
+T389	Action 5828 5833	limit
+R338	in-context Arg1:T370 Arg2:T373
+R339	in-context Arg1:T371 Arg2:T373
+R340	has-property Arg1:T373 Arg2:T372
+R341	has-property Arg1:T373 Arg2:T386
+R342	has-property Arg1:T374 Arg2:T375
+R343	has-property Arg1:T374 Arg2:T376
+R344	has-property Arg1:T374 Arg2:T377
+R345	has-property Arg1:T374 Arg2:T378
+R346	has-property Arg1:T374 Arg2:T379
+R347	has-property Arg1:T374 Arg2:T380
+R348	has-property Arg1:T374 Arg2:T382
+R349	has-property Arg1:T375 Arg2:T374
+R350	has-property Arg1:T375 Arg2:T377
+R351	has-property Arg1:T375 Arg2:T378
+R352	has-property Arg1:T375 Arg2:T380
+R353	has-property Arg1:T375 Arg2:T382
+R354	has-property Arg1:T376 Arg2:T374
+R355	has-property Arg1:T376 Arg2:T375
+R356	has-property Arg1:T376 Arg2:T377
+R357	has-property Arg1:T376 Arg2:T378
+R358	has-property Arg1:T376 Arg2:T379
+R359	has-property Arg1:T376 Arg2:T380
+R360	has-property Arg1:T376 Arg2:T382
+R361	has-property Arg1:T378 Arg2:T374
+R362	has-property Arg1:T378 Arg2:T375
+R363	has-property Arg1:T378 Arg2:T377
+R364	has-property Arg1:T378 Arg2:T380
+R365	has-property Arg1:T378 Arg2:T382
+R366	has-property Arg1:T379 Arg2:T374
+R367	has-property Arg1:T379 Arg2:T375
+R368	has-property Arg1:T379 Arg2:T376
+R369	has-property Arg1:T379 Arg2:T377
+R370	has-property Arg1:T379 Arg2:T378
+R371	has-property Arg1:T380 Arg2:T374
+R372	has-property Arg1:T380 Arg2:T375
+R373	has-property Arg1:T380 Arg2:T376
+R374	has-property Arg1:T380 Arg2:T377
+R375	has-property Arg1:T380 Arg2:T378
+R376	has-property Arg1:T380 Arg2:T387
+R377	has-property Arg1:T381 Arg2:T374
+R378	has-property Arg1:T381 Arg2:T375
+R379	has-property Arg1:T381 Arg2:T376
+R380	has-property Arg1:T381 Arg2:T377
+R381	has-property Arg1:T381 Arg2:T378
+R382	has-property Arg1:T381 Arg2:T380
+R383	has-property Arg1:T381 Arg2:T387
+R384	has-property Arg1:T382 Arg2:T374
+R385	has-property Arg1:T382 Arg2:T375
+R386	has-property Arg1:T382 Arg2:T376
+R387	has-property Arg1:T382 Arg2:T377
+R388	has-property Arg1:T382 Arg2:T378
+R389	in-context Arg1:T383 Arg2:T373
+R390	in-context Arg1:T383 Arg2:T378
+R391	has-property Arg1:T383 Arg2:T384
+R392	has-property Arg1:T383 Arg2:T386
+R393	in-context Arg1:T384 Arg2:T378
+R394	has-property Arg1:T386 Arg2:T370
+R395	has-property Arg1:T386 Arg2:T371
+R396	has-property Arg1:T386 Arg2:T372
+R397	in-context Arg1:T386 Arg2:T373
+R398	causes Arg1:T386 Arg2:T376
+R399	has-property Arg1:T386 Arg2:T377
+R400	in-context Arg1:T386 Arg2:T378
+R401	has-property Arg1:T386 Arg2:T383
+R402	has-property Arg1:T386 Arg2:T384
+R403	has-property Arg1:T387 Arg2:T374
+R404	has-property Arg1:T387 Arg2:T375
+R405	has-property Arg1:T387 Arg2:T376
+R406	has-property Arg1:T387 Arg2:T377
+R407	has-property Arg1:T387 Arg2:T378
+R408	has-property Arg1:T387 Arg2:T379
+R409	has-property Arg1:T387 Arg2:T380
+R410	has-property Arg1:T387 Arg2:T382
+R411	in-context Arg1:T388 Arg2:T373
+R412	in-context Arg1:T388 Arg2:T378
+R413	target Arg1:T389 Arg2:T370
+R414	target Arg1:T389 Arg2:T371
+R415	target Arg1:T389 Arg2:T372
+R416	target Arg1:T389 Arg2:T373
+R417	target Arg1:T389 Arg2:T374
+R418	target Arg1:T389 Arg2:T375
+R419	target Arg1:T389 Arg2:T376
+R420	target Arg1:T389 Arg2:T377
+R421	target Arg1:T389 Arg2:T378
+R422	target Arg1:T389 Arg2:T379
+R423	target Arg1:T389 Arg2:T380
+R424	target Arg1:T389 Arg2:T381
+R425	target Arg1:T389 Arg2:T382
+R426	target Arg1:T389 Arg2:T383
+R427	target Arg1:T389 Arg2:T384
+R428	target Arg1:T389 Arg2:T385
+R429	target Arg1:T389 Arg2:T386
+R430	target Arg1:T389 Arg2:T387
+R431	target Arg1:T389 Arg2:T388
+T390	Concept 6049 6058	potential
+T391	Concept 6059 6073	pancoronavirus
+T392	Concept 6074 6084	protection
+T393	Concept 6085 6090	using
+T394	Concept 6091 6097	CRISPR
+T395	Concept 6097 6098	-
+T396	Concept 6098 6104	Cas13d
+T397	Concept 6190 6198	vaccines
+T398	Concept 6154 6158;6159 6170;6171 6186	over traditional pharmaceuticals
+T399	Concept 6216 6231	physicochemical
+T400	Concept 6232 6242	properties
+T401	Concept 6323 6327	NVIs
+T402	Concept 6333 6345	distribution
+T403	Concept 6357 6360	six
+T404	Concept 6361 6371	properties
+T405	Concept 6375 6382	similar
+T406	Concept 6386 6389	FDA
+T407	Concept 6390 6398	approved
+T408	Concept 6399 6404	drugs
+T409	Concept 6417 6421	some
+T410	Concept 6422 6427	cases
+T411	Concept 6279 6281;6281 6282	33 ]
+T412	Concept 6433 6440;6441 6450	Enamine compounds
+R432	has-property Arg1:T402 Arg2:T403
+R433	has-property Arg1:T402 Arg2:T404
+R434	has-property Arg1:T402 Arg2:T405
+R435	has-property Arg1:T402 Arg2:T409
+R436	has-property Arg1:T402 Arg2:T412
+R437	has-property Arg1:T404 Arg2:T403
+R438	has-property Arg1:T404 Arg2:T405
+R439	has-property Arg1:T407 Arg2:T403
+R440	has-property Arg1:T407 Arg2:T404
+R441	has-property Arg1:T407 Arg2:T405
+R442	has-property Arg1:T408 Arg2:T403
+R443	has-property Arg1:T408 Arg2:T405
+R444	in-context Arg1:T409 Arg2:T404
+R445	in-context Arg1:T409 Arg2:T410
+R446	in-context Arg1:T409 Arg2:T412
+R447	has-property Arg1:T410 Arg2:T403
+R448	has-property Arg1:T410 Arg2:T404
+R449	has-property Arg1:T410 Arg2:T405
+R450	has-property Arg1:T410 Arg2:T409
+T413	Concept 6472 6480	symptoms
+T414	Concept 6485 6490	fever
+T415	Concept 6492 6497	cough
+T416	Concept 6503 6512;6513 6515;6516 6522	shortness of breath
+T417	Concept 6563 6571	standard
+T418	Concept 6572 6578	plaque
+T419	Concept 6579 6585	assays
+T420	Concept 6586 6591	using
+T421	Concept 6592 6596	MDCK
+T422	Concept 6597 6602	cells
+T423	Concept 6524 6529;6530 6536	Virus titers
+R451	has-property Arg1:T419 Arg2:T417
+R452	has-property Arg1:T419 Arg2:T418
+R453	has-property Arg1:T419 Arg2:T420
+R454	has-property Arg1:T422 Arg2:T420
+T424	Concept 6677 6681	mass
+T425	Concept 6682 6694	spectrometry
+T426	Concept 6745 6747	∆G
+T427	Concept 6748 6750	UF
+T428	Concept 6782 6784	30
+T429	Concept 6752 6753;6754 6755;6756 6758;6759 6760;6761 6762;6762 6763;6764 6765;6766 6771;6772 6776	T = 37 • C ) = −15.1 kcal
+T430	Concept 6809 6816	methods
+T431	Concept 6826 6830	open
+T432	Concept 6830 6831	-
+T433	Concept 6831 6837	source
+T434	Concept 6838 6843	tools
+T435	Concept 6854 6861	maximal
+T436	Concept 6862 6877	reproducibility
+T437	Action 6844 6849	allow
+R455	in-context Arg1:T433 Arg2:T434
+R456	in-context Arg1:T433 Arg2:T437
+R457	target Arg1:T437 Arg2:T430
+R458	target Arg1:T437 Arg2:T432
+R459	subject Arg1:T437 Arg2:T434
+T438	Concept 6940 6951	symptomatic
+T439	Concept 6952 6957	cases
+T440	Concept 6964 6967	age
+T441	Concept 6967 6968	-
+T442	Concept 6968 6977	dependent
+T443	Concept 6978 6987	reporting
+T444	Concept 6988 6992	rate
+T445	Concept 6893 6896;6897 6904	age classes
+R460	has-property Arg1:T439 Arg2:T438
+R461	has-property Arg1:T439 Arg2:T443
+R462	has-property Arg1:T439 Arg2:T444
+R463	in-context Arg1:T440 Arg2:T439
+R464	has-property Arg1:T440 Arg2:T444
+R465	in-context Arg1:T442 Arg2:T439
+R466	has-property Arg1:T442 Arg2:T444
+R467	has-property Arg1:T443 Arg2:T444
+R468	has-property Arg1:T444 Arg2:T443
+R469	has-property Arg1:T445 Arg2:T444
+T446	Concept 7072 7078	palmar
+T447	Concept 7079 7083	side
+T448	Concept 6994 7000;7001 7008	Before testing
+T449	Concept 7020 7024;7025 7027;7028 7030;7031 7035	need 72 to roll
+T450	Concept 7147 7155	imported
+T451	Concept 7156 7161	cases
+T452	Concept 7202 7205	All
+T453	Concept 7206 7212	rights
+T454	Concept 7213 7221	reserved
+T455	Action 7192 7201	determine
+R470	target Arg1:T455 Arg2:T450
+R471	target Arg1:T455 Arg2:T451
+R472	target Arg1:T455 Arg2:T452
+R473	target Arg1:T455 Arg2:T453
+R474	target Arg1:T455 Arg2:T454
+T456	Concept 7246 7258	plasmodesmal
+T457	Concept 7272 7274	MP
+T458	Concept 7275 7281	relies
+T459	Concept 7289 7291	LL
+T460	Concept 7292 7297	motif
+T461	Concept 7335 7344	endocytic
+T462	Concept 7345 7353	pathways
+T463	Action 7259 7268	targeting
+R475	in-context Arg1:T462 Arg2:T459
+R476	in-context Arg1:T462 Arg2:T460
+R477	target Arg1:T463 Arg2:T456
+R478	target Arg1:T463 Arg2:T457
+R479	target Arg1:T463 Arg2:T458
+R480	target Arg1:T463 Arg2:T459
+R481	target Arg1:T463 Arg2:T460
+R482	target Arg1:T463 Arg2:T462
+T464	Concept 7359 7364	Hubei
+T465	Concept 7422 7423	$
+T466	Concept 7424 7429	after
+T467	Concept 7381 7387;7388 7392	growth rate
+T468	Concept 7448 7455;7456 7458	January 23
+T469	Action 7396 7402	change
+R483	in-place Arg1:T469 Arg2:T464
+T470	Concept 7510 7523	metaproteomic
+T471	Concept 7524 7533	abundance
+T472	Concept 7534 7544	correction
+T473	Concept 7610 7618	provided
+T474	Concept 7619 7625	sample
+T475	Action 7557 7564	applied
+R484	target Arg1:T475 Arg2:T470
+R485	target Arg1:T475 Arg2:T471
+R486	target Arg1:T475 Arg2:T472
+R487	target Arg1:T475 Arg2:T473
+R488	target Arg1:T475 Arg2:T474
+T476	Concept 7632 7638	L)ocal
+T477	Concept 7639 7645	priors
+T478	Concept 7682 7690	previous
+T479	Concept 7691 7696	CHIKV
+T480	Concept 7697 7705	epidemic
+T481	Concept 7746 7752	island
+T482	Concept 7752 7753	-
+T483	Concept 7753 7759	specic
+T484	Concept 7760 7768	epidemic
+T485	Concept 7769 7776	drivers
+T486	Concept 7811 7823	distribution
+T487	Concept 7825 7830	socio
+T488	Concept 7830 7831	-
+T489	Concept 7831 7839	economic
+T490	Concept 7840 7853	circumstances
+T491	Concept 7786 7796;7797 7806	population structure
+T492	Concept 7858 7871;7872 7882	environmental conditions
+R489	has-property Arg1:T486 Arg2:T485
+T493	Concept 7887 7891	used
+T494	Concept 7892 7898	CRISPR
+T495	Concept 7898 7899	-
+T496	Concept 7899 7912	Cas9-mediated
+T497	Concept 7913 7918	scb-1
+T498	Concept 7919 7927	deletion
+T499	Concept 7928 7935	strains
+T500	Concept 7985 8001;8002 8010	chemotherapeutic response
+R490	in-context Arg1:T493 Arg2:T494
+R491	in-context Arg1:T493 Arg2:T495
+R492	in-context Arg1:T493 Arg2:T496
+R493	in-context Arg1:T493 Arg2:T497
+R494	has-property Arg1:T493 Arg2:T498
+R495	in-context Arg1:T493 Arg2:T499
+R496	in-context Arg1:T493 Arg2:T500
+R497	in-context Arg1:T497 Arg2:T494
+R498	has-property Arg1:T499 Arg2:T493
+R499	in-context Arg1:T499 Arg2:T494
+R500	in-context Arg1:T499 Arg2:T496
+R501	in-context Arg1:T499 Arg2:T497
+R502	has-property Arg1:T499 Arg2:T498
+R503	in-context Arg1:T499 Arg2:T500
+R504	in-context Arg1:T500 Arg2:T494
+R505	in-context Arg1:T500 Arg2:T496
+R506	in-context Arg1:T500 Arg2:T497
+T501	Concept 8038 8040	G0
+T502	Concept 8041 8048	release
+T503	Concept 8049 8058	beginning
+T504	Concept 8062 8065	6.5
+T505	Concept 8066 8071	hours
+T506	Concept 8072 8077	after
+T507	Action 8078 8085	release
+R507	has-property Arg1:T502 Arg2:T503
+R508	has-property Arg1:T503 Arg2:T502
+R509	has-property Arg1:T505 Arg2:T502
+R510	has-property Arg1:T505 Arg2:T504
+R511	target Arg1:T507 Arg2:T502
+R512	target Arg1:T507 Arg2:T503
+R513	target Arg1:T507 Arg2:T504
+R514	target Arg1:T507 Arg2:T505
+R515	target Arg1:T507 Arg2:T506
+T508	Concept 8183 8190	genomes
+T509	Concept 8121 8133;8134 8139	advantageous order
+T510	Concept 8155 8162;8163 8171	related function
+R516	has-property Arg1:T508 Arg2:T510
+T511	Concept 8258 8262	anti
+T512	Concept 8262 8263	-
+T513	Concept 8263 8271	diabetic
+T514	Concept 8272 8283	medications
+T515	Concept 8292 8302	clinically
+T516	Concept 8303 8313	beneficial
+T517	Concept 8344 8352	severity
+T518	Concept 8356 8363	disease
+T519	Concept 8379 8382	non
+T520	Concept 8382 8383	-
+T521	Concept 8383 8391	diabetic
+T522	Concept 8392 8400	subjects
+T523	Action 8331 8339	reducing
+R517	in-context Arg1:T515 Arg2:T516
+R518	in-context Arg1:T515 Arg2:T522
+R519	in-context Arg1:T515 Arg2:T523
+R520	in-context Arg1:T516 Arg2:T522
+R521	in-context Arg1:T517 Arg2:T515
+R522	in-context Arg1:T517 Arg2:T516
+R523	in-context Arg1:T517 Arg2:T522
+R524	in-context Arg1:T517 Arg2:T523
+R525	in-context Arg1:T522 Arg2:T511
+R526	in-context Arg1:T522 Arg2:T513
+R527	in-context Arg1:T522 Arg2:T514
+R528	in-context Arg1:T522 Arg2:T515
+R529	in-context Arg1:T522 Arg2:T516
+R530	in-context Arg1:T522 Arg2:T517
+R531	in-context Arg1:T522 Arg2:T518
+R532	has-property Arg1:T522 Arg2:T519
+R533	in-context Arg1:T522 Arg2:T521
+R534	in-context Arg1:T522 Arg2:T523
+R535	in-place Arg1:T523 Arg2:T522
+T524	Concept 8426 8438	biologically
+T525	Concept 8439 8445	active
+T526	Concept 8405 8418;8419 8422	Transmissible RNA
+R536	has-property Arg1:T524 Arg2:T525
+R537	has-property Arg1:T526 Arg2:T525
+T527	Concept 8466 8472	models
+T528	Concept 8523 8532	predictor
+T529	Concept 8533 8541	variable
+T530	Concept 8561 8565	know
+T531	Concept 8566 8567	k
+T532	Concept 8572 8573;8574 8575	k 3
+T533	Concept 8578 8579;8580 8581	k 4
+R538	in-context Arg1:T530 Arg2:T531
+R539	in-context Arg1:T530 Arg2:T532
+R540	in-context Arg1:T530 Arg2:T533
+R541	in-context Arg1:T531 Arg2:T530
+R542	in-context Arg1:T531 Arg2:T532
+R543	in-context Arg1:T531 Arg2:T533
+R544	in-context Arg1:T532 Arg2:T531
+R545	in-context Arg1:T532 Arg2:T533
+R546	has-property Arg1:T533 Arg2:T530
+R547	in-context Arg1:T533 Arg2:T531
+R548	in-context Arg1:T533 Arg2:T532
+T534	Concept 8614 8628	conformational
+T535	Concept 8629 8635	states
+T536	Concept 8704 8712	logistic
+T537	Concept 8713 8723	regression
+T538	Concept 8724 8730	models
+T539	Concept 8731 8736	offer
+T540	Concept 8776 8783;8784 8790;8791 8801	genomic motifs themselves
+R549	has-property Arg1:T537 Arg2:T534
+R550	has-property Arg1:T537 Arg2:T536
+R551	has-property Arg1:T537 Arg2:T539
+R552	has-property Arg1:T538 Arg2:T537
+T541	Concept 8838 8846	neomycin
+T542	Concept 8847 8852	alone
+T543	Concept 8853 8866	recapitulated
+T544	Concept 8871 8875	host
+T545	Concept 8876 8886	protection
+T546	Concept 8810 8814;8815 8826;8827 8829;8830 8836	four antibiotics 97 tested
+T547	Concept 8905 8909;8910 8920;8921 8923;8924 8932	full antibiotic 98 cocktail
+R553	has-property Arg1:T541 Arg2:T542
+R554	has-property Arg1:T541 Arg2:T543
+R555	in-context Arg1:T541 Arg2:T545
+R556	in-context Arg1:T541 Arg2:T546
+R557	has-property Arg1:T541 Arg2:T547
+R558	has-property Arg1:T542 Arg2:T541
+R559	has-property Arg1:T542 Arg2:T543
+R560	in-context Arg1:T542 Arg2:T545
+R561	has-property Arg1:T543 Arg2:T541
+R562	has-property Arg1:T543 Arg2:T542
+R563	in-context Arg1:T543 Arg2:T545
+R564	in-context Arg1:T543 Arg2:T546
+R565	has-property Arg1:T543 Arg2:T547
+R566	has-property Arg1:T544 Arg2:T542
+R567	has-property Arg1:T545 Arg2:T541
+R568	has-property Arg1:T545 Arg2:T542
+R569	has-property Arg1:T545 Arg2:T543
+R570	in-context Arg1:T546 Arg2:T541
+R571	has-property Arg1:T546 Arg2:T542
+R572	in-context Arg1:T546 Arg2:T543
+R573	in-context Arg1:T546 Arg2:T544
+R574	in-context Arg1:T546 Arg2:T545
+R575	in-context Arg1:T546 Arg2:T547
+R576	has-property Arg1:T547 Arg2:T541
+R577	has-property Arg1:T547 Arg2:T542
+R578	has-property Arg1:T547 Arg2:T543
+T548	Concept 9045 9049	SARS
+T549	Concept 9085 9092	largely
+T550	Concept 9104 9114	subsequent
+T551	Concept 9115 9128	interventions
+T552	Concept 8970 8971;8972 8975;8976 8977;8978 8981	u max = 0.8
+T553	Concept 9061 9073;9074 9080	reproduction number
+T554	Action 9010 9022	transmission
+T555	Action 9093 9100	reduced
+R579	has-property Arg1:T551 Arg2:T550
+R580	in-context Arg1:T551 Arg2:T552
+R581	in-context Arg1:T551 Arg2:T553
+R582	target Arg1:T555 Arg2:T553
+T556	Concept 9171 9177	MatTek
+T557	Concept 9201 9210	different
+T558	Concept 9211 9218	mCherry
+T559	Concept 9218 9219	-
+T560	Concept 9219 9229	Mis12-MAD1
+T561	Concept 9230 9240	constructs
+T562	Concept 9136 9139;9140 9157;9158 9160;9160 9162;9163 9169	1.5 coverslipbottomed 35 mm dishes
+T563	Concept 9253 9258	early
+T564	Concept 9259 9260	T
+T565	Concept 9261 9265	cell
+T566	Concept 9275 9281	played
+T567	Concept 9282 9289	crucial
+T568	Concept 9290 9295	roles
+T569	Concept 9299 9304;9305 9314;9315 9321;9322 9327;9328 9339;9340 9350	viral clearance during acute respiratory infections
+T570	Action 9266 9274	response
+T571	Concept 9396 9402	GitHub
+T572	Concept 9403 9416	GuangchuangYu
+T573	Concept 9416 9417	/
+T574	Concept 9417 9425	nCov2019
+T575	Concept 9383 9384;9385 9392	R package
+T576	Concept 9477 9479	ER
+T577	Concept 9520 9521	-
+T578	Concept 9502 9504;9505 9510	83 cells
+T579	Action 9521 9530	expressed
+R583	target Arg1:T579 Arg2:T577
+T580	Concept 9610 9614	city
+T581	Concept 9702 9705	RNA
+T582	Concept 9705 9706	-
+T583	Concept 9706 9713	binding
+T584	Concept 9714 9722	proteins
+T585	Concept 9675 9681;9682 9691	TRIM25 interacts
+R584	is-a Arg1:T582 Arg2:T584
+R585	has-property Arg1:T584 Arg2:T583
+T586	Concept 9735 9743	proteins
+T587	Concept 9749 9762	transmembrane
+T588	Concept 9763 9770	domains
+T589	Concept 9771 9777	linked
+T590	Concept 9781 9787	coiled
+T591	Concept 9787 9788	-
+T592	Concept 9788 9792	coil
+T593	Concept 9793 9803	structures
+T594	Concept 9826 9834	membrane
+T595	Action 9840 9848	interact
+R586	in-context Arg1:T592 Arg2:T593
+R587	has-property Arg1:T593 Arg2:T587
+T596	Concept 9954 9962;9963 9971	clinical features
+T597	Concept 9996 10001	error
+T598	Concept 10002 10007	rates
+T599	Concept 10008 10014	report
+T600	Concept 10015 10026	differences
+T601	Concept 10034 10043	reference
+T602	Concept 10044 10050	genome
+T603	Concept 10075 10082;10083 10092	genetic variation
+T604	Concept 10068 10074	actual
+R588	in-context Arg1:T598 Arg2:T600
+R589	in-context Arg1:T598 Arg2:T601
+R590	in-context Arg1:T598 Arg2:T603
+R591	has-property Arg1:T601 Arg2:T603
+T605	Concept 10160 10162	12
+T606	Concept 10163 10176	catalytically
+T607	Concept 10177 10180	362
+T608	Concept 10181 10187	active
+T609	Concept 10188 10192	mono
+T610	Concept 10192 10193	-
+T611	Concept 10193 10198	ARTDs
+T612	Concept 10219 10220;10221 10225	I IFNs
+T613	Concept 10227 10240;10241 10244	Supplementary Fig
+T614	Concept 10214 10218	type
+T615	Action 10203 10210	induced
+R592	target Arg1:T615 Arg2:T607
+R593	target Arg1:T615 Arg2:T610
+T616	Concept 10273 10280	granted
+T617	Concept 10281 10288	medRxiv
+T618	Concept 10394 10402	pandemic
+T619	Concept 10418 10423	delay
+T620	Concept 10424 10429	local
+T621	Concept 10438 10440	8)
+T622	Concept 10376 10379;10380 10386	key target
+T623	Action 10403 10411	response
+T624	Action 10430 10436	spread
+R594	has-property Arg1:T619 Arg2:T620
+R595	in-context Arg1:T619 Arg2:T621
+R596	has-property Arg1:T622 Arg2:T618
+R597	has-property Arg1:T622 Arg2:T620
+R598	has-property Arg1:T623 Arg2:T618
+R599	subject Arg1:T623 Arg2:T619
+R600	has-property Arg1:T623 Arg2:T620
+R601	has-property Arg1:T623 Arg2:T622
+R602	subject Arg1:T624 Arg2:T619
+R603	has-property Arg1:T624 Arg2:T620
+R604	target Arg1:T624 Arg2:T621
+T625	Concept 10443 10448	Small
+T626	Concept 10449 10458	molecules
+T627	Concept 10464 10472	activate
+T628	Concept 10473 10477	IRF3
+T629	Concept 10482 10490	modulate
+T630	Concept 10491 10494	RIG
+T631	Concept 10494 10495	-
+T632	Concept 10495 10496	I
+T633	Concept 10496 10497	-
+T634	Concept 10497 10501	like
+T635	Concept 10502 10511	receptors
+T636	Concept 10512 10520	pathways
+T637	Concept 10552 10561	potential
+T638	Concept 10562 10572	strategies
+T639	Concept 10576 10582	target
+T640	Concept 10583 10586	NiV
+T641	Concept 10587 10596	infection
+T642	Concept 10598 10600	54
+R605	has-property Arg1:T626 Arg2:T625
+R606	has-property Arg1:T626 Arg2:T627
+R607	in-context Arg1:T626 Arg2:T628
+R608	has-property Arg1:T626 Arg2:T629
+R609	in-context Arg1:T626 Arg2:T630
+R610	in-context Arg1:T626 Arg2:T631
+R611	in-context Arg1:T626 Arg2:T633
+R612	in-context Arg1:T626 Arg2:T637
+R613	in-context Arg1:T626 Arg2:T641
+R614	has-property Arg1:T635 Arg2:T625
+R615	has-property Arg1:T635 Arg2:T634
+R616	has-property Arg1:T635 Arg2:T636
+R617	has-property Arg1:T636 Arg2:T625
+R618	has-property Arg1:T636 Arg2:T634
+R619	has-property Arg1:T640 Arg2:T642
+R620	in-context Arg1:T642 Arg2:T641
+T643	Concept 10639 10645	fungal
+T644	Concept 10646 10653	species
+T645	Action 10672 10686	identification
+R621	in-context Arg1:T644 Arg2:T645
+R622	target Arg1:T645 Arg2:T643
+R623	target Arg1:T645 Arg2:T644
+T646	Concept 10736 10746	strategies
+T647	Concept 10747 10751	must
+T648	Concept 10768 10775	rapidly
+T649	Concept 10776 10783	respond
+T650	Concept 10789 10798	potential
+T651	Concept 10799 10802	CoV
+T652	Concept 10803 10812	emergence
+T653	Concept 10816 10818;10819 10830;10831 10836	42 reemergence event
+R624	has-property Arg1:T646 Arg2:T650
+R625	in-context Arg1:T646 Arg2:T653
+R626	has-property Arg1:T647 Arg2:T646
+R627	has-property Arg1:T647 Arg2:T650
+R628	has-property Arg1:T649 Arg2:T650
+R629	in-context Arg1:T650 Arg2:T651
+R630	in-context Arg1:T650 Arg2:T653
+R631	has-property Arg1:T651 Arg2:T646
+R632	has-property Arg1:T651 Arg2:T648
+R633	has-property Arg1:T651 Arg2:T650
+R634	has-property Arg1:T651 Arg2:T652
+R635	has-property Arg1:T651 Arg2:T653
+R636	in-context Arg1:T652 Arg2:T650
+R637	in-context Arg1:T652 Arg2:T651
+R638	in-context Arg1:T652 Arg2:T653
+R639	in-context Arg1:T653 Arg2:T646
+R640	in-context Arg1:T653 Arg2:T650
+R641	in-context Arg1:T653 Arg2:T651
+T654	Concept 10859 10864	lower
+T655	Concept 10865 10870	right
+T656	Concept 10871 10879	quadrant
+T657	Concept 10884 10889	cases
+T658	Concept 10899 10903	rank
+T659	Concept 10904 10911	effects
+T660	Concept 10916 10929	directionally
+T661	Concept 10930 10938	reversed
+T662	Concept 10942 10945	LPS
+T663	Concept 10946 10952	versus
+T664	Concept 10953 10957	Gard
+T665	Concept 10957 10958	-
+T666	Concept 10958 10968	stimulated
+T667	Concept 10969 10976	samples
+R642	in-context Arg1:T661 Arg2:T667
+R643	in-context Arg1:T663 Arg2:T667
+R644	in-context Arg1:T666 Arg2:T667
+R645	has-property Arg1:T667 Arg2:T656
+R646	has-property Arg1:T667 Arg2:T661
+R647	has-property Arg1:T667 Arg2:T662
+R648	has-property Arg1:T667 Arg2:T663
+R649	has-property Arg1:T667 Arg2:T664
+R650	has-property Arg1:T667 Arg2:T665
+R651	has-property Arg1:T667 Arg2:T666
+T668	Concept 10997 11008	sensitivity
+T669	Concept 11028 11029;11030 11031	R 0
+T670	Concept 11085 11091	strong
+T671	Concept 11092 11096	drop
+T672	Concept 11100 11107	protein
+T673	Concept 11108 11117	synthesis
+T674	Concept 11134 11144	remarkable
+T675	Concept 11161 11167	number
+T676	Concept 11193 11201	elevated
+T677	Concept 11202 11213	temperature
+T678	Action 11145 11153	decrease
+R652	in-context Arg1:T673 Arg2:T671
+R653	target Arg1:T678 Arg2:T675
+T679	Concept 11228 11234	global
+T680	Concept 11235 11239	tree
+R654	has-property Arg1:T680 Arg2:T679
+T681	Concept 11320 11327	TER-119
+T682	Concept 11328 11335	epitope
+T683	Concept 11361 11364	BHE
+T684	Concept 11365 11375	virolectin
+T685	Concept 11387 11390	CHE
+T686	Action 11343 11353	recognized
+R655	target Arg1:T686 Arg2:T681
+R656	target Arg1:T686 Arg2:T683
+R657	target Arg1:T686 Arg2:T684
+R658	target Arg1:T686 Arg2:T685
+T687	Concept 11436 11443	viruses
+T688	Concept 11488 11492	SARS
+T689	Concept 11492 11493	-
+T690	Concept 11493 11498	CoV-2
+T691	Concept 11503 11508	human
+T692	Concept 11509 11519	betaherpes
+T693	Concept 11520 11525	virus
+T694	Concept 11529 11534	human
+T695	Concept 11535 11550	cytomegalovirus
+T696	Concept 11419 11424;11425 11432	Reads mapping
+T697	Action 11458 11468	identified
+T698	Action 11479 11487	included
+R659	is-a Arg1:T688 Arg2:T687
+R660	is-a Arg1:T689 Arg2:T687
+R661	is-a Arg1:T690 Arg2:T687
+R662	target Arg1:T697 Arg2:T690
+R663	subject Arg1:T698 Arg2:T687
+R664	target Arg1:T698 Arg2:T688
+T699	Concept 11558 11564	RNASeq
+T700	Concept 11565 11570	reads
+T701	Concept 11604 11609	virus
+T702	Concept 11609 11610	-
+T703	Concept 11610 11618	infected
+T704	Concept 11619 11626	RiboSeq
+T705	Concept 11627 11636	libraries
+T706	Concept 11586 11591;11592 11596	viral gRNA
+R665	in-context Arg1:T700 Arg2:T699
+T707	Concept 11709 11717	province
+T708	Concept 11718 11720	j.
+T709	Concept 11671 11683;11684 11689	transmission route
+R666	has-property Arg1:T709 Arg2:T707
+T710	Concept 11739 11744	IL-10
+T711	Concept 11746 11750	IL-6
+T712	Concept 11755 11758	TNF
+T713	Concept 11758 11759	-
+T714	Concept 11759 11760	α
+T715	Concept 11767 11775	directly
+T716	Concept 11784 11785;11786 11790	T cell
+T717	Action 11776 11783	mediate
+T718	Action 11791 11800	reduction
+R667	is-a Arg1:T711 Arg2:T715
+R668	is-a Arg1:T711 Arg2:T717
+R669	target Arg1:T717 Arg2:T710
+R670	target Arg1:T717 Arg2:T711
+R671	target Arg1:T717 Arg2:T714
+R672	target Arg1:T717 Arg2:T715
+R673	target Arg1:T717 Arg2:T716
+R674	target Arg1:T717 Arg2:T718
+R675	target Arg1:T718 Arg2:T716
+R676	target Arg1:T718 Arg2:T717
+T719	Concept 11814 11820	Public
+T720	Concept 11821 11832	Involvement
+T721	Concept 11838 11848	continuous
+T722	Concept 11849 11858	variables
+T723	Concept 11963 11972	nonnormal
+T724	Concept 11973 11985	distribution
+T725	Concept 11990 11995	equal
+T726	Concept 11996 12004	variance
+T727	Concept 11916 11922;11923 11927	Wallis test
+T728	Concept 11908 11915	Kruskal
+T729	Concept 11915 11916	-
+T730	Concept 12047 12051	next
+T731	Concept 12052 12059	closest
+T732	Concept 12060 12066	sister
+T733	Concept 12067 12072	clade
+T734	Concept 12073 12084	neighboring
+T735	Concept 12089 12095	common
+T736	Concept 12096 12104	ancestor
+T737	Concept 12124 12130	clades
+R677	has-property Arg1:T730 Arg2:T733
+R678	has-property Arg1:T730 Arg2:T734
+R679	has-property Arg1:T730 Arg2:T735
+R680	has-property Arg1:T730 Arg2:T736
+R681	in-context Arg1:T730 Arg2:T737
+R682	has-property Arg1:T731 Arg2:T736
+R683	in-context Arg1:T731 Arg2:T737
+R684	in-context Arg1:T732 Arg2:T730
+R685	in-context Arg1:T732 Arg2:T734
+R686	has-property Arg1:T732 Arg2:T736
+R687	in-context Arg1:T732 Arg2:T737
+R688	has-property Arg1:T733 Arg2:T736
+R689	has-property Arg1:T734 Arg2:T730
+R690	has-property Arg1:T734 Arg2:T736
+R691	in-context Arg1:T734 Arg2:T737
+R692	has-property Arg1:T736 Arg2:T730
+R693	has-property Arg1:T737 Arg2:T730
+R694	has-property Arg1:T737 Arg2:T736
+T738	Concept 12161 12162	%
+T739	Concept 12163 12166	587
+T740	Concept 12167 12174	ACN/0.1
+T741	Concept 12174 12175	%
+T742	Concept 12176 12182	formic
+T743	Concept 12183 12187	acid
+T744	Concept 12228 12232	mass
+T745	Concept 12233 12245	spectrometry
+R695	in-context Arg1:T739 Arg2:T738
+R696	has-property Arg1:T743 Arg2:T738
+R697	has-property Arg1:T743 Arg2:T741
+R698	has-property Arg1:T743 Arg2:T742
+R699	has-property Arg1:T743 Arg2:T744
+R700	has-property Arg1:T743 Arg2:T745
+T746	Concept 12296 12302	pseudo
+T747	Concept 12302 12303	-
+T748	Concept 12303 12312	realistic
+T749	Concept 12313 12323	generation
+T750	Concept 12323 12324	-
+T751	Concept 12324 12332	interval
+T752	Concept 12333 12346	distributions
+T753	Concept 12394 12404	infectious
+T754	Concept 12405 12411	period
+T755	Concept 12412 12425	distributions
+T756	Concept 12430 12439	different
+T757	Concept 12440 12448	diseases
+T758	Concept 12259 12272;12273 12279	approximation method
+R701	has-property Arg1:T751 Arg2:T753
+R702	has-property Arg1:T754 Arg2:T753
+R703	has-property Arg1:T754 Arg2:T755
+R704	has-property Arg1:T754 Arg2:T756
+R705	in-context Arg1:T754 Arg2:T757
+R706	in-context Arg1:T755 Arg2:T754
+R707	in-context Arg1:T756 Arg2:T754
+R708	has-property Arg1:T757 Arg2:T753
+R709	in-context Arg1:T757 Arg2:T754
+R710	has-property Arg1:T757 Arg2:T756
+T759	Concept 12498 12508	subsequent
+T760	Concept 12509 12519	iterations
+T761	Concept 12535 12536	-
+T762	Concept 12536 12543	fitting

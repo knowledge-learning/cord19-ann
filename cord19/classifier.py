@@ -119,7 +119,7 @@ class Model:
         """
         collection = self.entity_classifier.predict_entities(sentences)
 
-        for sentence in tqdm.tqdm(collection):
+        for sentence in collection:
             sentence.keyphrases = [
                 k
                 for k in sentence.keyphrases
