@@ -34,8 +34,14 @@ with open(r'C:\Users\Houcemeddine Turki\Downloads\entities11.tsv', newline='') a
          n = 0
          for result in results["results"]["bindings"]:
              sheet.write(row1,0,row[0])
-             sheet.write(row1,1,result["item"]["value"])
-             sheet.write(row1,2,result["label"]["value"])
+             try:
+                 sheet.write(row1,1,result["item"]["value"])
+             except KeyError:
+                 sheet.write("KeyError")
+             try:
+                 sheet.write(row1,2,result["label"]["value"])
+             except KeyError:
+                 sheet.write("KeyError")
              row1 += 1
              n += 1
              if n == 4: break
