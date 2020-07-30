@@ -5,6 +5,8 @@ import sys
 from SPARQLWrapper import SPARQLWrapper, JSON
 import csv
 
+file = open("wdentities.csv","w")
+
 with open(r'C:\Users\Houcemeddine Turki\Downloads\entities11.tsv', newline='') as csvfile:
      spamreader = csv.reader(csvfile, delimiter='\t', quotechar='|')
      for row in spamreader:
@@ -26,8 +28,7 @@ with open(r'C:\Users\Houcemeddine Turki\Downloads\entities11.tsv', newline='') a
              return sparql.query().convert()
          results = get_results(endpoint_url, query)
          for result in results["results"]["bindings"]:
-             with open('wdentities.csv', 'w', newline='') as csvfile1:
-                    output = csv.writer(csvfile1, delimiter=';',
-                            quotechar='|', quoting=csv.QUOTE_MINIMAL)
-                    s = row[0] + ';' + result["item"]["value"] + ';' + result["label"]["value"]
-                    output.writerow(s)
+             s = row[0] + ';' + result["item"]["value"] + ';' + result["label"]["value"]
+             file.write("s")
+ 
+file.close() 
