@@ -64,8 +64,14 @@ for i in range(len(entities)):
          n = 0
          for result in results["results"]["bindings"]:
              sheet.write(row,0,entities[i])
-             sheet.write(row,1,result["item"]["value"])
-             sheet.write(row,2,result["label"]["value"])
+             try:
+                 sheet.write(row,1,result["item"]["value"])
+             except KeyError:
+                 sheet.write("KeyError")
+             try:
+                 sheet.write(row,2,result["label"]["value"])
+             except KeyError:
+                 sheet.write("KeyError")
              row += 1
              n += 1
              if n == 4: break
