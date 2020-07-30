@@ -67,11 +67,11 @@ for i in range(len(entities)):
              try:
                  sheet.write(row,1,result["item"]["value"])
              except KeyError:
-                 sheet.write("KeyError")
+                 sheet.write(row,1,"KeyError")
              try:
                  sheet.write(row,2,result["label"]["value"])
              except KeyError:
-                 sheet.write("KeyError")
+                 sheet.write(row,2,"KeyError")
              row += 1
              n += 1
              if n == 4: break
