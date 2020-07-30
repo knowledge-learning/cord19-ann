@@ -46,11 +46,11 @@ row = 0
 for i in range(len(entities)):
          print(entities[i])
          endpoint_url = "https://query.wikidata.org/sparql"
-         query = '''SELECT * WHERE {
+         query = '''SELECT DISTINCT ?item (UCASE(?label) AS ?title) WHERE {
             {?item wdt:P2892 [].} UNION {?item wdt:P6680 [].} UNION {?item wdt:P351 []; wdt:P703 wd:Q15978631.}
             {?item rdfs:label ?label} UNION { ?item skos:altLabel ?label. }
             FILTER(LANG(?label)="en")
-            FILTER(CONTAINS(UCASE(?label),UCASE("'''+entities[i]+'''")))
+            FILTER(STRSTARTS(UCASE(?label),UCASE("'''+entities[i]+'''")))
          }'''
          print(query)
          def get_results(endpoint_url, query):
