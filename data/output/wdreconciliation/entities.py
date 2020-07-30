@@ -4,8 +4,12 @@
 import sys
 from SPARQLWrapper import SPARQLWrapper, JSON
 import csv
+import xlsxwriter
 
-file = open("wdentities.csv","w")
+w = xlsxwriter.Workbook("wdentities.xlsx")
+sheet = w.add_worksheet("alignment")
+
+row = 0
 
 with open(r'C:\Users\Houcemeddine Turki\Downloads\entities11.tsv', newline='') as csvfile:
      spamreader = csv.reader(csvfile, delimiter='\t', quotechar='|')
@@ -27,8 +31,13 @@ with open(r'C:\Users\Houcemeddine Turki\Downloads\entities11.tsv', newline='') a
              sparql.setReturnFormat(JSON)
              return sparql.query().convert()
          results = get_results(endpoint_url, query)
+         n = 0
          for result in results["results"]["bindings"]:
-             s = row[0] + ';' + result["item"]["value"] + ';' + result["label"]["value"]
-             file.write(s)
+             sheet.write(row,0,entities[i])
+             sheet.write(row,1,result["item"]["value"])
+             sheet.write(row,2,result["label"]["value"])
+             row += 1
+             n += 1
+             if n == 4: break
  
 file.close()
