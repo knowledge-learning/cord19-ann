@@ -13,7 +13,7 @@ with open(r'C:\Users\Houcemeddine Turki\Downloads\entities11.tsv', newline='') a
          print(row[0])
          endpoint_url = "https://query.wikidata.org/sparql"
          query = '''SELECT * WHERE {
-            {?item wdt:P2892 [].} UNION {?item wdt:P6680 [].}
+            {?item wdt:P2892 [].} UNION {?item wdt:P6680 [].} UNION {?item wdt:P351 []; wdt:P703 wd:Q15978631.}
             {?item rdfs:label ?label} UNION { ?item skos:altLabel ?label. }
             FILTER(LANG(?label)="en")
             FILTER(CONTAINS(UCASE(?label),UCASE("'''+row[0]+'''")))
@@ -31,4 +31,4 @@ with open(r'C:\Users\Houcemeddine Turki\Downloads\entities11.tsv', newline='') a
              s = row[0] + ';' + result["item"]["value"] + ';' + result["label"]["value"]
              file.write(s)
  
-file.close() 
+file.close()
