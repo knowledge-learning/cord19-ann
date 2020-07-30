@@ -37,11 +37,11 @@ with open(r'C:\Users\Houcemeddine Turki\Downloads\entities11.tsv', newline='') a
              try:
                  sheet.write(row1,1,result["item"]["value"])
              except KeyError:
-                 sheet.write("KeyError")
+                 sheet.write(row1,1,"KeyError")
              try:
                  sheet.write(row1,2,result["label"]["value"])
              except KeyError:
-                 sheet.write("KeyError")
+                 sheet.write(row1,2,"KeyError")
              row1 += 1
              n += 1
              if n == 4: break
