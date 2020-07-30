@@ -29,6 +29,6 @@ with open(r'C:\Users\Houcemeddine Turki\Downloads\entities11.tsv', newline='') a
          results = get_results(endpoint_url, query)
          for result in results["results"]["bindings"]:
              s = row[0] + ';' + result["item"]["value"] + ';' + result["label"]["value"]
-             file.write("s")
+             file.write(s)
  
 file.close() 
