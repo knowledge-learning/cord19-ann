@@ -9,7 +9,7 @@ import xlsxwriter
 w = xlsxwriter.Workbook("wdentities.xlsx")
 sheet = w.add_worksheet("alignment")
 
-row = 0
+row1 = 0
 
 with open(r'C:\Users\Houcemeddine Turki\Downloads\entities11.tsv', newline='') as csvfile:
      spamreader = csv.reader(csvfile, delimiter='\t', quotechar='|')
@@ -33,10 +33,10 @@ with open(r'C:\Users\Houcemeddine Turki\Downloads\entities11.tsv', newline='') a
          results = get_results(endpoint_url, query)
          n = 0
          for result in results["results"]["bindings"]:
-             sheet.write(row,0,entities[i])
-             sheet.write(row,1,result["item"]["value"])
-             sheet.write(row,2,result["label"]["value"])
-             row += 1
+             sheet.write(row1,0,row[0])
+             sheet.write(row1,1,result["item"]["value"])
+             sheet.write(row1,2,result["label"]["value"])
+             row1 += 1
              n += 1
              if n == 4: break
  
