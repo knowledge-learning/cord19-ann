@@ -41,7 +41,10 @@ with open(r'C:\Users\Houcemeddine Turki\Downloads\entities11.tsv', newline='') a
              sparql.setReturnFormat(JSON)
              return sparql.query().convert()
          if (len(row[0])>2):
-             results = get_results(endpoint_url, query)
+             try:
+               results = get_results(endpoint_url, query)
+             except:
+               print("EndPointInternalError")
              n = 0
              for result in results["results"]["bindings"]:
                  sheet.write(row1,0,row[0])
