@@ -46,4 +46,4 @@ with open(r'C:\Users\Houcemeddine Turki\Downloads\entities11.tsv', newline='') a
              n += 1
              if n == 4: break
  
-file.close()
+w.close()
