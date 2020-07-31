@@ -40,20 +40,21 @@ with open(r'C:\Users\Houcemeddine Turki\Downloads\entities11.tsv', newline='') a
              sparql.setQuery(query)
              sparql.setReturnFormat(JSON)
              return sparql.query().convert()
-         results = get_results(endpoint_url, query)
-         n = 0
-         for result in results["results"]["bindings"]:
-             sheet.write(row1,0,row[0])
-             try:
-                 sheet.write(row1,1,result["item"]["value"])
-                 print(result["item"]["value"])
-             except KeyError:
-                 sheet.write(row1,1,"KeyError")
-             try:
-                 sheet.write(row1,2,result["label"]["value"])
-                 print(result["label"]["value"])
-             except KeyError:
-                 sheet.write(row1,2,"KeyError")
+         if (len(row[0])>2):
+             results = get_results(endpoint_url, query)
+             n = 0
+             for result in results["results"]["bindings"]:
+                 sheet.write(row1,0,row[0])
+                 try:
+                     sheet.write(row1,1,result["item"]["value"])
+                     print(result["item"]["value"])
+                 except KeyError:
+                     sheet.write(row1,1,"KeyError")
+                 try:
+                     sheet.write(row1,2,result["label"]["value"])
+                     print(result["label"]["value"])
+                 except KeyError:
+                     sheet.write(row1,2,"KeyError")
              row1 += 1
              n += 1
              if n == 4: break
