@@ -11,7 +11,7 @@ sheet = w.add_worksheet("alignment")
 
 row1 = 0
 
-with open(r'C:\Users\Houcemeddine Turki\Downloads\entities11.tsv', newline='') as csvfile:
+with open('entities11.tsv', newline='') as csvfile:
      spamreader = csv.reader(csvfile, delimiter='\t', quotechar='|')
      for row in spamreader:
          print(row[0])
