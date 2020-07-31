@@ -45,21 +45,22 @@ with open('entities11.tsv', newline='') as csvfile:
                results = get_results(endpoint_url, query)
              except:
                print("EndPointInternalError")
-               results = None
-             n = 0
-             for result in results["results"]["bindings"]:
-                 sheet.write(row1,0,row[0])
-                 try:
-                     sheet.write(row1,1,result["item"]["value"])
-                     print(result["item"]["value"])
-                 except KeyError:
-                     sheet.write(row1,1,"KeyError")
-                 try:
-                     sheet.write(row1,2,result["label"]["value"])
-                     print(result["label"]["value"])
-                 except KeyError:
-                     sheet.write(row1,2,"KeyError")
-             row1 += 1
+               e = 0
+           n = 0
+             if e!=0:
+                 for result in results["results"]["bindings"]:
+                     sheet.write(row1,0,row[0])
+                     try:
+                         sheet.write(row1,1,result["item"]["value"])
+                         print(result["item"]["value"])
+                     except KeyError:
+                         sheet.write(row1,1,"KeyError")
+                     try:
+                         sheet.write(row1,2,result["label"]["value"])
+                         print(result["label"]["value"])
+                     except KeyError:
+                         sheet.write(row1,2,"KeyError")
+                 row1 += 1
              n += 1
              if n == 4: break
  
