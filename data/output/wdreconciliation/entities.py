@@ -45,7 +45,7 @@ with open(r'C:\Users\Houcemeddine Turki\Downloads\entities11.tsv', newline='') a
                results = get_results(endpoint_url, query)
              except:
                print("EndPointInternalError")
-               results = none
+               results = None
              n = 0
              for result in results["results"]["bindings"]:
                  sheet.write(row1,0,row[0])
