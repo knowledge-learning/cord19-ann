@@ -43,6 +43,7 @@ with open('entities11.tsv', newline='') as csvfile:
          if (len(row[0])>2):
              try:
                results = get_results(endpoint_url, query)
+               e = 1
              except:
                print("EndPointInternalError")
                e = 0
