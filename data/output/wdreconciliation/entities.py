@@ -57,8 +57,8 @@ with open("result.csv", "w") as writer:
                     except KeyError:
                         writer.write(f"{row1},1,KeyError\n")
                     try:
-                        writer.write(f"{row1},2,{result['label']['value']}\n")
-                        print(result["label"]["value"])
+                        writer.write(f"{row1},2,{result['title']['value']}\n")
+                        print(result["title"]["value"])
                     except KeyError:
                         writer.write(f"{row1},2,KeyError\n")
                     row1 += 1
