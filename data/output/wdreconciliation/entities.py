@@ -1,8 +1,5 @@
 # Aligining annotated concepts with Wikidata items
-# Created by Houcemeddine Turki
-
-# Aligining annotated concepts with Wikidata items
-# Created by Houcemeddine Turki
+# Created by Houcemeddine Turki and Alejandro Piad Morffis
 
 import sys
 from SPARQLWrapper import SPARQLWrapper, JSON
