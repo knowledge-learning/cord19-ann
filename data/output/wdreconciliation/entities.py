@@ -10,6 +10,9 @@ import csv
 import xlsxwriter
 
 row1 = 0
+list1 = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q"]
+list2 = ["R","S","T","U","V","W","X","Y","Z"]
+lis = list1 + list2
 
 with open("result.csv", "w") as writer:
     with open(sys.argv[1], newline='') as csvfile:
@@ -53,7 +56,7 @@ with open("result.csv", "w") as writer:
                     continue
 
                 for result in results["results"]["bindings"]:
-                    c1 = result["title"]["value"][len(entity):len(entity)+1] in [A-Z]
+                    c1 = result["title"]["value"][len(entity):len(entity)+1] in lis
                     if (len(entity)==len(result["title"]["value"])) or (c1==true):    
                         writer.write(f"{row1},0,{entity}\n")
                         try:
