@@ -50,16 +50,18 @@ with open("result.csv", "w") as writer:
                     continue
 
                 for result in results["results"]["bindings"]:
-                    writer.write(f"{row1},0,{entity}\n")
-                    try:
-                        writer.write(f"{row1},1,{result['item']['value']}\n")
-                        print(result["item"]["value"])
-                    except KeyError:
-                        writer.write(f"{row1},1,KeyError\n")
-                    try:
-                        writer.write(f"{row1},2,{result['title']['value']}\n")
-                        print(result["title"]["value"])
-                    except KeyError:
-                        writer.write(f"{row1},2,KeyError\n")
-                    row1 += 1
-                    writer.flush()
+                    c1 = (result["title"]["value"][len(entity):len(entity)+1]
+                    if (len(entity)==len(result["title"]["value"])) or (c1.isalpha()):    
+                        writer.write(f"{row1},0,{entity}\n")
+                        try:
+                            writer.write(f"{row1},1,{result['item']['value']}\n")
+                            print(result["item"]["value"])
+                        except KeyError:
+                            writer.write(f"{row1},1,KeyError\n")
+                        try:
+                            writer.write(f"{row1},2,{result['title']['value']}\n")
+                            print(result["title"]["value"])
+                        except KeyError:
+                            writer.write(f"{row1},2,KeyError\n")
+                        row1 += 1
+                        writer.flush()
