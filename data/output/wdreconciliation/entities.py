@@ -1,6 +1,9 @@
 # Aligining annotated concepts with Wikidata items
 # Created by Houcemeddine Turki
 
+# Aligining annotated concepts with Wikidata items
+# Created by Houcemeddine Turki
+
 import sys
 from SPARQLWrapper import SPARQLWrapper, JSON
 import csv
@@ -50,8 +53,8 @@ with open("result.csv", "w") as writer:
                     continue
 
                 for result in results["results"]["bindings"]:
-                    c1 = (result["title"]["value"][len(entity):len(entity)+1]
-                    if (len(entity)==len(result["title"]["value"])) or (c1.isalpha()):    
+                    c1 = result["title"]["value"][len(entity):len(entity)+1] in [A-Z]
+                    if (len(entity)==len(result["title"]["value"])) or (c1==true):    
                         writer.write(f"{row1},0,{entity}\n")
                         try:
                             writer.write(f"{row1},1,{result['item']['value']}\n")
