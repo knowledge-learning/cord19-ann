@@ -30,6 +30,8 @@ with open("result.csv", "w") as writer:
             ?item wdt:P351 [];
                     wdt:P703 wd:Q15978631.
             }
+            UNION
+            { ?item wdt:P5008 wd:Q87748614.}
             { ?item rdfs:label ?label. }
             UNION
             { ?item skos:altLabel ?label. }
