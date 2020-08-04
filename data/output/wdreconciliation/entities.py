@@ -11,7 +11,7 @@ list1 = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q"]
 list2 = ["R","S","T","U","V","W","X","Y","Z"]
 lis = list1 + list2
 
-with open("result.csv", "w") as writer:
+with open(sys.argv[2], "w") as writer:
     with open(sys.argv[1], newline='') as csvfile:
         spamreader = csv.reader(csvfile, delimiter='\t', quotechar='|')
         for row in spamreader:
@@ -56,7 +56,7 @@ with open("result.csv", "w") as writer:
 
                 for result in results["results"]["bindings"]:
                     c1 = result["title"]["value"][len(entity):len(entity)+1] in lis
-                    if (len(entity)==len(result["title"]["value"])) or (c1==true):    
+                    if (len(entity)==len(result["title"]["value"])) or (c1==True):    
                         writer.write(f"{row1},0,{entity}\n")
                         try:
                             writer.write(f"{row1},1,{result['item']['value']}\n")
