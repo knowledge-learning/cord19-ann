@@ -72,10 +72,13 @@ for n1 in range(5):
     for i in range(len(p23)):
         p00 += p23[i]
     p0 = p00.split('\n')
+    p25 = ""
+    for i in range(len(p0)):
+        p25 += p0[i]
+    p0n = p25.split('/')
     p24 = ""
-    for i in range(len(p23)):
-        p24 += p0[i]
-
+    for i in range(len(p0n)):
+        p24 += p0n[i] + " "
     #Splitting the sentence into words
     a = p24.split(" ")
 
