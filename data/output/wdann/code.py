@@ -17,7 +17,7 @@ def get_results(endpoint_url, query):
     return sparql.query().convert()
 
 #Reading the pack file
-f = open(r"C:\Users\Houcemeddine Turki\Downloads\pack01-first.txt", "r")
+f = open(r"C:\Users\Houcemeddine Turki\Downloads\cord19-ann.txt", "r")
 g = open("wikidata-auto.txt", "w")
 for n1 in range(5):
     print("Analysis of sentence "+str(n1+1)+"...\n")
