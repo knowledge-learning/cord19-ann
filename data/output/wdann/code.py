@@ -81,7 +81,7 @@ for n1 in range(500):
     p251 = ""
     for i in range(len(p011)):
         p251 += p011[i]
-    p0 = p01.split("#")
+    p0 = p251.split("#")
     p25 = ""
     for i in range(len(p0)):
         p25 += p0[i]
