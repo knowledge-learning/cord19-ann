@@ -28,7 +28,7 @@ g = open("wikidata-auto.txt", "a")
 for n1 in range(500):
     print("Analysis of sentence " + str(n1 + 1) + "...\n")
     p = f.readline()
-    if n1 < 211:
+    if n1 < 413:
         continue
     # Eliminating punctuation
     p1 = p.split(",")
