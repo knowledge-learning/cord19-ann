@@ -24,10 +24,12 @@ def get_results(endpoint_url, query):
 
 # Reading the pack file
 f = open(pathlib.Path(__file__).parent / "cord19-ann.txt", "r")
-g = open("wikidata-auto.txt", "w")
+g = open("wikidata-auto.txt", "a")
 for n1 in range(500):
     print("Analysis of sentence " + str(n1 + 1) + "...\n")
     p = f.readline()
+    if n1 < 211:
+        continue
     # Eliminating punctuation
     p1 = p.split(",")
     p2 = ""
